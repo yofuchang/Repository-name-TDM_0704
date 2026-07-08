@@ -1,0 +1,4 @@
+set(DRIVER_INSTANCES "radar_beamformer@a0010000")
+set(DRIVER_PROP_0_LIST "xlnx,radar-beamformer-1.0;0xa0010000")
+set(DRIVER_OPTPROP_0_LIST "")
+list(APPEND TOTAL_DRIVER_PROP_LIST DRIVER_PROP_0_LIST)
