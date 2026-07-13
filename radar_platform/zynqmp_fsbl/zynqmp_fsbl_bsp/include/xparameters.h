@@ -452,6 +452,18 @@
 #define XPAR_XIPIPSU_0_CH6_IPI_BITMASK 0x80000
 #define XPAR_XIPIPSU_0_CH6_IPI_BUF_INDEX 0x7
 
+#define XPAR_XLFM_TDM_GEN_NUM_INSTANCES 1
+
+/* Definitions for peripheral LFM_TDM_GEN_0 */
+#define XPAR_LFM_TDM_GEN_0_COMPATIBLE "xlnx,lfm-tdm-gen-1.0"
+#define XPAR_LFM_TDM_GEN_0_BASEADDR 0xa0020000
+#define XPAR_LFM_TDM_GEN_0_HIGHADDR 0xa002ffff
+
+/* Canonical definitions for peripheral LFM_TDM_GEN_0 */
+#define XPAR_XLFM_TDM_GEN_0_BASEADDR 0xa0020000
+#define XPAR_XLFM_TDM_GEN_0_HIGHADDR 0xa002ffff
+#define XPAR_XLFM_TDM_GEN_0_COMPATIBLE "xlnx,lfm-tdm-gen-1.0"
+
 #define XPAR_XQSPIPSU_NUM_INSTANCES 1
 
 /* Definitions for peripheral QSPI */

@@ -187,6 +187,10 @@ drv_info:
     driver: axidma
     ip_name: axi_dma
     path: C:\Xilinx\Vitis\2024.2\data\embeddedsw\XilinxProcessorIPLib\drivers\axidma_v9_19
+  lfm_tdm_gen_0:
+    driver: lfm_tdm_gen
+    ip_name: lfm_tdm_gen
+    path: C:\TDM_0704\TDM_0704\radar_platform\psu_cortexa53_0\standalone_psu_cortexa53_0\bsp\hw_artifacts\drivers\lfm_tdm_gen_v1_0
   psu_acpu_gic:
     driver: scugic
     ip_name: psu_acpu_gic

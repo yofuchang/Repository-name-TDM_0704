@@ -1,0 +1,12 @@
+{
+  "name": "lfm_tdm_gen",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "hls_config.cfg"
+    ],
+    "work_dir": "lfm_tdm_gen"
+  },
+  "template": "empty_hls_component"
+}

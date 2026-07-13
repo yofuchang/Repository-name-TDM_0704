@@ -1,0 +1,3 @@
+relativeroot=C:/TDM_0704/TDM_0704/lfm_tdm_gen
+original_argv=--mode hls --package --config C:\TDM_0704\TDM_0704\lfm_tdm_gen\hls_config.cfg --work_dir lfm_tdm_gen 
+

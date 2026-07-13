@@ -56,6 +56,8 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 2
+set_param bd.open.in_stealth_mode 2
 set_msg_config  -id {[BD 41-1306]}  -suppress 
 set_msg_config  -id {[BD 41-1271]}  -suppress 
 OPTRACE "Creating in-memory project" START { }
@@ -72,7 +74,10 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part_repo_paths {C:/Users/NTUTIASE/AppData/Roaming/Xilinx/Vivado/2024.2/xhub/board_store/xilinx_board_store} [current_project]
 set_property board_part xilinx.com:zcu208:part0:2.0 [current_project]
-set_property ip_repo_paths c:/TDM_0704/radar_beamformer_ip/radar_beamformer_ip/hls/impl/ip [current_project]
+set_property ip_repo_paths {
+  c:/TDM_0704/radar_beamformer_ip/radar_beamformer_ip/hls/impl/ip
+  c:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/impl/ip
+} [current_project]
 update_ip_catalog
 set_property ip_output_repo c:/TDM_0704/TDM_0704/TDM_0704.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
@@ -120,6 +125,12 @@ set_property used_in_implementation false [get_files -all c:/TDM_0704/TDM_0704/T
 set_property used_in_implementation false [get_files -all c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2/bd_0/ip/ip_36/bd_6e42_m01awn_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2/bd_0/ip/ip_37/bd_6e42_m01wn_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2/bd_0/ip/ip_38/bd_6e42_m01bn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2/bd_0/ip/ip_40/bd_6e42_m02s2a_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2/bd_0/ip/ip_41/bd_6e42_m02arn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2/bd_0/ip/ip_42/bd_6e42_m02rn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2/bd_0/ip/ip_43/bd_6e42_m02awn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2/bd_0/ip/ip_44/bd_6e42_m02wn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2/bd_0/ip/ip_45/bd_6e42_m02bn_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2/ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2/smartconnect.xdc]
 set_property used_in_implementation false [get_files -all c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_99M_1/design_1_rst_ps8_0_99M_1_board.xdc]
@@ -156,6 +167,17 @@ set_property used_in_implementation false [get_files -all c:/TDM_0704/TDM_0704/T
 set_property used_in_implementation false [get_files -all c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_1/design_1_system_ila_0_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_axis_data_fifo_0_1/design_1_axis_data_fifo_0_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_axis_data_fifo_1_0/design_1_axis_data_fifo_1_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_lfm_tdm_gen_0_0/constraints/lfm_tdm_gen_ooc.xdc]
+set_property used_in_synthesis false [get_files -all c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_system_ila_1_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_system_ila_1_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_system_ila_1_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc]
+set_property used_in_implementation false [get_files -all c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_system_ila_1_0/bd_0/ip/ip_0/bd_365d_ila_lib_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_system_ila_1_0/bd_0/bd_365d_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_system_ila_1_0/design_1_system_ila_1_0_ooc.xdc]
+set_property used_in_synthesis false [get_files -all c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/ila_v6_2/constraints/ila.xdc]
+set_property used_in_implementation false [get_files -all c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_ila_0_0/design_1_ila_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/design_1_ooc.xdc]
 
 OPTRACE "Adding files" END { }

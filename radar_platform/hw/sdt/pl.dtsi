@@ -71,6 +71,24 @@
 				dma-channels = <0x1>;
 			};
 		};
+		lfm_tdm_gen_0: lfm_tdm_gen@a0020000 {
+			compatible = "xlnx,lfm-tdm-gen-1.0";
+			xlnx,ii = <4096>;
+			xlnx,machine = <64>;
+			xlnx,rable = <0>;
+			xlnx,ip-name = "lfm_tdm_gen";
+			reg = <0x0 0xa0020000 0x0 0x10000>;
+			clocks = <&zynqmp_clk 71>;
+			xlnx,s-axi-ctrl-addr-width = <4>;
+			xlnx,clk-period = <10>;
+			xlnx,edk-iptype = "PERIPHERAL";
+			status = "okay";
+			clock-names = "ap_clk";
+			xlnx,combinational = <0>;
+			xlnx,s-axi-ctrl-data-width = <32>;
+			xlnx,latency = <4107>;
+			xlnx,name = "lfm_tdm_gen_0";
+		};
 		radar_beamformer_0: radar_beamformer@a0010000 {
 			compatible = "xlnx,radar-beamformer-1.0";
 			xlnx,ii = <1024>;

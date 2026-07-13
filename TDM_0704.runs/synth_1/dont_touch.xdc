@@ -31,4 +31,13 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_ax
 # IP: bd/design_1/ip/design_1_axis_data_fifo_1_0/design_1_axis_data_fifo_1_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_axis_data_fifo_1_0 || ORIG_REF_NAME==design_1_axis_data_fifo_1_0} -quiet] -quiet
 
+# IP: bd/design_1/ip/design_1_lfm_tdm_gen_0_0/design_1_lfm_tdm_gen_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_lfm_tdm_gen_0_0 || ORIG_REF_NAME==design_1_lfm_tdm_gen_0_0} -quiet] -quiet
+
+# IP: bd/design_1/ip/design_1_system_ila_1_0/design_1_system_ila_1_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_system_ila_1_0 || ORIG_REF_NAME==design_1_system_ila_1_0} -quiet] -quiet
+
+# IP: bd/design_1/ip/design_1_ila_0_0/design_1_ila_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_ila_0_0 || ORIG_REF_NAME==design_1_ila_0_0} -quiet] -quiet
+
 # XDC: c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/design_1_ooc.xdc

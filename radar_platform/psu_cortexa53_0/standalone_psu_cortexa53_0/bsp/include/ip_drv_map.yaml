@@ -1,6 +1,9 @@
 axi_dma_0:
 - axi_dma
 - axidma
+lfm_tdm_gen_0:
+- lfm_tdm_gen
+- lfm_tdm_gen
 psu_acpu_gic:
 - psu_acpu_gic
 - scugic

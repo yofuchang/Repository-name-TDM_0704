@@ -1,0 +1,15 @@
+{
+  "0": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "lfm_tdm_gen.cpp",
+    "fileloc": 22,
+    "instructions": 80,
+    "name": "lfm_tdm_gen",
+    "stores": {
+      "L": 4,
+      "T": 11
+    },
+    "total_instructions": 80
+  }
+}

@@ -1,0 +1,58 @@
+---
+MainSourceFile:  'C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/lfm_tdm_gen.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        'C:\Xilinx\Vitis\2024.2\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\TDM_0704\TDM_0704\lfm_tdm_gen\lfm_tdm_gen\hls\.autopilot\db\lfm_tdm_gen.pp.0.cpp'
+        Offset:          283652
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        'C:\Xilinx\Vitis\2024.2\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\TDM_0704\TDM_0704\lfm_tdm_gen\lfm_tdm_gen\hls\.autopilot\db\lfm_tdm_gen.pp.0.cpp'
+        Offset:          284118
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        'C:\Xilinx\Vitis\2024.2\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\TDM_0704\TDM_0704\lfm_tdm_gen\lfm_tdm_gen\hls\.autopilot\db\lfm_tdm_gen.pp.0.cpp'
+        Offset:          284585
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1248_1:  '
+    FileOffset:      1248
+    FilePath:        'C:\Xilinx\Vitis\2024.2\common\technology\autopilot\etc\ap_fixed_base.h'
+    Replacements:    
+      - FilePath:        'C:\TDM_0704\TDM_0704\lfm_tdm_gen\lfm_tdm_gen\hls\.autopilot\db\lfm_tdm_gen.pp.0.cpp'
+        Offset:          567943
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1248_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_53_1:  '
+    FileOffset:      53
+    FilePath:        lfm_tdm_gen.cpp
+    Replacements:    
+      - FilePath:        'C:\TDM_0704\TDM_0704\lfm_tdm_gen\lfm_tdm_gen\hls\.autopilot\db\lfm_tdm_gen.pp.0.cpp'
+        Offset:          1057140
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_53_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_57_2:  '
+    FileOffset:      57
+    FilePath:        lfm_tdm_gen.cpp
+    Replacements:    
+      - FilePath:        'C:\TDM_0704\TDM_0704\lfm_tdm_gen\lfm_tdm_gen\hls\.autopilot\db\lfm_tdm_gen.pp.0.cpp'
+        Offset:          1057231
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_57_2: '
+...

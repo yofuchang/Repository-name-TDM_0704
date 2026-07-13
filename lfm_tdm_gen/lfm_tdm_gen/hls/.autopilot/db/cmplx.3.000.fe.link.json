@@ -1,0 +1,27 @@
+{
+  "0": {
+    "basicblocks": 17,
+    "calls": "1",
+    "file": "lfm_tdm_gen.cpp",
+    "fileloc": 22,
+    "instructions": 212,
+    "loads": {
+      "L": 18
+    },
+    "name": "lfm_tdm_gen",
+    "stores": {
+      "L": 7,
+      "T": 11
+    },
+    "total_instructions": 1087
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "lfm_tdm_gen.cpp",
+    "fileloc": 12,
+    "instructions": 24,
+    "name": "pack_iq",
+    "total_instructions": 199
+  }
+}

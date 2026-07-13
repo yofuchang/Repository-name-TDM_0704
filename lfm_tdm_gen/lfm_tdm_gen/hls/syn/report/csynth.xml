@@ -1,0 +1,924 @@
+<profile>
+    <ReportVersion>
+        <Version>2024.2</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>zynquplusRFSOC</ProductFamily>
+        <Part>xczu48dr-fsvg1517-2-e</Part>
+        <TopModelName>lfm_tdm_gen</TopModelName>
+        <TargetClockPeriod>10.00</TargetClockPeriod>
+        <ClockUncertainty>2.70</ClockUncertainty>
+        <FlowTarget>vivado</FlowTarget>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>loop auto-rewind stp (delay=0 cycles)</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>2.412</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>4107</Best-caseLatency>
+            <Average-caseLatency>4107</Average-caseLatency>
+            <Worst-caseLatency>4107</Worst-caseLatency>
+            <Best-caseRealTimeLatency>41.070 us</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>41.070 us</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>41.070 us</Worst-caseRealTimeLatency>
+            <Interval-min>4096</Interval-min>
+            <Interval-max>4096</Interval-max>
+        </SummaryOfOverallLatency>
+        <SummaryOfLoopLatency>
+            <VITIS_LOOP_53_1_VITIS_LOOP_57_2>
+                <Slack>7.30</Slack>
+                <TripCount>4096</TripCount>
+                <Latency>4105</Latency>
+                <AbsoluteTimeLatency>41050</AbsoluteTimeLatency>
+                <PipelineII>1</PipelineII>
+                <PipelineDepth>11</PipelineDepth>
+                <InstanceList/>
+            </VITIS_LOOP_53_1_VITIS_LOOP_57_2>
+        </SummaryOfLoopLatency>
+        <SummaryOfViolations>
+            <IssueType>-</IssueType>
+            <ViolationType>-</ViolationType>
+            <SourceLocation>lfm_tdm_gen.cpp:22</SourceLocation>
+            <SummaryOfLoopViolations>
+                <VITIS_LOOP_53_1_VITIS_LOOP_57_2>
+                    <Name>VITIS_LOOP_53_1_VITIS_LOOP_57_2</Name>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>lfm_tdm_gen.cpp:57</SourceLocation>
+                </VITIS_LOOP_53_1_VITIS_LOOP_57_2>
+            </SummaryOfLoopViolations>
+        </SummaryOfViolations>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <BRAM_18K>0</BRAM_18K>
+            <DSP>1</DSP>
+            <FF>368</FF>
+            <LUT>426</LUT>
+            <URAM>0</URAM>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>2160</BRAM_18K>
+            <DSP>4272</DSP>
+            <FF>850560</FF>
+            <LUT>425280</LUT>
+            <URAM>80</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>s_axi_CTRL_AWVALID</name>
+            <Object>CTRL</Object>
+            <Type>return void</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_AWREADY</name>
+            <Object>CTRL</Object>
+            <Type>return void</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_AWADDR</name>
+            <Object>CTRL</Object>
+            <Type>return void</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_WVALID</name>
+            <Object>CTRL</Object>
+            <Type>return void</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_WREADY</name>
+            <Object>CTRL</Object>
+            <Type>return void</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_WDATA</name>
+            <Object>CTRL</Object>
+            <Type>return void</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_WSTRB</name>
+            <Object>CTRL</Object>
+            <Type>return void</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_ARVALID</name>
+            <Object>CTRL</Object>
+            <Type>return void</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_ARREADY</name>
+            <Object>CTRL</Object>
+            <Type>return void</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_ARADDR</name>
+            <Object>CTRL</Object>
+            <Type>return void</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_RVALID</name>
+            <Object>CTRL</Object>
+            <Type>return void</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_RREADY</name>
+            <Object>CTRL</Object>
+            <Type>return void</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_RDATA</name>
+            <Object>CTRL</Object>
+            <Type>return void</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>32</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_RRESP</name>
+            <Object>CTRL</Object>
+            <Type>return void</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_BVALID</name>
+            <Object>CTRL</Object>
+            <Type>return void</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_BREADY</name>
+            <Object>CTRL</Object>
+            <Type>return void</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_CTRL_BRESP</name>
+            <Object>CTRL</Object>
+            <Type>return void</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>unknown</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_clk</name>
+            <Object>lfm_tdm_gen</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst_n</name>
+            <Object>lfm_tdm_gen</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>interrupt</name>
+            <Object>lfm_tdm_gen</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axis_tx_TREADY</name>
+            <Object>m_axis_tx_V_last_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axis_tx_TVALID</name>
+            <Object>m_axis_tx_V_last_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axis_tx_TLAST</name>
+            <Object>m_axis_tx_V_last_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axis_tx_TDATA</name>
+            <Object>m_axis_tx_V_data_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axis_tx_TKEEP</name>
+            <Object>m_axis_tx_V_keep_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>4</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axis_tx_TSTRB</name>
+            <Object>m_axis_tx_V_strb_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>4</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>dbg_lfm_i</name>
+            <Object>dbg_lfm_i</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>dbg_lfm_q</name>
+            <Object>dbg_lfm_q</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>dbg_tx_sel</name>
+            <Object>dbg_tx_sel</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>dbg_chirp_count</name>
+            <Object>dbg_chirp_count</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>dbg_sample_count</name>
+            <Object>dbg_sample_count</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>dbg_chirp_start</name>
+            <Object>dbg_chirp_start</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>dbg_chirp_end</name>
+            <Object>dbg_chirp_end</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>dbg_enable</name>
+            <Object>dbg_enable</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>dbg_state</name>
+            <Object>dbg_state</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>3</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule MAX_DEPTH="2">
+            <ModuleName>lfm_tdm_gen</ModuleName>
+            <BindInstances>select_ln53_fu_262_p3 chirp_2_fu_270_p3 urem_3ns_3ns_3_7_1_U1 mac_muladd_10ns_3ns_10ns_12_4_1_U2 cmp13_fu_284_p2 mac_muladd_10ns_3ns_10ns_12_4_1_U2 q_val_fu_369_p2 icmp_ln79_fu_294_p2 tx_word_last_fu_300_p2 sample_fu_306_p2 add_ln53_fu_312_p2 icmp_ln57_fu_318_p2 chirp_fu_324_p2 icmp_ln53_fu_330_p2 CTRL_s_axi_U</BindInstances>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>lfm_tdm_gen</Name>
+            <Loops>
+                <VITIS_LOOP_53_1_VITIS_LOOP_57_2/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>2.412</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>4107</Best-caseLatency>
+                    <Average-caseLatency>4107</Average-caseLatency>
+                    <Worst-caseLatency>4107</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>41.070 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>41.070 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>41.070 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>4096</PipelineInitiationInterval>
+                    <PipelineType>loop auto-rewind stp (delay=0 clock cycles(s))</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_53_1_VITIS_LOOP_57_2>
+                        <Name>VITIS_LOOP_53_1_VITIS_LOOP_57_2</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>4096</TripCount>
+                        <Latency>4105</Latency>
+                        <AbsoluteTimeLatency>41.050 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>11</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </VITIS_LOOP_53_1_VITIS_LOOP_57_2>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>lfm_tdm_gen.cpp:22</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_53_1_VITIS_LOOP_57_2>
+                            <Name>VITIS_LOOP_53_1_VITIS_LOOP_57_2</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>lfm_tdm_gen.cpp:57</SourceLocation>
+                        </VITIS_LOOP_53_1_VITIS_LOOP_57_2>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>2160</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>1</DSP>
+                    <AVAIL_DSP>4272</AVAIL_DSP>
+                    <UTIL_DSP>~0</UTIL_DSP>
+                    <FF>368</FF>
+                    <AVAIL_FF>850560</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>426</LUT>
+                    <AVAIL_LUT>425280</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>80</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_53_1_VITIS_LOOP_57_2" OPTYPE="select" PRAGMA="" RTLNAME="select_ln53_fu_262_p3" SOURCE="lfm_tdm_gen.cpp:53" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln53" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_53_1_VITIS_LOOP_57_2" OPTYPE="select" PRAGMA="" RTLNAME="chirp_2_fu_270_p3" SOURCE="lfm_tdm_gen.cpp:53" STORAGESUBTYPE="" URAM="0" VARIABLE="chirp_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op urem" DSP="0" ID="" IMPL="auto" LATENCY="6" LOOP="VITIS_LOOP_53_1_VITIS_LOOP_57_2" OPTYPE="urem" PRAGMA="" RTLNAME="urem_3ns_3ns_3_7_1_U1" SOURCE="lfm_tdm_gen.cpp:55" STORAGESUBTYPE="" URAM="0" VARIABLE="tx_sel" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="VITIS_LOOP_53_1_VITIS_LOOP_57_2" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_10ns_3ns_10ns_12_4_1_U2" SOURCE="lfm_tdm_gen.cpp:55" STORAGESUBTYPE="" URAM="0" VARIABLE="mul_i_i" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_53_1_VITIS_LOOP_57_2" OPTYPE="seteq" PRAGMA="" RTLNAME="cmp13_fu_284_p2" SOURCE="lfm_tdm_gen.cpp:53" STORAGESUBTYPE="" URAM="0" VARIABLE="cmp13" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp_slice" LATENCY="3" LOOP="VITIS_LOOP_53_1_VITIS_LOOP_57_2" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_10ns_3ns_10ns_12_4_1_U2" SOURCE="lfm_tdm_gen.cpp:60" STORAGESUBTYPE="" URAM="0" VARIABLE="i_val" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_53_1_VITIS_LOOP_57_2" OPTYPE="sub" PRAGMA="" RTLNAME="q_val_fu_369_p2" SOURCE="lfm_tdm_gen.cpp:63" STORAGESUBTYPE="" URAM="0" VARIABLE="q_val" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_53_1_VITIS_LOOP_57_2" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln79_fu_294_p2" SOURCE="lfm_tdm_gen.cpp:79" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln79" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_53_1_VITIS_LOOP_57_2" OPTYPE="and" PRAGMA="" RTLNAME="tx_word_last_fu_300_p2" SOURCE="lfm_tdm_gen.cpp:79" STORAGESUBTYPE="" URAM="0" VARIABLE="tx_word_last" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_53_1_VITIS_LOOP_57_2" OPTYPE="add" PRAGMA="" RTLNAME="sample_fu_306_p2" SOURCE="lfm_tdm_gen.cpp:57" STORAGESUBTYPE="" URAM="0" VARIABLE="sample" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_53_1_VITIS_LOOP_57_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln53_fu_312_p2" SOURCE="lfm_tdm_gen.cpp:53" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln53" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_53_1_VITIS_LOOP_57_2" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln57_fu_318_p2" SOURCE="lfm_tdm_gen.cpp:57" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln57" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_53_1_VITIS_LOOP_57_2" OPTYPE="add" PRAGMA="" RTLNAME="chirp_fu_324_p2" SOURCE="lfm_tdm_gen.cpp:53" STORAGESUBTYPE="" URAM="0" VARIABLE="chirp" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_53_1_VITIS_LOOP_57_2" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln53_fu_330_p2" SOURCE="lfm_tdm_gen.cpp:53" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln53" VISIBLE="false"/>
+                <BindNode BINDTYPE="adapter" BRAM="0" BUNDLEDNAME="CTRL" DISPNAME="bind_adapter " DSP="0" ID="" IMPL="" LATENCY="" LOOP="" OPTYPE="" PRAGMA="" RTLNAME="CTRL_s_axi_U" SOURCE="" STORAGESIZE="" STORAGESUBTYPE="s_axilite" STORAGEUSAGE="interface" URAM="0" VARIABLE=""/>
+            </BindNodes>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation/>
+    <UserConfigCommands/>
+    <Args>
+        <Arg ArgName="m_axis_tx" index="0" direction="out" srcType="stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 0, 0, 0, '8', false&gt;, 0&gt;&amp;" srcSize="96">
+            <hwRefs>
+                <hwRef type="interface" interface="m_axis_tx" name="" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="dbg_lfm_i" index="1" direction="out" srcType="ap_int&lt;16&gt;&amp;" srcSize="16">
+            <hwRefs>
+                <hwRef type="port" interface="dbg_lfm_i" name="dbg_lfm_i" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="dbg_lfm_q" index="2" direction="out" srcType="ap_int&lt;16&gt;&amp;" srcSize="16">
+            <hwRefs>
+                <hwRef type="port" interface="dbg_lfm_q" name="dbg_lfm_q" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="dbg_tx_sel" index="3" direction="out" srcType="ap_uint&lt;2&gt;&amp;" srcSize="8">
+            <hwRefs>
+                <hwRef type="port" interface="dbg_tx_sel" name="dbg_tx_sel" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="dbg_chirp_count" index="4" direction="out" srcType="ap_uint&lt;16&gt;&amp;" srcSize="16">
+            <hwRefs>
+                <hwRef type="port" interface="dbg_chirp_count" name="dbg_chirp_count" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="dbg_sample_count" index="5" direction="out" srcType="ap_uint&lt;16&gt;&amp;" srcSize="16">
+            <hwRefs>
+                <hwRef type="port" interface="dbg_sample_count" name="dbg_sample_count" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="dbg_chirp_start" index="6" direction="out" srcType="ap_uint&lt;1&gt;&amp;" srcSize="8">
+            <hwRefs>
+                <hwRef type="port" interface="dbg_chirp_start" name="dbg_chirp_start" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="dbg_chirp_end" index="7" direction="out" srcType="ap_uint&lt;1&gt;&amp;" srcSize="8">
+            <hwRefs>
+                <hwRef type="port" interface="dbg_chirp_end" name="dbg_chirp_end" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="dbg_enable" index="8" direction="out" srcType="ap_uint&lt;1&gt;&amp;" srcSize="8">
+            <hwRefs>
+                <hwRef type="port" interface="dbg_enable" name="dbg_enable" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="dbg_state" index="9" direction="out" srcType="ap_uint&lt;3&gt;&amp;" srcSize="8">
+            <hwRefs>
+                <hwRef type="port" interface="dbg_state" name="dbg_state" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <Interfaces>
+        <Interface InterfaceName="s_axi_CTRL" type="axi4lite" busTypeName="aximm" mode="slave" dataWidth="32" addrWidth="4" portPrefix="s_axi_CTRL_" paramPrefix="C_S_AXI_CTRL_">
+            <ports>
+                <port>s_axi_CTRL_ARADDR</port>
+                <port>s_axi_CTRL_ARREADY</port>
+                <port>s_axi_CTRL_ARVALID</port>
+                <port>s_axi_CTRL_AWADDR</port>
+                <port>s_axi_CTRL_AWREADY</port>
+                <port>s_axi_CTRL_AWVALID</port>
+                <port>s_axi_CTRL_BREADY</port>
+                <port>s_axi_CTRL_BRESP</port>
+                <port>s_axi_CTRL_BVALID</port>
+                <port>s_axi_CTRL_RDATA</port>
+                <port>s_axi_CTRL_RREADY</port>
+                <port>s_axi_CTRL_RRESP</port>
+                <port>s_axi_CTRL_RVALID</port>
+                <port>s_axi_CTRL_WDATA</port>
+                <port>s_axi_CTRL_WREADY</port>
+                <port>s_axi_CTRL_WSTRB</port>
+                <port>s_axi_CTRL_WVALID</port>
+            </ports>
+            <registers>
+                <register offset="0x00" name="CTRL" access="RW" description="Control signals" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="AP_START" access="RW" description="Control signal Register for 'ap_start'."/>
+                        <field offset="1" width="1" name="AP_DONE" access="R" description="Control signal Register for 'ap_done'."/>
+                        <field offset="2" width="1" name="AP_IDLE" access="R" description="Control signal Register for 'ap_idle'."/>
+                        <field offset="3" width="1" name="AP_READY" access="R" description="Control signal Register for 'ap_ready'."/>
+                        <field offset="4" width="3" name="RESERVED_1" access="R" description="Reserved.  0s on read."/>
+                        <field offset="7" width="1" name="AUTO_RESTART" access="RW" description="Control signal Register for 'auto_restart'."/>
+                        <field offset="8" width="1" name="RESERVED_2" access="R" description="Reserved.  0s on read."/>
+                        <field offset="9" width="1" name="INTERRUPT" access="R" description="Control signal Register for 'interrupt'."/>
+                        <field offset="10" width="22" name="RESERVED_3" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x04" name="GIER" access="RW" description="Global Interrupt Enable Register" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="Enable" access="RW" description="Master enable for the device interrupt output to the system interrupt controller: 0 = Disabled, 1 = Enabled"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x08" name="IP_IER" access="RW" description="IP Interrupt Enable Register" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="CHAN0_INT_EN" access="RW" description="Enable Channel 0 (ap_done) Interrupt.  0 = Disabled, 1 = Enabled."/>
+                        <field offset="1" width="1" name="CHAN1_INT_EN" access="RW" description="Enable Channel 1 (ap_ready) Interrupt.  0 = Disabled, 1 = Enabled."/>
+                        <field offset="2" width="30" name="RESERVED_0" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x0c" name="IP_ISR" access="RW" description="IP Interrupt Status Register" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="CHAN0_INT_ST" access="RTOW" description="Channel 0 (ap_done) Interrupt Status. 0 = No Channel 0 interrupt, 1 = Channel 0 interrupt."/>
+                        <field offset="1" width="1" name="CHAN1_INT_ST" access="RTOW" description="Channel 1 (ap_ready) Interrupt Status. 0 = No Channel 1 interrupt, 1 = Channel 1 interrupt."/>
+                        <field offset="2" width="30" name="RESERVED_0" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+            </registers>
+        </Interface>
+        <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
+            <busParams>
+                <busParam busParamName="ASSOCIATED_BUSIF">s_axi_CTRL:m_axis_tx</busParam>
+                <busParam busParamName="ASSOCIATED_RESET">ap_rst_n</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_clk">CLK</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_clk</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst_n" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_LOW</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst_n">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst_n</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="interrupt" type="interrupt" busTypeName="interrupt" mode="master" dataWidth="1">
+            <busParams>
+                <busParam busParamName="SENSITIVITY">LEVEL_HIGH</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="interrupt">INTERRUPT</portMap>
+            </portMaps>
+            <ports>
+                <port>interrupt</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="m_axis_tx" type="axi4stream" busTypeName="axis" mode="master" direction="out" dataWidth="32" portPrefix="m_axis_tx_">
+            <ports>
+                <port>m_axis_tx_TDATA</port>
+                <port>m_axis_tx_TKEEP</port>
+                <port>m_axis_tx_TLAST</port>
+                <port>m_axis_tx_TREADY</port>
+                <port>m_axis_tx_TSTRB</port>
+                <port>m_axis_tx_TVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both" argName="m_axis_tx"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="dbg_lfm_i" type="data" busTypeName="data" protocol="ap_none" mode="master" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="dbg_lfm_i">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>dbg_lfm_i</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="dbg_lfm_i"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="dbg_lfm_q" type="data" busTypeName="data" protocol="ap_none" mode="master" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="dbg_lfm_q">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>dbg_lfm_q</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="dbg_lfm_q"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="dbg_tx_sel" type="data" busTypeName="data" protocol="ap_none" mode="master" dataWidth="2">
+            <portMaps>
+                <portMap portMapName="dbg_tx_sel">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>dbg_tx_sel</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="dbg_tx_sel"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="dbg_chirp_count" type="data" busTypeName="data" protocol="ap_none" mode="master" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="dbg_chirp_count">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>dbg_chirp_count</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="dbg_chirp_count"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="dbg_sample_count" type="data" busTypeName="data" protocol="ap_none" mode="master" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="dbg_sample_count">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>dbg_sample_count</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="dbg_sample_count"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="dbg_chirp_start" type="data" busTypeName="data" protocol="ap_none" mode="master" dataWidth="1">
+            <portMaps>
+                <portMap portMapName="dbg_chirp_start">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>dbg_chirp_start</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="dbg_chirp_start"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="dbg_chirp_end" type="data" busTypeName="data" protocol="ap_none" mode="master" dataWidth="1">
+            <portMaps>
+                <portMap portMapName="dbg_chirp_end">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>dbg_chirp_end</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="dbg_chirp_end"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="dbg_enable" type="data" busTypeName="data" protocol="ap_none" mode="master" dataWidth="1">
+            <portMaps>
+                <portMap portMapName="dbg_enable">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>dbg_enable</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="dbg_enable"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="dbg_state" type="data" busTypeName="data" protocol="ap_none" mode="master" dataWidth="3">
+            <portMaps>
+                <portMap portMapName="dbg_state">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>dbg_state</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="dbg_state"/>
+            </constraints>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="S_AXILITE Interfaces">
+                <table>
+                    <keys size="3">Interface, Data Width, Address Width</keys>
+                    <column name="s_axi_CTRL">32, 4</column>
+                </table>
+            </item>
+            <item name="S_AXILITE Registers">
+                <table>
+                    <keys size="7">Interface, Register, Offset, Width, Access, Description, Bit Fields</keys>
+                    <column name="s_axi_CTRL">CTRL, 0x00, 32, RW, Control signals, 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT</column>
+                    <column name="s_axi_CTRL">GIER, 0x04, 32, RW, Global Interrupt Enable Register, 0=Enable</column>
+                    <column name="s_axi_CTRL">IP_IER, 0x08, 32, RW, IP Interrupt Enable Register, 0=CHAN0_INT_EN 1=CHAN1_INT_EN</column>
+                    <column name="s_axi_CTRL">IP_ISR, 0x0c, 32, RW, IP Interrupt Status Register, 0=CHAN0_INT_ST 1=CHAN1_INT_ST</column>
+                </table>
+            </item>
+            <item name="AXIS">
+                <table>
+                    <keys size="9">Interface, Direction, Register Mode, TDATA, TKEEP, TLAST, TREADY, TSTRB, TVALID</keys>
+                    <column name="m_axis_tx">out, both, 32, 4, 1, 1, 4, 1</column>
+                </table>
+            </item>
+            <item name="Other Ports">
+                <table>
+                    <keys size="4">Port, Mode, Direction, Bitwidth</keys>
+                    <column name="dbg_chirp_count">ap_none, out, 16</column>
+                    <column name="dbg_chirp_end">ap_none, out, 1</column>
+                    <column name="dbg_chirp_start">ap_none, out, 1</column>
+                    <column name="dbg_enable">ap_none, out, 1</column>
+                    <column name="dbg_lfm_i">ap_none, out, 16</column>
+                    <column name="dbg_lfm_q">ap_none, out, 16</column>
+                    <column name="dbg_sample_count">ap_none, out, 16</column>
+                    <column name="dbg_state">ap_none, out, 3</column>
+                    <column name="dbg_tx_sel">ap_none, out, 2</column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table>
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_clk">clock, ap_clk</column>
+                    <column name="ap_rst_n">reset, ap_rst_n</column>
+                    <column name="interrupt">interrupt, interrupt</column>
+                    <column name="ap_ctrl">ap_ctrl_hs, </column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table>
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="m_axis_tx">out, stream&lt;hls::axis&lt;ap_uint&lt;32&gt; 0 0 0 '8' false&gt; 0&gt;&amp;</column>
+                    <column name="dbg_lfm_i">out, ap_int&lt;16&gt;&amp;</column>
+                    <column name="dbg_lfm_q">out, ap_int&lt;16&gt;&amp;</column>
+                    <column name="dbg_tx_sel">out, ap_uint&lt;2&gt;&amp;</column>
+                    <column name="dbg_chirp_count">out, ap_uint&lt;16&gt;&amp;</column>
+                    <column name="dbg_sample_count">out, ap_uint&lt;16&gt;&amp;</column>
+                    <column name="dbg_chirp_start">out, ap_uint&lt;1&gt;&amp;</column>
+                    <column name="dbg_chirp_end">out, ap_uint&lt;1&gt;&amp;</column>
+                    <column name="dbg_enable">out, ap_uint&lt;1&gt;&amp;</column>
+                    <column name="dbg_state">out, ap_uint&lt;3&gt;&amp;</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table>
+                    <keys size="3">Argument, HW Interface, HW Type</keys>
+                    <column name="m_axis_tx">m_axis_tx, interface</column>
+                    <column name="dbg_lfm_i">dbg_lfm_i, port</column>
+                    <column name="dbg_lfm_q">dbg_lfm_q, port</column>
+                    <column name="dbg_tx_sel">dbg_tx_sel, port</column>
+                    <column name="dbg_chirp_count">dbg_chirp_count, port</column>
+                    <column name="dbg_sample_count">dbg_sample_count, port</column>
+                    <column name="dbg_chirp_start">dbg_chirp_start, port</column>
+                    <column name="dbg_chirp_end">dbg_chirp_end, port</column>
+                    <column name="dbg_enable">dbg_enable, port</column>
+                    <column name="dbg_state">dbg_state, port</column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <ResolutionUrl key="ZZZ">docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=ZZZ.html</ResolutionUrl>
+    <PragmaReport>
+        <Pragma type="inline" location="lfm_tdm_gen.cpp:14" status="valid" parentFunction="pack_iq" variable="" isDirective="0" options=""/>
+        <Pragma type="interface" location="lfm_tdm_gen.cpp:36" status="valid" parentFunction="lfm_tdm_gen" variable="m_axis_tx" isDirective="0" options="axis port=m_axis_tx"/>
+        <Pragma type="interface" location="lfm_tdm_gen.cpp:38" status="valid" parentFunction="lfm_tdm_gen" variable="dbg_lfm_i" isDirective="0" options="ap_none port=dbg_lfm_i"/>
+        <Pragma type="interface" location="lfm_tdm_gen.cpp:39" status="valid" parentFunction="lfm_tdm_gen" variable="dbg_lfm_q" isDirective="0" options="ap_none port=dbg_lfm_q"/>
+        <Pragma type="interface" location="lfm_tdm_gen.cpp:40" status="valid" parentFunction="lfm_tdm_gen" variable="dbg_tx_sel" isDirective="0" options="ap_none port=dbg_tx_sel"/>
+        <Pragma type="interface" location="lfm_tdm_gen.cpp:41" status="valid" parentFunction="lfm_tdm_gen" variable="dbg_chirp_count" isDirective="0" options="ap_none port=dbg_chirp_count"/>
+        <Pragma type="interface" location="lfm_tdm_gen.cpp:42" status="valid" parentFunction="lfm_tdm_gen" variable="dbg_sample_count" isDirective="0" options="ap_none port=dbg_sample_count"/>
+        <Pragma type="interface" location="lfm_tdm_gen.cpp:43" status="valid" parentFunction="lfm_tdm_gen" variable="dbg_chirp_start" isDirective="0" options="ap_none port=dbg_chirp_start"/>
+        <Pragma type="interface" location="lfm_tdm_gen.cpp:44" status="valid" parentFunction="lfm_tdm_gen" variable="dbg_chirp_end" isDirective="0" options="ap_none port=dbg_chirp_end"/>
+        <Pragma type="interface" location="lfm_tdm_gen.cpp:45" status="valid" parentFunction="lfm_tdm_gen" variable="dbg_enable" isDirective="0" options="ap_none port=dbg_enable"/>
+        <Pragma type="interface" location="lfm_tdm_gen.cpp:46" status="valid" parentFunction="lfm_tdm_gen" variable="dbg_state" isDirective="0" options="ap_none port=dbg_state"/>
+        <Pragma type="interface" location="lfm_tdm_gen.cpp:48" status="valid" parentFunction="lfm_tdm_gen" variable="return" isDirective="0" options="s_axilite port=return bundle=CTRL"/>
+        <Pragma type="pipeline" location="lfm_tdm_gen.cpp:58" status="valid" parentFunction="lfm_tdm_gen" variable="" isDirective="0" options="II=1"/>
+    </PragmaReport>
+</profile>
+

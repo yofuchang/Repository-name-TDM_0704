@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-//Date        : Wed Jul  8 16:06:35 2026
+//Date        : Wed Jul  8 20:27:17 2026
 //Host        : JohnsonKu running 64-bit major release  (build 9200)
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -10,7 +10,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=9,numReposBlks=9,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=1,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=6,da_zynq_ultra_ps_e_cnt=3,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
+(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=12,numReposBlks=12,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=2,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=8,da_zynq_ultra_ps_e_cnt=3,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
 module design_1
    ();
 
@@ -120,12 +120,38 @@ module design_1
   wire axi_smc_M01_AXI_WREADY;
   wire [3:0]axi_smc_M01_AXI_WSTRB;
   wire axi_smc_M01_AXI_WVALID;
-  wire [31:0]radar_beamformer_0_out_data1_TDATA;
-  wire [3:0]radar_beamformer_0_out_data1_TKEEP;
-  wire [0:0]radar_beamformer_0_out_data1_TLAST;
-  wire radar_beamformer_0_out_data1_TREADY;
-  wire [3:0]radar_beamformer_0_out_data1_TSTRB;
-  wire radar_beamformer_0_out_data1_TVALID;
+  wire [3:0]axi_smc_M02_AXI_ARADDR;
+  wire axi_smc_M02_AXI_ARREADY;
+  wire axi_smc_M02_AXI_ARVALID;
+  wire [3:0]axi_smc_M02_AXI_AWADDR;
+  wire axi_smc_M02_AXI_AWREADY;
+  wire axi_smc_M02_AXI_AWVALID;
+  wire axi_smc_M02_AXI_BREADY;
+  wire [1:0]axi_smc_M02_AXI_BRESP;
+  wire axi_smc_M02_AXI_BVALID;
+  wire [31:0]axi_smc_M02_AXI_RDATA;
+  wire axi_smc_M02_AXI_RREADY;
+  wire [1:0]axi_smc_M02_AXI_RRESP;
+  wire axi_smc_M02_AXI_RVALID;
+  wire [31:0]axi_smc_M02_AXI_WDATA;
+  wire axi_smc_M02_AXI_WREADY;
+  wire [3:0]axi_smc_M02_AXI_WSTRB;
+  wire axi_smc_M02_AXI_WVALID;
+  wire [15:0]lfm_tdm_gen_0_dbg_chirp_count;
+  wire [0:0]lfm_tdm_gen_0_dbg_chirp_end;
+  wire [0:0]lfm_tdm_gen_0_dbg_chirp_start;
+  wire [0:0]lfm_tdm_gen_0_dbg_enable;
+  wire [15:0]lfm_tdm_gen_0_dbg_lfm_i;
+  wire [15:0]lfm_tdm_gen_0_dbg_lfm_q;
+  wire [15:0]lfm_tdm_gen_0_dbg_sample_count;
+  wire [2:0]lfm_tdm_gen_0_dbg_state;
+  wire [1:0]lfm_tdm_gen_0_dbg_tx_sel;
+  (* CONN_BUS_INFO = "lfm_tdm_gen_0_m_axis_tx xilinx.com:interface:axis:1.0 None TDATA" *) (* DONT_TOUCH *) wire [31:0]lfm_tdm_gen_0_m_axis_tx_TDATA;
+  (* CONN_BUS_INFO = "lfm_tdm_gen_0_m_axis_tx xilinx.com:interface:axis:1.0 None TKEEP" *) (* DONT_TOUCH *) wire [3:0]lfm_tdm_gen_0_m_axis_tx_TKEEP;
+  (* CONN_BUS_INFO = "lfm_tdm_gen_0_m_axis_tx xilinx.com:interface:axis:1.0 None TLAST" *) (* DONT_TOUCH *) wire [0:0]lfm_tdm_gen_0_m_axis_tx_TLAST;
+  (* CONN_BUS_INFO = "lfm_tdm_gen_0_m_axis_tx xilinx.com:interface:axis:1.0 None TREADY" *) (* DONT_TOUCH *) wire lfm_tdm_gen_0_m_axis_tx_TREADY;
+  (* CONN_BUS_INFO = "lfm_tdm_gen_0_m_axis_tx xilinx.com:interface:axis:1.0 None TSTRB" *) (* DONT_TOUCH *) wire [3:0]lfm_tdm_gen_0_m_axis_tx_TSTRB;
+  (* CONN_BUS_INFO = "lfm_tdm_gen_0_m_axis_tx xilinx.com:interface:axis:1.0 None TVALID" *) (* DONT_TOUCH *) wire lfm_tdm_gen_0_m_axis_tx_TVALID;
   (* CONN_BUS_INFO = "radar_beamformer_0_out_data xilinx.com:interface:axis:1.0 None TDATA" *) (* DONT_TOUCH *) wire [31:0]radar_beamformer_0_out_data_TDATA;
   (* CONN_BUS_INFO = "radar_beamformer_0_out_data xilinx.com:interface:axis:1.0 None TKEEP" *) (* DONT_TOUCH *) wire [3:0]radar_beamformer_0_out_data_TKEEP;
   (* CONN_BUS_INFO = "radar_beamformer_0_out_data xilinx.com:interface:axis:1.0 None TLAST" *) (* DONT_TOUCH *) wire radar_beamformer_0_out_data_TLAST;
@@ -269,6 +295,23 @@ module design_1
         .M01_AXI_wready(axi_smc_M01_AXI_WREADY),
         .M01_AXI_wstrb(axi_smc_M01_AXI_WSTRB),
         .M01_AXI_wvalid(axi_smc_M01_AXI_WVALID),
+        .M02_AXI_araddr(axi_smc_M02_AXI_ARADDR),
+        .M02_AXI_arready(axi_smc_M02_AXI_ARREADY),
+        .M02_AXI_arvalid(axi_smc_M02_AXI_ARVALID),
+        .M02_AXI_awaddr(axi_smc_M02_AXI_AWADDR),
+        .M02_AXI_awready(axi_smc_M02_AXI_AWREADY),
+        .M02_AXI_awvalid(axi_smc_M02_AXI_AWVALID),
+        .M02_AXI_bready(axi_smc_M02_AXI_BREADY),
+        .M02_AXI_bresp(axi_smc_M02_AXI_BRESP),
+        .M02_AXI_bvalid(axi_smc_M02_AXI_BVALID),
+        .M02_AXI_rdata(axi_smc_M02_AXI_RDATA),
+        .M02_AXI_rready(axi_smc_M02_AXI_RREADY),
+        .M02_AXI_rresp(axi_smc_M02_AXI_RRESP),
+        .M02_AXI_rvalid(axi_smc_M02_AXI_RVALID),
+        .M02_AXI_wdata(axi_smc_M02_AXI_WDATA),
+        .M02_AXI_wready(axi_smc_M02_AXI_WREADY),
+        .M02_AXI_wstrb(axi_smc_M02_AXI_WSTRB),
+        .M02_AXI_wvalid(axi_smc_M02_AXI_WVALID),
         .S00_AXI_araddr(zynq_ultra_ps_e_0_M_AXI_HPM0_FPD_ARADDR),
         .S00_AXI_arburst(zynq_ultra_ps_e_0_M_AXI_HPM0_FPD_ARBURST),
         .S00_AXI_arcache(zynq_ultra_ps_e_0_M_AXI_HPM0_FPD_ARCACHE),
@@ -403,12 +446,58 @@ module design_1
         .m_axis_tvalid(radar_beamformer_0_out_data_TVALID),
         .s_axis_aclk(zynq_ultra_ps_e_0_pl_clk0),
         .s_axis_aresetn(rst_ps8_0_99M_peripheral_aresetn),
-        .s_axis_tdata(radar_beamformer_0_out_data1_TDATA),
-        .s_axis_tkeep(radar_beamformer_0_out_data1_TKEEP),
-        .s_axis_tlast(radar_beamformer_0_out_data1_TLAST),
-        .s_axis_tready(radar_beamformer_0_out_data1_TREADY),
-        .s_axis_tstrb(radar_beamformer_0_out_data1_TSTRB),
-        .s_axis_tvalid(radar_beamformer_0_out_data1_TVALID));
+        .s_axis_tdata(lfm_tdm_gen_0_m_axis_tx_TDATA),
+        .s_axis_tkeep(lfm_tdm_gen_0_m_axis_tx_TKEEP),
+        .s_axis_tlast(lfm_tdm_gen_0_m_axis_tx_TLAST),
+        .s_axis_tready(lfm_tdm_gen_0_m_axis_tx_TREADY),
+        .s_axis_tstrb(lfm_tdm_gen_0_m_axis_tx_TSTRB),
+        .s_axis_tvalid(lfm_tdm_gen_0_m_axis_tx_TVALID));
+  design_1_ila_0_0 ila_0
+       (.clk(zynq_ultra_ps_e_0_pl_clk0),
+        .probe0(lfm_tdm_gen_0_dbg_lfm_i),
+        .probe1(lfm_tdm_gen_0_dbg_lfm_q),
+        .probe2(lfm_tdm_gen_0_dbg_tx_sel),
+        .probe3(lfm_tdm_gen_0_dbg_chirp_count),
+        .probe4(lfm_tdm_gen_0_dbg_sample_count),
+        .probe5(lfm_tdm_gen_0_dbg_chirp_start),
+        .probe6(lfm_tdm_gen_0_dbg_chirp_end),
+        .probe7(lfm_tdm_gen_0_dbg_enable),
+        .probe8(lfm_tdm_gen_0_dbg_state));
+  design_1_lfm_tdm_gen_0_0 lfm_tdm_gen_0
+       (.ap_clk(zynq_ultra_ps_e_0_pl_clk0),
+        .ap_rst_n(rst_ps8_0_99M_peripheral_aresetn),
+        .dbg_chirp_count(lfm_tdm_gen_0_dbg_chirp_count),
+        .dbg_chirp_end(lfm_tdm_gen_0_dbg_chirp_end),
+        .dbg_chirp_start(lfm_tdm_gen_0_dbg_chirp_start),
+        .dbg_enable(lfm_tdm_gen_0_dbg_enable),
+        .dbg_lfm_i(lfm_tdm_gen_0_dbg_lfm_i),
+        .dbg_lfm_q(lfm_tdm_gen_0_dbg_lfm_q),
+        .dbg_sample_count(lfm_tdm_gen_0_dbg_sample_count),
+        .dbg_state(lfm_tdm_gen_0_dbg_state),
+        .dbg_tx_sel(lfm_tdm_gen_0_dbg_tx_sel),
+        .m_axis_tx_TDATA(lfm_tdm_gen_0_m_axis_tx_TDATA),
+        .m_axis_tx_TKEEP(lfm_tdm_gen_0_m_axis_tx_TKEEP),
+        .m_axis_tx_TLAST(lfm_tdm_gen_0_m_axis_tx_TLAST),
+        .m_axis_tx_TREADY(lfm_tdm_gen_0_m_axis_tx_TREADY),
+        .m_axis_tx_TSTRB(lfm_tdm_gen_0_m_axis_tx_TSTRB),
+        .m_axis_tx_TVALID(lfm_tdm_gen_0_m_axis_tx_TVALID),
+        .s_axi_CTRL_ARADDR(axi_smc_M02_AXI_ARADDR),
+        .s_axi_CTRL_ARREADY(axi_smc_M02_AXI_ARREADY),
+        .s_axi_CTRL_ARVALID(axi_smc_M02_AXI_ARVALID),
+        .s_axi_CTRL_AWADDR(axi_smc_M02_AXI_AWADDR),
+        .s_axi_CTRL_AWREADY(axi_smc_M02_AXI_AWREADY),
+        .s_axi_CTRL_AWVALID(axi_smc_M02_AXI_AWVALID),
+        .s_axi_CTRL_BREADY(axi_smc_M02_AXI_BREADY),
+        .s_axi_CTRL_BRESP(axi_smc_M02_AXI_BRESP),
+        .s_axi_CTRL_BVALID(axi_smc_M02_AXI_BVALID),
+        .s_axi_CTRL_RDATA(axi_smc_M02_AXI_RDATA),
+        .s_axi_CTRL_RREADY(axi_smc_M02_AXI_RREADY),
+        .s_axi_CTRL_RRESP(axi_smc_M02_AXI_RRESP),
+        .s_axi_CTRL_RVALID(axi_smc_M02_AXI_RVALID),
+        .s_axi_CTRL_WDATA(axi_smc_M02_AXI_WDATA),
+        .s_axi_CTRL_WREADY(axi_smc_M02_AXI_WREADY),
+        .s_axi_CTRL_WSTRB(axi_smc_M02_AXI_WSTRB),
+        .s_axi_CTRL_WVALID(axi_smc_M02_AXI_WVALID));
   design_1_radar_beamformer_0_1 radar_beamformer_0
        (.ap_clk(zynq_ultra_ps_e_0_pl_clk0),
         .ap_rst_n(rst_ps8_0_99M_peripheral_aresetn),
@@ -418,12 +507,7 @@ module design_1
         .in_data_TREADY(axi_dma_0_M_AXIS_MM2S_TREADY),
         .in_data_TSTRB(axi_dma_0_M_AXIS_MM2S_TSTRB),
         .in_data_TVALID(axi_dma_0_M_AXIS_MM2S_TVALID),
-        .out_data_TDATA(radar_beamformer_0_out_data1_TDATA),
-        .out_data_TKEEP(radar_beamformer_0_out_data1_TKEEP),
-        .out_data_TLAST(radar_beamformer_0_out_data1_TLAST),
-        .out_data_TREADY(radar_beamformer_0_out_data1_TREADY),
-        .out_data_TSTRB(radar_beamformer_0_out_data1_TSTRB),
-        .out_data_TVALID(radar_beamformer_0_out_data1_TVALID),
+        .out_data_TREADY(1'b1),
         .s_axi_control_ARADDR(axi_smc_M01_AXI_ARADDR),
         .s_axi_control_ARREADY(axi_smc_M01_AXI_ARREADY),
         .s_axi_control_ARVALID(axi_smc_M01_AXI_ARVALID),
@@ -461,6 +545,15 @@ module design_1
         .SLOT_1_AXIS_tready(radar_beamformer_0_out_data_TREADY),
         .SLOT_1_AXIS_tstrb(radar_beamformer_0_out_data_TSTRB),
         .SLOT_1_AXIS_tvalid(radar_beamformer_0_out_data_TVALID),
+        .clk(zynq_ultra_ps_e_0_pl_clk0),
+        .resetn(rst_ps8_0_99M_peripheral_aresetn));
+  design_1_system_ila_1_0 system_ila_1
+       (.SLOT_0_AXIS_tdata(lfm_tdm_gen_0_m_axis_tx_TDATA),
+        .SLOT_0_AXIS_tkeep(lfm_tdm_gen_0_m_axis_tx_TKEEP),
+        .SLOT_0_AXIS_tlast(lfm_tdm_gen_0_m_axis_tx_TLAST),
+        .SLOT_0_AXIS_tready(lfm_tdm_gen_0_m_axis_tx_TREADY),
+        .SLOT_0_AXIS_tstrb(lfm_tdm_gen_0_m_axis_tx_TSTRB),
+        .SLOT_0_AXIS_tvalid(lfm_tdm_gen_0_m_axis_tx_TVALID),
         .clk(zynq_ultra_ps_e_0_pl_clk0),
         .resetn(rst_ps8_0_99M_peripheral_aresetn));
   design_1_zynq_ultra_ps_e_0_0 zynq_ultra_ps_e_0

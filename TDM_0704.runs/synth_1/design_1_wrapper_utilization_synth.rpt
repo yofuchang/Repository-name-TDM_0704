@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Wed Jul  8 16:13:10 2026
+| Date         : Wed Jul  8 20:37:51 2026
 | Host         : JohnsonKu running 64-bit major release  (build 9200)
 | Command      : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
 | Design       : design_1_wrapper
@@ -173,9 +173,12 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 |            Ref Name           | Used |
 +-------------------------------+------+
 | design_1_zynq_ultra_ps_e_0_0  |    1 |
+| design_1_system_ila_1_0       |    1 |
 | design_1_system_ila_0_1       |    1 |
 | design_1_rst_ps8_0_99M_1      |    1 |
 | design_1_radar_beamformer_0_1 |    1 |
+| design_1_lfm_tdm_gen_0_0      |    1 |
+| design_1_ila_0_0              |    1 |
 | design_1_axis_data_fifo_1_0   |    1 |
 | design_1_axis_data_fifo_0_1   |    1 |
 | design_1_axi_smc_2            |    1 |

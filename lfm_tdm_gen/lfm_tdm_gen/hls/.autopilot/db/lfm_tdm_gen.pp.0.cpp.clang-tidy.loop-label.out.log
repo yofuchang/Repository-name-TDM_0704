@@ -1,0 +1,30 @@
+C:\TDM_0704\TDM_0704\lfm_tdm_gen\lfm_tdm_gen\hls\.autopilot\db\lfm_tdm_gen.pp.0.cpp:2386:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+C:\TDM_0704\TDM_0704\lfm_tdm_gen\lfm_tdm_gen\hls\.autopilot\db\lfm_tdm_gen.pp.0.cpp:2386:5: note: FIX-IT applied suggested code changes
+C:\TDM_0704\TDM_0704\lfm_tdm_gen\lfm_tdm_gen\hls\.autopilot\db\lfm_tdm_gen.pp.0.cpp:2400:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+C:\TDM_0704\TDM_0704\lfm_tdm_gen\lfm_tdm_gen\hls\.autopilot\db\lfm_tdm_gen.pp.0.cpp:2400:5: note: FIX-IT applied suggested code changes
+C:\TDM_0704\TDM_0704\lfm_tdm_gen\lfm_tdm_gen\hls\.autopilot\db\lfm_tdm_gen.pp.0.cpp:2414:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+C:\TDM_0704\TDM_0704\lfm_tdm_gen\lfm_tdm_gen\hls\.autopilot\db\lfm_tdm_gen.pp.0.cpp:2414:5: note: FIX-IT applied suggested code changes
+C:\TDM_0704\TDM_0704\lfm_tdm_gen\lfm_tdm_gen\hls\.autopilot\db\lfm_tdm_gen.pp.0.cpp:4048:7: warning: Added loop label VITIS_LOOP_1248_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1248_1: 
+C:\TDM_0704\TDM_0704\lfm_tdm_gen\lfm_tdm_gen\hls\.autopilot\db\lfm_tdm_gen.pp.0.cpp:4048:7: note: FIX-IT applied suggested code changes
+C:\TDM_0704\TDM_0704\lfm_tdm_gen\lfm_tdm_gen\hls\.autopilot\db\lfm_tdm_gen.pp.0.cpp:9791:5: warning: Added loop label VITIS_LOOP_53_1:   [xilinx-label-all-loops]
+    for (int chirp = 0; chirp < 4; chirp++) {
+    ^~~
+    VITIS_LOOP_53_1: 
+C:\TDM_0704\TDM_0704\lfm_tdm_gen\lfm_tdm_gen\hls\.autopilot\db\lfm_tdm_gen.pp.0.cpp:9791:5: note: FIX-IT applied suggested code changes
+C:\TDM_0704\TDM_0704\lfm_tdm_gen\lfm_tdm_gen\hls\.autopilot\db\lfm_tdm_gen.pp.0.cpp:9795:9: warning: Added loop label VITIS_LOOP_57_2:   [xilinx-label-all-loops]
+        for (int sample = 0; sample < 1024; sample++) {
+        ^~~
+        VITIS_LOOP_57_2: 
+C:\TDM_0704\TDM_0704\lfm_tdm_gen\lfm_tdm_gen\hls\.autopilot\db\lfm_tdm_gen.pp.0.cpp:9795:9: note: FIX-IT applied suggested code changes
