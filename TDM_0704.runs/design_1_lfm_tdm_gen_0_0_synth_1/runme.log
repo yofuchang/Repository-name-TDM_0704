@@ -8,12 +8,12 @@
   **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
   **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
   **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-  **** Start of session at: Tue Jul 14 14:22:25 2026
+  **** Start of session at: Tue Jul 14 22:11:59 2026
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source design_1_lfm_tdm_gen_0_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 445.199 ; gain = 121.496
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 446.484 ; gain = 120.160
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/TDM_0704/radar_beamformer_ip/radar_beamformer_ip/hls/impl/ip'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/impl/ip'.
@@ -26,32 +26,30 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu48d
 INFO: [Device 21-403] Loading part xczu48dr-fsvg1517-2-e
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 11144
+INFO: [Synth 8-7075] Helper process launched with PID 8068
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1820.582 ; gain = 382.336
+Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1821.242 ; gain = 382.352
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_lfm_tdm_gen_0_0' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_lfm_tdm_gen_0_0/synth/design_1_lfm_tdm_gen_0_0.v:53]
-INFO: [Synth 8-6157] synthesizing module 'lfm_tdm_gen' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ipshared/fdb9/hdl/verilog/lfm_tdm_gen.v:9]
-INFO: [Synth 8-6157] synthesizing module 'lfm_tdm_gen_LFM_IQ_LUT_ROM_AUTO_1R' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ipshared/fdb9/hdl/verilog/lfm_tdm_gen_LFM_IQ_LUT_ROM_AUTO_1R.v:7]
-INFO: [Synth 8-3876] $readmem data file './lfm_tdm_gen_LFM_IQ_LUT_ROM_AUTO_1R.dat' is read successfully [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ipshared/fdb9/hdl/verilog/lfm_tdm_gen_LFM_IQ_LUT_ROM_AUTO_1R.v:28]
-INFO: [Synth 8-6155] done synthesizing module 'lfm_tdm_gen_LFM_IQ_LUT_ROM_AUTO_1R' (0#1) [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ipshared/fdb9/hdl/verilog/lfm_tdm_gen_LFM_IQ_LUT_ROM_AUTO_1R.v:7]
-INFO: [Synth 8-6157] synthesizing module 'lfm_tdm_gen_CTRL_s_axi' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ipshared/fdb9/hdl/verilog/lfm_tdm_gen_CTRL_s_axi.v:9]
-INFO: [Synth 8-155] case statement is not full and has no default [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ipshared/fdb9/hdl/verilog/lfm_tdm_gen_CTRL_s_axi.v:197]
-INFO: [Synth 8-6155] done synthesizing module 'lfm_tdm_gen_CTRL_s_axi' (0#1) [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ipshared/fdb9/hdl/verilog/lfm_tdm_gen_CTRL_s_axi.v:9]
-INFO: [Synth 8-6157] synthesizing module 'lfm_tdm_gen_flow_control_loop_pipe' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ipshared/fdb9/hdl/verilog/lfm_tdm_gen_flow_control_loop_pipe.v:11]
-INFO: [Synth 8-6155] done synthesizing module 'lfm_tdm_gen_flow_control_loop_pipe' (0#1) [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ipshared/fdb9/hdl/verilog/lfm_tdm_gen_flow_control_loop_pipe.v:11]
-INFO: [Synth 8-6157] synthesizing module 'lfm_tdm_gen_regslice_both' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ipshared/fdb9/hdl/verilog/lfm_tdm_gen_regslice_both.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'lfm_tdm_gen_regslice_both' (0#1) [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ipshared/fdb9/hdl/verilog/lfm_tdm_gen_regslice_both.v:8]
-INFO: [Synth 8-6157] synthesizing module 'lfm_tdm_gen_regslice_both__parameterized0' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ipshared/fdb9/hdl/verilog/lfm_tdm_gen_regslice_both.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'lfm_tdm_gen_regslice_both__parameterized0' (0#1) [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ipshared/fdb9/hdl/verilog/lfm_tdm_gen_regslice_both.v:8]
-INFO: [Synth 8-6157] synthesizing module 'lfm_tdm_gen_regslice_both__parameterized1' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ipshared/fdb9/hdl/verilog/lfm_tdm_gen_regslice_both.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'lfm_tdm_gen_regslice_both__parameterized1' (0#1) [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ipshared/fdb9/hdl/verilog/lfm_tdm_gen_regslice_both.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'lfm_tdm_gen' (0#1) [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ipshared/fdb9/hdl/verilog/lfm_tdm_gen.v:9]
+INFO: [Synth 8-6157] synthesizing module 'lfm_tdm_gen' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ipshared/8100/hdl/verilog/lfm_tdm_gen.v:9]
+INFO: [Synth 8-6157] synthesizing module 'lfm_tdm_gen_LFM_IQ_LUT_ROM_AUTO_1R' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ipshared/8100/hdl/verilog/lfm_tdm_gen_LFM_IQ_LUT_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './lfm_tdm_gen_LFM_IQ_LUT_ROM_AUTO_1R.dat' is read successfully [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ipshared/8100/hdl/verilog/lfm_tdm_gen_LFM_IQ_LUT_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'lfm_tdm_gen_LFM_IQ_LUT_ROM_AUTO_1R' (0#1) [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ipshared/8100/hdl/verilog/lfm_tdm_gen_LFM_IQ_LUT_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'lfm_tdm_gen_CTRL_s_axi' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ipshared/8100/hdl/verilog/lfm_tdm_gen_CTRL_s_axi.v:9]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ipshared/8100/hdl/verilog/lfm_tdm_gen_CTRL_s_axi.v:197]
+INFO: [Synth 8-6155] done synthesizing module 'lfm_tdm_gen_CTRL_s_axi' (0#1) [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ipshared/8100/hdl/verilog/lfm_tdm_gen_CTRL_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'lfm_tdm_gen_bitset_4ns_4ns_32ns_1s_4_1_1' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ipshared/8100/hdl/verilog/lfm_tdm_gen_bitset_4ns_4ns_32ns_1s_4_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'lfm_tdm_gen_bitset_4ns_4ns_32ns_1s_4_1_1' (0#1) [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ipshared/8100/hdl/verilog/lfm_tdm_gen_bitset_4ns_4ns_32ns_1s_4_1_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'lfm_tdm_gen_regslice_both' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ipshared/8100/hdl/verilog/lfm_tdm_gen_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'lfm_tdm_gen_regslice_both' (0#1) [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ipshared/8100/hdl/verilog/lfm_tdm_gen_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'lfm_tdm_gen_regslice_both__parameterized0' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ipshared/8100/hdl/verilog/lfm_tdm_gen_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'lfm_tdm_gen_regslice_both__parameterized0' (0#1) [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ipshared/8100/hdl/verilog/lfm_tdm_gen_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'lfm_tdm_gen_regslice_both__parameterized1' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ipshared/8100/hdl/verilog/lfm_tdm_gen_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'lfm_tdm_gen_regslice_both__parameterized1' (0#1) [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ipshared/8100/hdl/verilog/lfm_tdm_gen_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'lfm_tdm_gen' (0#1) [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ipshared/8100/hdl/verilog/lfm_tdm_gen.v:9]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_lfm_tdm_gen_0_0' (0#1) [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_lfm_tdm_gen_0_0/synth/design_1_lfm_tdm_gen_0_0.v:53]
-WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ipshared/fdb9/hdl/verilog/lfm_tdm_gen_CTRL_s_axi.v:254]
-WARNING: [Synth 8-6014] Unused sequential element ap_block_pp0_stage0_subdone_grp0_done_reg_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ipshared/fdb9/hdl/verilog/lfm_tdm_gen.v:311]
-WARNING: [Synth 8-6014] Unused sequential element icmp_ln53_reg_416_pp0_iter1_reg_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ipshared/fdb9/hdl/verilog/lfm_tdm_gen.v:389]
-WARNING: [Synth 8-7129] Port ap_done_int in module lfm_tdm_gen_flow_control_loop_pipe is either unconnected or has no load
+WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ipshared/8100/hdl/verilog/lfm_tdm_gen_CTRL_s_axi.v:254]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
 WARNING: [Synth 8-7129] Port AWADDR[1] in module lfm_tdm_gen_CTRL_s_axi is either unconnected or has no load
 WARNING: [Synth 8-7129] Port AWADDR[0] in module lfm_tdm_gen_CTRL_s_axi is either unconnected or has no load
 WARNING: [Synth 8-7129] Port WDATA[31] in module lfm_tdm_gen_CTRL_s_axi is either unconnected or has no load
@@ -88,37 +86,37 @@ WARNING: [Synth 8-7129] Port WSTRB[2] in module lfm_tdm_gen_CTRL_s_axi is either
 WARNING: [Synth 8-7129] Port WSTRB[1] in module lfm_tdm_gen_CTRL_s_axi is either unconnected or has no load
 WARNING: [Synth 8-7129] Port reset in module lfm_tdm_gen_LFM_IQ_LUT_ROM_AUTO_1R is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1932.586 ; gain = 494.340
+Finished RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1933.672 ; gain = 494.781
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1932.586 ; gain = 494.340
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1933.672 ; gain = 494.781
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1932.586 ; gain = 494.340
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1933.672 ; gain = 494.781
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1932.586 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1933.672 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_lfm_tdm_gen_0_0/constraints/lfm_tdm_gen_ooc.xdc] for cell 'inst'
-create_clock: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2034.020 ; gain = 0.023
+create_clock: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2039.992 ; gain = 0.586
 Finished Parsing XDC File [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_lfm_tdm_gen_0_0/constraints/lfm_tdm_gen_ooc.xdc] for cell 'inst'
 Parsing XDC File [C:/TDM_0704/TDM_0704/TDM_0704.runs/design_1_lfm_tdm_gen_0_0_synth_1/dont_touch.xdc]
 Finished Parsing XDC File [C:/TDM_0704/TDM_0704/TDM_0704.runs/design_1_lfm_tdm_gen_0_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2034.020 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2039.992 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 2034.129 ; gain = 0.109
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 2041.438 ; gain = 1.445
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 2034.129 ; gain = 595.883
+Finished Constraint Validation : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 2041.438 ; gain = 602.547
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -126,20 +124,23 @@ Start Loading Part and Timing Information
 Loading part: xczu48dr-fsvg1517-2-e
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 2034.129 ; gain = 595.883
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 2041.438 ; gain = 602.547
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/TDM_0704/TDM_0704/TDM_0704.runs/design_1_lfm_tdm_gen_0_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 2034.129 ; gain = 595.883
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 2041.438 ; gain = 602.547
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'lfm_tdm_gen_CTRL_s_axi'
 INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'lfm_tdm_gen_CTRL_s_axi'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'lfm_tdm_gen_regslice_both'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'lfm_tdm_gen_regslice_both__parameterized0'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'lfm_tdm_gen_regslice_both__parameterized1'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -190,7 +191,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'lfm_tdm_gen_regslice_both__parameterized1'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 2034.129 ; gain = 595.883
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:46 ; elapsed = 00:00:49 . Memory (MB): peak = 2041.438 ; gain = 602.547
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-223] decloning instance 'inst/regslice_both_m_axis_tx_V_keep_V_U' (lfm_tdm_gen_regslice_both__parameterized0) to 'inst/regslice_both_m_axis_tx_V_strb_V_U'
 ---------------------------------------------------------------------------------
@@ -208,20 +209,21 @@ Detailed RTL Component Info :
 	               30 Bit    Registers := 1     
 	               12 Bit    Registers := 1     
 	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
 	                4 Bit    Registers := 3     
-	                3 Bit    Registers := 2     
+	                3 Bit    Registers := 3     
 	                2 Bit    Registers := 4     
-	                1 Bit    Registers := 25    
+	                1 Bit    Registers := 24    
 +---ROMs : 
 	                    ROMs := 1     
 +---Muxes : 
 	   2 Input   32 Bit        Muxes := 1     
-	   2 Input   11 Bit        Muxes := 1     
 	   4 Input    4 Bit        Muxes := 1     
-	   2 Input    4 Bit        Muxes := 4     
+	   2 Input    4 Bit        Muxes := 5     
 	   3 Input    3 Bit        Muxes := 1     
-	   2 Input    3 Bit        Muxes := 11    
-	   2 Input    2 Bit        Muxes := 30    
+	   2 Input    3 Bit        Muxes := 8     
+	   5 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 31    
 	   4 Input    2 Bit        Muxes := 12    
 	   2 Input    1 Bit        Muxes := 19    
 ---------------------------------------------------------------------------------
@@ -277,7 +279,7 @@ WARNING: [Synth 8-7129] Port s_axi_CTRL_WSTRB[1] in module lfm_tdm_gen is either
 WARNING: [Synth 8-3332] Sequential element (CTRL_s_axi_U/FSM_onehot_wstate_reg[0]) is unused and will be removed from module lfm_tdm_gen.
 WARNING: [Synth 8-3332] Sequential element (CTRL_s_axi_U/FSM_onehot_rstate_reg[0]) is unused and will be removed from module lfm_tdm_gen.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:00:52 . Memory (MB): peak = 2034.129 ; gain = 595.883
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:00:53 . Memory (MB): peak = 2041.438 ; gain = 602.547
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -298,20 +300,20 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:01 ; elapsed = 00:01:10 . Memory (MB): peak = 2541.703 ; gain = 1103.457
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:06 ; elapsed = 00:01:10 . Memory (MB): peak = 2556.961 ; gain = 1118.070
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:02 ; elapsed = 00:01:10 . Memory (MB): peak = 2577.922 ; gain = 1139.676
+Finished Timing Optimization : Time (s): cpu = 00:01:07 ; elapsed = 00:01:11 . Memory (MB): peak = 2593.363 ; gain = 1154.473
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-7052] The timing for the instance inst/LFM_IQ_LUT_U/q0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:02 ; elapsed = 00:01:11 . Memory (MB): peak = 2578.879 ; gain = 1140.633
+Finished Technology Mapping : Time (s): cpu = 00:01:07 ; elapsed = 00:01:12 . Memory (MB): peak = 2594.168 ; gain = 1155.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -329,37 +331,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:06 ; elapsed = 00:01:15 . Memory (MB): peak = 2765.125 ; gain = 1326.879
+Finished IO Insertion : Time (s): cpu = 00:01:13 ; elapsed = 00:01:18 . Memory (MB): peak = 2780.977 ; gain = 1342.086
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:06 ; elapsed = 00:01:15 . Memory (MB): peak = 2765.125 ; gain = 1326.879
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:13 ; elapsed = 00:01:18 . Memory (MB): peak = 2780.977 ; gain = 1342.086
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:06 ; elapsed = 00:01:15 . Memory (MB): peak = 2765.125 ; gain = 1326.879
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:13 ; elapsed = 00:01:18 . Memory (MB): peak = 2780.977 ; gain = 1342.086
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:06 ; elapsed = 00:01:15 . Memory (MB): peak = 2765.125 ; gain = 1326.879
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:13 ; elapsed = 00:01:18 . Memory (MB): peak = 2780.977 ; gain = 1342.086
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:06 ; elapsed = 00:01:15 . Memory (MB): peak = 2765.125 ; gain = 1326.879
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:13 ; elapsed = 00:01:18 . Memory (MB): peak = 2780.977 ; gain = 1342.086
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:06 ; elapsed = 00:01:15 . Memory (MB): peak = 2765.125 ; gain = 1326.879
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:13 ; elapsed = 00:01:18 . Memory (MB): peak = 2780.977 ; gain = 1342.086
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -376,42 +378,42 @@ Report Cell Usage:
 |      |Cell     |Count |
 +------+---------+------+
 |1     |CARRY8   |     2|
-|2     |LUT1     |     1|
-|3     |LUT2     |     9|
-|4     |LUT3     |    23|
-|5     |LUT4     |    58|
-|6     |LUT5     |    26|
-|7     |LUT6     |    33|
+|2     |LUT1     |     2|
+|3     |LUT2     |    11|
+|4     |LUT3     |    12|
+|5     |LUT4     |    54|
+|6     |LUT5     |    27|
+|7     |LUT6     |    48|
 |8     |RAMB36E2 |     1|
-|9     |FDRE     |   133|
-|10    |FDSE     |     4|
+|9     |FDRE     |   145|
+|10    |FDSE     |     6|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:06 ; elapsed = 00:01:15 . Memory (MB): peak = 2765.125 ; gain = 1326.879
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:13 ; elapsed = 00:01:18 . Memory (MB): peak = 2780.977 ; gain = 1342.086
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 37 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:01:00 . Memory (MB): peak = 2765.125 ; gain = 1225.336
-Synthesis Optimization Complete : Time (s): cpu = 00:01:07 ; elapsed = 00:01:16 . Memory (MB): peak = 2765.125 ; gain = 1326.879
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:42 ; elapsed = 00:01:03 . Memory (MB): peak = 2780.977 ; gain = 1234.320
+Synthesis Optimization Complete : Time (s): cpu = 00:01:14 ; elapsed = 00:01:19 . Memory (MB): peak = 2780.977 ; gain = 1342.086
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 2765.125 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2780.977 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2765.125 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2780.977 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: c8ece80c
+Synth Design complete | Checksum: 3be70d36
 INFO: [Common 17-83] Releasing license: Synthesis
-51 Infos, 76 Warnings, 0 Critical Warnings and 0 Errors encountered.
+55 Infos, 73 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:28 ; elapsed = 00:01:41 . Memory (MB): peak = 2765.125 ; gain = 2256.621
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2765.125 ; gain = 0.000
+synth_design: Time (s): cpu = 00:01:36 ; elapsed = 00:01:45 . Memory (MB): peak = 2780.977 ; gain = 2271.727
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2780.977 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/TDM_0704/TDM_0704/TDM_0704.runs/design_1_lfm_tdm_gen_0_0_synth_1/design_1_lfm_tdm_gen_0_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_lfm_tdm_gen_0_0, cache-ID = 444f622a61412829
-INFO: [Coretcl 2-1174] Renamed 7 cell refs.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2765.125 ; gain = 0.000
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_lfm_tdm_gen_0_0, cache-ID = 4e819776212000d3
+INFO: [Coretcl 2-1174] Renamed 6 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2780.977 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/TDM_0704/TDM_0704/TDM_0704.runs/design_1_lfm_tdm_gen_0_0_synth_1/design_1_lfm_tdm_gen_0_0.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_lfm_tdm_gen_0_0_utilization_synth.rpt -pb design_1_lfm_tdm_gen_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Jul 14 14:24:36 2026...
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 14 22:14:13 2026...

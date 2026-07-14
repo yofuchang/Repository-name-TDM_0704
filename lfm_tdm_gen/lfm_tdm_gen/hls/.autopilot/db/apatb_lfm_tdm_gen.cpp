@@ -38,22 +38,44 @@ using namespace std;
 #define WRAPC_STREAM_EGRESS_STATUS_m_axis_tx_V_last_V "../tv/stream_size/stream_egress_status_m_axis_tx_V_last_V.dat"
 #define AUTOTB_TVIN_dbg_lfm_i "../tv/cdatafile/c.lfm_tdm_gen.autotvin_dbg_lfm_i.dat"
 #define AUTOTB_TVOUT_dbg_lfm_i "../tv/cdatafile/c.lfm_tdm_gen.autotvout_dbg_lfm_i.dat"
+#define WRAPC_DIRECTIO_SIZE_OUT_dbg_lfm_i "../tv/directio_size/directio_size_out_dbg_lfm_i.dat"
+#define WRAPC_DIRECTIO_EGRESS_STATUS_dbg_lfm_i "../tv/directio_size/directio_egress_status_dbg_lfm_i.dat"
 #define AUTOTB_TVIN_dbg_lfm_q "../tv/cdatafile/c.lfm_tdm_gen.autotvin_dbg_lfm_q.dat"
 #define AUTOTB_TVOUT_dbg_lfm_q "../tv/cdatafile/c.lfm_tdm_gen.autotvout_dbg_lfm_q.dat"
+#define WRAPC_DIRECTIO_SIZE_OUT_dbg_lfm_q "../tv/directio_size/directio_size_out_dbg_lfm_q.dat"
+#define WRAPC_DIRECTIO_EGRESS_STATUS_dbg_lfm_q "../tv/directio_size/directio_egress_status_dbg_lfm_q.dat"
 #define AUTOTB_TVIN_dbg_tx_sel "../tv/cdatafile/c.lfm_tdm_gen.autotvin_dbg_tx_sel.dat"
 #define AUTOTB_TVOUT_dbg_tx_sel "../tv/cdatafile/c.lfm_tdm_gen.autotvout_dbg_tx_sel.dat"
+#define WRAPC_DIRECTIO_SIZE_OUT_dbg_tx_sel "../tv/directio_size/directio_size_out_dbg_tx_sel.dat"
+#define WRAPC_DIRECTIO_EGRESS_STATUS_dbg_tx_sel "../tv/directio_size/directio_egress_status_dbg_tx_sel.dat"
+#define AUTOTB_TVIN_dbg_tx_active "../tv/cdatafile/c.lfm_tdm_gen.autotvin_dbg_tx_active.dat"
+#define AUTOTB_TVOUT_dbg_tx_active "../tv/cdatafile/c.lfm_tdm_gen.autotvout_dbg_tx_active.dat"
+#define WRAPC_DIRECTIO_SIZE_OUT_dbg_tx_active "../tv/directio_size/directio_size_out_dbg_tx_active.dat"
+#define WRAPC_DIRECTIO_EGRESS_STATUS_dbg_tx_active "../tv/directio_size/directio_egress_status_dbg_tx_active.dat"
 #define AUTOTB_TVIN_dbg_chirp_count "../tv/cdatafile/c.lfm_tdm_gen.autotvin_dbg_chirp_count.dat"
 #define AUTOTB_TVOUT_dbg_chirp_count "../tv/cdatafile/c.lfm_tdm_gen.autotvout_dbg_chirp_count.dat"
+#define WRAPC_DIRECTIO_SIZE_OUT_dbg_chirp_count "../tv/directio_size/directio_size_out_dbg_chirp_count.dat"
+#define WRAPC_DIRECTIO_EGRESS_STATUS_dbg_chirp_count "../tv/directio_size/directio_egress_status_dbg_chirp_count.dat"
 #define AUTOTB_TVIN_dbg_sample_count "../tv/cdatafile/c.lfm_tdm_gen.autotvin_dbg_sample_count.dat"
 #define AUTOTB_TVOUT_dbg_sample_count "../tv/cdatafile/c.lfm_tdm_gen.autotvout_dbg_sample_count.dat"
+#define WRAPC_DIRECTIO_SIZE_OUT_dbg_sample_count "../tv/directio_size/directio_size_out_dbg_sample_count.dat"
+#define WRAPC_DIRECTIO_EGRESS_STATUS_dbg_sample_count "../tv/directio_size/directio_egress_status_dbg_sample_count.dat"
 #define AUTOTB_TVIN_dbg_chirp_start "../tv/cdatafile/c.lfm_tdm_gen.autotvin_dbg_chirp_start.dat"
 #define AUTOTB_TVOUT_dbg_chirp_start "../tv/cdatafile/c.lfm_tdm_gen.autotvout_dbg_chirp_start.dat"
+#define WRAPC_DIRECTIO_SIZE_OUT_dbg_chirp_start "../tv/directio_size/directio_size_out_dbg_chirp_start.dat"
+#define WRAPC_DIRECTIO_EGRESS_STATUS_dbg_chirp_start "../tv/directio_size/directio_egress_status_dbg_chirp_start.dat"
 #define AUTOTB_TVIN_dbg_chirp_end "../tv/cdatafile/c.lfm_tdm_gen.autotvin_dbg_chirp_end.dat"
 #define AUTOTB_TVOUT_dbg_chirp_end "../tv/cdatafile/c.lfm_tdm_gen.autotvout_dbg_chirp_end.dat"
+#define WRAPC_DIRECTIO_SIZE_OUT_dbg_chirp_end "../tv/directio_size/directio_size_out_dbg_chirp_end.dat"
+#define WRAPC_DIRECTIO_EGRESS_STATUS_dbg_chirp_end "../tv/directio_size/directio_egress_status_dbg_chirp_end.dat"
 #define AUTOTB_TVIN_dbg_enable "../tv/cdatafile/c.lfm_tdm_gen.autotvin_dbg_enable.dat"
 #define AUTOTB_TVOUT_dbg_enable "../tv/cdatafile/c.lfm_tdm_gen.autotvout_dbg_enable.dat"
+#define WRAPC_DIRECTIO_SIZE_OUT_dbg_enable "../tv/directio_size/directio_size_out_dbg_enable.dat"
+#define WRAPC_DIRECTIO_EGRESS_STATUS_dbg_enable "../tv/directio_size/directio_egress_status_dbg_enable.dat"
 #define AUTOTB_TVIN_dbg_state "../tv/cdatafile/c.lfm_tdm_gen.autotvin_dbg_state.dat"
 #define AUTOTB_TVOUT_dbg_state "../tv/cdatafile/c.lfm_tdm_gen.autotvout_dbg_state.dat"
+#define WRAPC_DIRECTIO_SIZE_OUT_dbg_state "../tv/directio_size/directio_size_out_dbg_state.dat"
+#define WRAPC_DIRECTIO_EGRESS_STATUS_dbg_state "../tv/directio_size/directio_egress_status_dbg_state.dat"
 
 
 // tvout file define:
@@ -64,6 +86,7 @@ using namespace std;
 #define AUTOTB_TVOUT_PC_dbg_lfm_i "../tv/rtldatafile/rtl.lfm_tdm_gen.autotvout_dbg_lfm_i.dat"
 #define AUTOTB_TVOUT_PC_dbg_lfm_q "../tv/rtldatafile/rtl.lfm_tdm_gen.autotvout_dbg_lfm_q.dat"
 #define AUTOTB_TVOUT_PC_dbg_tx_sel "../tv/rtldatafile/rtl.lfm_tdm_gen.autotvout_dbg_tx_sel.dat"
+#define AUTOTB_TVOUT_PC_dbg_tx_active "../tv/rtldatafile/rtl.lfm_tdm_gen.autotvout_dbg_tx_active.dat"
 #define AUTOTB_TVOUT_PC_dbg_chirp_count "../tv/rtldatafile/rtl.lfm_tdm_gen.autotvout_dbg_chirp_count.dat"
 #define AUTOTB_TVOUT_PC_dbg_sample_count "../tv/rtldatafile/rtl.lfm_tdm_gen.autotvout_dbg_sample_count.dat"
 #define AUTOTB_TVOUT_PC_dbg_chirp_start "../tv/rtldatafile/rtl.lfm_tdm_gen.autotvout_dbg_chirp_start.dat"
@@ -1263,10 +1286,10 @@ namespace hls::sim
 
 
 extern "C"
-void lfm_tdm_gen_hw_stub_wrapper(void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*);
+void lfm_tdm_gen_hw_stub_wrapper(void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*, void*);
 
 extern "C"
-void apatb_lfm_tdm_gen_hw(void* __xlx_apatb_param_m_axis_tx_V_data_V, void* __xlx_apatb_param_m_axis_tx_V_keep_V, void* __xlx_apatb_param_m_axis_tx_V_strb_V, void* __xlx_apatb_param_m_axis_tx_V_last_V, void* __xlx_apatb_param_dbg_lfm_i, void* __xlx_apatb_param_dbg_lfm_q, void* __xlx_apatb_param_dbg_tx_sel, void* __xlx_apatb_param_dbg_chirp_count, void* __xlx_apatb_param_dbg_sample_count, void* __xlx_apatb_param_dbg_chirp_start, void* __xlx_apatb_param_dbg_chirp_end, void* __xlx_apatb_param_dbg_enable, void* __xlx_apatb_param_dbg_state)
+void apatb_lfm_tdm_gen_hw(void* __xlx_apatb_param_m_axis_tx_V_data_V, void* __xlx_apatb_param_m_axis_tx_V_keep_V, void* __xlx_apatb_param_m_axis_tx_V_strb_V, void* __xlx_apatb_param_m_axis_tx_V_last_V, void* __xlx_apatb_param_dbg_lfm_i, void* __xlx_apatb_param_dbg_lfm_q, void* __xlx_apatb_param_dbg_tx_sel, void* __xlx_apatb_param_dbg_tx_active, void* __xlx_apatb_param_dbg_chirp_count, void* __xlx_apatb_param_dbg_sample_count, void* __xlx_apatb_param_dbg_chirp_start, void* __xlx_apatb_param_dbg_chirp_end, void* __xlx_apatb_param_dbg_enable, void* __xlx_apatb_param_dbg_state)
 {
   static hls::sim::Stream<hls::sim::Byte<4>> port0 {
     .width = 32,
@@ -1324,117 +1347,153 @@ void apatb_lfm_tdm_gen_hw(void* __xlx_apatb_param_m_axis_tx_V_data_V, void* __xl
   port3.param = (hls::stream<hls::sim::Byte<1>>*)__xlx_apatb_param_m_axis_tx_V_last_V;
   port3.hasWrite = true;
 
-  static hls::sim::Register port4 {
-    .name = "dbg_lfm_i",
+  static hls::sim::DirectIO<hls::sim::Byte<2>> port4 {
     .width = 16,
+    .name = "dbg_lfm_i",
 #ifdef POST_CHECK
     .reader = new hls::sim::Reader(AUTOTB_TVOUT_PC_dbg_lfm_i),
 #else
-    .owriter = new hls::sim::Writer(AUTOTB_TVOUT_dbg_lfm_i),
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_dbg_lfm_i),
+    .writer = new hls::sim::Writer(AUTOTB_TVOUT_dbg_lfm_i),
+    .swriter = new hls::sim::Writer(WRAPC_DIRECTIO_SIZE_OUT_dbg_lfm_i),
+    .gwriter = new hls::sim::Writer(WRAPC_DIRECTIO_EGRESS_STATUS_dbg_lfm_i),
 #endif
   };
-  port4.param = __xlx_apatb_param_dbg_lfm_i;
+  port4.param = (hls::directio<hls::sim::Byte<2>>*)__xlx_apatb_param_dbg_lfm_i;
+  port4.hasWrite = true;
 
-  static hls::sim::Register port5 {
-    .name = "dbg_lfm_q",
+  static hls::sim::DirectIO<hls::sim::Byte<2>> port5 {
     .width = 16,
+    .name = "dbg_lfm_q",
 #ifdef POST_CHECK
     .reader = new hls::sim::Reader(AUTOTB_TVOUT_PC_dbg_lfm_q),
 #else
-    .owriter = new hls::sim::Writer(AUTOTB_TVOUT_dbg_lfm_q),
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_dbg_lfm_q),
+    .writer = new hls::sim::Writer(AUTOTB_TVOUT_dbg_lfm_q),
+    .swriter = new hls::sim::Writer(WRAPC_DIRECTIO_SIZE_OUT_dbg_lfm_q),
+    .gwriter = new hls::sim::Writer(WRAPC_DIRECTIO_EGRESS_STATUS_dbg_lfm_q),
 #endif
   };
-  port5.param = __xlx_apatb_param_dbg_lfm_q;
+  port5.param = (hls::directio<hls::sim::Byte<2>>*)__xlx_apatb_param_dbg_lfm_q;
+  port5.hasWrite = true;
 
-  static hls::sim::Register port6 {
-    .name = "dbg_tx_sel",
+  static hls::sim::DirectIO<hls::sim::Byte<1>> port6 {
     .width = 2,
+    .name = "dbg_tx_sel",
 #ifdef POST_CHECK
     .reader = new hls::sim::Reader(AUTOTB_TVOUT_PC_dbg_tx_sel),
 #else
-    .owriter = new hls::sim::Writer(AUTOTB_TVOUT_dbg_tx_sel),
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_dbg_tx_sel),
+    .writer = new hls::sim::Writer(AUTOTB_TVOUT_dbg_tx_sel),
+    .swriter = new hls::sim::Writer(WRAPC_DIRECTIO_SIZE_OUT_dbg_tx_sel),
+    .gwriter = new hls::sim::Writer(WRAPC_DIRECTIO_EGRESS_STATUS_dbg_tx_sel),
 #endif
   };
-  port6.param = __xlx_apatb_param_dbg_tx_sel;
+  port6.param = (hls::directio<hls::sim::Byte<1>>*)__xlx_apatb_param_dbg_tx_sel;
+  port6.hasWrite = true;
 
-  static hls::sim::Register port7 {
-    .name = "dbg_chirp_count",
+  static hls::sim::DirectIO<hls::sim::Byte<1>> port7 {
+    .width = 4,
+    .name = "dbg_tx_active",
+#ifdef POST_CHECK
+    .reader = new hls::sim::Reader(AUTOTB_TVOUT_PC_dbg_tx_active),
+#else
+    .writer = new hls::sim::Writer(AUTOTB_TVOUT_dbg_tx_active),
+    .swriter = new hls::sim::Writer(WRAPC_DIRECTIO_SIZE_OUT_dbg_tx_active),
+    .gwriter = new hls::sim::Writer(WRAPC_DIRECTIO_EGRESS_STATUS_dbg_tx_active),
+#endif
+  };
+  port7.param = (hls::directio<hls::sim::Byte<1>>*)__xlx_apatb_param_dbg_tx_active;
+  port7.hasWrite = true;
+
+  static hls::sim::DirectIO<hls::sim::Byte<2>> port8 {
     .width = 16,
+    .name = "dbg_chirp_count",
 #ifdef POST_CHECK
     .reader = new hls::sim::Reader(AUTOTB_TVOUT_PC_dbg_chirp_count),
 #else
-    .owriter = new hls::sim::Writer(AUTOTB_TVOUT_dbg_chirp_count),
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_dbg_chirp_count),
+    .writer = new hls::sim::Writer(AUTOTB_TVOUT_dbg_chirp_count),
+    .swriter = new hls::sim::Writer(WRAPC_DIRECTIO_SIZE_OUT_dbg_chirp_count),
+    .gwriter = new hls::sim::Writer(WRAPC_DIRECTIO_EGRESS_STATUS_dbg_chirp_count),
 #endif
   };
-  port7.param = __xlx_apatb_param_dbg_chirp_count;
+  port8.param = (hls::directio<hls::sim::Byte<2>>*)__xlx_apatb_param_dbg_chirp_count;
+  port8.hasWrite = true;
 
-  static hls::sim::Register port8 {
-    .name = "dbg_sample_count",
+  static hls::sim::DirectIO<hls::sim::Byte<2>> port9 {
     .width = 16,
+    .name = "dbg_sample_count",
 #ifdef POST_CHECK
     .reader = new hls::sim::Reader(AUTOTB_TVOUT_PC_dbg_sample_count),
 #else
-    .owriter = new hls::sim::Writer(AUTOTB_TVOUT_dbg_sample_count),
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_dbg_sample_count),
+    .writer = new hls::sim::Writer(AUTOTB_TVOUT_dbg_sample_count),
+    .swriter = new hls::sim::Writer(WRAPC_DIRECTIO_SIZE_OUT_dbg_sample_count),
+    .gwriter = new hls::sim::Writer(WRAPC_DIRECTIO_EGRESS_STATUS_dbg_sample_count),
 #endif
   };
-  port8.param = __xlx_apatb_param_dbg_sample_count;
+  port9.param = (hls::directio<hls::sim::Byte<2>>*)__xlx_apatb_param_dbg_sample_count;
+  port9.hasWrite = true;
 
-  static hls::sim::Register port9 {
-    .name = "dbg_chirp_start",
+  static hls::sim::DirectIO<hls::sim::Byte<1>> port10 {
     .width = 1,
+    .name = "dbg_chirp_start",
 #ifdef POST_CHECK
     .reader = new hls::sim::Reader(AUTOTB_TVOUT_PC_dbg_chirp_start),
 #else
-    .owriter = new hls::sim::Writer(AUTOTB_TVOUT_dbg_chirp_start),
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_dbg_chirp_start),
+    .writer = new hls::sim::Writer(AUTOTB_TVOUT_dbg_chirp_start),
+    .swriter = new hls::sim::Writer(WRAPC_DIRECTIO_SIZE_OUT_dbg_chirp_start),
+    .gwriter = new hls::sim::Writer(WRAPC_DIRECTIO_EGRESS_STATUS_dbg_chirp_start),
 #endif
   };
-  port9.param = __xlx_apatb_param_dbg_chirp_start;
+  port10.param = (hls::directio<hls::sim::Byte<1>>*)__xlx_apatb_param_dbg_chirp_start;
+  port10.hasWrite = true;
 
-  static hls::sim::Register port10 {
-    .name = "dbg_chirp_end",
+  static hls::sim::DirectIO<hls::sim::Byte<1>> port11 {
     .width = 1,
+    .name = "dbg_chirp_end",
 #ifdef POST_CHECK
     .reader = new hls::sim::Reader(AUTOTB_TVOUT_PC_dbg_chirp_end),
 #else
-    .owriter = new hls::sim::Writer(AUTOTB_TVOUT_dbg_chirp_end),
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_dbg_chirp_end),
+    .writer = new hls::sim::Writer(AUTOTB_TVOUT_dbg_chirp_end),
+    .swriter = new hls::sim::Writer(WRAPC_DIRECTIO_SIZE_OUT_dbg_chirp_end),
+    .gwriter = new hls::sim::Writer(WRAPC_DIRECTIO_EGRESS_STATUS_dbg_chirp_end),
 #endif
   };
-  port10.param = __xlx_apatb_param_dbg_chirp_end;
+  port11.param = (hls::directio<hls::sim::Byte<1>>*)__xlx_apatb_param_dbg_chirp_end;
+  port11.hasWrite = true;
 
-  static hls::sim::Register port11 {
-    .name = "dbg_enable",
+  static hls::sim::DirectIO<hls::sim::Byte<1>> port12 {
     .width = 1,
+    .name = "dbg_enable",
 #ifdef POST_CHECK
     .reader = new hls::sim::Reader(AUTOTB_TVOUT_PC_dbg_enable),
 #else
-    .owriter = new hls::sim::Writer(AUTOTB_TVOUT_dbg_enable),
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_dbg_enable),
+    .writer = new hls::sim::Writer(AUTOTB_TVOUT_dbg_enable),
+    .swriter = new hls::sim::Writer(WRAPC_DIRECTIO_SIZE_OUT_dbg_enable),
+    .gwriter = new hls::sim::Writer(WRAPC_DIRECTIO_EGRESS_STATUS_dbg_enable),
 #endif
   };
-  port11.param = __xlx_apatb_param_dbg_enable;
+  port12.param = (hls::directio<hls::sim::Byte<1>>*)__xlx_apatb_param_dbg_enable;
+  port12.hasWrite = true;
 
-  static hls::sim::Register port12 {
-    .name = "dbg_state",
+  static hls::sim::DirectIO<hls::sim::Byte<1>> port13 {
     .width = 3,
+    .name = "dbg_state",
 #ifdef POST_CHECK
     .reader = new hls::sim::Reader(AUTOTB_TVOUT_PC_dbg_state),
 #else
-    .owriter = new hls::sim::Writer(AUTOTB_TVOUT_dbg_state),
-    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_dbg_state),
+    .writer = new hls::sim::Writer(AUTOTB_TVOUT_dbg_state),
+    .swriter = new hls::sim::Writer(WRAPC_DIRECTIO_SIZE_OUT_dbg_state),
+    .gwriter = new hls::sim::Writer(WRAPC_DIRECTIO_EGRESS_STATUS_dbg_state),
 #endif
   };
-  port12.param = __xlx_apatb_param_dbg_state;
+  port13.param = (hls::directio<hls::sim::Byte<1>>*)__xlx_apatb_param_dbg_state;
+  port13.hasWrite = true;
 
   try {
 #ifdef POST_CHECK
     CodeState = ENTER_WRAPC_PC;
+    check(port0);
+    check(port1);
+    check(port2);
+    check(port3);
     check(port4);
     check(port5);
     check(port6);
@@ -1444,23 +1503,60 @@ void apatb_lfm_tdm_gen_hw(void* __xlx_apatb_param_m_axis_tx_V_data_V, void* __xl
     check(port10);
     check(port11);
     check(port12);
-    check(port0);
-    check(port1);
-    check(port2);
-    check(port3);
+    check(port13);
 #else
     static hls::sim::RefTCL tcl("../tv/cdatafile/ref.tcl");
     tcl.containsVLA = 0;
     CodeState = DUMP_INPUTS;
-    dump(port4, port4.iwriter, tcl.AESL_transaction);
-    dump(port5, port5.iwriter, tcl.AESL_transaction);
-    dump(port6, port6.iwriter, tcl.AESL_transaction);
-    dump(port7, port7.iwriter, tcl.AESL_transaction);
-    dump(port8, port8.iwriter, tcl.AESL_transaction);
-    dump(port9, port9.iwriter, tcl.AESL_transaction);
-    dump(port10, port10.iwriter, tcl.AESL_transaction);
-    dump(port11, port11.iwriter, tcl.AESL_transaction);
-    dump(port12, port12.iwriter, tcl.AESL_transaction);
+    port0.markSize();
+    port1.markSize();
+    port2.markSize();
+    port3.markSize();
+    port4.markSize();
+    port5.markSize();
+    port6.markSize();
+    port7.markSize();
+    port8.markSize();
+    port9.markSize();
+    port10.markSize();
+    port11.markSize();
+    port12.markSize();
+    port13.markSize();
+    CodeState = CALL_C_DUT;
+    lfm_tdm_gen_hw_stub_wrapper(__xlx_apatb_param_m_axis_tx_V_data_V, __xlx_apatb_param_m_axis_tx_V_keep_V, __xlx_apatb_param_m_axis_tx_V_strb_V, __xlx_apatb_param_m_axis_tx_V_last_V, __xlx_apatb_param_dbg_lfm_i, __xlx_apatb_param_dbg_lfm_q, __xlx_apatb_param_dbg_tx_sel, __xlx_apatb_param_dbg_tx_active, __xlx_apatb_param_dbg_chirp_count, __xlx_apatb_param_dbg_sample_count, __xlx_apatb_param_dbg_chirp_start, __xlx_apatb_param_dbg_chirp_end, __xlx_apatb_param_dbg_enable, __xlx_apatb_param_dbg_state);
+    port0.buffer();
+    port1.buffer();
+    port2.buffer();
+    port3.buffer();
+    port4.buffer();
+    port5.buffer();
+    port6.buffer();
+    port7.buffer();
+    port8.buffer();
+    port9.buffer();
+    port10.buffer();
+    port11.buffer();
+    port12.buffer();
+    port13.buffer();
+    CodeState = DUMP_OUTPUTS;
+    dump(port0, tcl.AESL_transaction);
+    dump(port1, tcl.AESL_transaction);
+    dump(port2, tcl.AESL_transaction);
+    dump(port3, tcl.AESL_transaction);
+    port0.doTCL(tcl);
+    port1.doTCL(tcl);
+    port2.doTCL(tcl);
+    port3.doTCL(tcl);
+    dump(port4, tcl.AESL_transaction);
+    dump(port5, tcl.AESL_transaction);
+    dump(port6, tcl.AESL_transaction);
+    dump(port7, tcl.AESL_transaction);
+    dump(port8, tcl.AESL_transaction);
+    dump(port9, tcl.AESL_transaction);
+    dump(port10, tcl.AESL_transaction);
+    dump(port11, tcl.AESL_transaction);
+    dump(port12, tcl.AESL_transaction);
+    dump(port13, tcl.AESL_transaction);
     port4.doTCL(tcl);
     port5.doTCL(tcl);
     port6.doTCL(tcl);
@@ -1470,34 +1566,7 @@ void apatb_lfm_tdm_gen_hw(void* __xlx_apatb_param_m_axis_tx_V_data_V, void* __xl
     port10.doTCL(tcl);
     port11.doTCL(tcl);
     port12.doTCL(tcl);
-    port0.markSize();
-    port1.markSize();
-    port2.markSize();
-    port3.markSize();
-    CodeState = CALL_C_DUT;
-    lfm_tdm_gen_hw_stub_wrapper(__xlx_apatb_param_m_axis_tx_V_data_V, __xlx_apatb_param_m_axis_tx_V_keep_V, __xlx_apatb_param_m_axis_tx_V_strb_V, __xlx_apatb_param_m_axis_tx_V_last_V, __xlx_apatb_param_dbg_lfm_i, __xlx_apatb_param_dbg_lfm_q, __xlx_apatb_param_dbg_tx_sel, __xlx_apatb_param_dbg_chirp_count, __xlx_apatb_param_dbg_sample_count, __xlx_apatb_param_dbg_chirp_start, __xlx_apatb_param_dbg_chirp_end, __xlx_apatb_param_dbg_enable, __xlx_apatb_param_dbg_state);
-    port0.buffer();
-    port1.buffer();
-    port2.buffer();
-    port3.buffer();
-    CodeState = DUMP_OUTPUTS;
-    dump(port4, port4.owriter, tcl.AESL_transaction);
-    dump(port5, port5.owriter, tcl.AESL_transaction);
-    dump(port6, port6.owriter, tcl.AESL_transaction);
-    dump(port7, port7.owriter, tcl.AESL_transaction);
-    dump(port8, port8.owriter, tcl.AESL_transaction);
-    dump(port9, port9.owriter, tcl.AESL_transaction);
-    dump(port10, port10.owriter, tcl.AESL_transaction);
-    dump(port11, port11.owriter, tcl.AESL_transaction);
-    dump(port12, port12.owriter, tcl.AESL_transaction);
-    dump(port0, tcl.AESL_transaction);
-    dump(port1, tcl.AESL_transaction);
-    dump(port2, tcl.AESL_transaction);
-    dump(port3, tcl.AESL_transaction);
-    port0.doTCL(tcl);
-    port1.doTCL(tcl);
-    port2.doTCL(tcl);
-    port3.doTCL(tcl);
+    port13.doTCL(tcl);
     tcl.AESL_transaction++;
 #endif
   } catch (const hls::sim::SimException &e) {

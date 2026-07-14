@@ -3507,7 +3507,7 @@
       },
       "lfm_tdm_gen_0": {
         "vlnv": "xilinx.com:hls:lfm_tdm_gen:1.0",
-        "ip_revision": "2114696416",
+        "ip_revision": "2114696888",
         "xci_name": "design_1_lfm_tdm_gen_0_0",
         "xci_path": "ip\\design_1_lfm_tdm_gen_0_0\\design_1_lfm_tdm_gen_0_0.xci",
         "inst_hier_path": "lfm_tdm_gen_0"
@@ -3543,13 +3543,13 @@
         "inst_hier_path": "ila_0",
         "parameters": {
           "C_DATA_DEPTH": {
-            "value": "4096"
+            "value": "8192"
           },
           "C_MONITOR_TYPE": {
             "value": "Native"
           },
           "C_NUM_OF_PROBES": {
-            "value": "9"
+            "value": "11"
           },
           "C_PROBE0_WIDTH": {
             "value": "16"
@@ -3568,6 +3568,9 @@
           },
           "C_PROBE8_WIDTH": {
             "value": "3"
+          },
+          "C_PROBE9_WIDTH": {
+            "value": "4"
           }
         }
       }
@@ -3686,10 +3689,22 @@
           "ila_0/probe4"
         ]
       },
+      "lfm_tdm_gen_0_dbg_sample_count_ap_vld": {
+        "ports": [
+          "lfm_tdm_gen_0/dbg_sample_count_ap_vld",
+          "ila_0/probe10"
+        ]
+      },
       "lfm_tdm_gen_0_dbg_state": {
         "ports": [
           "lfm_tdm_gen_0/dbg_state",
           "ila_0/probe8"
+        ]
+      },
+      "lfm_tdm_gen_0_dbg_tx_active": {
+        "ports": [
+          "lfm_tdm_gen_0/dbg_tx_active",
+          "ila_0/probe9"
         ]
       },
       "lfm_tdm_gen_0_dbg_tx_sel": {

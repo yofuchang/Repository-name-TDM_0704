@@ -48,14 +48,24 @@
 
 
 // IP VLNV: xilinx.com:hls:lfm_tdm_gen:1.0
-// IP Revision: 2114696416
+// IP Revision: 2114696888
 
 (* X_CORE_INFO = "lfm_tdm_gen,Vivado 2024.2" *)
 (* CHECK_LICENSE_TYPE = "design_1_lfm_tdm_gen_0_0,lfm_tdm_gen,{}" *)
-(* CORE_GENERATION_INFO = "design_1_lfm_tdm_gen_0_0,lfm_tdm_gen,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=lfm_tdm_gen,x_ipVersion=1.0,x_ipCoreRevision=2114696416,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S_AXI_CTRL_ADDR_WIDTH=4,C_S_AXI_CTRL_DATA_WIDTH=32}" *)
+(* CORE_GENERATION_INFO = "design_1_lfm_tdm_gen_0_0,lfm_tdm_gen,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=lfm_tdm_gen,x_ipVersion=1.0,x_ipCoreRevision=2114696888,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S_AXI_CTRL_ADDR_WIDTH=4,C_S_AXI_CTRL_DATA_WIDTH=32}" *)
 (* IP_DEFINITION_SOURCE = "HLS" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module design_1_lfm_tdm_gen_0_0 (
+  dbg_lfm_i_ap_vld,
+  dbg_lfm_q_ap_vld,
+  dbg_tx_sel_ap_vld,
+  dbg_tx_active_ap_vld,
+  dbg_chirp_count_ap_vld,
+  dbg_sample_count_ap_vld,
+  dbg_chirp_start_ap_vld,
+  dbg_chirp_end_ap_vld,
+  dbg_enable_ap_vld,
+  dbg_state_ap_vld,
   s_axi_CTRL_ARADDR,
   s_axi_CTRL_ARREADY,
   s_axi_CTRL_ARVALID,
@@ -85,6 +95,7 @@ module design_1_lfm_tdm_gen_0_0 (
   dbg_lfm_i,
   dbg_lfm_q,
   dbg_tx_sel,
+  dbg_tx_active,
   dbg_chirp_count,
   dbg_sample_count,
   dbg_chirp_start,
@@ -93,6 +104,16 @@ module design_1_lfm_tdm_gen_0_0 (
   dbg_state
 );
 
+output wire dbg_lfm_i_ap_vld;
+output wire dbg_lfm_q_ap_vld;
+output wire dbg_tx_sel_ap_vld;
+output wire dbg_tx_active_ap_vld;
+output wire dbg_chirp_count_ap_vld;
+output wire dbg_sample_count_ap_vld;
+output wire dbg_chirp_start_ap_vld;
+output wire dbg_chirp_end_ap_vld;
+output wire dbg_enable_ap_vld;
+output wire dbg_state_ap_vld;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_CTRL ARADDR" *)
 (* X_INTERFACE_MODE = "slave" *)
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME s_axi_CTRL, ADDR_WIDTH 4, DATA_WIDTH 32, PROTOCOL AXI4LITE, READ_WRITE_MODE READ_WRITE, FREQ_HZ 99999001, ID_WIDTH 0, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 0, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN design_1_zynq_ultra_ps_e_0_0_pl_clk0, NUM_READ_THREADS 1,\
@@ -168,6 +189,10 @@ output wire [15 : 0] dbg_lfm_q;
 (* X_INTERFACE_MODE = "master" *)
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME dbg_tx_sel, LAYERED_METADATA undef" *)
 output wire [1 : 0] dbg_tx_sel;
+(* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 dbg_tx_active DATA" *)
+(* X_INTERFACE_MODE = "master" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME dbg_tx_active, LAYERED_METADATA undef" *)
+output wire [3 : 0] dbg_tx_active;
 (* X_INTERFACE_INFO = "xilinx.com:signal:data:1.0 dbg_chirp_count DATA" *)
 (* X_INTERFACE_MODE = "master" *)
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME dbg_chirp_count, LAYERED_METADATA undef" *)
@@ -200,6 +225,16 @@ output wire [2 : 0] dbg_state;
     .C_S_AXI_CTRL_ADDR_WIDTH(4),
     .C_S_AXI_CTRL_DATA_WIDTH(32)
   ) inst (
+    .dbg_lfm_i_ap_vld(dbg_lfm_i_ap_vld),
+    .dbg_lfm_q_ap_vld(dbg_lfm_q_ap_vld),
+    .dbg_tx_sel_ap_vld(dbg_tx_sel_ap_vld),
+    .dbg_tx_active_ap_vld(dbg_tx_active_ap_vld),
+    .dbg_chirp_count_ap_vld(dbg_chirp_count_ap_vld),
+    .dbg_sample_count_ap_vld(dbg_sample_count_ap_vld),
+    .dbg_chirp_start_ap_vld(dbg_chirp_start_ap_vld),
+    .dbg_chirp_end_ap_vld(dbg_chirp_end_ap_vld),
+    .dbg_enable_ap_vld(dbg_enable_ap_vld),
+    .dbg_state_ap_vld(dbg_state_ap_vld),
     .s_axi_CTRL_ARADDR(s_axi_CTRL_ARADDR),
     .s_axi_CTRL_ARREADY(s_axi_CTRL_ARREADY),
     .s_axi_CTRL_ARVALID(s_axi_CTRL_ARVALID),
@@ -229,6 +264,7 @@ output wire [2 : 0] dbg_state;
     .dbg_lfm_i(dbg_lfm_i),
     .dbg_lfm_q(dbg_lfm_q),
     .dbg_tx_sel(dbg_tx_sel),
+    .dbg_tx_active(dbg_tx_active),
     .dbg_chirp_count(dbg_chirp_count),
     .dbg_sample_count(dbg_sample_count),
     .dbg_chirp_start(dbg_chirp_start),

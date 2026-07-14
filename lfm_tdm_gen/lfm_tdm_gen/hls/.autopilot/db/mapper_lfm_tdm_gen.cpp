@@ -251,8 +251,8 @@ static AESL_RUNTIME_BC __xlx_m_axis_tx_V_strb_V_V_size_Reader("../tv/stream_size
 unsigned int ap_apatb_m_axis_tx_V_last_V_cap_bc;
 static AESL_RUNTIME_BC __xlx_m_axis_tx_V_last_V_V_size_Reader("../tv/stream_size/stream_size_out_m_axis_tx_V_last_V.dat");
 using hls::sim::Byte;
-extern "C" void lfm_tdm_gen(volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *);
-extern "C" void apatb_lfm_tdm_gen_hw(volatile void * __xlx_apatb_param_m_axis_tx_V_data_V, volatile void * __xlx_apatb_param_m_axis_tx_V_keep_V, volatile void * __xlx_apatb_param_m_axis_tx_V_strb_V, volatile void * __xlx_apatb_param_m_axis_tx_V_last_V, volatile void * __xlx_apatb_param_dbg_lfm_i, volatile void * __xlx_apatb_param_dbg_lfm_q, volatile void * __xlx_apatb_param_dbg_tx_sel, volatile void * __xlx_apatb_param_dbg_chirp_count, volatile void * __xlx_apatb_param_dbg_sample_count, volatile void * __xlx_apatb_param_dbg_chirp_start, volatile void * __xlx_apatb_param_dbg_chirp_end, volatile void * __xlx_apatb_param_dbg_enable, volatile void * __xlx_apatb_param_dbg_state) {
+extern "C" void lfm_tdm_gen(volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *, volatile void *);
+extern "C" void apatb_lfm_tdm_gen_hw(volatile void * __xlx_apatb_param_m_axis_tx_V_data_V, volatile void * __xlx_apatb_param_m_axis_tx_V_keep_V, volatile void * __xlx_apatb_param_m_axis_tx_V_strb_V, volatile void * __xlx_apatb_param_m_axis_tx_V_last_V, volatile void * __xlx_apatb_param_dbg_lfm_i, volatile void * __xlx_apatb_param_dbg_lfm_q, volatile void * __xlx_apatb_param_dbg_tx_sel, volatile void * __xlx_apatb_param_dbg_tx_active, volatile void * __xlx_apatb_param_dbg_chirp_count, volatile void * __xlx_apatb_param_dbg_sample_count, volatile void * __xlx_apatb_param_dbg_chirp_start, volatile void * __xlx_apatb_param_dbg_chirp_end, volatile void * __xlx_apatb_param_dbg_enable, volatile void * __xlx_apatb_param_dbg_state) {
 using hls::sim::createStream;
   //Create input buffer for m_axis_tx_V_data_V
   ap_apatb_m_axis_tx_V_data_V_cap_bc = __xlx_m_axis_tx_V_data_V_V_size_Reader.read_size();
@@ -271,7 +271,7 @@ auto* sm_axis_tx_V_strb_V = createStream((hls::stream<char>*)__xlx_apatb_param_m
   char* __xlx_m_axis_tx_V_last_V_input_buffer= new char[ap_apatb_m_axis_tx_V_last_V_cap_bc];
 auto* sm_axis_tx_V_last_V = createStream((hls::stream<char>*)__xlx_apatb_param_m_axis_tx_V_last_V);
   // DUT call
-  lfm_tdm_gen(sm_axis_tx_V_data_V->data<int>(), sm_axis_tx_V_keep_V->data<char>(), sm_axis_tx_V_strb_V->data<char>(), sm_axis_tx_V_last_V->data<char>(), __xlx_apatb_param_dbg_lfm_i, __xlx_apatb_param_dbg_lfm_q, __xlx_apatb_param_dbg_tx_sel, __xlx_apatb_param_dbg_chirp_count, __xlx_apatb_param_dbg_sample_count, __xlx_apatb_param_dbg_chirp_start, __xlx_apatb_param_dbg_chirp_end, __xlx_apatb_param_dbg_enable, __xlx_apatb_param_dbg_state);
+  lfm_tdm_gen(sm_axis_tx_V_data_V->data<int>(), sm_axis_tx_V_keep_V->data<char>(), sm_axis_tx_V_strb_V->data<char>(), sm_axis_tx_V_last_V->data<char>(), __xlx_apatb_param_dbg_lfm_i, __xlx_apatb_param_dbg_lfm_q, __xlx_apatb_param_dbg_tx_sel, __xlx_apatb_param_dbg_tx_active, __xlx_apatb_param_dbg_chirp_count, __xlx_apatb_param_dbg_sample_count, __xlx_apatb_param_dbg_chirp_start, __xlx_apatb_param_dbg_chirp_end, __xlx_apatb_param_dbg_enable, __xlx_apatb_param_dbg_state);
 sm_axis_tx_V_data_V->transfer((hls::stream<int>*)__xlx_apatb_param_m_axis_tx_V_data_V);
 sm_axis_tx_V_keep_V->transfer((hls::stream<char>*)__xlx_apatb_param_m_axis_tx_V_keep_V);
 sm_axis_tx_V_strb_V->transfer((hls::stream<char>*)__xlx_apatb_param_m_axis_tx_V_strb_V);

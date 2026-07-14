@@ -1,4 +1,4 @@
-# 2026-07-14T14:15:13.425600600
+# 2026-07-14T22:03:39.123378800
 import vitis
 
 client = vitis.create_client()
@@ -9,13 +9,11 @@ comp.run(operation="SYNTHESIS")
 
 comp.run(operation="PACKAGE")
 
-platform = client.get_component(name="radar_platform")
-status = platform.update_hw(hw_design = "$COMPONENT_LOCATION/../design_1_wrapper.xsa")
-
 comp = client.get_component(name="radar_loopback_test")
 status = comp.clean()
 
-status = platform.build()
+platform = client.get_component(name="radar_platform")
+status = platform.update_hw(hw_design = "$COMPONENT_LOCATION/../design_1_wrapper.xsa")
 
 status = platform.build()
 

@@ -2307,7 +2307,7 @@
 
                 lfm_tdm_gen_0: lfm_tdm_gen@a0020000 {
                         compatible = "xlnx,lfm-tdm-gen-1.0";
-                        xlnx,ii = <0x1000>;
+                        xlnx,ii = <0x1004>;
                         xlnx,machine = <0x40>;
                         xlnx,rable = <0x0>;
                         xlnx,ip-name = "lfm_tdm_gen";

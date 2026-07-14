@@ -12,10 +12,10 @@
         <FlowTarget>vivado</FlowTarget>
     </UserAssignments>
     <PerformanceEstimates>
-        <PipelineType>loop auto-rewind stp (delay=0 cycles)</PipelineType>
+        <PipelineType>no</PipelineType>
         <SummaryOfTimingAnalysis>
             <unit>ns</unit>
-            <EstimatedClockPeriod>2.412</EstimatedClockPeriod>
+            <EstimatedClockPeriod>1.985</EstimatedClockPeriod>
         </SummaryOfTimingAnalysis>
         <SummaryOfOverallLatency>
             <unit>clock cycles</unit>
@@ -25,11 +25,11 @@
             <Best-caseRealTimeLatency>40.990 us</Best-caseRealTimeLatency>
             <Average-caseRealTimeLatency>40.990 us</Average-caseRealTimeLatency>
             <Worst-caseRealTimeLatency>40.990 us</Worst-caseRealTimeLatency>
-            <Interval-min>4096</Interval-min>
-            <Interval-max>4096</Interval-max>
+            <Interval-min>4100</Interval-min>
+            <Interval-max>4100</Interval-max>
         </SummaryOfOverallLatency>
         <SummaryOfLoopLatency>
-            <VITIS_LOOP_53_1_VITIS_LOOP_56_2>
+            <VITIS_LOOP_63_1_VITIS_LOOP_75_2>
                 <Slack>7.30</Slack>
                 <TripCount>4096</TripCount>
                 <Latency>4097</Latency>
@@ -37,27 +37,27 @@
                 <PipelineII>1</PipelineII>
                 <PipelineDepth>3</PipelineDepth>
                 <InstanceList/>
-            </VITIS_LOOP_53_1_VITIS_LOOP_56_2>
+            </VITIS_LOOP_63_1_VITIS_LOOP_75_2>
         </SummaryOfLoopLatency>
         <SummaryOfViolations>
             <IssueType>-</IssueType>
             <ViolationType>-</ViolationType>
-            <SourceLocation>lfm_tdm_gen.cpp:22</SourceLocation>
+            <SourceLocation>lfm_tdm_gen.cpp:41</SourceLocation>
             <SummaryOfLoopViolations>
-                <VITIS_LOOP_53_1_VITIS_LOOP_56_2>
-                    <Name>VITIS_LOOP_53_1_VITIS_LOOP_56_2</Name>
+                <VITIS_LOOP_63_1_VITIS_LOOP_75_2>
+                    <Name>VITIS_LOOP_63_1_VITIS_LOOP_75_2</Name>
                     <IssueType>-</IssueType>
                     <ViolationType>-</ViolationType>
-                    <SourceLocation>lfm_tdm_gen.cpp:56</SourceLocation>
-                </VITIS_LOOP_53_1_VITIS_LOOP_56_2>
+                    <SourceLocation>lfm_tdm_gen.cpp:75</SourceLocation>
+                </VITIS_LOOP_63_1_VITIS_LOOP_75_2>
             </SummaryOfLoopViolations>
         </SummaryOfViolations>
     </PerformanceEstimates>
     <AreaEstimates>
         <Resources>
             <BRAM_18K>2</BRAM_18K>
-            <FF>76</FF>
-            <LUT>288</LUT>
+            <FF>88</FF>
+            <LUT>362</LUT>
             <URAM>0</URAM>
             <DSP>0</DSP>
         </Resources>
@@ -291,15 +291,15 @@
             <Attribute>unknown</Attribute>
         </RtlPorts>
         <RtlPorts>
-            <name>m_axis_tx_TREADY</name>
-            <Object>m_axis_tx_V_last_V</Object>
+            <name>m_axis_tx_TDATA</name>
+            <Object>m_axis_tx_V_data_V</Object>
             <Type>pointer</Type>
             <Scope/>
             <IOProtocol>axis</IOProtocol>
             <IOConfig>register, both mode</IOConfig>
-            <Dir>in</Dir>
-            <Bits>1</Bits>
-            <Attribute>control</Attribute>
+            <Dir>out</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
@@ -315,6 +315,18 @@
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
+            <name>m_axis_tx_TREADY</name>
+            <Object>m_axis_tx_V_last_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
             <name>m_axis_tx_TLAST</name>
             <Object>m_axis_tx_V_last_V</Object>
             <Type>pointer</Type>
@@ -323,18 +335,6 @@
             <IOConfig>register, both mode</IOConfig>
             <Dir>out</Dir>
             <Bits>1</Bits>
-            <Attribute>data</Attribute>
-            <CType>int</CType>
-        </RtlPorts>
-        <RtlPorts>
-            <name>m_axis_tx_TDATA</name>
-            <Object>m_axis_tx_V_data_V</Object>
-            <Type>pointer</Type>
-            <Scope/>
-            <IOProtocol>axis</IOProtocol>
-            <IOConfig>register, both mode</IOConfig>
-            <Dir>out</Dir>
-            <Bits>32</Bits>
             <Attribute>data</Attribute>
             <CType>int</CType>
         </RtlPorts>
@@ -367,11 +367,23 @@
             <Object>dbg_lfm_i</Object>
             <Type>pointer</Type>
             <Scope/>
-            <IOProtocol>ap_none</IOProtocol>
+            <IOProtocol>ap_hs</IOProtocol>
             <IOConfig/>
             <Dir>out</Dir>
             <Bits>16</Bits>
             <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>dbg_lfm_i_ap_vld</name>
+            <Object>dbg_lfm_i</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
@@ -379,11 +391,23 @@
             <Object>dbg_lfm_q</Object>
             <Type>pointer</Type>
             <Scope/>
-            <IOProtocol>ap_none</IOProtocol>
+            <IOProtocol>ap_hs</IOProtocol>
             <IOConfig/>
             <Dir>out</Dir>
             <Bits>16</Bits>
             <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>dbg_lfm_q_ap_vld</name>
+            <Object>dbg_lfm_q</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
@@ -391,7 +415,7 @@
             <Object>dbg_tx_sel</Object>
             <Type>pointer</Type>
             <Scope/>
-            <IOProtocol>ap_none</IOProtocol>
+            <IOProtocol>ap_hs</IOProtocol>
             <IOConfig/>
             <Dir>out</Dir>
             <Bits>2</Bits>
@@ -399,15 +423,63 @@
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
+            <name>dbg_tx_sel_ap_vld</name>
+            <Object>dbg_tx_sel</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>dbg_tx_active</name>
+            <Object>dbg_tx_active</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>4</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>dbg_tx_active_ap_vld</name>
+            <Object>dbg_tx_active</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
             <name>dbg_chirp_count</name>
             <Object>dbg_chirp_count</Object>
             <Type>pointer</Type>
             <Scope/>
-            <IOProtocol>ap_none</IOProtocol>
+            <IOProtocol>ap_hs</IOProtocol>
             <IOConfig/>
             <Dir>out</Dir>
             <Bits>16</Bits>
             <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>dbg_chirp_count_ap_vld</name>
+            <Object>dbg_chirp_count</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
@@ -415,7 +487,7 @@
             <Object>dbg_sample_count</Object>
             <Type>pointer</Type>
             <Scope/>
-            <IOProtocol>ap_none</IOProtocol>
+            <IOProtocol>ap_hs</IOProtocol>
             <IOConfig/>
             <Dir>out</Dir>
             <Bits>16</Bits>
@@ -423,15 +495,39 @@
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
+            <name>dbg_sample_count_ap_vld</name>
+            <Object>dbg_sample_count</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
             <name>dbg_chirp_start</name>
             <Object>dbg_chirp_start</Object>
             <Type>pointer</Type>
             <Scope/>
-            <IOProtocol>ap_none</IOProtocol>
+            <IOProtocol>ap_hs</IOProtocol>
             <IOConfig/>
             <Dir>out</Dir>
             <Bits>1</Bits>
             <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>dbg_chirp_start_ap_vld</name>
+            <Object>dbg_chirp_start</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
@@ -439,11 +535,23 @@
             <Object>dbg_chirp_end</Object>
             <Type>pointer</Type>
             <Scope/>
-            <IOProtocol>ap_none</IOProtocol>
+            <IOProtocol>ap_hs</IOProtocol>
             <IOConfig/>
             <Dir>out</Dir>
             <Bits>1</Bits>
             <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>dbg_chirp_end_ap_vld</name>
+            <Object>dbg_chirp_end</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
@@ -451,7 +559,7 @@
             <Object>dbg_enable</Object>
             <Type>pointer</Type>
             <Scope/>
-            <IOProtocol>ap_none</IOProtocol>
+            <IOProtocol>ap_hs</IOProtocol>
             <IOConfig/>
             <Dir>out</Dir>
             <Bits>1</Bits>
@@ -459,35 +567,59 @@
             <CType>int</CType>
         </RtlPorts>
         <RtlPorts>
+            <name>dbg_enable_ap_vld</name>
+            <Object>dbg_enable</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
             <name>dbg_state</name>
             <Object>dbg_state</Object>
             <Type>pointer</Type>
             <Scope/>
-            <IOProtocol>ap_none</IOProtocol>
+            <IOProtocol>ap_hs</IOProtocol>
             <IOConfig/>
             <Dir>out</Dir>
             <Bits>3</Bits>
             <Attribute>data</Attribute>
             <CType>int</CType>
         </RtlPorts>
+        <RtlPorts>
+            <name>dbg_state_ap_vld</name>
+            <Object>dbg_state</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
     </InterfaceSummary>
     <RTLDesignHierarchy>
         <TopModule MAX_DEPTH="2">
             <ModuleName>lfm_tdm_gen</ModuleName>
-            <BindInstances>select_ln53_fu_279_p3 chirp_2_fu_287_p3 cmp13_fu_295_p2 icmp_ln72_fu_306_p2 tx_word_last_fu_312_p2 sample_fu_318_p2 add_ln53_fu_324_p2 icmp_ln56_fu_330_p2 chirp_fu_336_p2 icmp_ln53_fu_342_p2 LFM_IQ_LUT_U CTRL_s_axi_U</BindInstances>
+            <BindInstances>select_ln63_fu_286_p3 chirp_2_fu_355_p3 first_iter_0_fu_294_p2 bitset_4ns_4ns_32ns_1s_4_1_1_U1 cmp11_fu_383_p2 icmp_ln95_fu_305_p2 m_axis_tx_TLAST_int_regslice sample_fu_315_p2 add_ln63_fu_321_p2 icmp_ln75_fu_327_p2 chirp_fu_429_p2 icmp_ln63_fu_333_p2 LFM_IQ_LUT_U CTRL_s_axi_U</BindInstances>
         </TopModule>
     </RTLDesignHierarchy>
     <ModuleInformation>
         <Module>
             <Name>lfm_tdm_gen</Name>
             <Loops>
-                <VITIS_LOOP_53_1_VITIS_LOOP_56_2/>
+                <VITIS_LOOP_63_1_VITIS_LOOP_75_2/>
             </Loops>
             <PerformanceEstimates>
                 <SummaryOfTimingAnalysis>
                     <TargetClockPeriod>10.00</TargetClockPeriod>
                     <ClockUncertainty>2.70</ClockUncertainty>
-                    <EstimatedClockPeriod>2.412</EstimatedClockPeriod>
+                    <EstimatedClockPeriod>1.985</EstimatedClockPeriod>
                 </SummaryOfTimingAnalysis>
                 <SummaryOfOverallLatency>
                     <Best-caseLatency>4099</Best-caseLatency>
@@ -496,12 +628,12 @@
                     <Best-caseRealTimeLatency>40.990 us</Best-caseRealTimeLatency>
                     <Average-caseRealTimeLatency>40.990 us</Average-caseRealTimeLatency>
                     <Worst-caseRealTimeLatency>40.990 us</Worst-caseRealTimeLatency>
-                    <PipelineInitiationInterval>4096</PipelineInitiationInterval>
-                    <PipelineType>loop auto-rewind stp (delay=0 clock cycles(s))</PipelineType>
+                    <PipelineInitiationInterval>4100</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
                 </SummaryOfOverallLatency>
                 <SummaryOfLoopLatency>
-                    <VITIS_LOOP_53_1_VITIS_LOOP_56_2>
-                        <Name>VITIS_LOOP_53_1_VITIS_LOOP_56_2</Name>
+                    <VITIS_LOOP_63_1_VITIS_LOOP_75_2>
+                        <Name>VITIS_LOOP_63_1_VITIS_LOOP_75_2</Name>
                         <Slack>7.30</Slack>
                         <TripCount>4096</TripCount>
                         <Latency>4097</Latency>
@@ -510,19 +642,19 @@
                         <PipelineDepth>3</PipelineDepth>
                         <PipelineType>yes</PipelineType>
                         <InstanceList/>
-                    </VITIS_LOOP_53_1_VITIS_LOOP_56_2>
+                    </VITIS_LOOP_63_1_VITIS_LOOP_75_2>
                 </SummaryOfLoopLatency>
                 <SummaryOfViolations>
                     <IssueType>-</IssueType>
                     <ViolationType>-</ViolationType>
-                    <SourceLocation>lfm_tdm_gen.cpp:22</SourceLocation>
+                    <SourceLocation>lfm_tdm_gen.cpp:41</SourceLocation>
                     <SummaryOfLoopViolations>
-                        <VITIS_LOOP_53_1_VITIS_LOOP_56_2>
-                            <Name>VITIS_LOOP_53_1_VITIS_LOOP_56_2</Name>
+                        <VITIS_LOOP_63_1_VITIS_LOOP_75_2>
+                            <Name>VITIS_LOOP_63_1_VITIS_LOOP_75_2</Name>
                             <IssueType>-</IssueType>
                             <ViolationType>-</ViolationType>
-                            <SourceLocation>lfm_tdm_gen.cpp:56</SourceLocation>
-                        </VITIS_LOOP_53_1_VITIS_LOOP_56_2>
+                            <SourceLocation>lfm_tdm_gen.cpp:75</SourceLocation>
+                        </VITIS_LOOP_63_1_VITIS_LOOP_75_2>
                     </SummaryOfLoopViolations>
                 </SummaryOfViolations>
             </PerformanceEstimates>
@@ -531,10 +663,10 @@
                     <BRAM_18K>2</BRAM_18K>
                     <AVAIL_BRAM>2160</AVAIL_BRAM>
                     <UTIL_BRAM>~0</UTIL_BRAM>
-                    <FF>76</FF>
+                    <FF>88</FF>
                     <AVAIL_FF>850560</AVAIL_FF>
                     <UTIL_FF>~0</UTIL_FF>
-                    <LUT>288</LUT>
+                    <LUT>366</LUT>
                     <AVAIL_LUT>425280</AVAIL_LUT>
                     <UTIL_LUT>~0</UTIL_LUT>
                     <URAM>0</URAM>
@@ -546,16 +678,18 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_53_1_VITIS_LOOP_56_2" OPTYPE="select" PRAGMA="" RTLNAME="select_ln53_fu_279_p3" SOURCE="lfm_tdm_gen.cpp:53" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln53" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_53_1_VITIS_LOOP_56_2" OPTYPE="select" PRAGMA="" RTLNAME="chirp_2_fu_287_p3" SOURCE="lfm_tdm_gen.cpp:53" STORAGESUBTYPE="" URAM="0" VARIABLE="chirp_2" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_53_1_VITIS_LOOP_56_2" OPTYPE="seteq" PRAGMA="" RTLNAME="cmp13_fu_295_p2" SOURCE="lfm_tdm_gen.cpp:53" STORAGESUBTYPE="" URAM="0" VARIABLE="cmp13" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_53_1_VITIS_LOOP_56_2" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln72_fu_306_p2" SOURCE="lfm_tdm_gen.cpp:72" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln72" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_53_1_VITIS_LOOP_56_2" OPTYPE="and" PRAGMA="" RTLNAME="tx_word_last_fu_312_p2" SOURCE="lfm_tdm_gen.cpp:71" STORAGESUBTYPE="" URAM="0" VARIABLE="tx_word_last" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_53_1_VITIS_LOOP_56_2" OPTYPE="add" PRAGMA="" RTLNAME="sample_fu_318_p2" SOURCE="lfm_tdm_gen.cpp:56" STORAGESUBTYPE="" URAM="0" VARIABLE="sample" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_53_1_VITIS_LOOP_56_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln53_fu_324_p2" SOURCE="lfm_tdm_gen.cpp:53" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln53" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_53_1_VITIS_LOOP_56_2" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln56_fu_330_p2" SOURCE="lfm_tdm_gen.cpp:56" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln56" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_53_1_VITIS_LOOP_56_2" OPTYPE="add" PRAGMA="" RTLNAME="chirp_fu_336_p2" SOURCE="lfm_tdm_gen.cpp:53" STORAGESUBTYPE="" URAM="0" VARIABLE="chirp" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_53_1_VITIS_LOOP_56_2" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln53_fu_342_p2" SOURCE="lfm_tdm_gen.cpp:53" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln53" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_63_1_VITIS_LOOP_75_2" OPTYPE="select" PRAGMA="" RTLNAME="select_ln63_fu_286_p3" SOURCE="lfm_tdm_gen.cpp:63" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln63" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_63_1_VITIS_LOOP_75_2" OPTYPE="select" PRAGMA="" RTLNAME="chirp_2_fu_355_p3" SOURCE="lfm_tdm_gen.cpp:63" STORAGESUBTYPE="" URAM="0" VARIABLE="chirp_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_63_1_VITIS_LOOP_75_2" OPTYPE="seteq" PRAGMA="" RTLNAME="first_iter_0_fu_294_p2" SOURCE="lfm_tdm_gen.cpp:63" STORAGESUBTYPE="" URAM="0" VARIABLE="first_iter_0" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op bitset" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_63_1_VITIS_LOOP_75_2" OPTYPE="bitset" PRAGMA="" RTLNAME="bitset_4ns_4ns_32ns_1s_4_1_1_U1" SOURCE="lfm_tdm_gen.cpp:73" STORAGESUBTYPE="" URAM="0" VARIABLE="tx_active" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_63_1_VITIS_LOOP_75_2" OPTYPE="seteq" PRAGMA="" RTLNAME="cmp11_fu_383_p2" SOURCE="lfm_tdm_gen.cpp:63" STORAGESUBTYPE="" URAM="0" VARIABLE="cmp11" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_63_1_VITIS_LOOP_75_2" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln95_fu_305_p2" SOURCE="lfm_tdm_gen.cpp:95" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln95" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_63_1_VITIS_LOOP_75_2" OPTYPE="and" PRAGMA="" RTLNAME="m_axis_tx_TLAST_int_regslice" SOURCE="lfm_tdm_gen.cpp:94" STORAGESUBTYPE="" URAM="0" VARIABLE="tx_word_last" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_63_1_VITIS_LOOP_75_2" OPTYPE="add" PRAGMA="" RTLNAME="sample_fu_315_p2" SOURCE="lfm_tdm_gen.cpp:75" STORAGESUBTYPE="" URAM="0" VARIABLE="sample" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_63_1_VITIS_LOOP_75_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln63_fu_321_p2" SOURCE="lfm_tdm_gen.cpp:63" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln63" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_63_1_VITIS_LOOP_75_2" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln75_fu_327_p2" SOURCE="lfm_tdm_gen.cpp:75" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln75" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_63_1_VITIS_LOOP_75_2" OPTYPE="add" PRAGMA="" RTLNAME="chirp_fu_429_p2" SOURCE="lfm_tdm_gen.cpp:63" STORAGESUBTYPE="" URAM="0" VARIABLE="chirp" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_63_1_VITIS_LOOP_75_2" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln63_fu_333_p2" SOURCE="lfm_tdm_gen.cpp:63" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln63" VISIBLE="false"/>
                 <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="LFM_IQ_LUT_U" SOURCE="" STORAGESIZE="31 1024 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="LFM_IQ_LUT" VISIBLE="true"/>
                 <BindNode BINDTYPE="adapter" BRAM="0" BUNDLEDNAME="CTRL" DISPNAME="bind_adapter " DSP="0" ID="" IMPL="" LATENCY="" LOOP="" OPTYPE="" PRAGMA="" RTLNAME="CTRL_s_axi_U" SOURCE="" STORAGESIZE="" STORAGESUBTYPE="s_axilite" STORAGEUSAGE="interface" URAM="0" VARIABLE=""/>
             </BindNodes>
@@ -569,49 +703,64 @@
                 <hwRef type="interface" interface="m_axis_tx" name="" usage="data" direction="out"/>
             </hwRefs>
         </Arg>
-        <Arg ArgName="dbg_lfm_i" index="1" direction="out" srcType="ap_int&lt;16&gt;&amp;" srcSize="16">
+        <Arg ArgName="dbg_lfm_i" index="1" direction="out" srcType="directio&lt;ap_int&lt;16&gt;, 1&gt;&amp;" srcSize="16">
             <hwRefs>
                 <hwRef type="port" interface="dbg_lfm_i" name="dbg_lfm_i" usage="data" direction="out"/>
+                <hwRef type="port" interface="dbg_lfm_i_ap_vld" name="dbg_lfm_i_ap_vld" usage="control" direction="out"/>
             </hwRefs>
         </Arg>
-        <Arg ArgName="dbg_lfm_q" index="2" direction="out" srcType="ap_int&lt;16&gt;&amp;" srcSize="16">
+        <Arg ArgName="dbg_lfm_q" index="2" direction="out" srcType="directio&lt;ap_int&lt;16&gt;, 1&gt;&amp;" srcSize="16">
             <hwRefs>
                 <hwRef type="port" interface="dbg_lfm_q" name="dbg_lfm_q" usage="data" direction="out"/>
+                <hwRef type="port" interface="dbg_lfm_q_ap_vld" name="dbg_lfm_q_ap_vld" usage="control" direction="out"/>
             </hwRefs>
         </Arg>
-        <Arg ArgName="dbg_tx_sel" index="3" direction="out" srcType="ap_uint&lt;2&gt;&amp;" srcSize="8">
+        <Arg ArgName="dbg_tx_sel" index="3" direction="out" srcType="directio&lt;ap_uint&lt;2&gt;, 1&gt;&amp;" srcSize="8">
             <hwRefs>
                 <hwRef type="port" interface="dbg_tx_sel" name="dbg_tx_sel" usage="data" direction="out"/>
+                <hwRef type="port" interface="dbg_tx_sel_ap_vld" name="dbg_tx_sel_ap_vld" usage="control" direction="out"/>
             </hwRefs>
         </Arg>
-        <Arg ArgName="dbg_chirp_count" index="4" direction="out" srcType="ap_uint&lt;16&gt;&amp;" srcSize="16">
+        <Arg ArgName="dbg_tx_active" index="4" direction="out" srcType="directio&lt;ap_uint&lt;4&gt;, 1&gt;&amp;" srcSize="8">
+            <hwRefs>
+                <hwRef type="port" interface="dbg_tx_active" name="dbg_tx_active" usage="data" direction="out"/>
+                <hwRef type="port" interface="dbg_tx_active_ap_vld" name="dbg_tx_active_ap_vld" usage="control" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="dbg_chirp_count" index="5" direction="out" srcType="directio&lt;ap_uint&lt;16&gt;, 1&gt;&amp;" srcSize="16">
             <hwRefs>
                 <hwRef type="port" interface="dbg_chirp_count" name="dbg_chirp_count" usage="data" direction="out"/>
+                <hwRef type="port" interface="dbg_chirp_count_ap_vld" name="dbg_chirp_count_ap_vld" usage="control" direction="out"/>
             </hwRefs>
         </Arg>
-        <Arg ArgName="dbg_sample_count" index="5" direction="out" srcType="ap_uint&lt;16&gt;&amp;" srcSize="16">
+        <Arg ArgName="dbg_sample_count" index="6" direction="out" srcType="directio&lt;ap_uint&lt;16&gt;, 1&gt;&amp;" srcSize="16">
             <hwRefs>
                 <hwRef type="port" interface="dbg_sample_count" name="dbg_sample_count" usage="data" direction="out"/>
+                <hwRef type="port" interface="dbg_sample_count_ap_vld" name="dbg_sample_count_ap_vld" usage="control" direction="out"/>
             </hwRefs>
         </Arg>
-        <Arg ArgName="dbg_chirp_start" index="6" direction="out" srcType="ap_uint&lt;1&gt;&amp;" srcSize="8">
+        <Arg ArgName="dbg_chirp_start" index="7" direction="out" srcType="directio&lt;ap_uint&lt;1&gt;, 1&gt;&amp;" srcSize="8">
             <hwRefs>
                 <hwRef type="port" interface="dbg_chirp_start" name="dbg_chirp_start" usage="data" direction="out"/>
+                <hwRef type="port" interface="dbg_chirp_start_ap_vld" name="dbg_chirp_start_ap_vld" usage="control" direction="out"/>
             </hwRefs>
         </Arg>
-        <Arg ArgName="dbg_chirp_end" index="7" direction="out" srcType="ap_uint&lt;1&gt;&amp;" srcSize="8">
+        <Arg ArgName="dbg_chirp_end" index="8" direction="out" srcType="directio&lt;ap_uint&lt;1&gt;, 1&gt;&amp;" srcSize="8">
             <hwRefs>
                 <hwRef type="port" interface="dbg_chirp_end" name="dbg_chirp_end" usage="data" direction="out"/>
+                <hwRef type="port" interface="dbg_chirp_end_ap_vld" name="dbg_chirp_end_ap_vld" usage="control" direction="out"/>
             </hwRefs>
         </Arg>
-        <Arg ArgName="dbg_enable" index="8" direction="out" srcType="ap_uint&lt;1&gt;&amp;" srcSize="8">
+        <Arg ArgName="dbg_enable" index="9" direction="out" srcType="directio&lt;ap_uint&lt;1&gt;, 1&gt;&amp;" srcSize="8">
             <hwRefs>
                 <hwRef type="port" interface="dbg_enable" name="dbg_enable" usage="data" direction="out"/>
+                <hwRef type="port" interface="dbg_enable_ap_vld" name="dbg_enable_ap_vld" usage="control" direction="out"/>
             </hwRefs>
         </Arg>
-        <Arg ArgName="dbg_state" index="9" direction="out" srcType="ap_uint&lt;3&gt;&amp;" srcSize="8">
+        <Arg ArgName="dbg_state" index="10" direction="out" srcType="directio&lt;ap_uint&lt;3&gt;, 1&gt;&amp;" srcSize="8">
             <hwRefs>
                 <hwRef type="port" interface="dbg_state" name="dbg_state" usage="data" direction="out"/>
+                <hwRef type="port" interface="dbg_state_ap_vld" name="dbg_state_ap_vld" usage="control" direction="out"/>
             </hwRefs>
         </Arg>
     </Args>
@@ -719,7 +868,7 @@
                 <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both" argName="m_axis_tx"/>
             </constraints>
         </Interface>
-        <Interface InterfaceName="dbg_lfm_i" type="data" busTypeName="data" protocol="ap_none" mode="master" dataWidth="16">
+        <Interface InterfaceName="dbg_lfm_i" type="data" busTypeName="data" protocol="ap_hs" mode="master" dataWidth="16">
             <portMaps>
                 <portMap portMapName="dbg_lfm_i">DATA</portMap>
             </portMaps>
@@ -727,10 +876,10 @@
                 <port>dbg_lfm_i</port>
             </ports>
             <constraints>
-                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="dbg_lfm_i"/>
+                <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0" argName="dbg_lfm_i"/>
             </constraints>
         </Interface>
-        <Interface InterfaceName="dbg_lfm_q" type="data" busTypeName="data" protocol="ap_none" mode="master" dataWidth="16">
+        <Interface InterfaceName="dbg_lfm_q" type="data" busTypeName="data" protocol="ap_hs" mode="master" dataWidth="16">
             <portMaps>
                 <portMap portMapName="dbg_lfm_q">DATA</portMap>
             </portMaps>
@@ -738,10 +887,10 @@
                 <port>dbg_lfm_q</port>
             </ports>
             <constraints>
-                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="dbg_lfm_q"/>
+                <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0" argName="dbg_lfm_q"/>
             </constraints>
         </Interface>
-        <Interface InterfaceName="dbg_tx_sel" type="data" busTypeName="data" protocol="ap_none" mode="master" dataWidth="2">
+        <Interface InterfaceName="dbg_tx_sel" type="data" busTypeName="data" protocol="ap_hs" mode="master" dataWidth="2">
             <portMaps>
                 <portMap portMapName="dbg_tx_sel">DATA</portMap>
             </portMaps>
@@ -749,10 +898,21 @@
                 <port>dbg_tx_sel</port>
             </ports>
             <constraints>
-                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="dbg_tx_sel"/>
+                <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0" argName="dbg_tx_sel"/>
             </constraints>
         </Interface>
-        <Interface InterfaceName="dbg_chirp_count" type="data" busTypeName="data" protocol="ap_none" mode="master" dataWidth="16">
+        <Interface InterfaceName="dbg_tx_active" type="data" busTypeName="data" protocol="ap_hs" mode="master" dataWidth="4">
+            <portMaps>
+                <portMap portMapName="dbg_tx_active">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>dbg_tx_active</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0" argName="dbg_tx_active"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="dbg_chirp_count" type="data" busTypeName="data" protocol="ap_hs" mode="master" dataWidth="16">
             <portMaps>
                 <portMap portMapName="dbg_chirp_count">DATA</portMap>
             </portMaps>
@@ -760,10 +920,10 @@
                 <port>dbg_chirp_count</port>
             </ports>
             <constraints>
-                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="dbg_chirp_count"/>
+                <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0" argName="dbg_chirp_count"/>
             </constraints>
         </Interface>
-        <Interface InterfaceName="dbg_sample_count" type="data" busTypeName="data" protocol="ap_none" mode="master" dataWidth="16">
+        <Interface InterfaceName="dbg_sample_count" type="data" busTypeName="data" protocol="ap_hs" mode="master" dataWidth="16">
             <portMaps>
                 <portMap portMapName="dbg_sample_count">DATA</portMap>
             </portMaps>
@@ -771,10 +931,10 @@
                 <port>dbg_sample_count</port>
             </ports>
             <constraints>
-                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="dbg_sample_count"/>
+                <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0" argName="dbg_sample_count"/>
             </constraints>
         </Interface>
-        <Interface InterfaceName="dbg_chirp_start" type="data" busTypeName="data" protocol="ap_none" mode="master" dataWidth="1">
+        <Interface InterfaceName="dbg_chirp_start" type="data" busTypeName="data" protocol="ap_hs" mode="master" dataWidth="1">
             <portMaps>
                 <portMap portMapName="dbg_chirp_start">DATA</portMap>
             </portMaps>
@@ -782,10 +942,10 @@
                 <port>dbg_chirp_start</port>
             </ports>
             <constraints>
-                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="dbg_chirp_start"/>
+                <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0" argName="dbg_chirp_start"/>
             </constraints>
         </Interface>
-        <Interface InterfaceName="dbg_chirp_end" type="data" busTypeName="data" protocol="ap_none" mode="master" dataWidth="1">
+        <Interface InterfaceName="dbg_chirp_end" type="data" busTypeName="data" protocol="ap_hs" mode="master" dataWidth="1">
             <portMaps>
                 <portMap portMapName="dbg_chirp_end">DATA</portMap>
             </portMaps>
@@ -793,10 +953,10 @@
                 <port>dbg_chirp_end</port>
             </ports>
             <constraints>
-                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="dbg_chirp_end"/>
+                <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0" argName="dbg_chirp_end"/>
             </constraints>
         </Interface>
-        <Interface InterfaceName="dbg_enable" type="data" busTypeName="data" protocol="ap_none" mode="master" dataWidth="1">
+        <Interface InterfaceName="dbg_enable" type="data" busTypeName="data" protocol="ap_hs" mode="master" dataWidth="1">
             <portMaps>
                 <portMap portMapName="dbg_enable">DATA</portMap>
             </portMaps>
@@ -804,10 +964,10 @@
                 <port>dbg_enable</port>
             </ports>
             <constraints>
-                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="dbg_enable"/>
+                <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0" argName="dbg_enable"/>
             </constraints>
         </Interface>
-        <Interface InterfaceName="dbg_state" type="data" busTypeName="data" protocol="ap_none" mode="master" dataWidth="3">
+        <Interface InterfaceName="dbg_state" type="data" busTypeName="data" protocol="ap_hs" mode="master" dataWidth="3">
             <portMaps>
                 <portMap portMapName="dbg_state">DATA</portMap>
             </portMaps>
@@ -815,7 +975,7 @@
                 <port>dbg_state</port>
             </ports>
             <constraints>
-                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="dbg_state"/>
+                <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0" argName="dbg_state"/>
             </constraints>
         </Interface>
     </Interfaces>
@@ -845,15 +1005,16 @@
             <item name="Other Ports">
                 <table>
                     <keys size="4">Port, Mode, Direction, Bitwidth</keys>
-                    <column name="dbg_chirp_count">ap_none, out, 16</column>
-                    <column name="dbg_chirp_end">ap_none, out, 1</column>
-                    <column name="dbg_chirp_start">ap_none, out, 1</column>
-                    <column name="dbg_enable">ap_none, out, 1</column>
-                    <column name="dbg_lfm_i">ap_none, out, 16</column>
-                    <column name="dbg_lfm_q">ap_none, out, 16</column>
-                    <column name="dbg_sample_count">ap_none, out, 16</column>
-                    <column name="dbg_state">ap_none, out, 3</column>
-                    <column name="dbg_tx_sel">ap_none, out, 2</column>
+                    <column name="dbg_chirp_count">ap_vld, out, 16</column>
+                    <column name="dbg_chirp_end">ap_vld, out, 1</column>
+                    <column name="dbg_chirp_start">ap_vld, out, 1</column>
+                    <column name="dbg_enable">ap_vld, out, 1</column>
+                    <column name="dbg_lfm_i">ap_vld, out, 16</column>
+                    <column name="dbg_lfm_q">ap_vld, out, 16</column>
+                    <column name="dbg_sample_count">ap_vld, out, 16</column>
+                    <column name="dbg_state">ap_vld, out, 3</column>
+                    <column name="dbg_tx_active">ap_vld, out, 4</column>
+                    <column name="dbg_tx_sel">ap_vld, out, 2</column>
                 </table>
             </item>
             <item name="TOP LEVEL CONTROL">
@@ -873,15 +1034,16 @@
                 <table>
                     <keys size="3">Argument, Direction, Datatype</keys>
                     <column name="m_axis_tx">out, stream&lt;hls::axis&lt;ap_uint&lt;32&gt; 0 0 0 '8' false&gt; 0&gt;&amp;</column>
-                    <column name="dbg_lfm_i">out, ap_int&lt;16&gt;&amp;</column>
-                    <column name="dbg_lfm_q">out, ap_int&lt;16&gt;&amp;</column>
-                    <column name="dbg_tx_sel">out, ap_uint&lt;2&gt;&amp;</column>
-                    <column name="dbg_chirp_count">out, ap_uint&lt;16&gt;&amp;</column>
-                    <column name="dbg_sample_count">out, ap_uint&lt;16&gt;&amp;</column>
-                    <column name="dbg_chirp_start">out, ap_uint&lt;1&gt;&amp;</column>
-                    <column name="dbg_chirp_end">out, ap_uint&lt;1&gt;&amp;</column>
-                    <column name="dbg_enable">out, ap_uint&lt;1&gt;&amp;</column>
-                    <column name="dbg_state">out, ap_uint&lt;3&gt;&amp;</column>
+                    <column name="dbg_lfm_i">out, directio&lt;ap_int&lt;16&gt; 1&gt;&amp;</column>
+                    <column name="dbg_lfm_q">out, directio&lt;ap_int&lt;16&gt; 1&gt;&amp;</column>
+                    <column name="dbg_tx_sel">out, directio&lt;ap_uint&lt;2&gt; 1&gt;&amp;</column>
+                    <column name="dbg_tx_active">out, directio&lt;ap_uint&lt;4&gt; 1&gt;&amp;</column>
+                    <column name="dbg_chirp_count">out, directio&lt;ap_uint&lt;16&gt; 1&gt;&amp;</column>
+                    <column name="dbg_sample_count">out, directio&lt;ap_uint&lt;16&gt; 1&gt;&amp;</column>
+                    <column name="dbg_chirp_start">out, directio&lt;ap_uint&lt;1&gt; 1&gt;&amp;</column>
+                    <column name="dbg_chirp_end">out, directio&lt;ap_uint&lt;1&gt; 1&gt;&amp;</column>
+                    <column name="dbg_enable">out, directio&lt;ap_uint&lt;1&gt; 1&gt;&amp;</column>
+                    <column name="dbg_state">out, directio&lt;ap_uint&lt;3&gt; 1&gt;&amp;</column>
                 </table>
             </item>
             <item name="SW-to-HW Mapping">
@@ -889,33 +1051,35 @@
                     <keys size="3">Argument, HW Interface, HW Type</keys>
                     <column name="m_axis_tx">m_axis_tx, interface</column>
                     <column name="dbg_lfm_i">dbg_lfm_i, port</column>
+                    <column name="dbg_lfm_i">dbg_lfm_i_ap_vld, port</column>
                     <column name="dbg_lfm_q">dbg_lfm_q, port</column>
+                    <column name="dbg_lfm_q">dbg_lfm_q_ap_vld, port</column>
                     <column name="dbg_tx_sel">dbg_tx_sel, port</column>
+                    <column name="dbg_tx_sel">dbg_tx_sel_ap_vld, port</column>
+                    <column name="dbg_tx_active">dbg_tx_active, port</column>
+                    <column name="dbg_tx_active">dbg_tx_active_ap_vld, port</column>
                     <column name="dbg_chirp_count">dbg_chirp_count, port</column>
+                    <column name="dbg_chirp_count">dbg_chirp_count_ap_vld, port</column>
                     <column name="dbg_sample_count">dbg_sample_count, port</column>
+                    <column name="dbg_sample_count">dbg_sample_count_ap_vld, port</column>
                     <column name="dbg_chirp_start">dbg_chirp_start, port</column>
+                    <column name="dbg_chirp_start">dbg_chirp_start_ap_vld, port</column>
                     <column name="dbg_chirp_end">dbg_chirp_end, port</column>
+                    <column name="dbg_chirp_end">dbg_chirp_end_ap_vld, port</column>
                     <column name="dbg_enable">dbg_enable, port</column>
+                    <column name="dbg_enable">dbg_enable_ap_vld, port</column>
                     <column name="dbg_state">dbg_state, port</column>
+                    <column name="dbg_state">dbg_state_ap_vld, port</column>
                 </table>
             </item>
         </section>
     </ReportSWInterface>
     <ResolutionUrl key="ZZZ">docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=ZZZ.html</ResolutionUrl>
     <PragmaReport>
-        <Pragma type="inline" location="lfm_tdm_gen.cpp:14" status="valid" parentFunction="pack_iq" variable="" isDirective="0" options=""/>
-        <Pragma type="interface" location="lfm_tdm_gen.cpp:36" status="valid" parentFunction="lfm_tdm_gen" variable="m_axis_tx" isDirective="0" options="axis port=m_axis_tx"/>
-        <Pragma type="interface" location="lfm_tdm_gen.cpp:38" status="valid" parentFunction="lfm_tdm_gen" variable="dbg_lfm_i" isDirective="0" options="ap_none port=dbg_lfm_i"/>
-        <Pragma type="interface" location="lfm_tdm_gen.cpp:39" status="valid" parentFunction="lfm_tdm_gen" variable="dbg_lfm_q" isDirective="0" options="ap_none port=dbg_lfm_q"/>
-        <Pragma type="interface" location="lfm_tdm_gen.cpp:40" status="valid" parentFunction="lfm_tdm_gen" variable="dbg_tx_sel" isDirective="0" options="ap_none port=dbg_tx_sel"/>
-        <Pragma type="interface" location="lfm_tdm_gen.cpp:41" status="valid" parentFunction="lfm_tdm_gen" variable="dbg_chirp_count" isDirective="0" options="ap_none port=dbg_chirp_count"/>
-        <Pragma type="interface" location="lfm_tdm_gen.cpp:42" status="valid" parentFunction="lfm_tdm_gen" variable="dbg_sample_count" isDirective="0" options="ap_none port=dbg_sample_count"/>
-        <Pragma type="interface" location="lfm_tdm_gen.cpp:43" status="valid" parentFunction="lfm_tdm_gen" variable="dbg_chirp_start" isDirective="0" options="ap_none port=dbg_chirp_start"/>
-        <Pragma type="interface" location="lfm_tdm_gen.cpp:44" status="valid" parentFunction="lfm_tdm_gen" variable="dbg_chirp_end" isDirective="0" options="ap_none port=dbg_chirp_end"/>
-        <Pragma type="interface" location="lfm_tdm_gen.cpp:45" status="valid" parentFunction="lfm_tdm_gen" variable="dbg_enable" isDirective="0" options="ap_none port=dbg_enable"/>
-        <Pragma type="interface" location="lfm_tdm_gen.cpp:46" status="valid" parentFunction="lfm_tdm_gen" variable="dbg_state" isDirective="0" options="ap_none port=dbg_state"/>
-        <Pragma type="interface" location="lfm_tdm_gen.cpp:48" status="valid" parentFunction="lfm_tdm_gen" variable="return" isDirective="0" options="s_axilite port=return bundle=CTRL"/>
-        <Pragma type="pipeline" location="lfm_tdm_gen.cpp:57" status="valid" parentFunction="lfm_tdm_gen" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="inline" location="lfm_tdm_gen.cpp:32" status="valid" parentFunction="pack_iq" variable="" isDirective="0" options=""/>
+        <Pragma type="interface" location="lfm_tdm_gen.cpp:56" status="valid" parentFunction="lfm_tdm_gen" variable="m_axis_tx" isDirective="0" options="axis port=m_axis_tx"/>
+        <Pragma type="interface" location="lfm_tdm_gen.cpp:57" status="valid" parentFunction="lfm_tdm_gen" variable="return" isDirective="0" options="s_axilite port=return bundle=CTRL"/>
+        <Pragma type="pipeline" location="lfm_tdm_gen.cpp:76" status="valid" parentFunction="lfm_tdm_gen" variable="" isDirective="0" options="II=1"/>
     </PragmaReport>
 </profile>
 

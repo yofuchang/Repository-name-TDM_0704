@@ -4,7 +4,7 @@ set RtlHierarchyInfo {[
 	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST"},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.LFM_IQ_LUT_U"},
 	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.CTRL_s_axi_U"},
-	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.flow_control_loop_pipe_U"},
+	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.bitset_4ns_4ns_32ns_1s_4_1_1_U1"},
 	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_m_axis_tx_V_data_V_U"},
 	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_m_axis_tx_V_keep_V_U"},
 	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_m_axis_tx_V_strb_V_U"},

@@ -1,8 +1,8 @@
+lfm_tdm_gen_bitset_4ns_4ns_32ns_1s_4_1_1
 lfm_tdm_gen_LFM_IQ_LUT_ROM_AUTO_1R
 lfm_tdm_gen_CTRL_s_axi
 lfm_tdm_gen_regslice_both
 lfm_tdm_gen_regslice_both
 lfm_tdm_gen_regslice_both
 lfm_tdm_gen_regslice_both
-lfm_tdm_gen_flow_control_loop_pipe
 lfm_tdm_gen

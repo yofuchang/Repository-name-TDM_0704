@@ -2,7 +2,7 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
--- Date        : Tue Jul 14 14:24:36 2026
+-- Date        : Tue Jul 14 22:14:13 2026
 -- Host        : JohnsonKu running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
 --               c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_lfm_tdm_gen_0_0/design_1_lfm_tdm_gen_0_0_stub.vhdl
@@ -15,6 +15,16 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity design_1_lfm_tdm_gen_0_0 is
   Port ( 
+    dbg_lfm_i_ap_vld : out STD_LOGIC;
+    dbg_lfm_q_ap_vld : out STD_LOGIC;
+    dbg_tx_sel_ap_vld : out STD_LOGIC;
+    dbg_tx_active_ap_vld : out STD_LOGIC;
+    dbg_chirp_count_ap_vld : out STD_LOGIC;
+    dbg_sample_count_ap_vld : out STD_LOGIC;
+    dbg_chirp_start_ap_vld : out STD_LOGIC;
+    dbg_chirp_end_ap_vld : out STD_LOGIC;
+    dbg_enable_ap_vld : out STD_LOGIC;
+    dbg_state_ap_vld : out STD_LOGIC;
     s_axi_CTRL_ARADDR : in STD_LOGIC_VECTOR ( 3 downto 0 );
     s_axi_CTRL_ARREADY : out STD_LOGIC;
     s_axi_CTRL_ARVALID : in STD_LOGIC;
@@ -44,6 +54,7 @@ entity design_1_lfm_tdm_gen_0_0 is
     dbg_lfm_i : out STD_LOGIC_VECTOR ( 15 downto 0 );
     dbg_lfm_q : out STD_LOGIC_VECTOR ( 15 downto 0 );
     dbg_tx_sel : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    dbg_tx_active : out STD_LOGIC_VECTOR ( 3 downto 0 );
     dbg_chirp_count : out STD_LOGIC_VECTOR ( 15 downto 0 );
     dbg_sample_count : out STD_LOGIC_VECTOR ( 15 downto 0 );
     dbg_chirp_start : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -55,7 +66,7 @@ entity design_1_lfm_tdm_gen_0_0 is
   attribute CHECK_LICENSE_TYPE : string;
   attribute CHECK_LICENSE_TYPE of design_1_lfm_tdm_gen_0_0 : entity is "design_1_lfm_tdm_gen_0_0,lfm_tdm_gen,{}";
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of design_1_lfm_tdm_gen_0_0 : entity is "design_1_lfm_tdm_gen_0_0,lfm_tdm_gen,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=lfm_tdm_gen,x_ipVersion=1.0,x_ipCoreRevision=2114696416,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S_AXI_CTRL_ADDR_WIDTH=4,C_S_AXI_CTRL_DATA_WIDTH=32}";
+  attribute CORE_GENERATION_INFO of design_1_lfm_tdm_gen_0_0 : entity is "design_1_lfm_tdm_gen_0_0,lfm_tdm_gen,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=lfm_tdm_gen,x_ipVersion=1.0,x_ipCoreRevision=2114696888,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S_AXI_CTRL_ADDR_WIDTH=4,C_S_AXI_CTRL_DATA_WIDTH=32}";
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of design_1_lfm_tdm_gen_0_0 : entity is "yes";
   attribute IP_DEFINITION_SOURCE : string;
@@ -68,7 +79,7 @@ architecture stub of design_1_lfm_tdm_gen_0_0 is
   attribute syn_black_box : boolean;
   attribute black_box_pad_pin : string;
   attribute syn_black_box of stub : architecture is true;
-  attribute black_box_pad_pin of stub : architecture is "s_axi_CTRL_ARADDR[3:0],s_axi_CTRL_ARREADY,s_axi_CTRL_ARVALID,s_axi_CTRL_AWADDR[3:0],s_axi_CTRL_AWREADY,s_axi_CTRL_AWVALID,s_axi_CTRL_BREADY,s_axi_CTRL_BRESP[1:0],s_axi_CTRL_BVALID,s_axi_CTRL_RDATA[31:0],s_axi_CTRL_RREADY,s_axi_CTRL_RRESP[1:0],s_axi_CTRL_RVALID,s_axi_CTRL_WDATA[31:0],s_axi_CTRL_WREADY,s_axi_CTRL_WSTRB[3:0],s_axi_CTRL_WVALID,ap_clk,ap_rst_n,interrupt,m_axis_tx_TDATA[31:0],m_axis_tx_TKEEP[3:0],m_axis_tx_TLAST[0:0],m_axis_tx_TREADY,m_axis_tx_TSTRB[3:0],m_axis_tx_TVALID,dbg_lfm_i[15:0],dbg_lfm_q[15:0],dbg_tx_sel[1:0],dbg_chirp_count[15:0],dbg_sample_count[15:0],dbg_chirp_start[0:0],dbg_chirp_end[0:0],dbg_enable[0:0],dbg_state[2:0]";
+  attribute black_box_pad_pin of stub : architecture is "dbg_lfm_i_ap_vld,dbg_lfm_q_ap_vld,dbg_tx_sel_ap_vld,dbg_tx_active_ap_vld,dbg_chirp_count_ap_vld,dbg_sample_count_ap_vld,dbg_chirp_start_ap_vld,dbg_chirp_end_ap_vld,dbg_enable_ap_vld,dbg_state_ap_vld,s_axi_CTRL_ARADDR[3:0],s_axi_CTRL_ARREADY,s_axi_CTRL_ARVALID,s_axi_CTRL_AWADDR[3:0],s_axi_CTRL_AWREADY,s_axi_CTRL_AWVALID,s_axi_CTRL_BREADY,s_axi_CTRL_BRESP[1:0],s_axi_CTRL_BVALID,s_axi_CTRL_RDATA[31:0],s_axi_CTRL_RREADY,s_axi_CTRL_RRESP[1:0],s_axi_CTRL_RVALID,s_axi_CTRL_WDATA[31:0],s_axi_CTRL_WREADY,s_axi_CTRL_WSTRB[3:0],s_axi_CTRL_WVALID,ap_clk,ap_rst_n,interrupt,m_axis_tx_TDATA[31:0],m_axis_tx_TKEEP[3:0],m_axis_tx_TLAST[0:0],m_axis_tx_TREADY,m_axis_tx_TSTRB[3:0],m_axis_tx_TVALID,dbg_lfm_i[15:0],dbg_lfm_q[15:0],dbg_tx_sel[1:0],dbg_tx_active[3:0],dbg_chirp_count[15:0],dbg_sample_count[15:0],dbg_chirp_start[0:0],dbg_chirp_end[0:0],dbg_enable[0:0],dbg_state[2:0]";
   attribute X_INTERFACE_INFO : string;
   attribute X_INTERFACE_INFO of s_axi_CTRL_ARADDR : signal is "xilinx.com:interface:aximm:1.0 s_axi_CTRL ARADDR";
   attribute X_INTERFACE_MODE : string;
@@ -117,6 +128,9 @@ architecture stub of design_1_lfm_tdm_gen_0_0 is
   attribute X_INTERFACE_INFO of dbg_tx_sel : signal is "xilinx.com:signal:data:1.0 dbg_tx_sel DATA";
   attribute X_INTERFACE_MODE of dbg_tx_sel : signal is "master";
   attribute X_INTERFACE_PARAMETER of dbg_tx_sel : signal is "XIL_INTERFACENAME dbg_tx_sel, LAYERED_METADATA undef";
+  attribute X_INTERFACE_INFO of dbg_tx_active : signal is "xilinx.com:signal:data:1.0 dbg_tx_active DATA";
+  attribute X_INTERFACE_MODE of dbg_tx_active : signal is "master";
+  attribute X_INTERFACE_PARAMETER of dbg_tx_active : signal is "XIL_INTERFACENAME dbg_tx_active, LAYERED_METADATA undef";
   attribute X_INTERFACE_INFO of dbg_chirp_count : signal is "xilinx.com:signal:data:1.0 dbg_chirp_count DATA";
   attribute X_INTERFACE_MODE of dbg_chirp_count : signal is "master";
   attribute X_INTERFACE_PARAMETER of dbg_chirp_count : signal is "XIL_INTERFACENAME dbg_chirp_count, LAYERED_METADATA undef";

@@ -1,6 +1,130 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Tue Jul 14 22:09:15 2026
+| Host         : JohnsonKu running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu48dr-fsvg1517-2-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_lfm_tdm_gen_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_lfm_tdm_gen_0_0 (xilinx.com:hls:lfm_tdm_gen:1.0) from (Rev. 2114696774) to (Rev. 2114696888)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Tue Jul 14 20:15:49 2026
+| Host         : JohnsonKu running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu48dr-fsvg1517-2-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_lfm_tdm_gen_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_lfm_tdm_gen_0_0 (xilinx.com:hls:lfm_tdm_gen:1.0) from (Rev. 2114696532) to (Rev. 2114696774)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_lfm_tdm_gen_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'dbg_chirp_count_ap_vld'
+
+-Upgrade has added port 'dbg_chirp_end_ap_vld'
+
+-Upgrade has added port 'dbg_chirp_start_ap_vld'
+
+-Upgrade has added port 'dbg_enable_ap_vld'
+
+-Upgrade has added port 'dbg_lfm_i_ap_vld'
+
+-Upgrade has added port 'dbg_lfm_q_ap_vld'
+
+-Upgrade has added port 'dbg_sample_count_ap_vld'
+
+-Upgrade has added port 'dbg_state_ap_vld'
+
+-Upgrade has added port 'dbg_tx_active_ap_vld'
+
+-Upgrade has added port 'dbg_tx_sel_ap_vld'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Tue Jul 14 16:14:36 2026
+| Host         : JohnsonKu running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu48dr-fsvg1517-2-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_lfm_tdm_gen_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_lfm_tdm_gen_0_0 (xilinx.com:hls:lfm_tdm_gen:1.0) from (Rev. 2114696509) to (Rev. 2114696532)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Tue Jul 14 16:05:52 2026
+| Host         : JohnsonKu running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xczu48dr-fsvg1517-2-e
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_lfm_tdm_gen_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_lfm_tdm_gen_0_0 (xilinx.com:hls:lfm_tdm_gen:1.0) from (Rev. 2114696416) to (Rev. 2114696509)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_lfm_tdm_gen_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'dbg_tx_active'
+
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
 | Date         : Tue Jul 14 14:18:34 2026
 | Host         : JohnsonKu running 64-bit major release  (build 9200)
 | Command      : upgrade_ip

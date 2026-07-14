@@ -6,49 +6,54 @@
           <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both"/>
         </hw>
       </arg>
-      <arg id="1" access_type="w" src_name="dbg_lfm_i" src_type="ap_int&lt;16&gt;&amp;" src_isptr="1" src_bitwidth="16" src_size_or_depth="1">
+      <arg id="1" access_type="w" src_name="dbg_lfm_i" src_type="directio&lt;ap_int&lt;16&gt;, 1&gt;&amp;" src_isptr="1" src_bitwidth="16" src_size_or_depth="1">
         <hw hw_usage="data" hw_interface="Register" hw_name="dbg_lfm_i" hw_bitwidth="16" hw_size_or_depth="1" hw_kernel_support="false">
-          <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
+          <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
         </hw>
       </arg>
-      <arg id="2" access_type="w" src_name="dbg_lfm_q" src_type="ap_int&lt;16&gt;&amp;" src_isptr="1" src_bitwidth="16" src_size_or_depth="1">
+      <arg id="2" access_type="w" src_name="dbg_lfm_q" src_type="directio&lt;ap_int&lt;16&gt;, 1&gt;&amp;" src_isptr="1" src_bitwidth="16" src_size_or_depth="1">
         <hw hw_usage="data" hw_interface="Register" hw_name="dbg_lfm_q" hw_bitwidth="16" hw_size_or_depth="1" hw_kernel_support="false">
-          <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
+          <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
         </hw>
       </arg>
-      <arg id="3" access_type="w" src_name="dbg_tx_sel" src_type="ap_uint&lt;2&gt;&amp;" src_isptr="1" src_bitwidth="8" src_size_or_depth="1">
+      <arg id="3" access_type="w" src_name="dbg_tx_sel" src_type="directio&lt;ap_uint&lt;2&gt;, 1&gt;&amp;" src_isptr="1" src_bitwidth="8" src_size_or_depth="1">
         <hw hw_usage="data" hw_interface="Register" hw_name="dbg_tx_sel" hw_bitwidth="2" hw_size_or_depth="1" hw_kernel_support="false">
-          <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
+          <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
         </hw>
       </arg>
-      <arg id="4" access_type="w" src_name="dbg_chirp_count" src_type="ap_uint&lt;16&gt;&amp;" src_isptr="1" src_bitwidth="16" src_size_or_depth="1">
+      <arg id="4" access_type="w" src_name="dbg_tx_active" src_type="directio&lt;ap_uint&lt;4&gt;, 1&gt;&amp;" src_isptr="1" src_bitwidth="8" src_size_or_depth="1">
+        <hw hw_usage="data" hw_interface="Register" hw_name="dbg_tx_active" hw_bitwidth="4" hw_size_or_depth="1" hw_kernel_support="false">
+          <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
+        </hw>
+      </arg>
+      <arg id="5" access_type="w" src_name="dbg_chirp_count" src_type="directio&lt;ap_uint&lt;16&gt;, 1&gt;&amp;" src_isptr="1" src_bitwidth="16" src_size_or_depth="1">
         <hw hw_usage="data" hw_interface="Register" hw_name="dbg_chirp_count" hw_bitwidth="16" hw_size_or_depth="1" hw_kernel_support="false">
-          <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
+          <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
         </hw>
       </arg>
-      <arg id="5" access_type="w" src_name="dbg_sample_count" src_type="ap_uint&lt;16&gt;&amp;" src_isptr="1" src_bitwidth="16" src_size_or_depth="1">
+      <arg id="6" access_type="w" src_name="dbg_sample_count" src_type="directio&lt;ap_uint&lt;16&gt;, 1&gt;&amp;" src_isptr="1" src_bitwidth="16" src_size_or_depth="1">
         <hw hw_usage="data" hw_interface="Register" hw_name="dbg_sample_count" hw_bitwidth="16" hw_size_or_depth="1" hw_kernel_support="false">
-          <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
+          <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
         </hw>
       </arg>
-      <arg id="6" access_type="w" src_name="dbg_chirp_start" src_type="ap_uint&lt;1&gt;&amp;" src_isptr="1" src_bitwidth="8" src_size_or_depth="1">
+      <arg id="7" access_type="w" src_name="dbg_chirp_start" src_type="directio&lt;ap_uint&lt;1&gt;, 1&gt;&amp;" src_isptr="1" src_bitwidth="8" src_size_or_depth="1">
         <hw hw_usage="data" hw_interface="Register" hw_name="dbg_chirp_start" hw_bitwidth="1" hw_size_or_depth="1" hw_kernel_support="false">
-          <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
+          <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
         </hw>
       </arg>
-      <arg id="7" access_type="w" src_name="dbg_chirp_end" src_type="ap_uint&lt;1&gt;&amp;" src_isptr="1" src_bitwidth="8" src_size_or_depth="1">
+      <arg id="8" access_type="w" src_name="dbg_chirp_end" src_type="directio&lt;ap_uint&lt;1&gt;, 1&gt;&amp;" src_isptr="1" src_bitwidth="8" src_size_or_depth="1">
         <hw hw_usage="data" hw_interface="Register" hw_name="dbg_chirp_end" hw_bitwidth="1" hw_size_or_depth="1" hw_kernel_support="false">
-          <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
+          <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
         </hw>
       </arg>
-      <arg id="8" access_type="w" src_name="dbg_enable" src_type="ap_uint&lt;1&gt;&amp;" src_isptr="1" src_bitwidth="8" src_size_or_depth="1">
+      <arg id="9" access_type="w" src_name="dbg_enable" src_type="directio&lt;ap_uint&lt;1&gt;, 1&gt;&amp;" src_isptr="1" src_bitwidth="8" src_size_or_depth="1">
         <hw hw_usage="data" hw_interface="Register" hw_name="dbg_enable" hw_bitwidth="1" hw_size_or_depth="1" hw_kernel_support="false">
-          <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
+          <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
         </hw>
       </arg>
-      <arg id="9" access_type="w" src_name="dbg_state" src_type="ap_uint&lt;3&gt;&amp;" src_isptr="1" src_bitwidth="8" src_size_or_depth="1">
+      <arg id="10" access_type="w" src_name="dbg_state" src_type="directio&lt;ap_uint&lt;3&gt;, 1&gt;&amp;" src_isptr="1" src_bitwidth="8" src_size_or_depth="1">
         <hw hw_usage="data" hw_interface="Register" hw_name="dbg_state" hw_bitwidth="3" hw_size_or_depth="1" hw_kernel_support="false">
-          <constraint constraint_type="pragma interface" mode="ap_none" register_option="0"/>
+          <constraint constraint_type="pragma interface" mode="ap_vld" register_option="0"/>
         </hw>
       </arg>
     </args>

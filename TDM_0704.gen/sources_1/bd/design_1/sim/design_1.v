@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-//Date        : Tue Jul 14 14:25:22 2026
+//Date        : Tue Jul 14 22:14:20 2026
 //Host        : JohnsonKu running 64-bit major release  (build 9200)
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -144,7 +144,9 @@ module design_1
   wire [15:0]lfm_tdm_gen_0_dbg_lfm_i;
   wire [15:0]lfm_tdm_gen_0_dbg_lfm_q;
   wire [15:0]lfm_tdm_gen_0_dbg_sample_count;
+  wire lfm_tdm_gen_0_dbg_sample_count_ap_vld;
   wire [2:0]lfm_tdm_gen_0_dbg_state;
+  wire [3:0]lfm_tdm_gen_0_dbg_tx_active;
   wire [1:0]lfm_tdm_gen_0_dbg_tx_sel;
   (* CONN_BUS_INFO = "lfm_tdm_gen_0_m_axis_tx xilinx.com:interface:axis:1.0 None TDATA" *) (* DONT_TOUCH *) wire [31:0]lfm_tdm_gen_0_m_axis_tx_TDATA;
   (* CONN_BUS_INFO = "lfm_tdm_gen_0_m_axis_tx xilinx.com:interface:axis:1.0 None TKEEP" *) (* DONT_TOUCH *) wire [3:0]lfm_tdm_gen_0_m_axis_tx_TKEEP;
@@ -456,13 +458,15 @@ module design_1
        (.clk(zynq_ultra_ps_e_0_pl_clk0),
         .probe0(lfm_tdm_gen_0_dbg_lfm_i),
         .probe1(lfm_tdm_gen_0_dbg_lfm_q),
+        .probe10(lfm_tdm_gen_0_dbg_sample_count_ap_vld),
         .probe2(lfm_tdm_gen_0_dbg_tx_sel),
         .probe3(lfm_tdm_gen_0_dbg_chirp_count),
         .probe4(lfm_tdm_gen_0_dbg_sample_count),
         .probe5(lfm_tdm_gen_0_dbg_chirp_start),
         .probe6(lfm_tdm_gen_0_dbg_chirp_end),
         .probe7(lfm_tdm_gen_0_dbg_enable),
-        .probe8(lfm_tdm_gen_0_dbg_state));
+        .probe8(lfm_tdm_gen_0_dbg_state),
+        .probe9(lfm_tdm_gen_0_dbg_tx_active));
   design_1_lfm_tdm_gen_0_0 lfm_tdm_gen_0
        (.ap_clk(zynq_ultra_ps_e_0_pl_clk0),
         .ap_rst_n(rst_ps8_0_99M_peripheral_aresetn),
@@ -473,7 +477,9 @@ module design_1
         .dbg_lfm_i(lfm_tdm_gen_0_dbg_lfm_i),
         .dbg_lfm_q(lfm_tdm_gen_0_dbg_lfm_q),
         .dbg_sample_count(lfm_tdm_gen_0_dbg_sample_count),
+        .dbg_sample_count_ap_vld(lfm_tdm_gen_0_dbg_sample_count_ap_vld),
         .dbg_state(lfm_tdm_gen_0_dbg_state),
+        .dbg_tx_active(lfm_tdm_gen_0_dbg_tx_active),
         .dbg_tx_sel(lfm_tdm_gen_0_dbg_tx_sel),
         .m_axis_tx_TDATA(lfm_tdm_gen_0_m_axis_tx_TDATA),
         .m_axis_tx_TKEEP(lfm_tdm_gen_0_m_axis_tx_TKEEP),

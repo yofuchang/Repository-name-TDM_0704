@@ -1,6 +1,11 @@
 # This script segment is generated automatically by AutoPilot
 
 if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler lfm_tdm_gen_bitset_4ns_4ns_32ns_1s_4_1_1 BINDTYPE {op} TYPE {bitset} IMPL {auto}
+}
+
+
+if {${::AESL::PGuard_rtl_comp_handler}} {
 	::AP::rtl_comp_handler lfm_tdm_gen_LFM_IQ_LUT_ROM_AUTO_1R BINDTYPE {storage} TYPE {rom} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
 }
 
@@ -28,7 +33,7 @@ dict set axilite_register_dict CTRL $port_CTRL
 if {${::AESL::PGuard_simmodel_gen}} {
 	if {[info proc ::AESL_LIB_XILADAPTER::s_axilite_gen] == "::AESL_LIB_XILADAPTER::s_axilite_gen"} {
 		eval "::AESL_LIB_XILADAPTER::s_axilite_gen { \
-			id 2 \
+			id 4 \
 			corename lfm_tdm_gen_CTRL_axilite \
 			name lfm_tdm_gen_CTRL_s_axi \
 			ports {$port_CTRL} \
@@ -52,7 +57,7 @@ if {${::AESL::PGuard_rtl_comp_handler}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 3 \
+    id 5 \
     name m_axis_tx_V_data_V \
     reset_level 0 \
     sync_rst true \
@@ -71,7 +76,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 4 \
+    id 6 \
     name m_axis_tx_V_keep_V \
     reset_level 0 \
     sync_rst true \
@@ -90,7 +95,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 5 \
+    id 7 \
     name m_axis_tx_V_strb_V \
     reset_level 0 \
     sync_rst true \
@@ -109,14 +114,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 6 \
+    id 8 \
     name m_axis_tx_V_last_V \
     reset_level 0 \
     sync_rst true \
     corename {m_axis_tx} \
     metadata {  } \
     op interface \
-    ports { m_axis_tx_TREADY { I 1 bit } m_axis_tx_TVALID { O 1 bit } m_axis_tx_TLAST { O 1 vector } } \
+    ports { m_axis_tx_TVALID { O 1 bit } m_axis_tx_TREADY { I 1 bit } m_axis_tx_TLAST { O 1 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'm_axis_tx_V_last_V'"
@@ -127,7 +132,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 7 \
+    id 9 \
     name dbg_lfm_i \
     type other \
     dir O \
@@ -135,37 +140,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_dbg_lfm_i \
     op interface \
-    ports { dbg_lfm_i { O 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 8 \
-    name dbg_lfm_q \
-    type other \
-    dir O \
-    reset_level 0 \
-    sync_rst true \
-    corename dc_dbg_lfm_q \
-    op interface \
-    ports { dbg_lfm_q { O 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 9 \
-    name dbg_tx_sel \
-    type other \
-    dir O \
-    reset_level 0 \
-    sync_rst true \
-    corename dc_dbg_tx_sel \
-    op interface \
-    ports { dbg_tx_sel { O 2 vector } } \
+    ports { dbg_lfm_i { O 16 vector } dbg_lfm_i_ap_vld { O 1 bit } } \
 } "
 }
 
@@ -173,14 +148,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 10 \
-    name dbg_chirp_count \
+    name dbg_lfm_q \
     type other \
     dir O \
     reset_level 0 \
     sync_rst true \
-    corename dc_dbg_chirp_count \
+    corename dc_dbg_lfm_q \
     op interface \
-    ports { dbg_chirp_count { O 16 vector } } \
+    ports { dbg_lfm_q { O 16 vector } dbg_lfm_q_ap_vld { O 1 bit } } \
 } "
 }
 
@@ -188,14 +163,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 11 \
-    name dbg_sample_count \
+    name dbg_tx_sel \
     type other \
     dir O \
     reset_level 0 \
     sync_rst true \
-    corename dc_dbg_sample_count \
+    corename dc_dbg_tx_sel \
     op interface \
-    ports { dbg_sample_count { O 16 vector } } \
+    ports { dbg_tx_sel { O 2 vector } dbg_tx_sel_ap_vld { O 1 bit } } \
 } "
 }
 
@@ -203,14 +178,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 12 \
-    name dbg_chirp_start \
+    name dbg_tx_active \
     type other \
     dir O \
     reset_level 0 \
     sync_rst true \
-    corename dc_dbg_chirp_start \
+    corename dc_dbg_tx_active \
     op interface \
-    ports { dbg_chirp_start { O 1 vector } } \
+    ports { dbg_tx_active { O 4 vector } dbg_tx_active_ap_vld { O 1 bit } } \
 } "
 }
 
@@ -218,14 +193,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 13 \
-    name dbg_chirp_end \
+    name dbg_chirp_count \
     type other \
     dir O \
     reset_level 0 \
     sync_rst true \
-    corename dc_dbg_chirp_end \
+    corename dc_dbg_chirp_count \
     op interface \
-    ports { dbg_chirp_end { O 1 vector } } \
+    ports { dbg_chirp_count { O 16 vector } dbg_chirp_count_ap_vld { O 1 bit } } \
 } "
 }
 
@@ -233,14 +208,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 14 \
-    name dbg_enable \
+    name dbg_sample_count \
     type other \
     dir O \
     reset_level 0 \
     sync_rst true \
-    corename dc_dbg_enable \
+    corename dc_dbg_sample_count \
     op interface \
-    ports { dbg_enable { O 1 vector } } \
+    ports { dbg_sample_count { O 16 vector } dbg_sample_count_ap_vld { O 1 bit } } \
 } "
 }
 
@@ -248,6 +223,51 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 15 \
+    name dbg_chirp_start \
+    type other \
+    dir O \
+    reset_level 0 \
+    sync_rst true \
+    corename dc_dbg_chirp_start \
+    op interface \
+    ports { dbg_chirp_start { O 1 vector } dbg_chirp_start_ap_vld { O 1 bit } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 16 \
+    name dbg_chirp_end \
+    type other \
+    dir O \
+    reset_level 0 \
+    sync_rst true \
+    corename dc_dbg_chirp_end \
+    op interface \
+    ports { dbg_chirp_end { O 1 vector } dbg_chirp_end_ap_vld { O 1 bit } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 17 \
+    name dbg_enable \
+    type other \
+    dir O \
+    reset_level 0 \
+    sync_rst true \
+    corename dc_dbg_enable \
+    op interface \
+    ports { dbg_enable { O 1 vector } dbg_enable_ap_vld { O 1 bit } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 18 \
     name dbg_state \
     type other \
     dir O \
@@ -255,7 +275,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_dbg_state \
     op interface \
-    ports { dbg_state { O 3 vector } } \
+    ports { dbg_state { O 3 vector } dbg_state_ap_vld { O 1 bit } } \
 } "
 }
 
@@ -326,27 +346,6 @@ if {${::AESL::PGuard_rtl_comp_handler}} {
 
 if {${::AESL::PGuard_rtl_comp_handler}} {
 	::AP::rtl_comp_handler lfm_tdm_gen_regslice_both BINDTYPE {interface} TYPE {adapter} IMPL {reg_slice}
-}
-
-
-# flow_control definition:
-set InstName lfm_tdm_gen_flow_control_loop_pipe_U
-set CompName lfm_tdm_gen_flow_control_loop_pipe
-set name flow_control_loop_pipe
-if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
-if {[info proc ::AESL_LIB_VIRTEX::xil_gen_UPC_flow_control] == "::AESL_LIB_VIRTEX::xil_gen_UPC_flow_control"} {
-eval "::AESL_LIB_VIRTEX::xil_gen_UPC_flow_control { \
-    name ${name} \
-    prefix lfm_tdm_gen_ \
-}"
-} else {
-puts "@W \[IMPL-107\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_UPC_flow_control, check your platform lib"
-}
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $CompName BINDTYPE interface TYPE internal_upc_flow_control INSTNAME $InstName
 }
 
 

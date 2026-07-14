@@ -9735,6 +9735,125 @@ private:
 
 }
 # 4 "lfm_tdm_gen.cpp" 2
+# 1 "C:/Xilinx/Vitis/2024.2/common/technology/autopilot\\hls_directio.h" 1
+# 21 "C:/Xilinx/Vitis/2024.2/common/technology/autopilot\\hls_directio.h"
+namespace hls {
+
+enum class mode : int { hs = 0, vld = 1, ack = 2, none = 3 };
+
+
+
+
+template<typename __STREAM_T__, int __MODE__ = static_cast<int>(mode::hs)>
+class directio
+{
+  public:
+    using value_type = __STREAM_T__;
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) directio() {
+    }
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) directio(const char* name) {
+      (void)(name);
+    }
+
+
+  private:
+    inline __attribute__((always_inline)) __attribute__((nodebug)) directio(const directio< __STREAM_T__, __MODE__>& chn):V(chn.V) {
+    }
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) directio& operator= (const directio< __STREAM_T__, __MODE__>& chn) {
+        V = chn.V;
+        return *this;
+    }
+
+  public:
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) void operator >> (__STREAM_T__& rdata) {
+        read(rdata);
+    }
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) void operator << (const __STREAM_T__& wdata) {
+        write(wdata);
+    }
+
+
+  public:
+
+
+    template<int M = __MODE__, typename std::enable_if<M == static_cast<int>(mode::hs) || M == static_cast<int>(mode::vld), int>::type = 0>
+    inline __attribute__((always_inline)) __attribute__((nodebug)) bool valid() const {
+        return __fpga_direct_valid(&V);
+    }
+
+
+    template<int M = __MODE__, typename std::enable_if<M == static_cast<int>(mode::hs) || M == static_cast<int>(mode::ack), int>::type = 0>
+    inline __attribute__((always_inline)) __attribute__((nodebug)) bool ready() const {
+        return __fpga_direct_ready(&V);
+    }
+
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) void read(__STREAM_T__& dout) {
+        __fpga_direct_load(&V, &dout);
+    }
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) __STREAM_T__ read() {
+        __STREAM_T__ tmp;
+        read(tmp);
+        return tmp;
+    }
+
+
+
+    template<int M = __MODE__, typename std::enable_if<M == static_cast<int>(mode::hs) || M == static_cast<int>(mode::vld), int>::type = 0>
+    inline __attribute__((always_inline)) __attribute__((nodebug)) bool read_nb(__STREAM_T__& dout) {
+        if (valid()) {
+            read(dout);
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+
+    inline __attribute__((always_inline)) __attribute__((nodebug)) void write(const __STREAM_T__& din) {
+        __fpga_direct_store(&V, &din);
+    }
+
+
+
+    template<int M = __MODE__, typename std::enable_if<M == static_cast<int>(mode::hs) || M == static_cast<int>(mode::ack), int>::type = 0>
+    inline __attribute__((always_inline)) __attribute__((nodebug)) bool write_nb(const __STREAM_T__& din) {
+        if (ready()) {
+            write(din);
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+
+    void set_name(const char* name) { (void)(name); }
+
+  private:
+    __STREAM_T__ V __attribute__((no_ctor));
+};
+
+template<typename __STREAM_T__>
+using ap_hs = directio<__STREAM_T__, static_cast<int>(mode::hs)>;
+
+template<typename __STREAM_T__>
+using ap_vld = directio<__STREAM_T__, static_cast<int>(mode::vld)>;
+
+template<typename __STREAM_T__>
+using ap_ack = directio<__STREAM_T__, static_cast<int>(mode::ack)>;
+
+template<typename __STREAM_T__>
+using ap_none = directio<__STREAM_T__, static_cast<int>(mode::none)>;
+
+
+}
+# 5 "lfm_tdm_gen.cpp" 2
 # 1 "./lfm_chirp_lut.h" 1
 # 10 "./lfm_chirp_lut.h"
 static const unsigned int LFM_IQ_LUT[1024] = {
@@ -9867,12 +9986,8 @@ static const unsigned int LFM_IQ_LUT[1024] = {
     0xF193D367U, 0xD122FF30U, 0xF0162C17U, 0x249D1D45U, 0x277AE6B9U, 0xF4B0D283U, 0xD147FC36U, 0xED8E2B18U,
     0x23071F27U, 0x289FE89BU, 0xF695D215U, 0xD172FA89U, 0xEC412A83U, 0x223E2003U, 0x2910E965U, 0xF737D1F5U
 };
-# 5 "lfm_tdm_gen.cpp" 2
-
-
-
-
-
+# 6 "lfm_tdm_gen.cpp" 2
+# 28 "lfm_tdm_gen.cpp"
 typedef ap_axiu<32, 0, 0, 0> axis_tx_t;
 
 static ap_uint<32> pack_iq(ap_int<16> i, ap_int<16> q)
@@ -9882,56 +9997,61 @@ static ap_uint<32> pack_iq(ap_int<16> i, ap_int<16> q)
  ap_uint<32> word = 0;
     word.range(15, 0) = (ap_uint<16>)i;
     word.range(31, 16) = (ap_uint<16>)q;
+
     return word;
 }
 
 __attribute__((sdx_kernel("lfm_tdm_gen", 0))) void lfm_tdm_gen(
     hls::stream<axis_tx_t> &m_axis_tx,
 
-    ap_int<16> &dbg_lfm_i,
-    ap_int<16> &dbg_lfm_q,
-    ap_uint<2> &dbg_tx_sel,
-    ap_uint<16> &dbg_chirp_count,
-    ap_uint<16> &dbg_sample_count,
-    ap_uint<1> &dbg_chirp_start,
-    ap_uint<1> &dbg_chirp_end,
-    ap_uint<1> &dbg_enable,
-    ap_uint<3> &dbg_state
+    hls::ap_vld<ap_int<16> > &dbg_lfm_i,
+    hls::ap_vld<ap_int<16> > &dbg_lfm_q,
+    hls::ap_vld<ap_uint<2> > &dbg_tx_sel,
+    hls::ap_vld<ap_uint<4> > &dbg_tx_active,
+    hls::ap_vld<ap_uint<16> > &dbg_chirp_count,
+    hls::ap_vld<ap_uint<16> > &dbg_sample_count,
+    hls::ap_vld<ap_uint<1> > &dbg_chirp_start,
+    hls::ap_vld<ap_uint<1> > &dbg_chirp_end,
+    hls::ap_vld<ap_uint<1> > &dbg_enable,
+    hls::ap_vld<ap_uint<3> > &dbg_state
 )
 {
 #line 1 "directive"
 #pragma HLSDIRECTIVE TOP name=lfm_tdm_gen
-# 35 "lfm_tdm_gen.cpp"
+# 55 "lfm_tdm_gen.cpp"
 
 #pragma HLS INTERFACE axis port=m_axis_tx
-
-#pragma HLS INTERFACE ap_none port=dbg_lfm_i
-#pragma HLS INTERFACE ap_none port=dbg_lfm_q
-#pragma HLS INTERFACE ap_none port=dbg_tx_sel
-#pragma HLS INTERFACE ap_none port=dbg_chirp_count
-#pragma HLS INTERFACE ap_none port=dbg_sample_count
-#pragma HLS INTERFACE ap_none port=dbg_chirp_start
-#pragma HLS INTERFACE ap_none port=dbg_chirp_end
-#pragma HLS INTERFACE ap_none port=dbg_enable
-#pragma HLS INTERFACE ap_none port=dbg_state
-
 #pragma HLS INTERFACE s_axilite port=return bundle=CTRL
 
- dbg_enable = 1;
-    dbg_state = 1;
 
-    VITIS_LOOP_53_1: for (int chirp = 0; chirp < 4; chirp++) {
-        ap_uint<2> tx_sel = chirp % 3;
 
-        VITIS_LOOP_56_2: for (int sample = 0; sample < 1024; sample++) {
+
+
+ VITIS_LOOP_63_1: for (int chirp = 0; chirp < 4; chirp++) {
+
+        ap_uint<2> tx_sel = (ap_uint<2>)(chirp % 4);
+
+
+
+
+
+
+        ap_uint<4> tx_active = 0;
+        tx_active[tx_sel] = 1;
+
+        VITIS_LOOP_75_2: for (int sample = 0; sample < 1024; sample++) {
 #pragma HLS PIPELINE II=1
 
  ap_uint<32> lut_word = LFM_IQ_LUT[sample];
 
-            ap_int<16> i_val = (ap_int<16>)lut_word.range(15, 0);
-            ap_int<16> q_val = (ap_int<16>)lut_word.range(31, 16);
+            ap_int<16> i_val =
+                (ap_int<16>)lut_word.range(15, 0);
+
+            ap_int<16> q_val =
+                (ap_int<16>)lut_word.range(31, 16);
 
             axis_tx_t tx_word;
+
             tx_word.data = pack_iq(i_val, q_val);
             tx_word.keep = 0xF;
             tx_word.strb = 0xF;
@@ -9939,20 +10059,38 @@ __attribute__((sdx_kernel("lfm_tdm_gen", 0))) void lfm_tdm_gen(
 
             tx_word.last =
                 ((chirp == 4 - 1) &&
-                 (sample == 1024 - 1)) ? 1 : 0;
+                 (sample == 1024 - 1))
+                    ? 1
+                    : 0;
+# 106 "lfm_tdm_gen.cpp"
+            dbg_lfm_i.write(i_val);
+            dbg_lfm_q.write(q_val);
+            dbg_tx_sel.write(tx_sel);
+            dbg_tx_active.write(tx_active);
+            dbg_chirp_count.write((ap_uint<16>)chirp);
+            dbg_sample_count.write((ap_uint<16>)sample);
+            dbg_chirp_start.write(
+                (sample == 0) ? (ap_uint<1>)1 : (ap_uint<1>)0
+            );
+            dbg_chirp_end.write(
+                (sample == 1024 - 1)
+                    ? (ap_uint<1>)1
+                    : (ap_uint<1>)0
+            );
+            dbg_enable.write((ap_uint<1>)1);
+            dbg_state.write((ap_uint<3>)1);
 
-            dbg_lfm_i = i_val;
-            dbg_lfm_q = q_val;
-            dbg_tx_sel = tx_sel;
-            dbg_chirp_count = chirp;
-            dbg_sample_count = sample;
-            dbg_chirp_start = (sample == 0);
-            dbg_chirp_end = (sample == 1024 - 1);
 
             m_axis_tx.write(tx_word);
         }
     }
 
-    dbg_enable = 0;
-    dbg_state = 0;
+
+
+
+    dbg_tx_active.write((ap_uint<4>)0);
+    dbg_chirp_start.write((ap_uint<1>)0);
+    dbg_chirp_end.write((ap_uint<1>)0);
+    dbg_enable.write((ap_uint<1>)0);
+    dbg_state.write((ap_uint<3>)0);
 }

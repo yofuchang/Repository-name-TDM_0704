@@ -1,15 +1,15 @@
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: lfm_tdm_gen.cpp, Line: 65, Column: 28 }
-Function:        _Z11lfm_tdm_genRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEER6ap_intILi16EES9_RS2_ILi2EERS2_ILi16EESD_RS2_ILi1EESF_SF_RS2_ILi3EE
+DebugLoc:        { File: lfm_tdm_gen.cpp, Line: 88, Column: 28 }
+Function:        _Z11lfm_tdm_genRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEERNS_8directioI6ap_intILi16EELi1EEESB_RNS7_IS2_ILi2EELi1EEERNS7_IS2_ILi4EELi1EEERNS7_IS2_ILi16EELi1EEESK_RNS7_IS2_ILi1EELi1EEESN_SN_RNS7_IS2_ILi3EELi1EEE
 Args:            
   - String:          'Inlining function '''
   - Callee:          'pack_iq(ap_int<16>, ap_int<16>)'
-    DebugLoc:        { File: lfm_tdm_gen.cpp, Line: 13, Column: 0 }
+    DebugLoc:        { File: lfm_tdm_gen.cpp, Line: 31, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'lfm_tdm_gen(hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, ap_int<16>&, ap_int<16>&, ap_uint<2>&, ap_uint<16>&, ap_uint<16>&, ap_uint<1>&, ap_uint<1>&, ap_uint<1>&, ap_uint<3>&)'
-    DebugLoc:        { File: lfm_tdm_gen.cpp, Line: 35, Column: 0 }
+  - Caller:          'lfm_tdm_gen(hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::directio<ap_int<16>, 1>&, hls::directio<ap_int<16>, 1>&, hls::directio<ap_uint<2>, 1>&, hls::directio<ap_uint<4>, 1>&, hls::directio<ap_uint<16>, 1>&, hls::directio<ap_uint<16>, 1>&, hls::directio<ap_uint<1>, 1>&, hls::directio<ap_uint<1>, 1>&, hls::directio<ap_uint<1>, 1>&, hls::directio<ap_uint<3>, 1>&)'
+    DebugLoc:        { File: lfm_tdm_gen.cpp, Line: 55, Column: 0 }
   - String:          ''''
 ...
 --- !Missed
@@ -17,9 +17,169 @@ Pass:            inline
 Name:            NeverInline
 Function:        apatb_lfm_tdm_gen_ir
 Args:            
-  - Callee:          'lfm_tdm_gen(hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, ap_int<16>&, ap_int<16>&, ap_uint<2>&, ap_uint<16>&, ap_uint<16>&, ap_uint<1>&, ap_uint<1>&, ap_uint<1>&, ap_uint<3>&)'
-    DebugLoc:        { File: lfm_tdm_gen.cpp, Line: 35, Column: 0 }
+  - Callee:          'lfm_tdm_gen(hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::directio<ap_int<16>, 1>&, hls::directio<ap_int<16>, 1>&, hls::directio<ap_uint<2>, 1>&, hls::directio<ap_uint<4>, 1>&, hls::directio<ap_uint<16>, 1>&, hls::directio<ap_uint<16>, 1>&, hls::directio<ap_uint<1>, 1>&, hls::directio<ap_uint<1>, 1>&, hls::directio<ap_uint<1>, 1>&, hls::directio<ap_uint<3>, 1>&)'
+    DebugLoc:        { File: lfm_tdm_gen.cpp, Line: 55, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          apatb_lfm_tdm_gen_ir
   - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: lfm_tdm_gen.cpp, Line: 55, Column: 0 }
+Function:        _Z11lfm_tdm_genRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEERNS_8directioI6ap_intILi16EELi1EEESB_RNS7_IS2_ILi2EELi1EEERNS7_IS2_ILi4EELi1EEERNS7_IS2_ILi16EELi1EEESK_RNS7_IS2_ILi1EELi1EEESN_SN_RNS7_IS2_ILi3EELi1EEE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        scalar
+  - String:          ' variable '''
+  - Name:            dbg_state
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '3'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: lfm_tdm_gen.cpp, Line: 55, Column: 0 }
+Function:        _Z11lfm_tdm_genRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEERNS_8directioI6ap_intILi16EELi1EEESB_RNS7_IS2_ILi2EELi1EEERNS7_IS2_ILi4EELi1EEERNS7_IS2_ILi16EELi1EEESK_RNS7_IS2_ILi1EELi1EEESN_SN_RNS7_IS2_ILi3EELi1EEE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        scalar
+  - String:          ' variable '''
+  - Name:            dbg_enable
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '1'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: lfm_tdm_gen.cpp, Line: 55, Column: 0 }
+Function:        _Z11lfm_tdm_genRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEERNS_8directioI6ap_intILi16EELi1EEESB_RNS7_IS2_ILi2EELi1EEERNS7_IS2_ILi4EELi1EEERNS7_IS2_ILi16EELi1EEESK_RNS7_IS2_ILi1EELi1EEESN_SN_RNS7_IS2_ILi3EELi1EEE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        scalar
+  - String:          ' variable '''
+  - Name:            dbg_chirp_end
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '1'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: lfm_tdm_gen.cpp, Line: 55, Column: 0 }
+Function:        _Z11lfm_tdm_genRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEERNS_8directioI6ap_intILi16EELi1EEESB_RNS7_IS2_ILi2EELi1EEERNS7_IS2_ILi4EELi1EEERNS7_IS2_ILi16EELi1EEESK_RNS7_IS2_ILi1EELi1EEESN_SN_RNS7_IS2_ILi3EELi1EEE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        scalar
+  - String:          ' variable '''
+  - Name:            dbg_chirp_start
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '1'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: lfm_tdm_gen.cpp, Line: 55, Column: 0 }
+Function:        _Z11lfm_tdm_genRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEERNS_8directioI6ap_intILi16EELi1EEESB_RNS7_IS2_ILi2EELi1EEERNS7_IS2_ILi4EELi1EEERNS7_IS2_ILi16EELi1EEESK_RNS7_IS2_ILi1EELi1EEESN_SN_RNS7_IS2_ILi3EELi1EEE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        scalar
+  - String:          ' variable '''
+  - Name:            dbg_sample_count
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '16'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: lfm_tdm_gen.cpp, Line: 55, Column: 0 }
+Function:        _Z11lfm_tdm_genRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEERNS_8directioI6ap_intILi16EELi1EEESB_RNS7_IS2_ILi2EELi1EEERNS7_IS2_ILi4EELi1EEERNS7_IS2_ILi16EELi1EEESK_RNS7_IS2_ILi1EELi1EEESN_SN_RNS7_IS2_ILi3EELi1EEE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        scalar
+  - String:          ' variable '''
+  - Name:            dbg_chirp_count
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '16'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: lfm_tdm_gen.cpp, Line: 55, Column: 0 }
+Function:        _Z11lfm_tdm_genRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEERNS_8directioI6ap_intILi16EELi1EEESB_RNS7_IS2_ILi2EELi1EEERNS7_IS2_ILi4EELi1EEERNS7_IS2_ILi16EELi1EEESK_RNS7_IS2_ILi1EELi1EEESN_SN_RNS7_IS2_ILi3EELi1EEE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        scalar
+  - String:          ' variable '''
+  - Name:            dbg_tx_active
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '4'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: lfm_tdm_gen.cpp, Line: 55, Column: 0 }
+Function:        _Z11lfm_tdm_genRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEERNS_8directioI6ap_intILi16EELi1EEESB_RNS7_IS2_ILi2EELi1EEERNS7_IS2_ILi4EELi1EEERNS7_IS2_ILi16EELi1EEESK_RNS7_IS2_ILi1EELi1EEESN_SN_RNS7_IS2_ILi3EELi1EEE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        scalar
+  - String:          ' variable '''
+  - Name:            dbg_tx_sel
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '2'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: lfm_tdm_gen.cpp, Line: 55, Column: 0 }
+Function:        _Z11lfm_tdm_genRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEERNS_8directioI6ap_intILi16EELi1EEESB_RNS7_IS2_ILi2EELi1EEERNS7_IS2_ILi4EELi1EEERNS7_IS2_ILi16EELi1EEESK_RNS7_IS2_ILi1EELi1EEESN_SN_RNS7_IS2_ILi3EELi1EEE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        scalar
+  - String:          ' variable '''
+  - Name:            dbg_lfm_q
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '16'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: lfm_tdm_gen.cpp, Line: 55, Column: 0 }
+Function:        _Z11lfm_tdm_genRN3hls6streamINS_4axisI7ap_uintILi32EELm0ELm0ELm0ELh56ELb0EEELi0EEERNS_8directioI6ap_intILi16EELi1EEESB_RNS7_IS2_ILi2EELi1EEERNS7_IS2_ILi4EELi1EEERNS7_IS2_ILi16EELi1EEESK_RNS7_IS2_ILi1EELi1EEESN_SN_RNS7_IS2_ILi3EELi1EEE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        scalar
+  - String:          ' variable '''
+  - Name:            dbg_lfm_i
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '16'
+  - String:          '-bits'
 ...

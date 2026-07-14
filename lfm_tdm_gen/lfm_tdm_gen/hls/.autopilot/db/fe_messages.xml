@@ -29,50 +29,53 @@
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis/2024.2/common/technology/autopilot\ap_axi_sdata.h:400:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="write_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="lfm_tdm_gen.cpp:14:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="lfm_tdm_gen.cpp:32:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="pack_iq" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="directive" ARG_PragmaFunction="lfm_tdm_gen" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=lfm_tdm_gen" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="lfm_tdm_gen.cpp:36:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="lfm_tdm_gen.cpp:56:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="lfm_tdm_gen" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=m_axis_tx" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="lfm_tdm_gen.cpp:38:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="lfm_tdm_gen" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=dbg_lfm_i" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="lfm_tdm_gen.cpp:39:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="lfm_tdm_gen" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=dbg_lfm_q" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="lfm_tdm_gen.cpp:40:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="lfm_tdm_gen" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=dbg_tx_sel" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="lfm_tdm_gen.cpp:41:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="lfm_tdm_gen" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=dbg_chirp_count" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="lfm_tdm_gen.cpp:42:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="lfm_tdm_gen" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=dbg_sample_count" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="lfm_tdm_gen.cpp:43:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="lfm_tdm_gen" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=dbg_chirp_start" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="lfm_tdm_gen.cpp:44:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="lfm_tdm_gen" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=dbg_chirp_end" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="lfm_tdm_gen.cpp:45:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="lfm_tdm_gen" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=dbg_enable" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="lfm_tdm_gen.cpp:46:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="lfm_tdm_gen" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=dbg_state" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="lfm_tdm_gen.cpp:48:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="lfm_tdm_gen.cpp:57:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="lfm_tdm_gen" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return bundle=CTRL" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="lfm_tdm_gen.cpp:57:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="lfm_tdm_gen.cpp:76:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="lfm_tdm_gen" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="lfm_tdm_gen.cpp:65:28" msg_body="Inlining function 'pack_iq(ap_int&lt;16&gt;, ap_int&lt;16&gt;)' into 'lfm_tdm_gen(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, ap_int&lt;16&gt;&amp;, ap_int&lt;16&gt;&amp;, ap_uint&lt;2&gt;&amp;, ap_uint&lt;16&gt;&amp;, ap_uint&lt;16&gt;&amp;, ap_uint&lt;1&gt;&amp;, ap_uint&lt;1&gt;&amp;, ap_uint&lt;1&gt;&amp;, ap_uint&lt;3&gt;&amp;)'">
-        <args Callee="pack_iq(ap_int&lt;16&gt;, ap_int&lt;16&gt;)" Callee-DebugLoc="File lfm_tdm_gen.cpp Line 13 Column 0" Caller="lfm_tdm_gen(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, ap_int&lt;16&gt;&amp;, ap_int&lt;16&gt;&amp;, ap_uint&lt;2&gt;&amp;, ap_uint&lt;16&gt;&amp;, ap_uint&lt;16&gt;&amp;, ap_uint&lt;1&gt;&amp;, ap_uint&lt;1&gt;&amp;, ap_uint&lt;1&gt;&amp;, ap_uint&lt;3&gt;&amp;)" Caller-DebugLoc="File lfm_tdm_gen.cpp Line 35 Column 0"/>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="lfm_tdm_gen.cpp:88:28" msg_body="Inlining function 'pack_iq(ap_int&lt;16&gt;, ap_int&lt;16&gt;)' into 'lfm_tdm_gen(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::directio&lt;ap_int&lt;16&gt;, 1&gt;&amp;, hls::directio&lt;ap_int&lt;16&gt;, 1&gt;&amp;, hls::directio&lt;ap_uint&lt;2&gt;, 1&gt;&amp;, hls::directio&lt;ap_uint&lt;4&gt;, 1&gt;&amp;, hls::directio&lt;ap_uint&lt;16&gt;, 1&gt;&amp;, hls::directio&lt;ap_uint&lt;16&gt;, 1&gt;&amp;, hls::directio&lt;ap_uint&lt;1&gt;, 1&gt;&amp;, hls::directio&lt;ap_uint&lt;1&gt;, 1&gt;&amp;, hls::directio&lt;ap_uint&lt;1&gt;, 1&gt;&amp;, hls::directio&lt;ap_uint&lt;3&gt;, 1&gt;&amp;)'">
+        <args Callee="pack_iq(ap_int&lt;16&gt;, ap_int&lt;16&gt;)" Callee-DebugLoc="File lfm_tdm_gen.cpp Line 31 Column 0" Caller="lfm_tdm_gen(hls::stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 0ul, 0ul, 0ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::directio&lt;ap_int&lt;16&gt;, 1&gt;&amp;, hls::directio&lt;ap_int&lt;16&gt;, 1&gt;&amp;, hls::directio&lt;ap_uint&lt;2&gt;, 1&gt;&amp;, hls::directio&lt;ap_uint&lt;4&gt;, 1&gt;&amp;, hls::directio&lt;ap_uint&lt;16&gt;, 1&gt;&amp;, hls::directio&lt;ap_uint&lt;16&gt;, 1&gt;&amp;, hls::directio&lt;ap_uint&lt;1&gt;, 1&gt;&amp;, hls::directio&lt;ap_uint&lt;1&gt;, 1&gt;&amp;, hls::directio&lt;ap_uint&lt;1&gt;, 1&gt;&amp;, hls::directio&lt;ap_uint&lt;3&gt;, 1&gt;&amp;)" Caller-DebugLoc="File lfm_tdm_gen.cpp Line 55 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="lfm_tdm_gen.cpp:55:0" msg_body="Aggregating scalar variable 'dbg_state' with compact=bit mode in 3-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="3" HwTyName="scalar" Name="dbg_state"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="lfm_tdm_gen.cpp:55:0" msg_body="Aggregating scalar variable 'dbg_enable' with compact=bit mode in 1-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="1" HwTyName="scalar" Name="dbg_enable"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="lfm_tdm_gen.cpp:55:0" msg_body="Aggregating scalar variable 'dbg_chirp_end' with compact=bit mode in 1-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="1" HwTyName="scalar" Name="dbg_chirp_end"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="lfm_tdm_gen.cpp:55:0" msg_body="Aggregating scalar variable 'dbg_chirp_start' with compact=bit mode in 1-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="1" HwTyName="scalar" Name="dbg_chirp_start"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="lfm_tdm_gen.cpp:55:0" msg_body="Aggregating scalar variable 'dbg_sample_count' with compact=bit mode in 16-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="16" HwTyName="scalar" Name="dbg_sample_count"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="lfm_tdm_gen.cpp:55:0" msg_body="Aggregating scalar variable 'dbg_chirp_count' with compact=bit mode in 16-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="16" HwTyName="scalar" Name="dbg_chirp_count"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="lfm_tdm_gen.cpp:55:0" msg_body="Aggregating scalar variable 'dbg_tx_active' with compact=bit mode in 4-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="4" HwTyName="scalar" Name="dbg_tx_active"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="lfm_tdm_gen.cpp:55:0" msg_body="Aggregating scalar variable 'dbg_tx_sel' with compact=bit mode in 2-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="2" HwTyName="scalar" Name="dbg_tx_sel"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="lfm_tdm_gen.cpp:55:0" msg_body="Aggregating scalar variable 'dbg_lfm_q' with compact=bit mode in 16-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="16" HwTyName="scalar" Name="dbg_lfm_q"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="lfm_tdm_gen.cpp:55:0" msg_body="Aggregating scalar variable 'dbg_lfm_i' with compact=bit mode in 16-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="16" HwTyName="scalar" Name="dbg_lfm_i"/>
     </msg>
 </xilinx:hls_fe_msgs>
 

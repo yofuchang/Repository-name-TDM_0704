@@ -1,47 +1,49 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.677809",
-   "Default View_TopLeft":"-90,-500",
+   "Default View_ScaleFactor":"0.677807",
+   "Default View_TopLeft":"431,-379",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
 #  -string -flagsOSRD
 preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 1 -x 440 -y -280 -defaultsOSRD
 preplace inst axi_dma_0 -pg 1 -lvl 1 -x 440 -y 130 -defaultsOSRD
-preplace inst axi_smc -pg 1 -lvl 5 -x 2120 -y -100 -defaultsOSRD
-preplace inst rst_ps8_0_99M -pg 1 -lvl 4 -x 1770 -y -300 -defaultsOSRD
-preplace inst axi_smc_1 -pg 1 -lvl 5 -x 2120 -y -350 -defaultsOSRD
+preplace inst axi_smc -pg 1 -lvl 5 -x 2170 -y -100 -defaultsOSRD
+preplace inst rst_ps8_0_99M -pg 1 -lvl 4 -x 1770 -y -480 -defaultsOSRD
+preplace inst axi_smc_1 -pg 1 -lvl 5 -x 2170 -y -350 -defaultsOSRD
 preplace inst radar_beamformer_0 -pg 1 -lvl 2 -x 1020 -y -320 -defaultsOSRD
 preplace inst system_ila_0 -pg 1 -lvl 1 -x 440 -y -110 -defaultsOSRD
 preplace inst axis_data_fifo_0 -pg 1 -lvl 2 -x 1020 -y -150 -defaultsOSRD
-preplace inst axis_data_fifo_1 -pg 1 -lvl 4 -x 1770 -y -100 -defaultsOSRD
-preplace inst lfm_tdm_gen_0 -pg 1 -lvl 2 -x 1020 -y 70 -defaultsOSRD
-preplace inst system_ila_1 -pg 1 -lvl 4 -x 1770 -y 40 -defaultsOSRD
-preplace inst ila_0 -pg 1 -lvl 3 -x 1460 -y -50 -defaultsOSRD
-preplace netloc lfm_tdm_gen_0_dbg_chirp_count 1 2 1 1260 -60n
-preplace netloc lfm_tdm_gen_0_dbg_chirp_end 1 2 1 1290 0n
-preplace netloc lfm_tdm_gen_0_dbg_chirp_start 1 2 1 1280 -20n
-preplace netloc lfm_tdm_gen_0_dbg_enable 1 2 1 1300 20n
-preplace netloc lfm_tdm_gen_0_dbg_lfm_i 1 2 1 1230 -120n
-preplace netloc lfm_tdm_gen_0_dbg_lfm_q 1 2 1 1240 -100n
-preplace netloc lfm_tdm_gen_0_dbg_sample_count 1 2 1 1270 -40n
-preplace netloc lfm_tdm_gen_0_dbg_state 1 2 1 1310 40n
-preplace netloc lfm_tdm_gen_0_dbg_tx_sel 1 2 1 1250 -80n
-preplace netloc rst_ps8_0_99M_peripheral_aresetn 1 0 5 140 0 770 -500 N -500 1580 -200 1980
-preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 0 5 110 10 800 -480 1290 -400 1590 -400 1960
-preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 1 3 740 -490 N -490 1600
-preplace netloc axi_dma_0_M_AXIS_MM2S 1 0 3 140 -370 810 -410 1210
-preplace netloc axi_dma_0_M_AXIS_MM2S1 1 1 1 820J -170n
-preplace netloc axi_dma_0_M_AXI_MM2S 1 1 4 780J -430 N -430 N -430 1980
-preplace netloc axi_dma_0_M_AXI_S2MM 1 1 4 750 -420 N -420 1590 -410 1970J
-preplace netloc axi_smc_1_M00_AXI 1 0 6 120 -470 NJ -470 N -470 N -470 NJ -470 2260
-preplace netloc axi_smc_M00_AXI 1 0 6 100 -510 NJ -510 N -510 N -510 NJ -510 2280
-preplace netloc axi_smc_M01_AXI 1 1 5 820 -450 N -450 N -450 NJ -450 2270
-preplace netloc axi_smc_M02_AXI 1 1 5 830 -440 NJ -440 N -440 NJ -440 2290
-preplace netloc lfm_tdm_gen_0_m_axis_tx 1 2 2 1220 -200 1560
-preplace netloc radar_beamformer_0_out_data 1 0 5 130 -460 N -460 N -460 N -460 1940
-preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 1 4 790J -230 N -230 1570 -180 1950
-levelinfo -pg 1 0 440 1020 1460 1770 2120 2310
-pagesize -pg 1 -db -bbox -sgen 0 -740 2310 930
+preplace inst axis_data_fifo_1 -pg 1 -lvl 4 -x 1770 -y -290 -defaultsOSRD
+preplace inst lfm_tdm_gen_0 -pg 1 -lvl 2 -x 1020 -y 180 -defaultsOSRD
+preplace inst system_ila_1 -pg 1 -lvl 4 -x 1770 -y -150 -defaultsOSRD
+preplace inst ila_0 -pg 1 -lvl 3 -x 1440 -y 90 -defaultsOSRD
+preplace netloc lfm_tdm_gen_0_dbg_chirp_count 1 2 1 1260 60n
+preplace netloc lfm_tdm_gen_0_dbg_chirp_end 1 2 1 1300 120n
+preplace netloc lfm_tdm_gen_0_dbg_chirp_start 1 2 1 1280 100n
+preplace netloc lfm_tdm_gen_0_dbg_enable 1 2 1 1310 140n
+preplace netloc lfm_tdm_gen_0_dbg_lfm_i 1 2 1 1220 0n
+preplace netloc lfm_tdm_gen_0_dbg_lfm_q 1 2 1 1230 20n
+preplace netloc lfm_tdm_gen_0_dbg_sample_count 1 2 1 1270 80n
+preplace netloc lfm_tdm_gen_0_dbg_state 1 2 1 1320 160n
+preplace netloc lfm_tdm_gen_0_dbg_tx_sel 1 2 1 1240 40n
+preplace netloc rst_ps8_0_99M_peripheral_aresetn 1 0 5 140 0 790 -420 N -420 1550 -370 1950
+preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 0 5 130 10 780 -440 1260 -410 1600 -580 2000
+preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 1 3 750 -450 N -450 1590
+preplace netloc lfm_tdm_gen_0_dbg_tx_active 1 2 1 1290 180n
+preplace netloc lfm_tdm_gen_0_dbg_sample_count_ap_vld 1 2 1 1250 90n
+preplace netloc axi_dma_0_M_AXIS_MM2S 1 0 3 140 -370 800 -410 1220
+preplace netloc axi_dma_0_M_AXIS_MM2S1 1 1 1 810J -170n
+preplace netloc axi_dma_0_M_AXI_MM2S 1 1 4 740J -510 N -510 1530 -640 2030
+preplace netloc axi_dma_0_M_AXI_S2MM 1 1 4 760 -500 N -500 1540 -630 2010J
+preplace netloc axi_smc_1_M00_AXI 1 0 6 130 -460 NJ -460 N -460 1580 -590 NJ -590 2330
+preplace netloc axi_smc_M00_AXI 1 0 6 110 -490 NJ -490 N -490 1550 -620 NJ -620 2340
+preplace netloc axi_smc_M01_AXI 1 1 5 810 -480 N -480 1560 -610 2020J -580 2310
+preplace netloc axi_smc_M02_AXI 1 1 5 820 -470 NJ -470 1570 -600 NJ -600 2320
+preplace netloc lfm_tdm_gen_0_m_axis_tx 1 2 2 1220 -80 1580
+preplace netloc radar_beamformer_0_out_data 1 0 5 120 -430 N -430 N -430 1580 -380 1940
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 1 4 770J -230 N -230 1530 -70 2030
+levelinfo -pg 1 0 440 1020 1440 1770 2170 2360
+pagesize -pg 1 -db -bbox -sgen 0 -740 2360 930
 "
 }
 {
