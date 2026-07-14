@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:hls:lfm_tdm_gen:1.0
-// IP Revision: 2114688118
+// IP Revision: 2114696416
 
 (* X_CORE_INFO = "lfm_tdm_gen,Vivado 2024.2" *)
 (* CHECK_LICENSE_TYPE = "design_1_lfm_tdm_gen_0_0,lfm_tdm_gen,{}" *)
-(* CORE_GENERATION_INFO = "design_1_lfm_tdm_gen_0_0,lfm_tdm_gen,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=lfm_tdm_gen,x_ipVersion=1.0,x_ipCoreRevision=2114688118,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S_AXI_CTRL_ADDR_WIDTH=4,C_S_AXI_CTRL_DATA_WIDTH=32}" *)
+(* CORE_GENERATION_INFO = "design_1_lfm_tdm_gen_0_0,lfm_tdm_gen,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=lfm_tdm_gen,x_ipVersion=1.0,x_ipCoreRevision=2114696416,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S_AXI_CTRL_ADDR_WIDTH=4,C_S_AXI_CTRL_DATA_WIDTH=32}" *)
 (* IP_DEFINITION_SOURCE = "HLS" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module design_1_lfm_tdm_gen_0_0 (

@@ -4,9 +4,9 @@
     "calls": "",
     "file": "lfm_tdm_gen.cpp",
     "fileloc": 22,
-    "instructions": 78,
+    "instructions": 72,
     "loads": {
-      "G": 2,
+      "G": 3,
       "L": 2
     },
     "name": "lfm_tdm_gen",
@@ -14,6 +14,6 @@
       "L": 6,
       "T": 11
     },
-    "total_instructions": 94
+    "total_instructions": 88
   }
 }

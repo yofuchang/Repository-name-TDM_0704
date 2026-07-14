@@ -126,13 +126,13 @@ set NewPortList {[
  	{ "name": "dbg_state", "direction": "out", "datatype": "sc_lv", "bitwidth":3, "type": "signal", "bundle":{"name": "dbg_state", "role": "default" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "5", "6", "7", "8"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "5", "6", "7"],
 		"CDFG" : "lfm_tdm_gen",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "4107", "EstimateLatencyMax" : "4107",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "4099", "EstimateLatencyMax" : "4099",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -155,41 +155,42 @@ set RtlHierarchyInfo {[
 			{"Name" : "dbg_chirp_start", "Type" : "None", "Direction" : "O"},
 			{"Name" : "dbg_chirp_end", "Type" : "None", "Direction" : "O"},
 			{"Name" : "dbg_enable", "Type" : "None", "Direction" : "O"},
-			{"Name" : "dbg_state", "Type" : "None", "Direction" : "O"}],
+			{"Name" : "dbg_state", "Type" : "None", "Direction" : "O"},
+			{"Name" : "LFM_IQ_LUT", "Type" : "Memory", "Direction" : "I"}],
 		"Loop" : [
-			{"Name" : "VITIS_LOOP_53_1_VITIS_LOOP_57_2", "PipelineType" : "UPC",
-				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter10", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter10", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.CTRL_s_axi_U", "Parent" : "0"},
-	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.urem_3ns_3ns_3_7_1_U1", "Parent" : "0"},
-	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.mac_muladd_10ns_3ns_10ns_12_4_1_U2", "Parent" : "0"},
-	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.flow_control_loop_pipe_U", "Parent" : "0"},
-	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_m_axis_tx_V_data_V_U", "Parent" : "0"},
-	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_m_axis_tx_V_keep_V_U", "Parent" : "0"},
-	{"ID" : "7", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_m_axis_tx_V_strb_V_U", "Parent" : "0"},
-	{"ID" : "8", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_m_axis_tx_V_last_V_U", "Parent" : "0"}]}
+			{"Name" : "VITIS_LOOP_53_1_VITIS_LOOP_56_2", "PipelineType" : "UPC",
+				"LoopDec" : {"FSMBitwidth" : "1", "FirstState" : "ap_ST_fsm_pp0_stage0", "FirstStateIter" : "ap_enable_reg_pp0_iter0", "FirstStateBlock" : "ap_block_pp0_stage0_subdone", "LastState" : "ap_ST_fsm_pp0_stage0", "LastStateIter" : "ap_enable_reg_pp0_iter2", "LastStateBlock" : "ap_block_pp0_stage0_subdone", "QuitState" : "ap_ST_fsm_pp0_stage0", "QuitStateIter" : "ap_enable_reg_pp0_iter2", "QuitStateBlock" : "ap_block_pp0_stage0_subdone", "OneDepthLoop" : "0", "has_ap_ctrl" : "1", "has_continue" : "0"}}]},
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.LFM_IQ_LUT_U", "Parent" : "0"},
+	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.CTRL_s_axi_U", "Parent" : "0"},
+	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.flow_control_loop_pipe_U", "Parent" : "0"},
+	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_m_axis_tx_V_data_V_U", "Parent" : "0"},
+	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_m_axis_tx_V_keep_V_U", "Parent" : "0"},
+	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_m_axis_tx_V_strb_V_U", "Parent" : "0"},
+	{"ID" : "7", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.regslice_both_m_axis_tx_V_last_V_U", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	lfm_tdm_gen {
-		m_axis_tx_V_data_V {Type O LastRead -1 FirstWrite 9}
-		m_axis_tx_V_keep_V {Type O LastRead -1 FirstWrite 9}
-		m_axis_tx_V_strb_V {Type O LastRead -1 FirstWrite 9}
-		m_axis_tx_V_last_V {Type O LastRead -1 FirstWrite 9}
-		dbg_lfm_i {Type O LastRead -1 FirstWrite 10}
-		dbg_lfm_q {Type O LastRead -1 FirstWrite 10}
-		dbg_tx_sel {Type O LastRead -1 FirstWrite 10}
-		dbg_chirp_count {Type O LastRead -1 FirstWrite 10}
-		dbg_sample_count {Type O LastRead -1 FirstWrite 10}
-		dbg_chirp_start {Type O LastRead -1 FirstWrite 10}
-		dbg_chirp_end {Type O LastRead -1 FirstWrite 10}
-		dbg_enable {Type O LastRead -1 FirstWrite 10}
-		dbg_state {Type O LastRead -1 FirstWrite 10}}}
+		m_axis_tx_V_data_V {Type O LastRead -1 FirstWrite 1}
+		m_axis_tx_V_keep_V {Type O LastRead -1 FirstWrite 1}
+		m_axis_tx_V_strb_V {Type O LastRead -1 FirstWrite 1}
+		m_axis_tx_V_last_V {Type O LastRead -1 FirstWrite 1}
+		dbg_lfm_i {Type O LastRead -1 FirstWrite 2}
+		dbg_lfm_q {Type O LastRead -1 FirstWrite 2}
+		dbg_tx_sel {Type O LastRead -1 FirstWrite 2}
+		dbg_chirp_count {Type O LastRead -1 FirstWrite 2}
+		dbg_sample_count {Type O LastRead -1 FirstWrite 2}
+		dbg_chirp_start {Type O LastRead -1 FirstWrite 2}
+		dbg_chirp_end {Type O LastRead -1 FirstWrite 2}
+		dbg_enable {Type O LastRead -1 FirstWrite 2}
+		dbg_state {Type O LastRead -1 FirstWrite 2}
+		LFM_IQ_LUT {Type I LastRead -1 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "4107", "Max" : "4107"}
-	, {"Name" : "Interval", "Min" : "4108", "Max" : "4108"}
+	{"Name" : "Latency", "Min" : "4099", "Max" : "4099"}
+	, {"Name" : "Interval", "Min" : "4100", "Max" : "4100"}
 ]}
 
 set PipelineEnableSignalInfo {[

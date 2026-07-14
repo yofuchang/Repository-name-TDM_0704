@@ -3,8 +3,8 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Wed Jul  8 20:36:14 2026
-# Process ID         : 19468
+# Start of session at: Tue Jul 14 14:26:44 2026
+# Process ID         : 2564
 # Current directory  : C:/TDM_0704/TDM_0704/TDM_0704.runs/synth_1
 # Command line       : vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file           : C:/TDM_0704/TDM_0704/TDM_0704.runs/synth_1/design_1_wrapper.vds
@@ -19,15 +19,15 @@
 # Host memory        : 34169 MB
 # Swap memory        : 2147 MB
 # Total Virtual      : 36316 MB
-# Available Virtual  : 14189 MB
+# Available Virtual  : 20383 MB
 #-----------------------------------------------------------
 source design_1_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 446.258 ; gain = 119.945
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 447.809 ; gain = 120.270
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/TDM_0704/radar_beamformer_ip/radar_beamformer_ip/hls/impl/ip'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/impl/ip'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
-add_files: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 608.000 ; gain = 144.633
+add_files: Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 607.195 ; gain = 143.824
 Command: read_checkpoint -auto_incremental -incremental C:/TDM_0704/TDM_0704/TDM_0704.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from C:/TDM_0704/TDM_0704/TDM_0704.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -40,22 +40,22 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 26824
+INFO: [Synth 8-7075] Helper process launched with PID 5668
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1973.219 ; gain = 382.789
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1972.234 ; gain = 382.250
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [C:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
 INFO: [Synth 8-6157] synthesizing module 'design_1' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/synth/design_1.v:13]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_dma_0_0' [C:/TDM_0704/TDM_0704/TDM_0704.runs/synth_1/.Xil/Vivado-19468-JohnsonKu/realtime/design_1_axi_dma_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_dma_0_0' (0#1) [C:/TDM_0704/TDM_0704/TDM_0704.runs/synth_1/.Xil/Vivado-19468-JohnsonKu/realtime/design_1_axi_dma_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_dma_0_0' [C:/TDM_0704/TDM_0704/TDM_0704.runs/synth_1/.Xil/Vivado-2564-JohnsonKu/realtime/design_1_axi_dma_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_dma_0_0' (0#1) [C:/TDM_0704/TDM_0704/TDM_0704.runs/synth_1/.Xil/Vivado-2564-JohnsonKu/realtime/design_1_axi_dma_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'mm2s_prmry_reset_out_n' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/synth/design_1.v:204]
 WARNING: [Synth 8-7071] port 's2mm_prmry_reset_out_n' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/synth/design_1.v:204]
 WARNING: [Synth 8-7071] port 'mm2s_introut' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/synth/design_1.v:204]
 WARNING: [Synth 8-7071] port 's2mm_introut' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/synth/design_1.v:204]
 WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'design_1_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/synth/design_1.v:204]
 WARNING: [Synth 8-7023] instance 'axi_dma_0' of module 'design_1_axi_dma_0_0' has 64 connections declared, but only 59 given [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/synth/design_1.v:204]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_smc_2' [C:/TDM_0704/TDM_0704/TDM_0704.runs/synth_1/.Xil/Vivado-19468-JohnsonKu/realtime/design_1_axi_smc_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_smc_2' (0#1) [C:/TDM_0704/TDM_0704/TDM_0704.runs/synth_1/.Xil/Vivado-19468-JohnsonKu/realtime/design_1_axi_smc_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_smc_2' [C:/TDM_0704/TDM_0704/TDM_0704.runs/synth_1/.Xil/Vivado-2564-JohnsonKu/realtime/design_1_axi_smc_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_smc_2' (0#1) [C:/TDM_0704/TDM_0704/TDM_0704.runs/synth_1/.Xil/Vivado-2564-JohnsonKu/realtime/design_1_axi_smc_2_stub.v:6]
 WARNING: [Synth 8-7071] port 'M00_AXI_awprot' of module 'design_1_axi_smc_2' is unconnected for instance 'axi_smc' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/synth/design_1.v:264]
 WARNING: [Synth 8-7071] port 'M00_AXI_wstrb' of module 'design_1_axi_smc_2' is unconnected for instance 'axi_smc' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/synth/design_1.v:264]
 WARNING: [Synth 8-7071] port 'M00_AXI_arprot' of module 'design_1_axi_smc_2' is unconnected for instance 'axi_smc' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/synth/design_1.v:264]
@@ -64,21 +64,21 @@ WARNING: [Synth 8-7071] port 'M01_AXI_arprot' of module 'design_1_axi_smc_2' is 
 WARNING: [Synth 8-7071] port 'M02_AXI_awprot' of module 'design_1_axi_smc_2' is unconnected for instance 'axi_smc' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/synth/design_1.v:264]
 WARNING: [Synth 8-7071] port 'M02_AXI_arprot' of module 'design_1_axi_smc_2' is unconnected for instance 'axi_smc' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/synth/design_1.v:264]
 WARNING: [Synth 8-7023] instance 'axi_smc' of module 'design_1_axi_smc_2' has 98 connections declared, but only 91 given [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/synth/design_1.v:264]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_smc_1_1' [C:/TDM_0704/TDM_0704/TDM_0704.runs/synth_1/.Xil/Vivado-19468-JohnsonKu/realtime/design_1_axi_smc_1_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_smc_1_1' (0#1) [C:/TDM_0704/TDM_0704/TDM_0704.runs/synth_1/.Xil/Vivado-19468-JohnsonKu/realtime/design_1_axi_smc_1_1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axis_data_fifo_0_1' [C:/TDM_0704/TDM_0704/TDM_0704.runs/synth_1/.Xil/Vivado-19468-JohnsonKu/realtime/design_1_axis_data_fifo_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axis_data_fifo_0_1' (0#1) [C:/TDM_0704/TDM_0704/TDM_0704.runs/synth_1/.Xil/Vivado-19468-JohnsonKu/realtime/design_1_axis_data_fifo_0_1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axis_data_fifo_1_0' [C:/TDM_0704/TDM_0704/TDM_0704.runs/synth_1/.Xil/Vivado-19468-JohnsonKu/realtime/design_1_axis_data_fifo_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axis_data_fifo_1_0' (0#1) [C:/TDM_0704/TDM_0704/TDM_0704.runs/synth_1/.Xil/Vivado-19468-JohnsonKu/realtime/design_1_axis_data_fifo_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_smc_1_1' [C:/TDM_0704/TDM_0704/TDM_0704.runs/synth_1/.Xil/Vivado-2564-JohnsonKu/realtime/design_1_axi_smc_1_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_smc_1_1' (0#1) [C:/TDM_0704/TDM_0704/TDM_0704.runs/synth_1/.Xil/Vivado-2564-JohnsonKu/realtime/design_1_axi_smc_1_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axis_data_fifo_0_1' [C:/TDM_0704/TDM_0704/TDM_0704.runs/synth_1/.Xil/Vivado-2564-JohnsonKu/realtime/design_1_axis_data_fifo_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axis_data_fifo_0_1' (0#1) [C:/TDM_0704/TDM_0704/TDM_0704.runs/synth_1/.Xil/Vivado-2564-JohnsonKu/realtime/design_1_axis_data_fifo_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axis_data_fifo_1_0' [C:/TDM_0704/TDM_0704/TDM_0704.runs/synth_1/.Xil/Vivado-2564-JohnsonKu/realtime/design_1_axis_data_fifo_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axis_data_fifo_1_0' (0#1) [C:/TDM_0704/TDM_0704/TDM_0704.runs/synth_1/.Xil/Vivado-2564-JohnsonKu/realtime/design_1_axis_data_fifo_1_0_stub.v:6]
 WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/synth/design_1.v:455]
-INFO: [Synth 8-6157] synthesizing module 'design_1_ila_0_0' [C:/TDM_0704/TDM_0704/TDM_0704.runs/synth_1/.Xil/Vivado-19468-JohnsonKu/realtime/design_1_ila_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_ila_0_0' (0#1) [C:/TDM_0704/TDM_0704/TDM_0704.runs/synth_1/.Xil/Vivado-19468-JohnsonKu/realtime/design_1_ila_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_lfm_tdm_gen_0_0' [C:/TDM_0704/TDM_0704/TDM_0704.runs/synth_1/.Xil/Vivado-19468-JohnsonKu/realtime/design_1_lfm_tdm_gen_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_lfm_tdm_gen_0_0' (0#1) [C:/TDM_0704/TDM_0704/TDM_0704.runs/synth_1/.Xil/Vivado-19468-JohnsonKu/realtime/design_1_lfm_tdm_gen_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ila_0_0' [C:/TDM_0704/TDM_0704/TDM_0704.runs/synth_1/.Xil/Vivado-2564-JohnsonKu/realtime/design_1_ila_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ila_0_0' (0#1) [C:/TDM_0704/TDM_0704/TDM_0704.runs/synth_1/.Xil/Vivado-2564-JohnsonKu/realtime/design_1_ila_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_lfm_tdm_gen_0_0' [C:/TDM_0704/TDM_0704/TDM_0704.runs/synth_1/.Xil/Vivado-2564-JohnsonKu/realtime/design_1_lfm_tdm_gen_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_lfm_tdm_gen_0_0' (0#1) [C:/TDM_0704/TDM_0704/TDM_0704.runs/synth_1/.Xil/Vivado-2564-JohnsonKu/realtime/design_1_lfm_tdm_gen_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'interrupt' of module 'design_1_lfm_tdm_gen_0_0' is unconnected for instance 'lfm_tdm_gen_0' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/synth/design_1.v:466]
 WARNING: [Synth 8-7023] instance 'lfm_tdm_gen_0' of module 'design_1_lfm_tdm_gen_0_0' has 35 connections declared, but only 34 given [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/synth/design_1.v:466]
-INFO: [Synth 8-6157] synthesizing module 'design_1_radar_beamformer_0_1' [C:/TDM_0704/TDM_0704/TDM_0704.runs/synth_1/.Xil/Vivado-19468-JohnsonKu/realtime/design_1_radar_beamformer_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_radar_beamformer_0_1' (0#1) [C:/TDM_0704/TDM_0704/TDM_0704.runs/synth_1/.Xil/Vivado-19468-JohnsonKu/realtime/design_1_radar_beamformer_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_radar_beamformer_0_1' [C:/TDM_0704/TDM_0704/TDM_0704.runs/synth_1/.Xil/Vivado-2564-JohnsonKu/realtime/design_1_radar_beamformer_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_radar_beamformer_0_1' (0#1) [C:/TDM_0704/TDM_0704/TDM_0704.runs/synth_1/.Xil/Vivado-2564-JohnsonKu/realtime/design_1_radar_beamformer_0_1_stub.v:6]
 WARNING: [Synth 8-7071] port 'interrupt' of module 'design_1_radar_beamformer_0_1' is unconnected for instance 'radar_beamformer_0' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/synth/design_1.v:501]
 WARNING: [Synth 8-7071] port 'out_data_TDATA' of module 'design_1_radar_beamformer_0_1' is unconnected for instance 'radar_beamformer_0' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/synth/design_1.v:501]
 WARNING: [Synth 8-7071] port 'out_data_TKEEP' of module 'design_1_radar_beamformer_0_1' is unconnected for instance 'radar_beamformer_0' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/synth/design_1.v:501]
@@ -86,21 +86,21 @@ WARNING: [Synth 8-7071] port 'out_data_TLAST' of module 'design_1_radar_beamform
 WARNING: [Synth 8-7071] port 'out_data_TSTRB' of module 'design_1_radar_beamformer_0_1' is unconnected for instance 'radar_beamformer_0' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/synth/design_1.v:501]
 WARNING: [Synth 8-7071] port 'out_data_TVALID' of module 'design_1_radar_beamformer_0_1' is unconnected for instance 'radar_beamformer_0' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/synth/design_1.v:501]
 WARNING: [Synth 8-7023] instance 'radar_beamformer_0' of module 'design_1_radar_beamformer_0_1' has 32 connections declared, but only 26 given [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/synth/design_1.v:501]
-INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps8_0_99M_1' [C:/TDM_0704/TDM_0704/TDM_0704.runs/synth_1/.Xil/Vivado-19468-JohnsonKu/realtime/design_1_rst_ps8_0_99M_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps8_0_99M_1' (0#1) [C:/TDM_0704/TDM_0704/TDM_0704.runs/synth_1/.Xil/Vivado-19468-JohnsonKu/realtime/design_1_rst_ps8_0_99M_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps8_0_99M_1' [C:/TDM_0704/TDM_0704/TDM_0704.runs/synth_1/.Xil/Vivado-2564-JohnsonKu/realtime/design_1_rst_ps8_0_99M_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps8_0_99M_1' (0#1) [C:/TDM_0704/TDM_0704/TDM_0704.runs/synth_1/.Xil/Vivado-2564-JohnsonKu/realtime/design_1_rst_ps8_0_99M_1_stub.v:6]
 WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_rst_ps8_0_99M_1' is unconnected for instance 'rst_ps8_0_99M' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/synth/design_1.v:528]
 WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_rst_ps8_0_99M_1' is unconnected for instance 'rst_ps8_0_99M' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/synth/design_1.v:528]
 WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_rst_ps8_0_99M_1' is unconnected for instance 'rst_ps8_0_99M' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/synth/design_1.v:528]
 WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_rst_ps8_0_99M_1' is unconnected for instance 'rst_ps8_0_99M' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/synth/design_1.v:528]
 WARNING: [Synth 8-7023] instance 'rst_ps8_0_99M' of module 'design_1_rst_ps8_0_99M_1' has 10 connections declared, but only 6 given [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/synth/design_1.v:528]
 WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/synth/design_1.v:535]
-INFO: [Synth 8-6157] synthesizing module 'design_1_system_ila_0_1' [C:/TDM_0704/TDM_0704/TDM_0704.runs/synth_1/.Xil/Vivado-19468-JohnsonKu/realtime/design_1_system_ila_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_system_ila_0_1' (0#1) [C:/TDM_0704/TDM_0704/TDM_0704.runs/synth_1/.Xil/Vivado-19468-JohnsonKu/realtime/design_1_system_ila_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_system_ila_0_1' [C:/TDM_0704/TDM_0704/TDM_0704.runs/synth_1/.Xil/Vivado-2564-JohnsonKu/realtime/design_1_system_ila_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_system_ila_0_1' (0#1) [C:/TDM_0704/TDM_0704/TDM_0704.runs/synth_1/.Xil/Vivado-2564-JohnsonKu/realtime/design_1_system_ila_0_1_stub.v:6]
 WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/synth/design_1.v:550]
-INFO: [Synth 8-6157] synthesizing module 'design_1_system_ila_1_0' [C:/TDM_0704/TDM_0704/TDM_0704.runs/synth_1/.Xil/Vivado-19468-JohnsonKu/realtime/design_1_system_ila_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_system_ila_1_0' (0#1) [C:/TDM_0704/TDM_0704/TDM_0704.runs/synth_1/.Xil/Vivado-19468-JohnsonKu/realtime/design_1_system_ila_1_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_zynq_ultra_ps_e_0_0' [C:/TDM_0704/TDM_0704/TDM_0704.runs/synth_1/.Xil/Vivado-19468-JohnsonKu/realtime/design_1_zynq_ultra_ps_e_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_zynq_ultra_ps_e_0_0' (0#1) [C:/TDM_0704/TDM_0704/TDM_0704.runs/synth_1/.Xil/Vivado-19468-JohnsonKu/realtime/design_1_zynq_ultra_ps_e_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_system_ila_1_0' [C:/TDM_0704/TDM_0704/TDM_0704.runs/synth_1/.Xil/Vivado-2564-JohnsonKu/realtime/design_1_system_ila_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_system_ila_1_0' (0#1) [C:/TDM_0704/TDM_0704/TDM_0704.runs/synth_1/.Xil/Vivado-2564-JohnsonKu/realtime/design_1_system_ila_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_zynq_ultra_ps_e_0_0' [C:/TDM_0704/TDM_0704/TDM_0704.runs/synth_1/.Xil/Vivado-2564-JohnsonKu/realtime/design_1_zynq_ultra_ps_e_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_zynq_ultra_ps_e_0_0' (0#1) [C:/TDM_0704/TDM_0704/TDM_0704.runs/synth_1/.Xil/Vivado-2564-JohnsonKu/realtime/design_1_zynq_ultra_ps_e_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'saxigp2_bid' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/synth/design_1.v:559]
 WARNING: [Synth 8-7071] port 'saxigp2_rid' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/synth/design_1.v:559]
 WARNING: [Synth 8-7023] instance 'zynq_ultra_ps_e_0' of module 'design_1_zynq_ultra_ps_e_0_0' has 83 connections declared, but only 81 given [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/synth/design_1.v:559]
@@ -109,24 +109,24 @@ INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (0#1) [C:/TDM_0
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'lfm_tdm_gen_0'. This will prevent further optimization [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/synth/design_1.v:466]
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_0'. This will prevent further optimization [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/synth/design_1.v:455]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 2085.250 ; gain = 494.820
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2084.516 ; gain = 494.531
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2085.250 ; gain = 494.820
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2084.516 ; gain = 494.531
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2085.250 ; gain = 494.820
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2084.516 ; gain = 494.531
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 2085.250 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 2084.516 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'design_1_i/zynq_ultra_ps_e_0'
-create_clock: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2094.559 ; gain = 8.883
+create_clock: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2084.516 ; gain = 0.000
 Finished Parsing XDC File [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'design_1_i/zynq_ultra_ps_e_0'
 Parsing XDC File [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0/design_1_axi_dma_0_0_in_context.xdc] for cell 'design_1_i/axi_dma_0'
 Finished Parsing XDC File [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0/design_1_axi_dma_0_0_in_context.xdc] for cell 'design_1_i/axi_dma_0'
@@ -154,15 +154,15 @@ Parsing XDC File [C:/TDM_0704/TDM_0704/TDM_0704.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [C:/TDM_0704/TDM_0704/TDM_0704.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2094.559 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2084.516 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 2094.559 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2084.516 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2094.559 ; gain = 504.129
+Finished Constraint Validation : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 2084.516 ; gain = 494.531
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -170,7 +170,7 @@ Start Loading Part and Timing Information
 Loading part: xczu48dr-fsvg1517-2-e
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 2094.559 ; gain = 504.129
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 2084.516 ; gain = 494.531
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -189,10 +189,10 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/lfm_tdm_gen_0. (constr
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/system_ila_1. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ila_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 2094.559 ; gain = 504.129
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 2084.516 ; gain = 494.531
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 2094.559 ; gain = 504.129
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 2084.516 ; gain = 494.531
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -215,25 +215,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 2094.559 ; gain = 504.129
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 2088.035 ; gain = 498.051
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 2672.102 ; gain = 1081.672
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 2682.266 ; gain = 1092.281
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 2672.102 ; gain = 1081.672
+Finished Timing Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 2682.266 ; gain = 1092.281
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 2684.469 ; gain = 1094.039
+Finished Technology Mapping : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 2694.414 ; gain = 1104.430
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -251,37 +251,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 2892.910 ; gain = 1302.480
+Finished IO Insertion : Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 2903.645 ; gain = 1313.660
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 2892.910 ; gain = 1302.480
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 2903.645 ; gain = 1313.660
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 2892.910 ; gain = 1302.480
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 2903.645 ; gain = 1313.660
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 2892.910 ; gain = 1302.480
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 2903.645 ; gain = 1313.660
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 2892.910 ; gain = 1302.480
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 2903.645 ; gain = 1313.660
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 2892.910 ; gain = 1302.480
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 2903.645 ; gain = 1313.660
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -323,16 +323,16 @@ Report Cell Usage:
 |12    |design_1_zynq_ultra_ps_e_0  |     1|
 +------+----------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 2892.910 ; gain = 1302.480
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 2903.645 ; gain = 1313.660
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:40 . Memory (MB): peak = 2892.910 ; gain = 1293.172
-Synthesis Optimization Complete : Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 2892.910 ; gain = 1302.480
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:43 . Memory (MB): peak = 2903.645 ; gain = 1313.660
+Synthesis Optimization Complete : Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 2903.645 ; gain = 1313.660
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 2892.910 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 2903.645 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2892.910 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2903.645 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
@@ -340,7 +340,7 @@ Synth Design complete | Checksum: 7e3143d7
 INFO: [Common 17-83] Releasing license: Synthesis
 53 Infos, 35 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:00 ; elapsed = 00:01:08 . Memory (MB): peak = 2892.910 ; gain = 2274.016
+synth_design: Time (s): cpu = 00:01:08 ; elapsed = 00:01:15 . Memory (MB): peak = 2903.645 ; gain = 2285.504
 INFO: [Common 17-1381] The checkpoint 'C:/TDM_0704/TDM_0704/TDM_0704.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Jul  8 20:37:51 2026...
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 14 14:28:29 2026...

@@ -1262,7 +1262,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:ea7d8ed8</spirit:value>
+            <spirit:value>9:15abb616</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1276,11 +1276,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Jul 08 12:32:15 UTC 2026</spirit:value>
+            <spirit:value>Tue Jul 14 06:24:36 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:ea7d8ed8</spirit:value>
+            <spirit:value>9:15abb616</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1294,11 +1294,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Jul 08 12:27:50 UTC 2026</spirit:value>
+            <spirit:value>Tue Jul 14 06:20:49 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:ea7d8ed8</spirit:value>
+            <spirit:value>9:15abb616</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1309,7 +1309,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:ea7d8ed8</spirit:value>
+            <spirit:value>9:15abb616</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1325,11 +1325,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Jul 08 12:27:50 UTC 2026</spirit:value>
+            <spirit:value>Tue Jul 14 06:20:49 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:868c8a6f</spirit:value>
+            <spirit:value>9:337b0d70</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1345,11 +1345,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Jul 08 12:27:50 UTC 2026</spirit:value>
+            <spirit:value>Tue Jul 14 06:20:49 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:868c8a6f</spirit:value>
+            <spirit:value>9:337b0d70</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1365,11 +1365,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Jul 08 12:27:50 UTC 2026</spirit:value>
+            <spirit:value>Tue Jul 14 06:20:49 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:ea7d8ed8</spirit:value>
+            <spirit:value>9:15abb616</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1385,11 +1385,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Jul 08 12:27:50 UTC 2026</spirit:value>
+            <spirit:value>Tue Jul 14 06:20:49 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:ea7d8ed8</spirit:value>
+            <spirit:value>9:15abb616</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -2025,42 +2025,41 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/f59e/hdl/verilog/lfm_tdm_gen_CTRL_s_axi.v</spirit:name>
+        <spirit:name>../../ipshared/fdb9/hdl/verilog/lfm_tdm_gen_CTRL_s_axi.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/f59e/hdl/verilog/lfm_tdm_gen_flow_control_loop_pipe.v</spirit:name>
+        <spirit:name>../../ipshared/fdb9/hdl/verilog/lfm_tdm_gen_flow_control_loop_pipe.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/f59e/hdl/verilog/lfm_tdm_gen_hls_deadlock_idx0_monitor.v</spirit:name>
+        <spirit:name>../../ipshared/fdb9/hdl/verilog/lfm_tdm_gen_hls_deadlock_idx0_monitor.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/f59e/hdl/verilog/lfm_tdm_gen_hls_deadlock_kernel_monitor_top.vh</spirit:name>
+        <spirit:name>../../ipshared/fdb9/hdl/verilog/lfm_tdm_gen_hls_deadlock_kernel_monitor_top.vh</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/f59e/hdl/verilog/lfm_tdm_gen_mac_muladd_10ns_3ns_10ns_12_4_1.v</spirit:name>
+        <spirit:name>hdl/verilog/lfm_tdm_gen_LFM_IQ_LUT_ROM_AUTO_1R.dat</spirit:name>
+        <spirit:userFileType>mif</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/fdb9/hdl/verilog/lfm_tdm_gen_LFM_IQ_LUT_ROM_AUTO_1R.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/f59e/hdl/verilog/lfm_tdm_gen_regslice_both.v</spirit:name>
+        <spirit:name>../../ipshared/fdb9/hdl/verilog/lfm_tdm_gen_regslice_both.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/f59e/hdl/verilog/lfm_tdm_gen_urem_3ns_3ns_3_7_1.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ipshared/f59e/hdl/verilog/lfm_tdm_gen.v</spirit:name>
+        <spirit:name>../../ipshared/fdb9/hdl/verilog/lfm_tdm_gen.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2081,35 +2080,35 @@
         <spirit:userFileType>USED_IN_out_of_context</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/f59e/hdl/verilog/lfm_tdm_gen_CTRL_s_axi.v</spirit:name>
+        <spirit:name>../../ipshared/fdb9/hdl/verilog/lfm_tdm_gen_CTRL_s_axi.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/f59e/hdl/verilog/lfm_tdm_gen_flow_control_loop_pipe.v</spirit:name>
+        <spirit:name>../../ipshared/fdb9/hdl/verilog/lfm_tdm_gen_flow_control_loop_pipe.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/f59e/hdl/verilog/lfm_tdm_gen_hls_deadlock_idx0_monitor.v</spirit:name>
+        <spirit:name>../../ipshared/fdb9/hdl/verilog/lfm_tdm_gen_hls_deadlock_idx0_monitor.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/f59e/hdl/verilog/lfm_tdm_gen_hls_deadlock_kernel_monitor_top.vh</spirit:name>
+        <spirit:name>../../ipshared/fdb9/hdl/verilog/lfm_tdm_gen_hls_deadlock_kernel_monitor_top.vh</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/f59e/hdl/verilog/lfm_tdm_gen_mac_muladd_10ns_3ns_10ns_12_4_1.v</spirit:name>
+        <spirit:name>hdl/verilog/lfm_tdm_gen_LFM_IQ_LUT_ROM_AUTO_1R.dat</spirit:name>
+        <spirit:userFileType>mif</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/fdb9/hdl/verilog/lfm_tdm_gen_LFM_IQ_LUT_ROM_AUTO_1R.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/f59e/hdl/verilog/lfm_tdm_gen_regslice_both.v</spirit:name>
+        <spirit:name>../../ipshared/fdb9/hdl/verilog/lfm_tdm_gen_regslice_both.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/f59e/hdl/verilog/lfm_tdm_gen_urem_3ns_3ns_3_7_1.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ipshared/f59e/hdl/verilog/lfm_tdm_gen.v</spirit:name>
+        <spirit:name>../../ipshared/fdb9/hdl/verilog/lfm_tdm_gen.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -2163,7 +2162,7 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>latency</spirit:name>
-      <spirit:value spirit:id="PARAM_VALUE.latency" spirit:order="4">4107</spirit:value>
+      <spirit:value spirit:id="PARAM_VALUE.latency" spirit:order="4">4099</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -2188,7 +2187,7 @@
     <xilinx:coreExtensions>
       <xilinx:displayName>Lfm_tdm_gen</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2114688118</xilinx:coreRevision>
+      <xilinx:coreRevision>2114696416</xilinx:coreRevision>
       <xilinx:sdxKernelAttributes>
         <xilinx:sdx_kernel>true</xilinx:sdx_kernel>
         <xilinx:sdx_kernel_type>hls</xilinx:sdx_kernel_type>
@@ -2263,10 +2262,10 @@
       <xilinx:xilinxVersion>2024.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="205f94d3"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="844efc95"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="1a99ef7d"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="ddb9c242"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="a4372df8"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="79893713"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="7f29fdb3"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="3e55d67a"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

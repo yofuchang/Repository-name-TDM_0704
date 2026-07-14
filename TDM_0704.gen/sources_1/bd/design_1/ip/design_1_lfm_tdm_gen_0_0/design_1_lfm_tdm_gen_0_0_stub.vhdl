@@ -2,7 +2,7 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
--- Date        : Wed Jul  8 20:32:15 2026
+-- Date        : Tue Jul 14 14:24:36 2026
 -- Host        : JohnsonKu running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
 --               c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_lfm_tdm_gen_0_0/design_1_lfm_tdm_gen_0_0_stub.vhdl
@@ -55,7 +55,7 @@ entity design_1_lfm_tdm_gen_0_0 is
   attribute CHECK_LICENSE_TYPE : string;
   attribute CHECK_LICENSE_TYPE of design_1_lfm_tdm_gen_0_0 : entity is "design_1_lfm_tdm_gen_0_0,lfm_tdm_gen,{}";
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of design_1_lfm_tdm_gen_0_0 : entity is "design_1_lfm_tdm_gen_0_0,lfm_tdm_gen,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=lfm_tdm_gen,x_ipVersion=1.0,x_ipCoreRevision=2114688118,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S_AXI_CTRL_ADDR_WIDTH=4,C_S_AXI_CTRL_DATA_WIDTH=32}";
+  attribute CORE_GENERATION_INFO of design_1_lfm_tdm_gen_0_0 : entity is "design_1_lfm_tdm_gen_0_0,lfm_tdm_gen,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=lfm_tdm_gen,x_ipVersion=1.0,x_ipCoreRevision=2114696416,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S_AXI_CTRL_ADDR_WIDTH=4,C_S_AXI_CTRL_DATA_WIDTH=32}";
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of design_1_lfm_tdm_gen_0_0 : entity is "yes";
   attribute IP_DEFINITION_SOURCE : string;

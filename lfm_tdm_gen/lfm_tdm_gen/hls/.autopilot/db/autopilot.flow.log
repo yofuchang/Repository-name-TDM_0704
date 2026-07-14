@@ -88,7 +88,7 @@ Execute         source C:/Xilinx/Vitis/2024.2/tps/tcl/tk8.6/pkgIndex.tcl
 Execute         source C:/Xilinx/Vitis/2024.2/tps/tcl/tcl8.6/http1.0/pkgIndex.tcl 
 Execute         source C:/Xilinx/Vitis/2024.2/tps/tcl/tcl8.6/opt0.4/pkgIndex.tcl 
 Execute         source C:/Xilinx/Vitis/2024.2/tps/tcl/tcl8.6/pkgs/win/thread2.8.7/pkgIndex.tcl 
-Command       ap_source done; 0.155 sec.
+Command       ap_source done; 0.191 sec.
 Execute       source C:/Xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/amazon-s3/pkgIndex.tcl 
 Execute       source C:/Xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/asn/pkgIndex.tcl 
 Execute       source C:/Xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/base32/pkgIndex.tcl 
@@ -177,16 +177,20 @@ Execute       source C:/Xilinx/Vitis/2024.2/tps/tcl/tk8.6/pkgIndex.tcl
 Execute       source C:/Xilinx/Vitis/2024.2/tps/tcl/tcl8.6/http1.0/pkgIndex.tcl 
 Execute       source C:/Xilinx/Vitis/2024.2/tps/tcl/tcl8.6/opt0.4/pkgIndex.tcl 
 Execute       source C:/Xilinx/Vitis/2024.2/tps/tcl/tcl8.6/pkgs/win/thread2.8.7/pkgIndex.tcl 
-Command     ap_source done; 0.316 sec.
-INFO-FLOW: Workspace C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls opened at Wed Jul 08 19:53:41 +0800 2026
+Command     ap_source done; 0.403 sec.
+INFO-FLOW: Workspace C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls opened at Tue Jul 14 14:15:31 +0800 2026
 Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
 INFO: [HLS 200-1505] Using default flow_target 'vivado'
-Command   open_solution done; 0.394 sec.
+Command   open_solution done; 0.499 sec.
 Execute   apply_ini C:/TDM_0704/TDM_0704/lfm_tdm_gen/hls_config.cfg 
 Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:\TDM_0704\TDM_0704\lfm_tdm_gen\lfm_tdm_gen.cpp' from C:/TDM_0704/TDM_0704/lfm_tdm_gen/hls_config.cfg(9) 
 INFO: [HLS 200-1465] Applying ini 'syn.file=C:\TDM_0704\TDM_0704\lfm_tdm_gen\lfm_tdm_gen.cpp' from C:/TDM_0704/TDM_0704/lfm_tdm_gen/hls_config.cfg(9)
 Execute     add_files C:\TDM_0704\TDM_0704\lfm_tdm_gen\lfm_tdm_gen.cpp 
 INFO: [HLS 200-10] Adding design file 'C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=lfm_chirp_lut.h' from C:/TDM_0704/TDM_0704/lfm_tdm_gen/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=lfm_chirp_lut.h' from C:/TDM_0704/TDM_0704/lfm_tdm_gen/hls_config.cfg(10)
+Execute     add_files C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_chirp_lut.h 
+INFO: [HLS 200-10] Adding design file 'C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_chirp_lut.h' to the project
 Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=lfm_tdm_gen' from C:/TDM_0704/TDM_0704/lfm_tdm_gen/hls_config.cfg(7) 
 INFO: [HLS 200-1465] Applying ini 'syn.top=lfm_tdm_gen' from C:/TDM_0704/TDM_0704/lfm_tdm_gen/hls_config.cfg(7)
 Execute     set_top lfm_tdm_gen 
@@ -202,7 +206,7 @@ DBG:HLSDevice: Trying to load device library: C:/Xilinx/Vitis/2024.2\lib\win64.o
 DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2024.2/data/parts/arch.xml
 DBG:HLSDevice: init success
 INFO: [HLS 200-1611] Setting target device to 'xczu48dr-fsvg1517-2-e'
-Command       create_platform done; 5.247 sec.
+Command       create_platform done; 5.353 sec.
 Execute       source C:/Xilinx/Vitis/2024.2/common/technology/xilinx/common/xilinx.gen 
 Execute         source C:/Xilinx/Vitis/2024.2/common/technology/xilinx/interface/plb46.gen 
 Execute         source C:/Xilinx/Vitis/2024.2/common/technology/xilinx/interface/axi4.gen 
@@ -213,13 +217,13 @@ Execute         source C:/Xilinx/Vitis/2024.2/common/technology/xilinx/interface
 Execute         source C:/Xilinx/Vitis/2024.2/common/technology/xilinx/ip/dds_compiler.gen 
 Execute         source C:/Xilinx/Vitis/2024.2/common/technology/xilinx/ip/util.gen 
 Execute         source C:/Xilinx/Vitis/2024.2/common/technology/xilinx/ip/xfft.gen 
-Command         ap_source done; 0.103 sec.
+Command         ap_source done; 0.191 sec.
 Execute         source C:/Xilinx/Vitis/2024.2/common/technology/xilinx/ip/xfir.gen 
 Execute         source C:/Xilinx/Vitis/2024.2/common/technology/xilinx/DSP48/dsp48.gen 
-Command       ap_source done; 0.148 sec.
+Command       ap_source done; 0.438 sec.
 Execute       ap_part_info -name xczu48dr-fsvg1517-2-e -data info 
 Execute       config_compile -quiet -complex-mul-dsp=0 
-Command     set_part done; 5.47 sec.
+Command     set_part done; 5.886 sec.
 Execute     send_msg_by_id INFO @200-1465@%s 'clock=10ns' from C:/TDM_0704/TDM_0704/lfm_tdm_gen/hls_config.cfg(8) 
 INFO: [HLS 200-1465] Applying ini 'clock=10ns' from C:/TDM_0704/TDM_0704/lfm_tdm_gen/hls_config.cfg(8)
 Execute     create_clock -period 10ns 
@@ -228,14 +232,14 @@ INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 Execute     send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from C:/TDM_0704/TDM_0704/lfm_tdm_gen/hls_config.cfg(5) 
 INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/TDM_0704/TDM_0704/lfm_tdm_gen/hls_config.cfg(5)
 Execute     config_export -format=ip_catalog 
-Command   apply_ini done; 5.512 sec.
+Command   apply_ini done; 5.961 sec.
 Execute   apply_ini C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/config.cmdline 
 Execute   ::AP::init_summary_file csynth 
 Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
 Execute   csynth_design 
 INFO-FLOW: Running SLX 'csynth' proc: ::SLX::run_csynth
 Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
-INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 5 seconds. CPU system time: 2 seconds. Elapsed time: 8.379 seconds; current allocated memory: 271.598 MB.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 6 seconds. CPU system time: 2 seconds. Elapsed time: 11.136 seconds; current allocated memory: 271.789 MB.
 Execute       set_directive_top lfm_tdm_gen -name=lfm_tdm_gen 
 Execute       source C:/Xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
 Execute       source C:/Xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
@@ -246,45 +250,47 @@ Execute       ap_part_info -name xczu48dr-fsvg1517-2-e -data info
 INFO-FLOW: Running: GCC PP 39
 INFO-FLOW: Source preprocessing
 INFO-FLOW: run_clang exec: C:/Xilinx/Vitis/2024.2/win64/tools/clang-3.9-csynth/bin/clang lfm_tdm_gen.cpp -foptimization-record-file=C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/lfm_tdm_gen.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll|inline -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info --sysroot C:/Xilinx/Vitis/2024.2/tps/mingw/8.3.0/win64.o/nt -fhls -fno-exceptions -insert-hls-directive=C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/all.directive.json -E -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -hls-clock-period=10 -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-mingw32 -fno-threadsafe-statics -fno-use-cxa-atexit -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vitis/2024.2/common/technology/autopilot -I C:/Xilinx/Vitis/2024.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -I /usr/include/x86_64-linux-gnu -o C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/lfm_tdm_gen.pp.0.cpp {-hls-platform-db-name=C:/Xilinx/Vitis/2024.2\common/technology\xilinx/common/platform.db} -hls-platform-name=zynquplus_medium -device-resource-info=BRAM_2160.000000_DSP_4272.000000_FF_850560.000000_LUT_425280.000000_SLICE_53160.000000_URAM_80.000000 -device-name-info=xczu48dr-fsvg1517-2-e > C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/lfm_tdm_gen.cpp.clang.out.log 2> C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/lfm_tdm_gen.cpp.clang.err.log
-INFO-FLOW: Done: GCC PP 39 time: 0.6 seconds per iteration
+INFO-FLOW: Done: GCC PP 39 time: 1.7 seconds per iteration
 INFO-FLOW: Source syntax check for synthesis
 INFO-FLOW: run_clang exec: C:/Xilinx/Vitis/2024.2/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll|inline -mllvm -pass-remarks=reflow|pasta|unroll|inline -fsyntax-only -fhls -target fpga64-xilinx-linux-gnu C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/lfm_tdm_gen.pp.0.cpp {-hls-platform-db-name=C:/Xilinx/Vitis/2024.2\common/technology\xilinx/common/platform.db} -hls-platform-name=zynquplus_medium -device-resource-info=BRAM_2160.000000_DSP_4272.000000_FF_850560.000000_LUT_425280.000000_SLICE_53160.000000_URAM_80.000000 -device-name-info=xczu48dr-fsvg1517-2-e > C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/clang.out.log 2> C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/clang.err.log
 Execute       clang_tidy xilinx-systemc-detector -desc systemc-detector C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/lfm_tdm_gen.pp.0.cpp std=gnu++14 -target fpga  -directive=C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/.systemc_flag 
 INFO-FLOW: exec C:/Xilinx/Vitis/2024.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/.systemc_flag -fix-errors C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/lfm_tdm_gen.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
-Command       clang_tidy done; 1.436 sec.
+Command       clang_tidy done; 1.934 sec.
 INFO-FLOW: Running: clang-tidy CDT preprocess 39
 Execute       clang_tidy xilinx-directive2pragma -desc directive2pragma C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/lfm_tdm_gen.pp.0.cpp std=gnu++14 -target fpga  -directive=C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/all.directive.json 
 INFO-FLOW: exec C:/Xilinx/Vitis/2024.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/all.directive.json -fix-errors C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/lfm_tdm_gen.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
-Command       clang_tidy done; 1.543 sec.
-INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 1.5 seconds per iteration
+Command       clang_tidy done; 1.838 sec.
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 1.8 seconds per iteration
 INFO-FLOW: Calling xilinx-label-all-loops ... 
 INFO-FLOW: Calling xilinx-aggregate-on-hls-vector ... 
 Execute       clang_tidy -errorcheck -desc loop-label xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/lfm_tdm_gen.pp.0.cpp std=gnu++14 -target fpga  
 INFO-FLOW: run_clang exec: C:/Xilinx/Vitis/2024.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/lfm_tdm_gen.pp.0.cpp.clang-tidy.loop-label.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute -fix-errors C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/lfm_tdm_gen.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/lfm_tdm_gen.pp.0.cpp.clang-tidy.loop-label.out.log 2> C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/lfm_tdm_gen.pp.0.cpp.clang-tidy.loop-label.err.log
 Execute         source C:/Xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
-Command       clang_tidy done; 2.188 sec.
+Command       clang_tidy done; 2.36 sec.
 INFO-FLOW: run_clang exec: C:/Xilinx/Vitis/2024.2/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/lfm_tdm_gen.pp.0.cpp.xilinx-dataflow-lawyer.diag.yml C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/lfm_tdm_gen.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/lfm_tdm_gen.pp.0.cpp.xilinx-dataflow-lawyer.out.log 2> C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/lfm_tdm_gen.pp.0.cpp.xilinx-dataflow-lawyer.err.log
 Execute       ap_part_info -name xczu48dr-fsvg1517-2-e -data info 
 INFO-FLOW: compiling source code to llvm bc
 INFO-FLOW: run_clang exec: C:/Xilinx/Vitis/2024.2/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/lfm_tdm_gen.pp.0.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll|inline -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing -hls-emit-hint-scope C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/lfm_tdm_gen.pp.0.cpp -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -hls-clock-period=10 -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vitis/2024.2/common/technology/autopilot -I C:/Xilinx/Vitis/2024.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/lfm_tdm_gen.bc {-hls-platform-db-name=C:/Xilinx/Vitis/2024.2\common/technology\xilinx/common/platform.db} -hls-platform-name=zynquplus_medium -device-resource-info=BRAM_2160.000000_DSP_4272.000000_FF_850560.000000_LUT_425280.000000_SLICE_53160.000000_URAM_80.000000 -device-name-info=xczu48dr-fsvg1517-2-e > C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/lfm_tdm_gen.pp.0.cpp.clang.out.log 2> C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/lfm_tdm_gen.pp.0.cpp.clang.err.log
-INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 10.057 seconds; current allocated memory: 274.477 MB.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 13.248 seconds; current allocated memory: 274.801 MB.
 INFO-FLOW: Linking Debug ...
 INFO-FLOW: Linking dut bc code.
 Execute       run_link_or_opt -out C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/a.g.ld.0.bc -args  "C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/lfm_tdm_gen.g.bc"  
 INFO-FLOW: run_clang exec: C:/Xilinx/Vitis/2024.2/win64/tools/clang-3.9-csynth/bin/llvm-link C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/lfm_tdm_gen.g.bc -o C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/a.g.ld.0.bc > C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/a.g.ld.0.bc.llvm-link.out.log 2> C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/a.g.ld.0.bc.llvm-link.err.log
+Command       run_link_or_opt done; 0.226 sec.
 Execute       run_link_or_opt -opt -out C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/a.g.ld.1.lower.bc -args C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics 
 INFO-FLOW: run_clang exec: C:/Xilinx/Vitis/2024.2/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll|inline -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/a.g.ld.1.lower.bc.opt.diag.yml C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics -o C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/a.g.ld.1.lower.bc > C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/a.g.ld.1.lower.bc.opt.out.log 2> C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/a.g.ld.1.lower.bc.opt.err.log
 INFO-FLOW: Running: gen_design_size_report post-opt
 INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds per iteration
+Command       run_link_or_opt done; 0.35 sec.
 INFO-FLOW: Linking math bc lib
 Execute       run_link_or_opt -out C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/a.g.ld.2.m1.bc -args C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/a.g.ld.1.lower.bc -only-needed C:/Xilinx/Vitis/2024.2/win64/lib/libhlsm_39.bc C:/Xilinx/Vitis/2024.2/win64/lib/libhlsmc++_39.bc 
 INFO-FLOW: run_clang exec: C:/Xilinx/Vitis/2024.2/win64/tools/clang-3.9-csynth/bin/llvm-link C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/a.g.ld.1.lower.bc -only-needed C:/Xilinx/Vitis/2024.2/win64/lib/libhlsm_39.bc C:/Xilinx/Vitis/2024.2/win64/lib/libhlsmc++_39.bc -o C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/a.g.ld.2.m1.bc > C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.out.log 2> C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.err.log
-Command       run_link_or_opt done; 2.562 sec.
+Command       run_link_or_opt done; 3.198 sec.
 Execute       run_link_or_opt -opt -out C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/a.g.ld.3.fpc.bc -args C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=lfm_tdm_gen -reflow-float-conversion 
 INFO-FLOW: run_clang exec: C:/Xilinx/Vitis/2024.2/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll|inline -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/a.g.ld.3.fpc.bc.opt.diag.yml C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=lfm_tdm_gen -reflow-float-conversion -o C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/a.g.ld.3.fpc.bc > C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/a.g.ld.3.fpc.bc.opt.out.log 2> C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/a.g.ld.3.fpc.bc.opt.err.log
 INFO-FLOW: Running: gen_design_size_report post-opt
 INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds per iteration
-Command       run_link_or_opt done; 1.373 sec.
+Command       run_link_or_opt done; 1.512 sec.
 Execute       run_link_or_opt -out C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/a.g.ld.4.m2.bc -args C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/a.g.ld.3.fpc.bc -only-needed C:/Xilinx/Vitis/2024.2/win64/lib/libfloatconversion_39.bc 
 INFO-FLOW: run_clang exec: C:/Xilinx/Vitis/2024.2/win64/tools/clang-3.9-csynth/bin/llvm-link C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/a.g.ld.3.fpc.bc -only-needed C:/Xilinx/Vitis/2024.2/win64/lib/libfloatconversion_39.bc -o C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/a.g.ld.4.m2.bc > C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.out.log 2> C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.err.log
 Execute       run_link_or_opt -opt -out C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/a.g.ld.5.gdce.bc -args C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=lfm_tdm_gen 
@@ -296,73 +302,74 @@ INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
 Execute       is_m_axi_addr64 
 INFO-FLOW: Doing LTO.
 INFO-FLOW: run_clang (background poll_ms 5000) exec: C:/Xilinx/Vitis/2024.2/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/a.g.ld.0.bc.clang.reflow.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll|inline -mllvm -pass-remarks=reflow|pasta|unroll|inline -fhls -mllvm -hls-top-function-name=lfm_tdm_gen -mllvm -hls-db-dir -mllvm C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db -emit-llvm -c -target fpga64-xilinx-none -mllvm -xcl-xmlinfo=C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/kernel.internal.xml -mllvm -top-io-mapping-info=C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/top-io-fe.xml -mllvm -hls-bitcode-version=3.1 -mllvm -reflow-enable-slave-interface-default-setting=true -mllvm -gen-kernel-xml=false -mllvm -default-maxi-offset=slave -mllvm -maxi-latency=0 -mllvm -hls-maxi-data-size-in-bits=8 -mllvm -hls-maxi-max-data-size-in-bits=1024 -mllvm -hls-max-widen-size-in-bits=0 -mllvm -xcl-kernel-max-mem-ports=0 -mllvm -maxi-read-trans=16 -mllvm -maxi-write-trans=16 -mllvm -maxi-read-burst-len=16 -mllvm -maxi-write-burst-len=16 -mllvm -reflow-enable-saxi-64bits=0 -mllvm -reflow-basic-block-instr-threshold=200000 -mllvm -reflow-auto-pipeline-threshold=64 -mllvm -reflow-enable-maxi-auto-id-channel=0 -mllvm -reflow-bdd-simplify-threshold=1048576 -mllvm -reflow-fanout-threshold=16 -mllvm -reflow-complete-threshold=4 -mllvm -reflow-array-promotion-threshold=64 -mllvm -assume-maxi-align=1 -mllvm -reflow-enable-dataflow-strict-mode-checking=1 -ftime-report -mllvm -time-passes -mllvm -reflow-auto-array-partition-mode=default -mllvm -reflow-enable-auto-small-array-partition=true -mllvm -reflow-enable-auto-array-promotion=true -mllvm -reflow-enable-auto-array-partition-for-flatten=true -mllvm -reflow-enable-auto-parallel-performance-driven=true -mllvm -reflow-enable-partition-for-automation=true -mllvm -reflow-aggregate-bitwidth-threshold=4096 -mllvm -reflow-reserved-saxilite-registers=0 -mllvm -enable-reflow-auto-loop-pipeline -mllvm -reflow-max-unroll-threshold=409600 -mllvm -auto-unroll-tripcount-threshold=0 -mllvm -reflow-assume-no-address-wrap=true -mllvm -reflow-enable-occurrence-inference=true -mllvm -reflow-emit-hint-scope=true -mllvm -reflow-enable-codegen-with-if=true -mllvm -reflow-enable-dataflow-canon=true -mllvm -reflow-enable-dataflow-canon2=true -mllvm -hls -mllvm -disable-inlined-alloca-merging=true -mllvm -default-clock-period=10 -mllvm -use_read_first_ram_in_loop=1 -mllvm -default-clock-uncertainty=2.7 -x ir C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/a.g.ld.5.gdce.bc -o C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/a.g.lto.bc {-hls-platform-db-name=C:/Xilinx/Vitis/2024.2\common/technology\xilinx/common/platform.db} -hls-platform-name=zynquplus_medium -device-resource-info=BRAM_2160.000000_DSP_4272.000000_FF_850560.000000_LUT_425280.000000_SLICE_53160.000000_URAM_80.000000 -device-name-info=xczu48dr-fsvg1517-2-e 2> C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/a.g.ld.0.bc.clang.reflow.err.log bg_poll_cmd: ::AP::poll_clang_39_closed_source
-Execute       send_msg_by_id INFO @200-1995@%s%s%s 1,087 Compile/Link C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt 
-INFO: [HLS 200-1995] There were 1,087 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt
-Execute       send_msg_by_id INFO @200-1995@%s%s%s 88 Unroll/Inline (step 1) C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt 
-INFO: [HLS 200-1995] There were 88 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt
-Execute       send_msg_by_id INFO @200-1995@%s%s%s 67 Unroll/Inline (step 2) C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt 
-INFO: [HLS 200-1995] There were 67 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt
-Execute       send_msg_by_id INFO @200-1995@%s%s%s 64 Unroll/Inline (step 3) C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt 
-INFO: [HLS 200-1995] There were 64 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt
-Execute       send_msg_by_id INFO @200-1995@%s%s%s 62 Unroll/Inline (step 4) C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt 
-INFO: [HLS 200-1995] There were 62 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt
-Execute       send_msg_by_id INFO @200-1995@%s%s%s 62 Array/Struct (step 1) C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt 
-INFO: [HLS 200-1995] There were 62 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt
-Execute       send_msg_by_id INFO @200-1995@%s%s%s 62 Array/Struct (step 2) C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt 
-INFO: [HLS 200-1995] There were 62 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt
-Execute       send_msg_by_id INFO @200-1995@%s%s%s 62 Array/Struct (step 3) C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt 
-INFO: [HLS 200-1995] There were 62 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt
-Execute       send_msg_by_id INFO @200-1995@%s%s%s 62 Array/Struct (step 4) C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt 
-INFO: [HLS 200-1995] There were 62 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt
-Execute       send_msg_by_id INFO @200-1995@%s%s%s 98 Array/Struct (step 5) C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt 
-INFO: [HLS 200-1995] There were 98 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt
-Execute       send_msg_by_id INFO @200-1995@%s%s%s 98 Performance (step 1) C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt 
-INFO: [HLS 200-1995] There were 98 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt
-Execute       send_msg_by_id INFO @200-1995@%s%s%s 94 Performance (step 2) C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt 
-INFO: [HLS 200-1995] There were 94 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt
-Execute       send_msg_by_id INFO @200-1995@%s%s%s 72 Performance (step 3) C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt 
-INFO: [HLS 200-1995] There were 72 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt
-Execute       send_msg_by_id INFO @200-1995@%s%s%s 72 Performance (step 4) C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt 
-INFO: [HLS 200-1995] There were 72 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt
-Execute       send_msg_by_id INFO @200-1995@%s%s%s 72 HW Transforms (step 1) C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt 
-INFO: [HLS 200-1995] There were 72 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt
-Execute       send_msg_by_id INFO @200-1995@%s%s%s 80 HW Transforms (step 2) C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt 
-INFO: [HLS 200-1995] There were 80 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt
-INFO: [HLS 214-131] Inlining function 'pack_iq(ap_int<16>, ap_int<16>)' into 'lfm_tdm_gen(hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, ap_int<16>&, ap_int<16>&, ap_uint<2>&, ap_uint<16>&, ap_uint<16>&, ap_uint<1>&, ap_uint<1>&, ap_uint<1>&, ap_uint<3>&)' (lfm_tdm_gen.cpp:66:28)
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 748 Compile/Link C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 748 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 83 Unroll/Inline (step 1) C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 83 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 64 Unroll/Inline (step 2) C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 64 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 56 Unroll/Inline (step 3) C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 56 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 56 Unroll/Inline (step 4) C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 56 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 56 Array/Struct (step 1) C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 56 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 56 Array/Struct (step 2) C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 56 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 56 Array/Struct (step 3) C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 56 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 56 Array/Struct (step 4) C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 56 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 88 Array/Struct (step 5) C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 88 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 88 Performance (step 1) C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 88 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 88 Performance (step 2) C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 88 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 66 Performance (step 3) C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 66 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 66 Performance (step 4) C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 66 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 66 HW Transforms (step 1) C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 66 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 70 HW Transforms (step 2) C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 70 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-131] Inlining function 'pack_iq(ap_int<16>, ap_int<16>)' into 'lfm_tdm_gen(hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, ap_int<16>&, ap_int<16>&, ap_uint<2>&, ap_uint<16>&, ap_uint<16>&, ap_uint<1>&, ap_uint<1>&, ap_uint<1>&, ap_uint<3>&)' (lfm_tdm_gen.cpp:65:28)
 INFO-FLOW: DBG:PUTS: copy_raw_kernel_xml ap_link_39: kernel.xml not generated: C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/kernel.internal.xml
-INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 10.365 seconds; current allocated memory: 276.156 MB.
-INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.007 seconds; current allocated memory: 276.156 MB.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 11.927 seconds; current allocated memory: 276.594 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.005 seconds; current allocated memory: 276.594 MB.
 Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
 Execute         cleanup_all_models 
 INFO: [HLS 200-10] Starting code transformations ...
 INFO-FLOW: Running Standard Transforms...
 Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top lfm_tdm_gen -deadargelim -mem2reg -instcombine -dce -presyn-prepare -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -promote-dbg-pointer -norm-name C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/a.g.0.bc -o C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/a.g.1.bc -f -phase std-opt 
-INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.108 seconds; current allocated memory: 280.852 MB.
+Command         transform done; 0.159 sec.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.206 seconds; current allocated memory: 281.117 MB.
 INFO: [HLS 200-10] Checking synthesizability ...
 INFO-FLOW: Checking Synthesizability 1/2..
 Execute         transform -hls -syn-check -check-rec-only -scalarrepl -norm-name -dce -mem2reg -instcombine -directive-preproc -mem2reg -dse -dce -dce -pag -array-normalize -instcombine -dce -array-seg-normalize -instcombine -dce -data-pack -instcombine -dce -inst-simplify -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -directive-preproc -mem2reg -dse -dce -globaldce C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/a.g.1.bc -o C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/a.g.2.prechk.bc -f 
 INFO-FLOW: Checking Synthesizability 2/2..
 Execute         transform -syn-check C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/a.g.2.prechk.bc -o C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/a.g.2.bc -f -phase syn-check 
-INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.067 seconds; current allocated memory: 282.121 MB.
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.073 seconds; current allocated memory: 282.422 MB.
 INFO-FLOW: Compiler optimizing ...
 INFO-FLOW: Share syncheck's 1.bc for syn flow: copy C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/a.g.1.bc to C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/a.o.1.bc
 INFO-FLOW: Presyn 1...
 Execute         transform -hls -tmp C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db -interface-port-rename -directive-preproc -mem2reg -dse -dce -scalarrepl -norm-name -deadargelim -dce -hls-dead-arg-elim -deadargelim -mem2reg -instcombine -dce -simplifycfg -dce -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -directive-preproc -mem2reg -dse -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -loop-simplify -loop-bound -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -prepare-dynamic-array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -lcssa -loop-simplify -phi-select-elim -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -accesses-merge -function-inline -complex-op-raise -inst-simplify -globaldce -func-legal -dce -loop-bound -arraycheck -bitwidthmin2 -bitwidthmin2 -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -duplicate-dataflow-processes -check-dataflow-syntax -legalize-stream-variable -globaldce -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -hls-dead-arg-elim -deadargelim -directive-preproc -canonicalize-dataflow -dce -globaldce -scalar-preprocessing -scalar-propagation2 -scalar-stream -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -clean-array-spec -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -hls-display -norm-name C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/a.o.1.bc -o C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/a.o.1.tmp.bc -f 
 INFO-FLOW: Presyn 2...
 Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin2 -bitwidthmin2 -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -barrier -norm-name C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/a.o.1.tmp.bc -o C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/a.o.2.bc -f -phase presyn 
-INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.122 seconds; current allocated memory: 303.566 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.125 seconds; current allocated memory: 303.621 MB.
 Execute         transform -hls -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -aggr-aa -licm -loop-dep -loop-bound -licm -loop-simplify -loop-sink-hoist -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg-lite -loop-simplify -array-burst -promote-global-argument -dce -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -inst-simplify -cfgopt -simplifycfg-lite -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -deadargelim -dce -canonicalize-dataflow -dce -deadargelim -globaldce -mem2reg -bram-byte-enable -inst-simplify -inst-rectify -instcombine -adce -deadargelim -load-elim -read-loop-dep -loop-simplify -loop-rewind-sink-hoist -loop-outline -hls-dead-arg-elim -directive-preproc -bitwidthmin2 -bitwidthmin2 -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable-spec-prop -mul2addshift -deadargelim -inst-simplify -dce -mem2reg -instcombine -gvn -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg-lite -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -float-op-raise -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg-lite -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg-lite -loop-simplify -mergereturn -inst-simplify -inst-rectify -globaldce -dce -load-elim -bitop-lower -float-op-raise -fma-raise -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -dyn-mem-reuse -dce -recurrence-min -dce -share-scalar-alloca -deadargelim -dce -check-stream -norm-name -legalize -inst-clarity -bitwidth -dce -validate-dataflow -dump-loop-dep-to-ir -check-all-ssdm -dump-complexity-metric C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/a.o.2.bc -o C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
-INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_53_1'(lfm_tdm_gen.cpp:53:22) and 'VITIS_LOOP_57_2'(lfm_tdm_gen.cpp:57:26) in function 'lfm_tdm_gen' into perfectly nested loops.
+INFO: [HLS 200-2061] Successfully converted nested loops 'VITIS_LOOP_53_1'(lfm_tdm_gen.cpp:53:22) and 'VITIS_LOOP_56_2'(lfm_tdm_gen.cpp:56:26) in function 'lfm_tdm_gen' into perfectly nested loops.
 INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_53_1' (lfm_tdm_gen.cpp:53:22) in function 'lfm_tdm_gen'.
 Execute           auto_get_db
 INFO-FLOW: Building ssdm...
 Execute         transform -hls -cdfg-build C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/a.o.3.bc -o C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
-INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.117 seconds; current allocated memory: 303.578 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.143 seconds; current allocated memory: 303.781 MB.
 INFO-FLOW: Finish building internal data model.
-Command       opt_and_import_c done; 0.423 sec.
-Command     elaborate done; 20.879 sec.
+Command       opt_and_import_c done; 0.558 sec.
+Command     elaborate done; 25.769 sec.
 Execute     ap_eval exec zip -j C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/dut.hcp $dbDir/a.o.3.bc $dbDir/${topname}.rtl_wrap.cfg.tcl $dbDir/apatb_${topname}.cpp $dbDir/apatb_${topname}_util.cpp $dbDir/apatb_${topname}_ir.ll $dbDir/mapper_${topname}.cpp $dbDir/top-io-fe.xml $dbDir/kernel.internal.xml $workdir/../hls.app 
-Command     ap_eval done; 0.157 sec.
+Command     ap_eval done; 0.334 sec.
 Execute     autosyn -from_csynth_design=1 
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO-FLOW: Synthesizing C/C++ design ...
@@ -387,12 +394,11 @@ INFO: [HLS 200-10] -------------------------------------------------------------
 Execute       set_default_model lfm_tdm_gen 
 Execute       schedule -model lfm_tdm_gen 
 INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [HLS 200-486] Changing DSP latency (root=i_val) to 3 in order to utilize available DSP registers.
-INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_53_1_VITIS_LOOP_57_2'.
-INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 11, loop 'VITIS_LOOP_53_1_VITIS_LOOP_57_2'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_53_1_VITIS_LOOP_56_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_53_1_VITIS_LOOP_56_2'
 INFO: [SCHED 204-11] Finished scheduling.
-Command       schedule done; 0.16 sec.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.388 seconds; current allocated memory: 303.578 MB.
+Command       schedule done; 0.208 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.62 seconds; current allocated memory: 303.781 MB.
 Execute       syn_report -verbosereport -o C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/lfm_tdm_gen.verbose.sched.rpt 
 Execute         list_part -family xczu48dr-fsvg1517-2-e 
 Execute           ap_family_info -name xczu48dr-fsvg1517-2-e -data names 
@@ -406,7 +412,8 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.127 seconds; current allocated memory: 303.578 MB.
+Command       bind done; 0.106 sec.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.189 seconds; current allocated memory: 303.781 MB.
 Execute       syn_report -verbosereport -o C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/lfm_tdm_gen.verbose.bind.rpt 
 Execute         list_part -family xczu48dr-fsvg1517-2-e 
 Execute           ap_family_info -name xczu48dr-fsvg1517-2-e -data names 
@@ -445,13 +452,12 @@ WARNING: [RTGEN 206-101] Port 'dbg_enable' with mode 'ap_none' may require an as
 INFO: [RTGEN 206-500] Setting interface mode on port 'lfm_tdm_gen/dbg_state' to 'ap_none'.
 WARNING: [RTGEN 206-101] Port 'dbg_state' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
 INFO: [RTGEN 206-500] Setting interface mode on function 'lfm_tdm_gen' to 's_axilite & ap_ctrl_hs'.
-INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'lfm_tdm_gen' pipeline 'VITIS_LOOP_53_1_VITIS_LOOP_57_2' pipeline type 'loop pipeline'
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'lfm_tdm_gen' pipeline 'VITIS_LOOP_53_1_VITIS_LOOP_56_2' pipeline type 'loop pipeline'
 INFO: [RTGEN 206-100] Bundling port 'return' to AXI-Lite port CTRL.
-INFO: [RTGEN 206-100] Generating core module 'mac_muladd_10ns_3ns_10ns_12_4_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'urem_3ns_3ns_3_7_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'lfm_tdm_gen'.
-Command       create_rtl_model done; 1.475 sec.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.592 seconds; current allocated memory: 304.973 MB.
+INFO: [RTMG 210-279] Implementing memory 'lfm_tdm_gen_LFM_IQ_LUT_ROM_AUTO_1R' using auto ROMs.
+Command       create_rtl_model done; 0.978 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.148 seconds; current allocated memory: 305.098 MB.
 Execute       source C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/lfm_tdm_gen.rtl_wrap.cfg.tcl 
 Execute       gen_rtl lfm_tdm_gen -istop -style xilinx -f -lang vhdl -o C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/vhdl/lfm_tdm_gen 
 Execute       gen_rtl lfm_tdm_gen -istop -style xilinx -f -lang vlog -o C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/verilog/lfm_tdm_gen 
@@ -483,10 +489,8 @@ Execute       sc_get_portdomain lfm_tdm_gen
 INFO-FLOW: Model list for RTL component generation: lfm_tdm_gen
 INFO-FLOW: Handling components in module [lfm_tdm_gen] ... 
 Execute       source C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/lfm_tdm_gen.compgen.tcl 
-INFO-FLOW: Found component lfm_tdm_gen_urem_3ns_3ns_3_7_1.
-INFO-FLOW: Append model lfm_tdm_gen_urem_3ns_3ns_3_7_1
-INFO-FLOW: Found component lfm_tdm_gen_mac_muladd_10ns_3ns_10ns_12_4_1.
-INFO-FLOW: Append model lfm_tdm_gen_mac_muladd_10ns_3ns_10ns_12_4_1
+INFO-FLOW: Found component lfm_tdm_gen_LFM_IQ_LUT_ROM_AUTO_1R.
+INFO-FLOW: Append model lfm_tdm_gen_LFM_IQ_LUT_ROM_AUTO_1R
 INFO-FLOW: Found component lfm_tdm_gen_CTRL_s_axi.
 INFO-FLOW: Append model lfm_tdm_gen_CTRL_s_axi
 INFO-FLOW: Found component lfm_tdm_gen_regslice_both.
@@ -501,10 +505,9 @@ INFO-FLOW: Found component lfm_tdm_gen_flow_control_loop_pipe.
 INFO-FLOW: Append model lfm_tdm_gen_flow_control_loop_pipe
 INFO-FLOW: Append model lfm_tdm_gen
 INFO-FLOW: Generating RTL model list ...
-INFO-FLOW: All models in this session: lfm_tdm_gen_urem_3ns_3ns_3_7_1 lfm_tdm_gen_mac_muladd_10ns_3ns_10ns_12_4_1 lfm_tdm_gen_CTRL_s_axi lfm_tdm_gen_regslice_both lfm_tdm_gen_regslice_both lfm_tdm_gen_regslice_both lfm_tdm_gen_regslice_both lfm_tdm_gen_flow_control_loop_pipe lfm_tdm_gen
+INFO-FLOW: All models in this session: lfm_tdm_gen_LFM_IQ_LUT_ROM_AUTO_1R lfm_tdm_gen_CTRL_s_axi lfm_tdm_gen_regslice_both lfm_tdm_gen_regslice_both lfm_tdm_gen_regslice_both lfm_tdm_gen_regslice_both lfm_tdm_gen_flow_control_loop_pipe lfm_tdm_gen
 INFO-FLOW: Generating C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/autopilot.rtl.models.txt file...
-INFO-FLOW: To file: write model lfm_tdm_gen_urem_3ns_3ns_3_7_1
-INFO-FLOW: To file: write model lfm_tdm_gen_mac_muladd_10ns_3ns_10ns_12_4_1
+INFO-FLOW: To file: write model lfm_tdm_gen_LFM_IQ_LUT_ROM_AUTO_1R
 INFO-FLOW: To file: write model lfm_tdm_gen_CTRL_s_axi
 INFO-FLOW: To file: write model lfm_tdm_gen_regslice_both
 INFO-FLOW: To file: write model lfm_tdm_gen_regslice_both
@@ -537,12 +540,12 @@ Execute         source C:/Xilinx/Vitis/2024.2/common/technology/xilinx/interface
 Execute         source C:/Xilinx/Vitis/2024.2/common/technology/xilinx/ip/dds_compiler.gen 
 Execute         source C:/Xilinx/Vitis/2024.2/common/technology/xilinx/ip/util.gen 
 Execute         source C:/Xilinx/Vitis/2024.2/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.167 sec.
 Execute         source C:/Xilinx/Vitis/2024.2/common/technology/xilinx/ip/xfir.gen 
 Execute         source C:/Xilinx/Vitis/2024.2/common/technology/xilinx/DSP48/dsp48.gen 
-Command       ap_source done; 0.139 sec.
+Command       ap_source done; 0.23 sec.
 INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
-INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::generate_ip_cores gen_sim_model='1' gen_fp_models='0' gen_for_export='0' dstSCDir='' dstVhdlDir='C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/vhdl' dstVlogDir='C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/vlog' tclDir='C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db' modelList='lfm_tdm_gen_urem_3ns_3ns_3_7_1
-lfm_tdm_gen_mac_muladd_10ns_3ns_10ns_12_4_1
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::generate_ip_cores gen_sim_model='1' gen_fp_models='0' gen_for_export='0' dstSCDir='' dstVhdlDir='C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/vhdl' dstVlogDir='C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/vlog' tclDir='C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db' modelList='lfm_tdm_gen_LFM_IQ_LUT_ROM_AUTO_1R
 lfm_tdm_gen_CTRL_s_axi
 lfm_tdm_gen_regslice_both
 lfm_tdm_gen_regslice_both
@@ -558,19 +561,19 @@ Execute       source C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot
 Execute       source C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/global.setting.tcl 
 Execute       source C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/lfm_tdm_gen.compgen.tcl 
 Execute         source ./CTRL.slave.tcl 
-INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.961 seconds; current allocated memory: 308.930 MB.
+Command       ap_source done; 0.168 sec.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.388 seconds; current allocated memory: 309.262 MB.
 INFO-FLOW: DBG:PROC: ::HLSREPORTS::create_csynth_xml bind_info_var='bind_info' RtlSubPrefix='lfm_tdm_gen_' outfile=''
 INFO-FLOW: Running: create_csynth_xml read xml data
 INFO-FLOW: Done: create_csynth_xml read xml data time: 0 seconds per iteration
 INFO-FLOW: Running: create_csynth_xml bind info
 INFO-FLOW: Done: create_csynth_xml bind info time: 0 seconds per iteration
 INFO-FLOW: Running: create_csynth_xml config info
-INFO-FLOW: Done: create_csynth_xml config info time: 0.5 seconds per iteration
+INFO-FLOW: Done: create_csynth_xml config info time: 0.8 seconds per iteration
 INFO-FLOW: Running: create_csynth_xml write xml
 INFO-FLOW: Done: create_csynth_xml write xml time: 0 seconds per iteration
 INFO-FLOW: DBG:PUTS:      create_csynth_xml wrote csynth_xml=C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/syn/report/csynth.xml
-INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='0' modelList='lfm_tdm_gen_urem_3ns_3ns_3_7_1
-lfm_tdm_gen_mac_muladd_10ns_3ns_10ns_12_4_1
+INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='0' modelList='lfm_tdm_gen_LFM_IQ_LUT_ROM_AUTO_1R
 lfm_tdm_gen_CTRL_s_axi
 lfm_tdm_gen_regslice_both
 lfm_tdm_gen_regslice_both
@@ -594,20 +597,20 @@ Execute       ap_part_info -name xczu48dr-fsvg1517-2-e -data info -quiet
 Execute       source C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/lfm_tdm_gen.constraint.tcl 
 Execute       sc_get_clocks lfm_tdm_gen 
 Execute       source C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/global.setting.tcl 
-INFO-FLOW: DBG:PROC: ::HLSREPORTS::add_csynth_report_sections bind_info_dict='adapter_nodes {{BINDTYPE adapter ID {} IMPL {} LATENCY {} OPTYPE {} PRAGMA {} RTLNAME CTRL_s_axi_U SOURCE {} VARIABLE {} LOOP {} BUNDLEDNAME CTRL DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE s_axilite STORAGESIZE {} STORAGEUSAGE interface DISPNAME {bind_adapter }}} cache_nodes {} report_dict {TOPINST lfm_tdm_gen MODULE2INSTS {lfm_tdm_gen lfm_tdm_gen} INST2MODULE {lfm_tdm_gen lfm_tdm_gen} INSTDATA {lfm_tdm_gen {DEPTH 1 CHILDREN {}}} MODULEDATA {lfm_tdm_gen {BINDINFO {{BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME select_ln53_fu_262_p3 SOURCE lfm_tdm_gen.cpp:53 VARIABLE select_ln53 LOOP VITIS_LOOP_53_1_VITIS_LOOP_57_2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME chirp_2_fu_270_p3 SOURCE lfm_tdm_gen.cpp:53 VARIABLE chirp_2 LOOP VITIS_LOOP_53_1_VITIS_LOOP_57_2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 6 OPTYPE urem PRAGMA {} RTLNAME urem_3ns_3ns_3_7_1_U1 SOURCE lfm_tdm_gen.cpp:55 VARIABLE tx_sel LOOP VITIS_LOOP_53_1_VITIS_LOOP_57_2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op urem} VISIBLE false} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_10ns_3ns_10ns_12_4_1_U2 SOURCE lfm_tdm_gen.cpp:55 VARIABLE mul_i_i LOOP VITIS_LOOP_53_1_VITIS_LOOP_57_2 BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME cmp13_fu_284_p2 SOURCE lfm_tdm_gen.cpp:53 VARIABLE cmp13 LOOP VITIS_LOOP_53_1_VITIS_LOOP_57_2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_10ns_3ns_10ns_12_4_1_U2 SOURCE lfm_tdm_gen.cpp:60 VARIABLE i_val LOOP VITIS_LOOP_53_1_VITIS_LOOP_57_2 BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME q_val_fu_369_p2 SOURCE lfm_tdm_gen.cpp:63 VARIABLE q_val LOOP VITIS_LOOP_53_1_VITIS_LOOP_57_2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sub} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln79_fu_294_p2 SOURCE lfm_tdm_gen.cpp:79 VARIABLE icmp_ln79 LOOP VITIS_LOOP_53_1_VITIS_LOOP_57_2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE and PRAGMA {} RTLNAME tx_word_last_fu_300_p2 SOURCE lfm_tdm_gen.cpp:79 VARIABLE tx_word_last LOOP VITIS_LOOP_53_1_VITIS_LOOP_57_2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op and} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME sample_fu_306_p2 SOURCE lfm_tdm_gen.cpp:57 VARIABLE sample LOOP VITIS_LOOP_53_1_VITIS_LOOP_57_2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln53_fu_312_p2 SOURCE lfm_tdm_gen.cpp:53 VARIABLE add_ln53 LOOP VITIS_LOOP_53_1_VITIS_LOOP_57_2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln57_fu_318_p2 SOURCE lfm_tdm_gen.cpp:57 VARIABLE icmp_ln57 LOOP VITIS_LOOP_53_1_VITIS_LOOP_57_2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME chirp_fu_324_p2 SOURCE lfm_tdm_gen.cpp:53 VARIABLE chirp LOOP VITIS_LOOP_53_1_VITIS_LOOP_57_2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln53_fu_330_p2 SOURCE lfm_tdm_gen.cpp:53 VARIABLE icmp_ln53 LOOP VITIS_LOOP_53_1_VITIS_LOOP_57_2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false}} AREA {DSP 1 BRAM 0 URAM 0}}}}'
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::add_csynth_report_sections bind_info_dict='adapter_nodes {{BINDTYPE adapter ID {} IMPL {} LATENCY {} OPTYPE {} PRAGMA {} RTLNAME CTRL_s_axi_U SOURCE {} VARIABLE {} LOOP {} BUNDLEDNAME CTRL DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE s_axilite STORAGESIZE {} STORAGEUSAGE interface DISPNAME {bind_adapter }}} cache_nodes {} report_dict {TOPINST lfm_tdm_gen MODULE2INSTS {lfm_tdm_gen lfm_tdm_gen} INST2MODULE {lfm_tdm_gen lfm_tdm_gen} INSTDATA {lfm_tdm_gen {DEPTH 1 CHILDREN {}}} MODULEDATA {lfm_tdm_gen {BINDINFO {{BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME select_ln53_fu_279_p3 SOURCE lfm_tdm_gen.cpp:53 VARIABLE select_ln53 LOOP VITIS_LOOP_53_1_VITIS_LOOP_56_2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME chirp_2_fu_287_p3 SOURCE lfm_tdm_gen.cpp:53 VARIABLE chirp_2 LOOP VITIS_LOOP_53_1_VITIS_LOOP_56_2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME cmp13_fu_295_p2 SOURCE lfm_tdm_gen.cpp:53 VARIABLE cmp13 LOOP VITIS_LOOP_53_1_VITIS_LOOP_56_2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln72_fu_306_p2 SOURCE lfm_tdm_gen.cpp:72 VARIABLE icmp_ln72 LOOP VITIS_LOOP_53_1_VITIS_LOOP_56_2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE and PRAGMA {} RTLNAME tx_word_last_fu_312_p2 SOURCE lfm_tdm_gen.cpp:71 VARIABLE tx_word_last LOOP VITIS_LOOP_53_1_VITIS_LOOP_56_2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op and} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME sample_fu_318_p2 SOURCE lfm_tdm_gen.cpp:56 VARIABLE sample LOOP VITIS_LOOP_53_1_VITIS_LOOP_56_2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln53_fu_324_p2 SOURCE lfm_tdm_gen.cpp:53 VARIABLE add_ln53 LOOP VITIS_LOOP_53_1_VITIS_LOOP_56_2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln56_fu_330_p2 SOURCE lfm_tdm_gen.cpp:56 VARIABLE icmp_ln56 LOOP VITIS_LOOP_53_1_VITIS_LOOP_56_2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME chirp_fu_336_p2 SOURCE lfm_tdm_gen.cpp:53 VARIABLE chirp LOOP VITIS_LOOP_53_1_VITIS_LOOP_56_2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln53_fu_342_p2 SOURCE lfm_tdm_gen.cpp:53 VARIABLE icmp_ln53 LOOP VITIS_LOOP_53_1_VITIS_LOOP_56_2 BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE storage ID {} IMPL auto LATENCY 1 OPTYPE rom_1p PRAGMA {} RTLNAME LFM_IQ_LUT_U SOURCE {} VARIABLE LFM_IQ_LUT LOOP {} BUNDLEDNAME {} DSP 0 BRAM 2 URAM 0 STORAGESUBTYPE {} STORAGESIZE {31 1024 1} STORAGEUSAGE rom_1p DISPNAME {bind_storage rom_1p} VISIBLE true}} AREA {DSP 0 BRAM 2 URAM 0}}}}'
 INFO-FLOW: DBG:PUTS:      update_csynth_reports json2rpt_hw_sw_interfaces
 INFO-FLOW: Running: gen_csynth_sec_pragma
 INFO-FLOW: Done: gen_csynth_sec_pragma time: 0 seconds per iteration
 INFO-FLOW: DBG:PUTS:      update_csynth_reports wrote xml
 INFO-FLOW: DBG:PUTS:      update_csynth_reports appended to csynth rpt file
-INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.186 seconds; current allocated memory: 312.594 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 1.948 seconds; current allocated memory: 312.625 MB.
 INFO: [VHDL 208-304] Generating VHDL RTL for lfm_tdm_gen.
 INFO: [VLOG 209-307] Generating Verilog RTL for lfm_tdm_gen.
 Execute       syn_report -model lfm_tdm_gen -printsummary 
 INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
 INFO: [HLS 200-789] **** Estimated Fmax: 414.59 MHz
-Command     autosyn done; 4.186 sec.
-Command   csynth_design done; 25.471 sec.
+Command     autosyn done; 5.137 sec.
+Command   csynth_design done; 31.557 sec.
 Execute   close_project 
 Execute     close_solution 
 Execute       cleanup_all 
@@ -702,7 +705,7 @@ Execute         source C:/Xilinx/Vitis/2024.2/tps/tcl/tk8.6/pkgIndex.tcl
 Execute         source C:/Xilinx/Vitis/2024.2/tps/tcl/tcl8.6/http1.0/pkgIndex.tcl 
 Execute         source C:/Xilinx/Vitis/2024.2/tps/tcl/tcl8.6/opt0.4/pkgIndex.tcl 
 Execute         source C:/Xilinx/Vitis/2024.2/tps/tcl/tcl8.6/pkgs/win/thread2.8.7/pkgIndex.tcl 
-Command       ap_source done; 0.189 sec.
+Command       ap_source done; 0.2 sec.
 Execute       source C:/Xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/amazon-s3/pkgIndex.tcl 
 Execute       source C:/Xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/asn/pkgIndex.tcl 
 Execute       source C:/Xilinx/Vitis/2024.2/tps/tcl/tcllib1.11.1/base32/pkgIndex.tcl 
@@ -791,8 +794,8 @@ Execute       source C:/Xilinx/Vitis/2024.2/tps/tcl/tk8.6/pkgIndex.tcl
 Execute       source C:/Xilinx/Vitis/2024.2/tps/tcl/tcl8.6/http1.0/pkgIndex.tcl 
 Execute       source C:/Xilinx/Vitis/2024.2/tps/tcl/tcl8.6/opt0.4/pkgIndex.tcl 
 Execute       source C:/Xilinx/Vitis/2024.2/tps/tcl/tcl8.6/pkgs/win/thread2.8.7/pkgIndex.tcl 
-Command     ap_source done; 0.425 sec.
-INFO-FLOW: Workspace C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls opened at Wed Jul 08 19:58:29 +0800 2026
+Command     ap_source done; 0.389 sec.
+INFO-FLOW: Workspace C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls opened at Tue Jul 14 14:16:44 +0800 2026
 Execute     source C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/global.setting.tcl 
 Execute     set_part xczu48dr-fsvg1517-2-e 
 Execute       create_platform xczu48dr-fsvg1517-2-e -board  
@@ -800,7 +803,7 @@ DBG:HLSDevice: Trying to load device library: C:/Xilinx/Vitis/2024.2\lib\win64.o
 DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2024.2/data/parts/arch.xml
 DBG:HLSDevice: init success
 INFO: [HLS 200-1611] Setting target device to 'xczu48dr-fsvg1517-2-e'
-Command       create_platform done; 4.733 sec.
+Command       create_platform done; 4.27 sec.
 Execute       source C:/Xilinx/Vitis/2024.2/common/technology/xilinx/common/xilinx.gen 
 Execute         source C:/Xilinx/Vitis/2024.2/common/technology/xilinx/interface/plb46.gen 
 Execute         source C:/Xilinx/Vitis/2024.2/common/technology/xilinx/interface/axi4.gen 
@@ -811,20 +814,25 @@ Execute         source C:/Xilinx/Vitis/2024.2/common/technology/xilinx/interface
 Execute         source C:/Xilinx/Vitis/2024.2/common/technology/xilinx/ip/dds_compiler.gen 
 Execute         source C:/Xilinx/Vitis/2024.2/common/technology/xilinx/ip/util.gen 
 Execute         source C:/Xilinx/Vitis/2024.2/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.135 sec.
 Execute         source C:/Xilinx/Vitis/2024.2/common/technology/xilinx/ip/xfir.gen 
 Execute         source C:/Xilinx/Vitis/2024.2/common/technology/xilinx/DSP48/dsp48.gen 
-Command       ap_source done; 0.133 sec.
+Command       ap_source done; 0.189 sec.
 Execute       ap_part_info -name xczu48dr-fsvg1517-2-e -data info 
 Execute       config_compile -quiet -complex-mul-dsp=0 
-Command     set_part done; 4.934 sec.
+Command     set_part done; 4.54 sec.
 Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
 INFO: [HLS 200-1505] Using default flow_target 'vivado'
-Command   open_solution done; 5.413 sec.
+Command   open_solution done; 5.002 sec.
 Execute   apply_ini C:/TDM_0704/TDM_0704/lfm_tdm_gen/hls_config.cfg 
 Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:\TDM_0704\TDM_0704\lfm_tdm_gen\lfm_tdm_gen.cpp' from C:/TDM_0704/TDM_0704/lfm_tdm_gen/hls_config.cfg(9) 
 INFO: [HLS 200-1465] Applying ini 'syn.file=C:\TDM_0704\TDM_0704\lfm_tdm_gen\lfm_tdm_gen.cpp' from C:/TDM_0704/TDM_0704/lfm_tdm_gen/hls_config.cfg(9)
 Execute     add_files C:\TDM_0704\TDM_0704\lfm_tdm_gen\lfm_tdm_gen.cpp 
 INFO: [HLS 200-10] Adding design file 'C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=lfm_chirp_lut.h' from C:/TDM_0704/TDM_0704/lfm_tdm_gen/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=lfm_chirp_lut.h' from C:/TDM_0704/TDM_0704/lfm_tdm_gen/hls_config.cfg(10)
+Execute     add_files C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_chirp_lut.h 
+INFO: [HLS 200-10] Adding design file 'C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_chirp_lut.h' to the project
 Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=lfm_tdm_gen' from C:/TDM_0704/TDM_0704/lfm_tdm_gen/hls_config.cfg(7) 
 INFO: [HLS 200-1465] Applying ini 'syn.top=lfm_tdm_gen' from C:/TDM_0704/TDM_0704/lfm_tdm_gen/hls_config.cfg(7)
 Execute     set_top lfm_tdm_gen 
@@ -836,7 +844,7 @@ Execute     send_msg_by_id INFO @200-1465@%s 'part=xczu48dr-fsvg1517-2-e' from C
 INFO: [HLS 200-1465] Applying ini 'part=xczu48dr-fsvg1517-2-e' from C:/TDM_0704/TDM_0704/lfm_tdm_gen/hls_config.cfg(1)
 Execute     set_part xczu48dr-fsvg1517-2-e 
 Execute       create_platform xczu48dr-fsvg1517-2-e -board  
-Command       create_platform done; 0.506 sec.
+Command       create_platform done; 0.408 sec.
 Execute       source C:/Xilinx/Vitis/2024.2/common/technology/xilinx/common/xilinx.gen 
 Execute         source C:/Xilinx/Vitis/2024.2/common/technology/xilinx/interface/plb46.gen 
 Execute         source C:/Xilinx/Vitis/2024.2/common/technology/xilinx/interface/axi4.gen 
@@ -847,13 +855,13 @@ Execute         source C:/Xilinx/Vitis/2024.2/common/technology/xilinx/interface
 Execute         source C:/Xilinx/Vitis/2024.2/common/technology/xilinx/ip/dds_compiler.gen 
 Execute         source C:/Xilinx/Vitis/2024.2/common/technology/xilinx/ip/util.gen 
 Execute         source C:/Xilinx/Vitis/2024.2/common/technology/xilinx/ip/xfft.gen 
-Command         ap_source done; 0.152 sec.
+Command         ap_source done; 0.109 sec.
 Execute         source C:/Xilinx/Vitis/2024.2/common/technology/xilinx/ip/xfir.gen 
 Execute         source C:/Xilinx/Vitis/2024.2/common/technology/xilinx/DSP48/dsp48.gen 
-Command       ap_source done; 0.198 sec.
+Command       ap_source done; 0.152 sec.
 Execute       ap_part_info -name xczu48dr-fsvg1517-2-e -data info 
 Execute       config_compile -quiet -complex-mul-dsp=0 
-Command     set_part done; 0.813 sec.
+Command     set_part done; 0.635 sec.
 Execute     send_msg_by_id INFO @200-1465@%s 'clock=10ns' from C:/TDM_0704/TDM_0704/lfm_tdm_gen/hls_config.cfg(8) 
 INFO: [HLS 200-1465] Applying ini 'clock=10ns' from C:/TDM_0704/TDM_0704/lfm_tdm_gen/hls_config.cfg(8)
 Execute     create_clock -period 10ns 
@@ -862,7 +870,7 @@ INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 Execute     send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from C:/TDM_0704/TDM_0704/lfm_tdm_gen/hls_config.cfg(5) 
 INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/TDM_0704/TDM_0704/lfm_tdm_gen/hls_config.cfg(5)
 Execute     config_export -format=ip_catalog 
-Command   apply_ini done; 0.876 sec.
+Command   apply_ini done; 0.676 sec.
 Execute   apply_ini C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/config.cmdline 
 Execute   ::AP::init_summary_file package-ip 
 Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
@@ -896,10 +904,10 @@ Execute       source C:/Xilinx/Vitis/2024.2/common/technology/xilinx/interface/X
 Execute       source C:/Xilinx/Vitis/2024.2/common/technology/xilinx/ip/dds_compiler.gen 
 Execute       source C:/Xilinx/Vitis/2024.2/common/technology/xilinx/ip/util.gen 
 Execute       source C:/Xilinx/Vitis/2024.2/common/technology/xilinx/ip/xfft.gen 
-Command       ap_source done; 0.107 sec.
+Command       ap_source done; 0.114 sec.
 Execute       source C:/Xilinx/Vitis/2024.2/common/technology/xilinx/ip/xfir.gen 
 Execute       source C:/Xilinx/Vitis/2024.2/common/technology/xilinx/DSP48/dsp48.gen 
-Command     ap_source done; 0.147 sec.
+Command     ap_source done; 0.153 sec.
 INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
 INFO-FLOW: DBG:PUTS:       initCTypeInfo top_module=lfm_tdm_gen xml_exists=0
 Execute     source C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/db/lfm_tdm_gen.rtl_wrap.cfg.tcl 
@@ -913,9 +921,8 @@ Execute     source C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/.autopilot/d
 INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to lfm_tdm_gen
 INFO-FLOW: DBG:PUTS:       generate_datafile_ip_script ip_types={vitis sysgen} #gSsdmPorts=0
 INFO-FLOW: DBG:PUTS: Skipping loadAnalyze_DB, #g_database=13
-INFO-FLOW: DBG:PUTS:       generate_json generate_bd_files=0 generate_xo_files=false #modelList=9 #gSsdmPorts=0
-INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='false' modelList='lfm_tdm_gen_urem_3ns_3ns_3_7_1
-lfm_tdm_gen_mac_muladd_10ns_3ns_10ns_12_4_1
+INFO-FLOW: DBG:PUTS:       generate_json generate_bd_files=0 generate_xo_files=false #modelList=8 #gSsdmPorts=0
+INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='false' modelList='lfm_tdm_gen_LFM_IQ_LUT_ROM_AUTO_1R
 lfm_tdm_gen_CTRL_s_axi
 lfm_tdm_gen_regslice_both
 lfm_tdm_gen_regslice_both
@@ -970,14 +977,15 @@ Execute       source C:/Xilinx/Vitis/2024.2/common/technology/xilinx/interface/X
 Execute       source C:/Xilinx/Vitis/2024.2/common/technology/xilinx/ip/dds_compiler.gen 
 Execute       source C:/Xilinx/Vitis/2024.2/common/technology/xilinx/ip/util.gen 
 Execute       source C:/Xilinx/Vitis/2024.2/common/technology/xilinx/ip/xfft.gen 
+Command       ap_source done; 0.106 sec.
 Execute       source C:/Xilinx/Vitis/2024.2/common/technology/xilinx/ip/xfir.gen 
 Execute       source C:/Xilinx/Vitis/2024.2/common/technology/xilinx/DSP48/dsp48.gen 
-Command     ap_source done; 0.127 sec.
+Command     ap_source done; 0.151 sec.
 INFO-FLOW: DBG:PUTS:     IP package: exec C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/impl/ip/pack.bat
 INFO-FLOW: DBG:PUTS:     IP package: success C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/impl/ip/pack.bat
 Execute     send_msg_by_id INFO @200-802@%s lfm_tdm_gen/lfm_tdm_gen.zip 
 INFO: [HLS 200-802] Generated output file lfm_tdm_gen/lfm_tdm_gen.zip
-Command   export_design done; 21.663 sec.
+Command   export_design done; 25.966 sec.
 Execute   close_project 
 Execute     close_solution 
 Execute       cleanup_all 

@@ -10,7 +10,7 @@
 <Module>
 <Name>lfm_tdm_gen</Name>
 <Loops>
-<VITIS_LOOP_53_1_VITIS_LOOP_57_2></VITIS_LOOP_53_1_VITIS_LOOP_57_2>
+<VITIS_LOOP_53_1_VITIS_LOOP_56_2></VITIS_LOOP_53_1_VITIS_LOOP_56_2>
 </Loops>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
@@ -19,60 +19,60 @@
 <EstimatedClockPeriod>2.412</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>4107</Best-caseLatency>
-<Average-caseLatency>4107</Average-caseLatency>
-<Worst-caseLatency>4107</Worst-caseLatency>
-<Best-caseRealTimeLatency>41.070 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>41.070 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>41.070 us</Worst-caseRealTimeLatency>
+<Best-caseLatency>4099</Best-caseLatency>
+<Average-caseLatency>4099</Average-caseLatency>
+<Worst-caseLatency>4099</Worst-caseLatency>
+<Best-caseRealTimeLatency>40.990 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>40.990 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>40.990 us</Worst-caseRealTimeLatency>
 <PipelineInitiationInterval>4096</PipelineInitiationInterval>
 <PipelineType>loop auto-rewind stp (delay=0 clock cycles(s))</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_53_1_VITIS_LOOP_57_2>
-<Name>VITIS_LOOP_53_1_VITIS_LOOP_57_2</Name>
+<VITIS_LOOP_53_1_VITIS_LOOP_56_2>
+<Name>VITIS_LOOP_53_1_VITIS_LOOP_56_2</Name>
 <Slack>7.30</Slack>
 <TripCount>4096</TripCount>
-<Latency>4105</Latency>
-<AbsoluteTimeLatency>41.050 us</AbsoluteTimeLatency>
+<Latency>4097</Latency>
+<AbsoluteTimeLatency>40.970 us</AbsoluteTimeLatency>
 <PipelineII>1</PipelineII>
-<PipelineDepth>11</PipelineDepth>
+<PipelineDepth>3</PipelineDepth>
 <PipelineType>yes</PipelineType>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_53_1_VITIS_LOOP_57_2>
+</VITIS_LOOP_53_1_VITIS_LOOP_56_2>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
 <SourceLocation>lfm_tdm_gen.cpp:22</SourceLocation>
 <SummaryOfLoopViolations>
-<VITIS_LOOP_53_1_VITIS_LOOP_57_2>
-<Name>VITIS_LOOP_53_1_VITIS_LOOP_57_2</Name>
+<VITIS_LOOP_53_1_VITIS_LOOP_56_2>
+<Name>VITIS_LOOP_53_1_VITIS_LOOP_56_2</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>lfm_tdm_gen.cpp:57</SourceLocation>
-</VITIS_LOOP_53_1_VITIS_LOOP_57_2>
+<SourceLocation>lfm_tdm_gen.cpp:56</SourceLocation>
+</VITIS_LOOP_53_1_VITIS_LOOP_56_2>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<BRAM_18K>0</BRAM_18K>
+<BRAM_18K>2</BRAM_18K>
 <AVAIL_BRAM>2160</AVAIL_BRAM>
-<UTIL_BRAM>0</UTIL_BRAM>
-<DSP>1</DSP>
-<AVAIL_DSP>4272</AVAIL_DSP>
-<UTIL_DSP>~0</UTIL_DSP>
-<FF>368</FF>
+<UTIL_BRAM>~0</UTIL_BRAM>
+<FF>76</FF>
 <AVAIL_FF>850560</AVAIL_FF>
 <UTIL_FF>~0</UTIL_FF>
-<LUT>426</LUT>
+<LUT>288</LUT>
 <AVAIL_LUT>425280</AVAIL_LUT>
 <UTIL_LUT>~0</UTIL_LUT>
 <URAM>0</URAM>
 <AVAIL_URAM>80</AVAIL_URAM>
 <UTIL_URAM>0</UTIL_URAM>
+<DSP>0</DSP>
+<AVAIL_DSP>4272</AVAIL_DSP>
+<UTIL_DSP>0</UTIL_DSP>
 </Resources>
 </AreaEstimates>
 <InterfaceSummary>

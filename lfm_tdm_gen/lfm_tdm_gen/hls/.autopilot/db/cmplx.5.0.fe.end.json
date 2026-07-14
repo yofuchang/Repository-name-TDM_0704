@@ -3,11 +3,12 @@
         "name": "lfm_tdm_gen",
         "file": "lfm_tdm_gen.cpp",
         "fileloc": "22",
-        "instructions": "81",
-        "total_instructions": "81",
+        "instructions": "73",
+        "total_instructions": "73",
         "calls": "",
         "basicblocks": "3",
         "loads": {
+            "G": "1",
             "L": "4"
         },
         "stores": {

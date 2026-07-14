@@ -2,7 +2,7 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-// Date        : Wed Jul  8 20:32:15 2026
+// Date        : Tue Jul 14 14:24:36 2026
 // Host        : JohnsonKu running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_lfm_tdm_gen_0_0/design_1_lfm_tdm_gen_0_0_stub.v
@@ -14,7 +14,7 @@
 // This empty module with port declaration file causes synthesis tools to infer a black box for IP.
 // The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
-(* CHECK_LICENSE_TYPE = "design_1_lfm_tdm_gen_0_0,lfm_tdm_gen,{}" *) (* CORE_GENERATION_INFO = "design_1_lfm_tdm_gen_0_0,lfm_tdm_gen,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=lfm_tdm_gen,x_ipVersion=1.0,x_ipCoreRevision=2114688118,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S_AXI_CTRL_ADDR_WIDTH=4,C_S_AXI_CTRL_DATA_WIDTH=32}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) 
+(* CHECK_LICENSE_TYPE = "design_1_lfm_tdm_gen_0_0,lfm_tdm_gen,{}" *) (* CORE_GENERATION_INFO = "design_1_lfm_tdm_gen_0_0,lfm_tdm_gen,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=lfm_tdm_gen,x_ipVersion=1.0,x_ipCoreRevision=2114696416,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S_AXI_CTRL_ADDR_WIDTH=4,C_S_AXI_CTRL_DATA_WIDTH=32}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) 
 (* IP_DEFINITION_SOURCE = "HLS" *) (* X_CORE_INFO = "lfm_tdm_gen,Vivado 2024.2" *) (* hls_module = "yes" *) 
 module design_1_lfm_tdm_gen_0_0(s_axi_CTRL_ARADDR, s_axi_CTRL_ARREADY, 
   s_axi_CTRL_ARVALID, s_axi_CTRL_AWADDR, s_axi_CTRL_AWREADY, s_axi_CTRL_AWVALID, 

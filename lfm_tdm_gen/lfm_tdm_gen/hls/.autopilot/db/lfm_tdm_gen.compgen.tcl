@@ -1,13 +1,7 @@
 # This script segment is generated automatically by AutoPilot
 
-set name lfm_tdm_gen_urem_3ns_3ns_3_7_1
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {urem} IMPL {auto} LATENCY 6 ALLOW_PRAGMA 1
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler lfm_tdm_gen_mac_muladd_10ns_3ns_10ns_12_4_1 BINDTYPE {op} TYPE {all} IMPL {dsp_slice} LATENCY 3
+	::AP::rtl_comp_handler lfm_tdm_gen_LFM_IQ_LUT_ROM_AUTO_1R BINDTYPE {storage} TYPE {rom} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
 }
 
 
@@ -34,7 +28,7 @@ dict set axilite_register_dict CTRL $port_CTRL
 if {${::AESL::PGuard_simmodel_gen}} {
 	if {[info proc ::AESL_LIB_XILADAPTER::s_axilite_gen] == "::AESL_LIB_XILADAPTER::s_axilite_gen"} {
 		eval "::AESL_LIB_XILADAPTER::s_axilite_gen { \
-			id 5 \
+			id 2 \
 			corename lfm_tdm_gen_CTRL_axilite \
 			name lfm_tdm_gen_CTRL_s_axi \
 			ports {$port_CTRL} \
@@ -58,7 +52,7 @@ if {${::AESL::PGuard_rtl_comp_handler}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 6 \
+    id 3 \
     name m_axis_tx_V_data_V \
     reset_level 0 \
     sync_rst true \
@@ -77,7 +71,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 7 \
+    id 4 \
     name m_axis_tx_V_keep_V \
     reset_level 0 \
     sync_rst true \
@@ -96,7 +90,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 8 \
+    id 5 \
     name m_axis_tx_V_strb_V \
     reset_level 0 \
     sync_rst true \
@@ -115,7 +109,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
 eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 9 \
+    id 6 \
     name m_axis_tx_V_last_V \
     reset_level 0 \
     sync_rst true \
@@ -133,7 +127,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 10 \
+    id 7 \
     name dbg_lfm_i \
     type other \
     dir O \
@@ -148,7 +142,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 11 \
+    id 8 \
     name dbg_lfm_q \
     type other \
     dir O \
@@ -163,7 +157,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 12 \
+    id 9 \
     name dbg_tx_sel \
     type other \
     dir O \
@@ -178,7 +172,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 13 \
+    id 10 \
     name dbg_chirp_count \
     type other \
     dir O \
@@ -193,7 +187,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 14 \
+    id 11 \
     name dbg_sample_count \
     type other \
     dir O \
@@ -208,7 +202,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 15 \
+    id 12 \
     name dbg_chirp_start \
     type other \
     dir O \
@@ -223,7 +217,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 16 \
+    id 13 \
     name dbg_chirp_end \
     type other \
     dir O \
@@ -238,7 +232,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 17 \
+    id 14 \
     name dbg_enable \
     type other \
     dir O \
@@ -253,7 +247,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 18 \
+    id 15 \
     name dbg_state \
     type other \
     dir O \

@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x291ABD21D25CB17E",
+      "boundary_crc": "0x36298663E13C17CB",
       "design_src": "SBD",
       "device": "xczu48dr-fsvg1517-2-e",
       "name": "bd_36cd",
@@ -59,7 +59,7 @@
             "value_src": "default"
           },
           "TDATA_NUM_BYTES": {
-            "value": "128",
+            "value": "16",
             "value_src": "default"
           },
           "TDEST_WIDTH": {
@@ -119,7 +119,7 @@
             "value_src": "default"
           },
           "TDATA_NUM_BYTES": {
-            "value": "32",
+            "value": "4",
             "value_src": "default"
           },
           "TDEST_WIDTH": {
@@ -224,7 +224,7 @@
             "value": "0"
           },
           "C_PROBE0_WIDTH": {
-            "value": "1024"
+            "value": "128"
           },
           "C_PROBE10_TYPE": {
             "value": "0"
@@ -242,13 +242,13 @@
             "value": "0"
           },
           "C_PROBE1_WIDTH": {
-            "value": "128"
+            "value": "16"
           },
           "C_PROBE2_TYPE": {
             "value": "0"
           },
           "C_PROBE2_WIDTH": {
-            "value": "128"
+            "value": "16"
           },
           "C_PROBE3_TYPE": {
             "value": "0"
@@ -272,19 +272,19 @@
             "value": "0"
           },
           "C_PROBE6_WIDTH": {
-            "value": "256"
+            "value": "32"
           },
           "C_PROBE7_TYPE": {
             "value": "0"
           },
           "C_PROBE7_WIDTH": {
-            "value": "32"
+            "value": "4"
           },
           "C_PROBE8_TYPE": {
             "value": "0"
           },
           "C_PROBE8_WIDTH": {
-            "value": "32"
+            "value": "4"
           },
           "C_PROBE9_TYPE": {
             "value": "0"
@@ -320,7 +320,7 @@
             "value": "0"
           },
           "C_SLOT_0_AXIS_TDATA_WIDTH": {
-            "value": "1024"
+            "value": "128"
           },
           "C_SLOT_0_AXIS_TDEST_WIDTH": {
             "value": "0"
@@ -347,7 +347,7 @@
             "value": "FT"
           },
           "C_SLOT_1_AXIS_TDATA_WIDTH": {
-            "value": "256"
+            "value": "32"
           },
           "C_SLOT_1_AXIS_TDEST_WIDTH": {
             "value": "0"

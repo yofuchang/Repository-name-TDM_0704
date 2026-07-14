@@ -3507,7 +3507,7 @@
       },
       "lfm_tdm_gen_0": {
         "vlnv": "xilinx.com:hls:lfm_tdm_gen:1.0",
-        "ip_revision": "2114688118",
+        "ip_revision": "2114696416",
         "xci_name": "design_1_lfm_tdm_gen_0_0",
         "xci_path": "ip\\design_1_lfm_tdm_gen_0_0\\design_1_lfm_tdm_gen_0_0.xci",
         "inst_hier_path": "lfm_tdm_gen_0"
@@ -3708,8 +3708,8 @@
           "axis_data_fifo_0/s_axis_aresetn",
           "axis_data_fifo_1/s_axis_aresetn",
           "radar_beamformer_0/ap_rst_n",
-          "lfm_tdm_gen_0/ap_rst_n",
-          "system_ila_1/resetn"
+          "system_ila_1/resetn",
+          "lfm_tdm_gen_0/ap_rst_n"
         ]
       },
       "zynq_ultra_ps_e_0_pl_clk0": {
@@ -3727,9 +3727,9 @@
           "axis_data_fifo_0/s_axis_aclk",
           "axis_data_fifo_1/s_axis_aclk",
           "radar_beamformer_0/ap_clk",
-          "lfm_tdm_gen_0/ap_clk",
           "system_ila_1/clk",
-          "ila_0/clk"
+          "ila_0/clk",
+          "lfm_tdm_gen_0/ap_clk"
         ]
       },
       "zynq_ultra_ps_e_0_pl_resetn0": {

@@ -2,10 +2,10 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-// Date        : Wed Jul  8 20:36:02 2026
+// Date        : Wed Jul  8 20:35:55 2026
 // Host        : JohnsonKu running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_system_ila_1_0/design_1_system_ila_1_0_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top design_1_system_ila_1_0 -prefix
+//               design_1_system_ila_1_0_ design_1_system_ila_1_0_stub.v
 // Design      : design_1_system_ila_1_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xczu48dr-fsvg1517-2-e

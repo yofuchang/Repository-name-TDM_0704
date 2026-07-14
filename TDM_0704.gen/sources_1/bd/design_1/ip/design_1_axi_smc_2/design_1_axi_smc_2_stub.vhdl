@@ -2,10 +2,10 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
--- Date        : Wed Jul  8 20:34:45 2026
+-- Date        : Wed Jul  8 20:34:31 2026
 -- Host        : JohnsonKu running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_axi_smc_2/design_1_axi_smc_2_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top design_1_axi_smc_2 -prefix
+--               design_1_axi_smc_2_ design_1_axi_smc_2_stub.vhdl
 -- Design      : design_1_axi_smc_2
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xczu48dr-fsvg1517-2-e

@@ -56,8 +56,7 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "design_1_lfm_tdm_gen_0_0_synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 2
-set_param bd.open.in_stealth_mode 2
+set_param bd.open.in_stealth_mode 4
 set_msg_config  -id {[BD 41-1306]}  -suppress 
 set_msg_config  -id {[BD 41-1271]}  -suppress 
 set_param project.vivado.isBlockSynthRun true
@@ -84,7 +83,7 @@ set_property ip_output_repo c:/TDM_0704/TDM_0704/TDM_0704.cache/ip [current_proj
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet c:/TDM_0704/TDM_0704/TDM_0704.srcs/sources_1/bd/design_1/ip/design_1_lfm_tdm_gen_0_0/design_1_lfm_tdm_gen_0_0.xci
+read_ip -quiet C:/TDM_0704/TDM_0704/TDM_0704.srcs/sources_1/bd/design_1/ip/design_1_lfm_tdm_gen_0_0/design_1_lfm_tdm_gen_0_0.xci
 set_property used_in_implementation false [get_files -all c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_lfm_tdm_gen_0_0/constraints/lfm_tdm_gen_ooc.xdc]
 
 OPTRACE "Adding files" END { }

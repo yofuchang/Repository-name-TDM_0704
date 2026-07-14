@@ -134,7 +134,7 @@ output wire m_sc_r_send;
 (* X_INTERFACE_INFO = "xilinx.com:interface:sc:1.0 M_SC_R RECV" *)
 input wire m_sc_r_recv;
 (* X_INTERFACE_INFO = "xilinx.com:interface:sc:1.0 M_SC_R PAYLD" *)
-output wire [276 : 0] m_sc_r_payld;
+output wire [148 : 0] m_sc_r_payld;
 (* X_INTERFACE_INFO = "xilinx.com:interface:sc:1.0 M_SC_B REQ" *)
 (* X_INTERFACE_MODE = "master" *)
 output wire m_sc_b_req;
@@ -178,7 +178,7 @@ input wire s_sc_w_send;
 (* X_INTERFACE_INFO = "xilinx.com:interface:sc:1.0 S_SC_W RECV" *)
 output wire s_sc_w_recv;
 (* X_INTERFACE_INFO = "xilinx.com:interface:sc:1.0 S_SC_W PAYLD" *)
-input wire [303 : 0] s_sc_w_payld;
+input wire [159 : 0] s_sc_w_payld;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI AWID" *)
 (* X_INTERFACE_MODE = "master" *)
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M_AXI, DATA_WIDTH 128, PROTOCOL AXI4, FREQ_HZ 99999001, ID_WIDTH 2, ADDR_WIDTH 32, AWUSER_WIDTH 1024, ARUSER_WIDTH 1024, WUSER_WIDTH 1024, RUSER_WIDTH 1024, BUSER_WIDTH 1024, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 2, NUM_WRITE_OUTSTANDING 2, MAX_BURST_LENGTH 256, PHASE 0.0, CLK_DOMAIN design_1_zynq_ultra_ps_e_0_0_pl_clk0, NUM_READ_\
@@ -266,8 +266,8 @@ output wire m_axi_rready;
     .C_AXI_WDATA_WIDTH(128),
     .C_SC_ADDR_WIDTH(32),
     .C_SC_ID_WIDTH(2),
-    .C_SC_RDATA_WIDTH(256),
-    .C_SC_WDATA_WIDTH(256),
+    .C_SC_RDATA_WIDTH(128),
+    .C_SC_WDATA_WIDTH(128),
     .C_SC_RUSER_BITS_PER_BYTE(0),
     .C_SC_WUSER_BITS_PER_BYTE(0),
     .C_SC_ARUSER_WIDTH(0),
@@ -277,8 +277,8 @@ output wire m_axi_rready;
     .C_SSC_ROUTE_WIDTH(2),
     .C_AWPAYLD_WIDTH(140),
     .C_ARPAYLD_WIDTH(140),
-    .C_WPAYLD_WIDTH(304),
-    .C_RPAYLD_WIDTH(277),
+    .C_WPAYLD_WIDTH(160),
+    .C_RPAYLD_WIDTH(149),
     .C_BPAYLD_WIDTH(7)
   ) inst (
     .aclk(aclk),

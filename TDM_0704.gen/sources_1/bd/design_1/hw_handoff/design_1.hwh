@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Jul  8 20:27:57 2026" VIVADOVERSION="2024.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Jul 14 14:26:00 2026" VIVADOVERSION="2024.2">
 
   <SYSTEMINFO ARCH="zynquplusRFSOC" BOARD="xilinx.com:zcu208:part0:2.0" DEVICE="xczu48dr" NAME="design_1" PACKAGE="fsvg1517" SPEEDGRADE="-2"/>
 
@@ -6128,7 +6128,7 @@
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="2114688118" FULLNAME="/lfm_tdm_gen_0" HWVERSION="1.0" INSTANCE="lfm_tdm_gen_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="lfm_tdm_gen" VLNV="xilinx.com:hls:lfm_tdm_gen:1.0">
+    <MODULE COREREVISION="2114696416" FULLNAME="/lfm_tdm_gen_0" HWVERSION="1.0" INSTANCE="lfm_tdm_gen_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="lfm_tdm_gen" VLNV="xilinx.com:hls:lfm_tdm_gen:1.0">
       <DOCUMENTS/>
       <ADDRESSBLOCKS>
         <ADDRESSBLOCK ACCESS="read-write" INTERFACE="s_axi_CTRL" NAME="Reg" RANGE="65536" USAGE="register">
@@ -6353,7 +6353,7 @@
         <PARAMETER NAME="II" VALUE="4096"/>
         <PARAMETER NAME="clk_period" VALUE="10"/>
         <PARAMETER NAME="combinational" VALUE="0"/>
-        <PARAMETER NAME="latency" VALUE="4107"/>
+        <PARAMETER NAME="latency" VALUE="4099"/>
         <PARAMETER NAME="machine" VALUE="64"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
         <PARAMETER NAME="C_S_AXI_CTRL_BASEADDR" VALUE="0xA0020000"/>
@@ -7116,8 +7116,8 @@
             <CONNECTION INSTANCE="axis_data_fifo_0" PORT="s_axis_aresetn"/>
             <CONNECTION INSTANCE="axis_data_fifo_1" PORT="s_axis_aresetn"/>
             <CONNECTION INSTANCE="radar_beamformer_0" PORT="ap_rst_n"/>
-            <CONNECTION INSTANCE="lfm_tdm_gen_0" PORT="ap_rst_n"/>
             <CONNECTION INSTANCE="system_ila_1" PORT="resetn"/>
+            <CONNECTION INSTANCE="lfm_tdm_gen_0" PORT="ap_rst_n"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="0" NAME="peripheral_reset" POLARITY="ACTIVE_HIGH" RIGHT="0" SIGIS="rst"/>
@@ -15217,10 +15217,10 @@
         <ADDRESSBLOCK ACCESS="" INTERFACE="SAXIGP2" NAME="HP0_LPS_OCM" RANGE="0x1000000" USAGE="register"/>
       </ADDRESSBLOCKS>
       <ADDRESSBLOCKS>
-        <ADDRESSBLOCK ACCESS="" INTERFACE="SAXIGP2" NAME="HP0_QSPI" RANGE="0x20000000" USAGE="memory"/>
+        <ADDRESSBLOCK ACCESS="" INTERFACE="SAXIGP2" NAME="HP0_DDR_LOW" RANGE="0x80000000" USAGE="memory"/>
       </ADDRESSBLOCKS>
       <ADDRESSBLOCKS>
-        <ADDRESSBLOCK ACCESS="" INTERFACE="SAXIGP2" NAME="HP0_DDR_LOW" RANGE="0x80000000" USAGE="memory"/>
+        <ADDRESSBLOCK ACCESS="" INTERFACE="SAXIGP2" NAME="HP0_QSPI" RANGE="0x20000000" USAGE="memory"/>
       </ADDRESSBLOCKS>
       <PARAMETERS>
         <PARAMETER NAME="C_DP_USE_AUDIO" VALUE="0"/>
@@ -17169,9 +17169,9 @@
             <CONNECTION INSTANCE="axis_data_fifo_0" PORT="s_axis_aclk"/>
             <CONNECTION INSTANCE="axis_data_fifo_1" PORT="s_axis_aclk"/>
             <CONNECTION INSTANCE="radar_beamformer_0" PORT="ap_clk"/>
-            <CONNECTION INSTANCE="lfm_tdm_gen_0" PORT="ap_clk"/>
             <CONNECTION INSTANCE="system_ila_1" PORT="clk"/>
             <CONNECTION INSTANCE="ila_0" PORT="clk"/>
+            <CONNECTION INSTANCE="lfm_tdm_gen_0" PORT="ap_clk"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="0" NAME="pl_ps_irq0" RIGHT="0" SENSITIVITY="LEVEL_HIGH" SIGIS="INTERRUPT"/>

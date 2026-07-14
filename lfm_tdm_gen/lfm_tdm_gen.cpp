@@ -1,11 +1,11 @@
 #include <hls_stream.h>
 #include <ap_int.h>
 #include <ap_axi_sdata.h>
+#include "lfm_chirp_lut.h"
 
 #define CHIRP_LEN     1024
 #define NUM_TX        3
 #define FRAME_CHIRPS  4
-#define FRAME_SAMPLES (CHIRP_LEN * FRAME_CHIRPS)
 
 typedef ap_axiu<32, 0, 0, 0> axis_tx_t;
 
@@ -51,35 +51,25 @@ void lfm_tdm_gen(
     dbg_state  = 1;
 
     for (int chirp = 0; chirp < FRAME_CHIRPS; chirp++) {
-
         ap_uint<2> tx_sel = chirp % NUM_TX;
 
         for (int sample = 0; sample < CHIRP_LEN; sample++) {
 #pragma HLS PIPELINE II=1
 
-            ap_int<32> base = sample + tx_sel * 1000;
+            ap_uint<32> lut_word = LFM_IQ_LUT[sample];
 
-            ap_int<16> i_val = (ap_int<16>)base;
-            ap_int<16> q_val = (ap_int<16>)(-base);
+            ap_int<16> i_val = (ap_int<16>)lut_word.range(15, 0);
+            ap_int<16> q_val = (ap_int<16>)lut_word.range(31, 16);
 
             axis_tx_t tx_word;
             tx_word.data = pack_iq(i_val, q_val);
             tx_word.keep = 0xF;
             tx_word.strb = 0xF;
 
-            /*
-             * 重要：
-             * 這一版 TLAST 先放在整個 frame 最後一筆，
-             * 不放在每個 chirp 最後。
-             *
-             * 原因：
-             * AXI DMA simple mode S2MM 比較適合一個 DMA transfer 對應一個 TLAST。
-             * 每個 chirp 的結束，我們另外用 dbg_chirp_end 觀察。
-             */
-            if ((chirp == FRAME_CHIRPS - 1) && (sample == CHIRP_LEN - 1))
-                tx_word.last = 1;
-            else
-                tx_word.last = 0;
+            // DMA S2MM：整個 4-chirp frame 只在最後一筆送出 TLAST。
+            tx_word.last =
+                ((chirp == FRAME_CHIRPS - 1) &&
+                 (sample == CHIRP_LEN - 1)) ? 1 : 0;
 
             dbg_lfm_i        = i_val;
             dbg_lfm_q        = q_val;

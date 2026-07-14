@@ -22,49 +22,49 @@
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>4107</Best-caseLatency>
-<Average-caseLatency>4107</Average-caseLatency>
-<Worst-caseLatency>4107</Worst-caseLatency>
-<Best-caseRealTimeLatency>41.070 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>41.070 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>41.070 us</Worst-caseRealTimeLatency>
+<Best-caseLatency>4099</Best-caseLatency>
+<Average-caseLatency>4099</Average-caseLatency>
+<Worst-caseLatency>4099</Worst-caseLatency>
+<Best-caseRealTimeLatency>40.990 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>40.990 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>40.990 us</Worst-caseRealTimeLatency>
 <Interval-min>4096</Interval-min>
 <Interval-max>4096</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_53_1_VITIS_LOOP_57_2>
+<VITIS_LOOP_53_1_VITIS_LOOP_56_2>
 <Slack>7.30</Slack>
 <TripCount>4096</TripCount>
-<Latency>4105</Latency>
-<AbsoluteTimeLatency>41050</AbsoluteTimeLatency>
+<Latency>4097</Latency>
+<AbsoluteTimeLatency>40970</AbsoluteTimeLatency>
 <PipelineII>1</PipelineII>
-<PipelineDepth>11</PipelineDepth>
+<PipelineDepth>3</PipelineDepth>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_53_1_VITIS_LOOP_57_2>
+</VITIS_LOOP_53_1_VITIS_LOOP_56_2>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
 <SourceLocation>lfm_tdm_gen.cpp:22</SourceLocation>
 <SummaryOfLoopViolations>
-<VITIS_LOOP_53_1_VITIS_LOOP_57_2>
-<Name>VITIS_LOOP_53_1_VITIS_LOOP_57_2</Name>
+<VITIS_LOOP_53_1_VITIS_LOOP_56_2>
+<Name>VITIS_LOOP_53_1_VITIS_LOOP_56_2</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>lfm_tdm_gen.cpp:57</SourceLocation>
-</VITIS_LOOP_53_1_VITIS_LOOP_57_2>
+<SourceLocation>lfm_tdm_gen.cpp:56</SourceLocation>
+</VITIS_LOOP_53_1_VITIS_LOOP_56_2>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
-<BRAM_18K>0</BRAM_18K>
-<DSP>1</DSP>
-<FF>368</FF>
-<LUT>426</LUT>
+<BRAM_18K>2</BRAM_18K>
+<FF>76</FF>
+<LUT>288</LUT>
 <URAM>0</URAM>
+<DSP>0</DSP>
 </Resources>
 <AvailableResources>
 <BRAM_18K>2160</BRAM_18K>

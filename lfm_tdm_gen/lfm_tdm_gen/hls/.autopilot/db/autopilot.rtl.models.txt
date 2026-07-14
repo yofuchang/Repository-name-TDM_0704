@@ -1,5 +1,4 @@
-lfm_tdm_gen_urem_3ns_3ns_3_7_1
-lfm_tdm_gen_mac_muladd_10ns_3ns_10ns_12_4_1
+lfm_tdm_gen_LFM_IQ_LUT_ROM_AUTO_1R
 lfm_tdm_gen_CTRL_s_axi
 lfm_tdm_gen_regslice_both
 lfm_tdm_gen_regslice_both

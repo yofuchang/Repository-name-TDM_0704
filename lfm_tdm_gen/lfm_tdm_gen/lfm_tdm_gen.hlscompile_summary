@@ -9,10 +9,10 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "07/08/26 19:53:34",
- "timestampMillis": "1783511614823",
+ "dateTimestamp": "07/14/26 14:15:21",
+ "timestampMillis": "1784009721347",
  "buildStep": {
-  "cmdId": "dbc5d3b5-730c-43bd-9dc6-2b76caf302f0",
+  "cmdId": "4fe63206-9d43-4577-b004-fd6fdd930745",
   "name": "v++",
   "logFile": "C:/TDM_0704\\TDM_0704\\lfm_tdm_gen\\lfm_tdm_gen\\logs\\lfm_tdm_gen.steps.log",
   "commandLine": "C:/Xilinx/Vitis/2024.2/bin/unwrapped/win64.o/v++.exe  -c --mode hls --config C:\\TDM_0704\\TDM_0704\\lfm_tdm_gen\\hls_config.cfg --work_dir lfm_tdm_gen ",
@@ -28,7 +28,7 @@
   "iniFiles": [
    {
     "path": "C:/TDM_0704\\TDM_0704\\lfm_tdm_gen\\hls_config.cfg",
-    "content": "part=xczu48dr-fsvg1517-2-e\n\n[hls]\nflow_target=vivado\npackage.output.format=ip_catalog\npackage.output.syn=false\nsyn.top=lfm_tdm_gen\nclock=10ns\nsyn.file=C:\\TDM_0704\\TDM_0704\\lfm_tdm_gen\\lfm_tdm_gen.cpp"
+    "content": "part=xczu48dr-fsvg1517-2-e\n\n[hls]\nflow_target=vivado\npackage.output.format=ip_catalog\npackage.output.syn=false\nsyn.top=lfm_tdm_gen\nclock=10ns\nsyn.file=C:\\TDM_0704\\TDM_0704\\lfm_tdm_gen\\lfm_tdm_gen.cpp\nsyn.file=lfm_chirp_lut.h"
    }
   ],
   "cwd": "C:\\TDM_0704\\TDM_0704\\lfm_tdm_gen"
@@ -38,10 +38,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "07/08/26 19:53:34",
- "timestampMillis": "1783511614824",
+ "dateTimestamp": "07/14/26 14:15:21",
+ "timestampMillis": "1784009721348",
  "status": {
-  "cmdId": "dbc5d3b5-730c-43bd-9dc6-2b76caf302f0",
+  "cmdId": "4fe63206-9d43-4577-b004-fd6fdd930745",
   "state": "CS_RUNNING"
  }
 }
@@ -49,8 +49,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "07/08/26 19:53:47",
- "timestampMillis": "1783511627835",
+ "dateTimestamp": "07/14/26 14:15:37",
+ "timestampMillis": "1784009737731",
  "buildSummary": {
   "hardwarePlatform": "",
   "hardwareDsa": "",
@@ -69,7 +69,8 @@
      "uuid": ""
     },
     "sources": [
-     "C:/TDM_0704\\TDM_0704\\lfm_tdm_gen\\lfm_tdm_gen.cpp"
+     "C:/TDM_0704\\TDM_0704\\lfm_tdm_gen\\lfm_tdm_gen.cpp",
+     "C:/TDM_0704\\TDM_0704\\lfm_tdm_gen\\lfm_chirp_lut.h"
     ],
     "psSources": [],
     "cuNames": [],
@@ -85,10 +86,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "07/08/26 19:53:47",
- "timestampMillis": "1783511627838",
+ "dateTimestamp": "07/14/26 14:15:37",
+ "timestampMillis": "1784009737733",
  "buildStep": {
-  "cmdId": "fe485c43-744a-4e30-ad4a-94e8db665412",
+  "cmdId": "88d99d32-d94f-469c-b53b-cebaaba5f7e4",
   "name": "",
   "logFile": "C:/TDM_0704\\TDM_0704\\lfm_tdm_gen\\lfm_tdm_gen\\hls\\hls.log",
   "commandLine": "",
@@ -101,10 +102,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "07/08/26 19:53:47",
- "timestampMillis": "1783511627839",
+ "dateTimestamp": "07/14/26 14:15:37",
+ "timestampMillis": "1784009737734",
  "status": {
-  "cmdId": "fe485c43-744a-4e30-ad4a-94e8db665412",
+  "cmdId": "88d99d32-d94f-469c-b53b-cebaaba5f7e4",
   "state": "CS_RUNNING"
  }
 }
@@ -112,8 +113,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "07/08/26 19:53:47",
- "timestampMillis": "1783511627839",
+ "dateTimestamp": "07/14/26 14:15:37",
+ "timestampMillis": "1784009737735",
  "report": {
   "path": "C:/TDM_0704\\TDM_0704\\lfm_tdm_gen\\lfm_tdm_gen\\hls\\hls_data.json",
   "name": "",
@@ -126,8 +127,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "07/08/26 19:53:47",
- "timestampMillis": "1783511627840",
+ "dateTimestamp": "07/14/26 14:15:37",
+ "timestampMillis": "1784009737736",
  "report": {
   "path": "C:/TDM_0704\\TDM_0704\\lfm_tdm_gen\\lfm_tdm_gen\\hls\\syn\\report\\csynth.rpt",
   "name": "",
@@ -140,8 +141,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "07/08/26 19:53:47",
- "timestampMillis": "1783511627841",
+ "dateTimestamp": "07/14/26 14:15:37",
+ "timestampMillis": "1784009737737",
  "report": {
   "path": "C:/TDM_0704\\TDM_0704\\lfm_tdm_gen\\lfm_tdm_gen\\hls\\syn\\report\\csynth.xml",
   "name": "",
@@ -154,8 +155,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "07/08/26 19:54:13",
- "timestampMillis": "1783511653311",
+ "dateTimestamp": "07/14/26 14:16:09",
+ "timestampMillis": "1784009769291",
  "report": {
   "path": "C:/TDM_0704\\TDM_0704\\lfm_tdm_gen\\lfm_tdm_gen\\hls",
   "name": "",
@@ -168,8 +169,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "07/08/26 19:54:13",
- "timestampMillis": "1783511653312",
+ "dateTimestamp": "07/14/26 14:16:09",
+ "timestampMillis": "1784009769293",
  "report": {
   "path": "C:/TDM_0704\\TDM_0704\\lfm_tdm_gen\\lfm_tdm_gen\\hls",
   "name": "",
@@ -182,8 +183,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "07/08/26 19:54:13",
- "timestampMillis": "1783511653312",
+ "dateTimestamp": "07/14/26 14:16:09",
+ "timestampMillis": "1784009769294",
  "report": {
   "path": "C:/TDM_0704\\TDM_0704\\lfm_tdm_gen\\lfm_tdm_gen\\hls",
   "name": "",
@@ -196,10 +197,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "07/08/26 19:54:13",
- "timestampMillis": "1783511653313",
+ "dateTimestamp": "07/14/26 14:16:09",
+ "timestampMillis": "1784009769295",
  "status": {
-  "cmdId": "fe485c43-744a-4e30-ad4a-94e8db665412",
+  "cmdId": "88d99d32-d94f-469c-b53b-cebaaba5f7e4",
   "state": "CS_PASSED"
  }
 }
@@ -207,10 +208,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "07/08/26 19:54:13",
- "timestampMillis": "1783511653532",
+ "dateTimestamp": "07/14/26 14:16:09",
+ "timestampMillis": "1784009769744",
  "status": {
-  "cmdId": "dbc5d3b5-730c-43bd-9dc6-2b76caf302f0",
+  "cmdId": "4fe63206-9d43-4577-b004-fd6fdd930745",
   "state": "CS_PASSED"
  }
 }
@@ -218,8 +219,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "07/08/26 19:54:13",
- "timestampMillis": "1783511653580",
+ "dateTimestamp": "07/14/26 14:16:09",
+ "timestampMillis": "1784009769806",
  "report": {
   "path": "C:/TDM_0704\\TDM_0704\\lfm_tdm_gen\\lfm_tdm_gen\\reports\\v++_compile_lfm_tdm_gen_guidance.html",
   "name": "",
@@ -232,8 +233,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "07/08/26 19:54:13",
- "timestampMillis": "1783511653581",
+ "dateTimestamp": "07/14/26 14:16:09",
+ "timestampMillis": "1784009769808",
  "report": {
   "path": "C:/TDM_0704\\TDM_0704\\lfm_tdm_gen\\lfm_tdm_gen\\reports\\.db\\v++_compile_lfm_tdm_gen_guidance.pb3",
   "name": "",

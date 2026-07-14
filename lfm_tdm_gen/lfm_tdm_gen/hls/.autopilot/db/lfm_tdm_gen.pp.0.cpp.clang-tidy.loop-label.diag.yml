@@ -43,16 +43,16 @@ Diagnostics:
     FilePath:        lfm_tdm_gen.cpp
     Replacements:    
       - FilePath:        'C:\TDM_0704\TDM_0704\lfm_tdm_gen\lfm_tdm_gen\hls\.autopilot\db\lfm_tdm_gen.pp.0.cpp'
-        Offset:          1057140
+        Offset:          1071087
         Length:          0
         ReplacementText: 'VITIS_LOOP_53_1: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_57_2:  '
-    FileOffset:      57
+    Message:         'Added loop label VITIS_LOOP_56_2:  '
+    FileOffset:      56
     FilePath:        lfm_tdm_gen.cpp
     Replacements:    
       - FilePath:        'C:\TDM_0704\TDM_0704\lfm_tdm_gen\lfm_tdm_gen\hls\.autopilot\db\lfm_tdm_gen.pp.0.cpp'
-        Offset:          1057231
+        Offset:          1071177
         Length:          0
-        ReplacementText: 'VITIS_LOOP_57_2: '
+        ReplacementText: 'VITIS_LOOP_56_2: '
 ...

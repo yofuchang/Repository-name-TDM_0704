@@ -2320,7 +2320,7 @@
                         clock-names = "ap_clk";
                         xlnx,combinational = <0x0>;
                         xlnx,s-axi-ctrl-data-width = <0x20>;
-                        xlnx,latency = <0x100b>;
+                        xlnx,latency = <0x1003>;
                         xlnx,name = "lfm_tdm_gen_0";
                         phandle = <0xd>;
                 };

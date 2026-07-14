@@ -107,7 +107,7 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 2
-  set_param bd.open.in_stealth_mode 2
+  set_param bd.open.in_stealth_mode 4
   set_param runs.launchOptions { -jobs 8  }
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xczu48dr-fsvg1517-2-e
@@ -120,7 +120,7 @@ OPTRACE "set parameters" START { }
   set_property webtalk.parent_dir C:/TDM_0704/TDM_0704/TDM_0704.cache/wt [current_project]
   set_property parent.project_path C:/TDM_0704/TDM_0704/TDM_0704.xpr [current_project]
   set_property ip_repo_paths {
-  c:/TDM_0704/radar_beamformer_ip/radar_beamformer_ip/hls/impl/ip
+  C:/TDM_0704/radar_beamformer_ip/radar_beamformer_ip/hls/impl/ip
   C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/impl/ip
 } [current_project]
   update_ip_catalog
