@@ -3,8 +3,8 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Tue Jul 14 22:08:37 2026
-# Process ID         : 19188
+# Start of session at: Tue Jul 21 20:36:28 2026
+# Process ID         : 3456
 # Current directory  : C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/impl/ip
 # Command line       : vivado.exe -notrace -mode batch -source run_ippack.tcl
 # Log file           : C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/impl/ip/vivado.log
@@ -17,9 +17,9 @@
 # CPU Physical cores : 4
 # CPU Logical cores  : 8
 # Host memory        : 34169 MB
-# Swap memory        : 2147 MB
-# Total Virtual      : 36316 MB
-# Available Virtual  : 16822 MB
+# Swap memory        : 3556 MB
+# Total Virtual      : 37725 MB
+# Available Virtual  : 9538 MB
 #-----------------------------------------------------------
 source run_ippack.tcl -notrace
 INFO: calling package_hls_ip ip_types=vitis sysgen json_file=C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/hls_data.json outdir=C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/impl/ip srcdir=C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls sort_interfaces_ports=false
@@ -27,7 +27,7 @@ INFO: Copied 1 ipmisc file(s) to C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hl
 INFO: Copied 8 verilog file(s) to C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/impl/ip/hdl/verilog
 INFO: Copied 5 vhdl file(s) to C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/impl/ip/hdl/vhdl
 INFO: Copied 10 swdriver file(s) to C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/impl/ip/drivers
-ipx::create_core: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 450.625 ; gain = 115.145
+ipx::create_core: Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 451.797 ; gain = 115.629
 INFO: Import ports from HDL: C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/impl/ip/hdl/vhdl/lfm_tdm_gen.vhd (lfm_tdm_gen)
 INFO: Add axi4lite interface s_axi_CTRL
 INFO: Add clock interface ap_clk
@@ -52,4 +52,4 @@ INFO: Calling post_process_sysgen to specialize IP
 Generating sysgen info xml from json file
 INFO: Created IP C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/impl/ip/component.xml
 INFO: Created IP archive C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/impl/ip/xilinx_com_hls_lfm_tdm_gen_1_0.zip
-INFO: [Common 17-206] Exiting Vivado at Tue Jul 14 22:08:54 2026...
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 21 20:37:04 2026...

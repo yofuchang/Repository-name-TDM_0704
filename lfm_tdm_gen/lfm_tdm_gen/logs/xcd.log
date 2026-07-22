@@ -273,3 +273,53 @@
 07/14/26 22:08:55: Socket received request to stop server.
 07/14/26 22:08:55: Dispatch Server: do_await_stop
 07/14/26 22:08:55: SERVER: destructor for server bound to port 60162
+07/21/26 20:34:10: Running xcd server. This server was built by gradle.
+07/21/26 20:34:10: Server was asked to start on port: '49195'
+07/21/26 20:34:10: Server is using token UUID: '9d051aa0-9c79-4d4d-998f-cb842a8a186b'
+07/21/26 20:34:10: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+07/21/26 20:34:10: Attempting to start server on port '49195'
+07/21/26 20:34:10: Running Dispatch Server
+07/21/26 20:34:10: Version 2.2.0
+07/21/26 20:34:11: Dispatch Server: Accepted socket connection from client
+07/21/26 20:34:11: Starting Socket connection
+07/21/26 20:34:11: EXCHANGE_TOKEN received, server token: 9d051aa0-9c79-4d4d-998f-cb842a8a186b, passed token: 9d051aa0-9c79-4d4d-998f-cb842a8a186b
+07/21/26 20:34:11: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+07/21/26 20:34:11: SESSION_MGR: creating session with session uuid: '793a7160-38fa-4c67-9a14-e28a58ad3260' and name 'v++_compile_lfm_tdm_gen'
+07/21/26 20:34:11: KERNEL_SVC: creating session with uuid: '793a7160-38fa-4c67-9a14-e28a58ad3260' and name 'v++_compile_lfm_tdm_gen'
+07/21/26 20:34:11: GUIDANCE_SMGR: creating guidance session with uuid: '793a7160-38fa-4c67-9a14-e28a58ad3260' and name 'v++_compile_lfm_tdm_gen'
+07/21/26 20:34:11: SYSTEM_DIAGRAM: creating session with uuid: '793a7160-38fa-4c67-9a14-e28a58ad3260' and name 'v++_compile_lfm_tdm_gen'
+07/21/26 20:34:35: Dispatch Server: Accepted socket connection from client
+07/21/26 20:34:35: Starting Socket connection
+07/21/26 20:35:09: SESSION_MGR: closing session for UUID '793a7160-38fa-4c67-9a14-e28a58ad3260' with name 'v++_compile_lfm_tdm_gen'
+07/21/26 20:35:09: KERNEL_SVC: closing session for UUID '793a7160-38fa-4c67-9a14-e28a58ad3260' with name 'v++_compile_lfm_tdm_gen'
+07/21/26 20:35:09: GUIDANCE_SMGR: closing session for UUID '793a7160-38fa-4c67-9a14-e28a58ad3260' with name 'v++_compile_lfm_tdm_gen'
+07/21/26 20:35:09: SYSTEM_DIAGRAM: closing session for UUID '793a7160-38fa-4c67-9a14-e28a58ad3260' with name 'v++_compile_lfm_tdm_gen'
+07/21/26 20:35:09: STOP_SERVER received, server token: 9d051aa0-9c79-4d4d-998f-cb842a8a186b, passed token: 9d051aa0-9c79-4d4d-998f-cb842a8a186b
+07/21/26 20:35:09: Socket received request to stop server.
+07/21/26 20:35:09: Dispatch Server: do_await_stop
+07/21/26 20:35:09: SERVER: destructor for server bound to port 49195
+07/21/26 20:36:01: Running xcd server. This server was built by gradle.
+07/21/26 20:36:01: Server was asked to start on port: '58064'
+07/21/26 20:36:01: Server is using token UUID: 'ced97507-72a9-4dd7-b759-8ead75ba1306'
+07/21/26 20:36:01: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+07/21/26 20:36:01: Attempting to start server on port '58064'
+07/21/26 20:36:01: Running Dispatch Server
+07/21/26 20:36:01: Version 2.2.0
+07/21/26 20:36:02: Dispatch Server: Accepted socket connection from client
+07/21/26 20:36:02: Starting Socket connection
+07/21/26 20:36:02: EXCHANGE_TOKEN received, server token: ced97507-72a9-4dd7-b759-8ead75ba1306, passed token: ced97507-72a9-4dd7-b759-8ead75ba1306
+07/21/26 20:36:03: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+07/21/26 20:36:03: SESSION_MGR: creating session with session uuid: '647e29d1-46c1-446c-b093-452f3126ab61' and name 'vitis-run_compile_lfm_tdm_gen'
+07/21/26 20:36:03: KERNEL_SVC: creating session with uuid: '647e29d1-46c1-446c-b093-452f3126ab61' and name 'vitis-run_compile_lfm_tdm_gen'
+07/21/26 20:36:03: GUIDANCE_SMGR: creating guidance session with uuid: '647e29d1-46c1-446c-b093-452f3126ab61' and name 'vitis-run_compile_lfm_tdm_gen'
+07/21/26 20:36:03: SYSTEM_DIAGRAM: creating session with uuid: '647e29d1-46c1-446c-b093-452f3126ab61' and name 'vitis-run_compile_lfm_tdm_gen'
+07/21/26 20:36:19: Dispatch Server: Accepted socket connection from client
+07/21/26 20:36:19: Starting Socket connection
+07/21/26 20:37:05: SESSION_MGR: closing session for UUID '647e29d1-46c1-446c-b093-452f3126ab61' with name 'vitis-run_compile_lfm_tdm_gen'
+07/21/26 20:37:05: KERNEL_SVC: closing session for UUID '647e29d1-46c1-446c-b093-452f3126ab61' with name 'vitis-run_compile_lfm_tdm_gen'
+07/21/26 20:37:05: GUIDANCE_SMGR: closing session for UUID '647e29d1-46c1-446c-b093-452f3126ab61' with name 'vitis-run_compile_lfm_tdm_gen'
+07/21/26 20:37:05: SYSTEM_DIAGRAM: closing session for UUID '647e29d1-46c1-446c-b093-452f3126ab61' with name 'vitis-run_compile_lfm_tdm_gen'
+07/21/26 20:37:05: STOP_SERVER received, server token: ced97507-72a9-4dd7-b759-8ead75ba1306, passed token: ced97507-72a9-4dd7-b759-8ead75ba1306
+07/21/26 20:37:05: Socket received request to stop server.
+07/21/26 20:37:05: Dispatch Server: do_await_stop
+07/21/26 20:37:05: SERVER: destructor for server bound to port 58064

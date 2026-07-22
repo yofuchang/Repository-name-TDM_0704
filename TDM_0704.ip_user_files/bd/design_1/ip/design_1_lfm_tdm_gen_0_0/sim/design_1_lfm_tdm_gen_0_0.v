@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:hls:lfm_tdm_gen:1.0
-// IP Revision: 2114696888
+// IP Revision: 2114706876
 
 `timescale 1ns/1ps
 

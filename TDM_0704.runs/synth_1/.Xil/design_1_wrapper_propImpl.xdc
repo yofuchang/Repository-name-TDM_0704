@@ -1,0 +1,5 @@
+set_property SRC_FILE_INFO {cfile:C:/TDM_0704/TDM_0704/TDM_0704.srcs/constrs_1/new/clk104_spi_mux.xdc rfile:../../../TDM_0704.srcs/constrs_1/new/clk104_spi_mux.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:4 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN C11 [get_ports {GPIO_0_tri_o[0]}]
+set_property src_info {type:XDC file:1 line:5 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN B12 [get_ports {GPIO_0_tri_o[1]}]

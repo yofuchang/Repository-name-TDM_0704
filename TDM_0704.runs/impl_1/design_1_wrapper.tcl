@@ -97,6 +97,7 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
+set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config  -id {[BD 41-1306]}  -suppress 
 set_msg_config  -id {[BD 41-1271]}  -suppress 
 
@@ -106,10 +107,12 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param tcl.collectionResultDisplayLimit 0
   set_param chipscope.maxJobs 2
+  set_param power.BramSDPPropagationFix 1
+  set_param power.enableUnconnectedCarry8PinPower 1
+  set_param power.enableCarry8RouteBelPower 1
+  set_param power.enableLutRouteBelPower 1
   set_param bd.open.in_stealth_mode 4
-  set_param xicom.use_bs_reader 1
   set_param runs.launchOptions { -jobs 8  }
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xczu48dr-fsvg1517-2-e
@@ -123,7 +126,9 @@ OPTRACE "set parameters" START { }
   set_property parent.project_path C:/TDM_0704/TDM_0704/TDM_0704.xpr [current_project]
   set_property ip_repo_paths {
   C:/TDM_0704/radar_beamformer_ip/radar_beamformer_ip/hls/impl/ip
+  C:/TDM_0704/TDM_0704/adc_packetizer/adc_packetizer/hls/impl/ip
   C:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/impl/ip
+  C:/TDM_0704/TDM_0704/iq_to_real/iq_to_real/hls/impl/ip
 } [current_project]
   update_ip_catalog
   set_property ip_output_repo C:/TDM_0704/TDM_0704/TDM_0704.cache/ip [current_project]
@@ -137,6 +142,7 @@ OPTRACE "add files" START { }
   add_files C:/TDM_0704/TDM_0704/TDM_0704.srcs/sources_1/bd/design_1/design_1.bd
   set_param project.isImplRun false
 OPTRACE "read constraints: implementation" START { }
+  read_xdc C:/TDM_0704/TDM_0704/TDM_0704.srcs/constrs_1/new/clk104_spi_mux.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "read constraints: implementation_pre" START { }
 OPTRACE "read constraints: implementation_pre" END { }

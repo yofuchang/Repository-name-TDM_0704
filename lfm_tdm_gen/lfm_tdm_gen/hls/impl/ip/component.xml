@@ -1834,8 +1834,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>Lfm_tdm_gen</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2114696888</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2026-07-14T14:08:54Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>2114706876</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2026-07-21T12:37:04Z</xilinx:coreCreationDateTime>
       <xilinx:sdxKernelAttributes>
         <xilinx:sdx_kernel>true</xilinx:sdx_kernel>
         <xilinx:sdx_kernel_type>hls</xilinx:sdx_kernel_type>

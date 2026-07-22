@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"adc_packetizer": {
+			"proto_instances": {
+			}
+		}
+	}
+}

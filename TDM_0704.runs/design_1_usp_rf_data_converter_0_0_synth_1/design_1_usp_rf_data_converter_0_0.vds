@@ -1,0 +1,949 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue Jul 21 16:18:16 2026
+# Process ID         : 21088
+# Current directory  : C:/TDM_0704/TDM_0704/TDM_0704.runs/design_1_usp_rf_data_converter_0_0_synth_1
+# Command line       : vivado.exe -log design_1_usp_rf_data_converter_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_usp_rf_data_converter_0_0.tcl
+# Log file           : C:/TDM_0704/TDM_0704/TDM_0704.runs/design_1_usp_rf_data_converter_0_0_synth_1/design_1_usp_rf_data_converter_0_0.vds
+# Journal file       : C:/TDM_0704/TDM_0704/TDM_0704.runs/design_1_usp_rf_data_converter_0_0_synth_1\vivado.jou
+# Running On         : JohnsonKu
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz
+# CPU Frequency      : 1992 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 34169 MB
+# Swap memory        : 3809 MB
+# Total Virtual      : 37978 MB
+# Available Virtual  : 15933 MB
+#-----------------------------------------------------------
+source design_1_usp_rf_data_converter_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 447.547 ; gain = 122.426
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/TDM_0704/radar_beamformer_ip/radar_beamformer_ip/hls/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/TDM_0704/TDM_0704/adc_packetizer/adc_packetizer/hls/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/TDM_0704/TDM_0704/iq_to_real/iq_to_real/hls/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_usp_rf_data_converter_0_0
+Command: synth_design -top design_1_usp_rf_data_converter_0_0 -part xczu48dr-fsvg1517-2-e -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu48dr'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu48dr'
+INFO: [Device 21-403] Loading part xczu48dr-fsvg1517-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 19204
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1834.410 ; gain = 381.855
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'adc00_cal_frozen', assumed default net type 'wire' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:6959]
+INFO: [Synth 8-11241] undeclared symbol 'adc01_cal_frozen', assumed default net type 'wire' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:6961]
+INFO: [Synth 8-11241] undeclared symbol 'adc02_cal_frozen', assumed default net type 'wire' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:6963]
+INFO: [Synth 8-11241] undeclared symbol 'adc03_cal_frozen', assumed default net type 'wire' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:6965]
+INFO: [Synth 8-11241] undeclared symbol 'adc10_cal_frozen', assumed default net type 'wire' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:6967]
+INFO: [Synth 8-11241] undeclared symbol 'adc11_cal_frozen', assumed default net type 'wire' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:6969]
+INFO: [Synth 8-11241] undeclared symbol 'adc12_cal_frozen', assumed default net type 'wire' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:6971]
+INFO: [Synth 8-11241] undeclared symbol 'adc13_cal_frozen', assumed default net type 'wire' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:6973]
+INFO: [Synth 8-11241] undeclared symbol 'adc21_cal_frozen', assumed default net type 'wire' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:6977]
+INFO: [Synth 8-11241] undeclared symbol 'adc22_cal_frozen', assumed default net type 'wire' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:6979]
+INFO: [Synth 8-11241] undeclared symbol 'adc23_cal_frozen', assumed default net type 'wire' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:6981]
+INFO: [Synth 8-11241] undeclared symbol 'adc30_cal_frozen', assumed default net type 'wire' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:6983]
+INFO: [Synth 8-11241] undeclared symbol 'adc31_cal_frozen', assumed default net type 'wire' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:6985]
+INFO: [Synth 8-11241] undeclared symbol 'adc32_cal_frozen', assumed default net type 'wire' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:6987]
+INFO: [Synth 8-11241] undeclared symbol 'adc33_cal_frozen', assumed default net type 'wire' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:6989]
+INFO: [Synth 8-11241] undeclared symbol 'dpto_cntr_ld_en', assumed default net type 'wire' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_slave_attachment.v:503]
+INFO: [Synth 8-11241] undeclared symbol 'dpto_cnt_en', assumed default net type 'wire' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_slave_attachment.v:504]
+INFO: [Synth 8-6157] synthesizing module 'design_1_usp_rf_data_converter_0_0' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'design_1_usp_rf_data_converter_0_0_block' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:65]
+INFO: [Synth 8-6157] synthesizing module 'design_1_usp_rf_data_converter_0_0_rf_wrapper' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_rf_wrapper.v:59]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (0#1) [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6157] synthesizing module 'design_1_usp_rf_data_converter_0_0_tile_config' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_tile_config.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'design_1_usp_rf_data_converter_0_0_device_rom' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_device_rom.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_usp_rf_data_converter_0_0_device_rom' (0#1) [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_device_rom.sv:57]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_tile_config.sv:304]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_usp_rf_data_converter_0_0_tile_config' (0#1) [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_tile_config.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'design_1_usp_rf_data_converter_0_0_constants_config' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_constants_config.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_usp_rf_data_converter_0_0_constants_config' (0#1) [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_constants_config.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'design_1_usp_rf_data_converter_0_0_bgt_fsm' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_bgt_fsm.v:56]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_usp_rf_data_converter_0_0_bgt_fsm' (0#1) [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_bgt_fsm.v:56]
+INFO: [Synth 8-6157] synthesizing module 'design_1_usp_rf_data_converter_0_0_por_fsm_disabled' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_por_fsm_disabled.sv:56]
+INFO: [Synth 8-226] default block is never used [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_por_fsm_disabled.sv:301]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_usp_rf_data_converter_0_0_por_fsm_disabled' (0#1) [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_por_fsm_disabled.sv:56]
+INFO: [Synth 8-6157] synthesizing module 'design_1_usp_rf_data_converter_0_0_clk_detection' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_clk_detection.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_usp_rf_data_converter_0_0_clk_detection' (0#1) [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_clk_detection.v:59]
+INFO: [Synth 8-6157] synthesizing module 'design_1_usp_rf_data_converter_0_0_por_fsm_disabled__parameterized0' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_por_fsm_disabled.sv:56]
+INFO: [Synth 8-226] default block is never used [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_por_fsm_disabled.sv:301]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_usp_rf_data_converter_0_0_por_fsm_disabled__parameterized0' (0#1) [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_por_fsm_disabled.sv:56]
+INFO: [Synth 8-6157] synthesizing module 'RFDAC' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp_diablo.v:151696]
+INFO: [Synth 8-6155] done synthesizing module 'RFDAC' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp_diablo.v:151696]
+INFO: [Synth 8-6157] synthesizing module 'RFDAC__parameterized0' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp_diablo.v:151696]
+INFO: [Synth 8-6155] done synthesizing module 'RFDAC__parameterized0' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp_diablo.v:151696]
+INFO: [Synth 8-6157] synthesizing module 'RFDAC__parameterized1' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp_diablo.v:151696]
+INFO: [Synth 8-6155] done synthesizing module 'RFDAC__parameterized1' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp_diablo.v:151696]
+INFO: [Synth 8-6157] synthesizing module 'RFDAC__parameterized2' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp_diablo.v:151696]
+INFO: [Synth 8-6155] done synthesizing module 'RFDAC__parameterized2' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp_diablo.v:151696]
+INFO: [Synth 8-6157] synthesizing module 'RFADC' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp_diablo.v:151152]
+INFO: [Synth 8-6155] done synthesizing module 'RFADC' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp_diablo.v:151152]
+INFO: [Synth 8-6157] synthesizing module 'RFADC__parameterized0' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp_diablo.v:151152]
+INFO: [Synth 8-6155] done synthesizing module 'RFADC__parameterized0' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp_diablo.v:151152]
+INFO: [Synth 8-6157] synthesizing module 'RFADC__parameterized1' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp_diablo.v:151152]
+INFO: [Synth 8-6155] done synthesizing module 'RFADC__parameterized1' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp_diablo.v:151152]
+INFO: [Synth 8-6157] synthesizing module 'RFADC__parameterized2' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp_diablo.v:151152]
+INFO: [Synth 8-6155] done synthesizing module 'RFADC__parameterized2' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp_diablo.v:151152]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_usp_rf_data_converter_0_0_rf_wrapper' (0#1) [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_rf_wrapper.v:59]
+INFO: [Synth 8-6157] synthesizing module 'design_1_usp_rf_data_converter_0_0_axi_lite_ipif' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_axi_lite_ipif.v:87]
+INFO: [Synth 8-6157] synthesizing module 'design_1_usp_rf_data_converter_0_0_slave_attachment' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_slave_attachment.v:83]
+INFO: [Synth 8-6157] synthesizing module 'design_1_usp_rf_data_converter_0_0_counter_f' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_counter_f.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_usp_rf_data_converter_0_0_counter_f' (0#1) [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_counter_f.v:53]
+INFO: [Synth 8-6157] synthesizing module 'design_1_usp_rf_data_converter_0_0_address_decoder' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_address_decoder.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_usp_rf_data_converter_0_0_address_decoder' (0#1) [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_address_decoder.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_usp_rf_data_converter_0_0_slave_attachment' (0#1) [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_slave_attachment.v:83]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_usp_rf_data_converter_0_0_axi_lite_ipif' (0#1) [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_axi_lite_ipif.v:87]
+INFO: [Synth 8-6157] synthesizing module 'design_1_usp_rf_data_converter_0_0_register_decode' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_register_decode.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_usp_rf_data_converter_0_0_register_decode' (0#1) [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_register_decode.v:59]
+INFO: [Synth 8-6157] synthesizing module 'design_1_usp_rf_data_converter_0_0_drp_access_ctrl' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_drp_access_ctrl.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_usp_rf_data_converter_0_0_drp_access_ctrl' (0#1) [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_drp_access_ctrl.v:58]
+INFO: [Synth 8-6157] synthesizing module 'design_1_usp_rf_data_converter_0_0_drp_control_top' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_drp_control_top.v:58]
+INFO: [Synth 8-6157] synthesizing module 'design_1_usp_rf_data_converter_0_0_drp_control' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_drp_control.v:58]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_drp_control.v:97]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_usp_rf_data_converter_0_0_drp_control' (0#1) [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_drp_control.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_usp_rf_data_converter_0_0_drp_control_top' (0#1) [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_drp_control_top.v:58]
+INFO: [Synth 8-6157] synthesizing module 'design_1_usp_rf_data_converter_0_0_irq_sync' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_irq_sync.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single__parameterized0' [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single__parameterized0' (0#1) [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_usp_rf_data_converter_0_0_irq_sync' (0#1) [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_irq_sync.v:57]
+INFO: [Synth 8-6157] synthesizing module 'design_1_usp_rf_data_converter_0_0_powerup_state_irq' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_powerup_state_irq.v:59]
+INFO: [Synth 8-6157] synthesizing module 'design_1_usp_rf_data_converter_0_0_irq_req_ack' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_irq_req_ack.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_usp_rf_data_converter_0_0_irq_req_ack' (0#1) [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_irq_req_ack.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_usp_rf_data_converter_0_0_powerup_state_irq' (0#1) [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_powerup_state_irq.v:59]
+INFO: [Synth 8-6157] synthesizing module 'design_1_usp_rf_data_converter_0_0_overvol_irq' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_overvol_irq.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_usp_rf_data_converter_0_0_overvol_irq' (0#1) [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_overvol_irq.v:59]
+INFO: [Synth 8-6157] synthesizing module 'design_1_usp_rf_data_converter_0_0_bufg_gt_ctrl' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0bufg_gt_ctrl.v:58]
+INFO: [Synth 8-6157] synthesizing module 'BUFG_GT' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp_diablo.v:2853]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG_GT' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp_diablo.v:2853]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_usp_rf_data_converter_0_0_bufg_gt_ctrl' (0#1) [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0bufg_gt_ctrl.v:58]
+INFO: [Synth 8-6157] synthesizing module 'design_1_usp_rf_data_converter_0_0_reset_count' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_rst_cnt.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_usp_rf_data_converter_0_0_reset_count' (0#1) [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_rst_cnt.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_usp_rf_data_converter_0_0_block' (0#1) [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_usp_rf_data_converter_0_0' (0#1) [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0.v:58]
+WARNING: [Synth 8-6014] Unused sequential element drp_gnt_adc0_r_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_constants_config.sv:357]
+WARNING: [Synth 8-6014] Unused sequential element drp_gnt_adc1_r_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_constants_config.sv:358]
+WARNING: [Synth 8-6014] Unused sequential element drp_gnt_adc3_r_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_constants_config.sv:360]
+WARNING: [Synth 8-6014] Unused sequential element adc0_start_r_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_constants_config.sv:361]
+WARNING: [Synth 8-6014] Unused sequential element adc1_start_r_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_constants_config.sv:362]
+WARNING: [Synth 8-6014] Unused sequential element adc3_start_r_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_constants_config.sv:364]
+WARNING: [Synth 8-6014] Unused sequential element adc0_start_rising_held_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_constants_config.sv:396]
+WARNING: [Synth 8-6014] Unused sequential element adc1_start_rising_held_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_constants_config.sv:411]
+WARNING: [Synth 8-6014] Unused sequential element adc3_start_rising_held_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_constants_config.sv:441]
+WARNING: [Synth 8-3848] Net drp_req_adc0 in module/entity design_1_usp_rf_data_converter_0_0_constants_config does not have driver. [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_constants_config.sv:130]
+WARNING: [Synth 8-3848] Net drp_req_adc1 in module/entity design_1_usp_rf_data_converter_0_0_constants_config does not have driver. [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_constants_config.sv:132]
+WARNING: [Synth 8-3848] Net drp_req_adc3 in module/entity design_1_usp_rf_data_converter_0_0_constants_config does not have driver. [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_constants_config.sv:136]
+WARNING: [Synth 8-3848] Net adc0_drpaddr in module/entity design_1_usp_rf_data_converter_0_0_constants_config does not have driver. [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_constants_config.sv:139]
+WARNING: [Synth 8-3848] Net adc0_drpen in module/entity design_1_usp_rf_data_converter_0_0_constants_config does not have driver. [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_constants_config.sv:140]
+WARNING: [Synth 8-3848] Net adc0_drpdi in module/entity design_1_usp_rf_data_converter_0_0_constants_config does not have driver. [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_constants_config.sv:141]
+WARNING: [Synth 8-3848] Net adc0_drpwe in module/entity design_1_usp_rf_data_converter_0_0_constants_config does not have driver. [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_constants_config.sv:143]
+WARNING: [Synth 8-3848] Net adc1_drpaddr in module/entity design_1_usp_rf_data_converter_0_0_constants_config does not have driver. [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_constants_config.sv:146]
+WARNING: [Synth 8-3848] Net adc1_drpen in module/entity design_1_usp_rf_data_converter_0_0_constants_config does not have driver. [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_constants_config.sv:147]
+WARNING: [Synth 8-3848] Net adc1_drpdi in module/entity design_1_usp_rf_data_converter_0_0_constants_config does not have driver. [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_constants_config.sv:148]
+WARNING: [Synth 8-3848] Net adc1_drpwe in module/entity design_1_usp_rf_data_converter_0_0_constants_config does not have driver. [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_constants_config.sv:150]
+WARNING: [Synth 8-3848] Net adc3_drpaddr in module/entity design_1_usp_rf_data_converter_0_0_constants_config does not have driver. [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_constants_config.sv:160]
+WARNING: [Synth 8-3848] Net adc3_drpen in module/entity design_1_usp_rf_data_converter_0_0_constants_config does not have driver. [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_constants_config.sv:161]
+WARNING: [Synth 8-3848] Net adc3_drpdi in module/entity design_1_usp_rf_data_converter_0_0_constants_config does not have driver. [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_constants_config.sv:162]
+WARNING: [Synth 8-3848] Net adc3_drpwe in module/entity design_1_usp_rf_data_converter_0_0_constants_config does not have driver. [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_constants_config.sv:164]
+WARNING: [Synth 8-3848] Net adc0_done in module/entity design_1_usp_rf_data_converter_0_0_constants_config does not have driver. [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_constants_config.sv:176]
+WARNING: [Synth 8-3848] Net adc1_done in module/entity design_1_usp_rf_data_converter_0_0_constants_config does not have driver. [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_constants_config.sv:177]
+WARNING: [Synth 8-3848] Net adc3_done in module/entity design_1_usp_rf_data_converter_0_0_constants_config does not have driver. [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_constants_config.sv:179]
+WARNING: [Synth 8-3848] Net adc0_bg_cal_off in module/entity design_1_usp_rf_data_converter_0_0_constants_config does not have driver. [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_constants_config.sv:201]
+WARNING: [Synth 8-3848] Net adc1_bg_cal_off in module/entity design_1_usp_rf_data_converter_0_0_constants_config does not have driver. [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_constants_config.sv:202]
+WARNING: [Synth 8-3848] Net adc3_bg_cal_off in module/entity design_1_usp_rf_data_converter_0_0_constants_config does not have driver. [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_constants_config.sv:204]
+WARNING: [Synth 8-6014] Unused sequential element timer_125ns_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_bgt_fsm.v:126]
+WARNING: [Synth 8-6014] Unused sequential element por_timer_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_por_fsm_disabled.sv:145]
+WARNING: [Synth 8-6014] Unused sequential element por_timer_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_por_fsm_disabled.sv:145]
+WARNING: [Synth 8-6014] Unused sequential element adc00_cal_freeze_reg_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:4071]
+WARNING: [Synth 8-6014] Unused sequential element adc00_disable_cal_freeze_input_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:4072]
+WARNING: [Synth 8-6014] Unused sequential element adc01_cal_freeze_reg_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:4084]
+WARNING: [Synth 8-6014] Unused sequential element adc01_disable_cal_freeze_input_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:4085]
+WARNING: [Synth 8-6014] Unused sequential element adc02_cal_freeze_reg_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:4097]
+WARNING: [Synth 8-6014] Unused sequential element adc02_disable_cal_freeze_input_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:4098]
+WARNING: [Synth 8-6014] Unused sequential element adc03_cal_freeze_reg_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:4110]
+WARNING: [Synth 8-6014] Unused sequential element adc03_disable_cal_freeze_input_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:4111]
+WARNING: [Synth 8-6014] Unused sequential element adc00_dsa_code_reg_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:4123]
+WARNING: [Synth 8-6014] Unused sequential element adc00_disable_ds_code_input_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:4124]
+WARNING: [Synth 8-6014] Unused sequential element adc01_dsa_code_reg_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:4136]
+WARNING: [Synth 8-6014] Unused sequential element adc01_disable_ds_code_input_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:4137]
+WARNING: [Synth 8-6014] Unused sequential element adc02_dsa_code_reg_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:4149]
+WARNING: [Synth 8-6014] Unused sequential element adc02_disable_ds_code_input_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:4150]
+WARNING: [Synth 8-6014] Unused sequential element adc03_dsa_code_reg_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:4162]
+WARNING: [Synth 8-6014] Unused sequential element adc03_disable_ds_code_input_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:4163]
+WARNING: [Synth 8-6014] Unused sequential element adc0_dsa_update_reg_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:4175]
+WARNING: [Synth 8-6014] Unused sequential element adc10_cal_freeze_reg_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:4609]
+WARNING: [Synth 8-6014] Unused sequential element adc10_disable_cal_freeze_input_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:4610]
+WARNING: [Synth 8-6014] Unused sequential element adc11_cal_freeze_reg_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:4622]
+WARNING: [Synth 8-6014] Unused sequential element adc11_disable_cal_freeze_input_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:4623]
+WARNING: [Synth 8-6014] Unused sequential element adc12_cal_freeze_reg_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:4635]
+WARNING: [Synth 8-6014] Unused sequential element adc12_disable_cal_freeze_input_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:4636]
+WARNING: [Synth 8-6014] Unused sequential element adc13_cal_freeze_reg_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:4648]
+WARNING: [Synth 8-6014] Unused sequential element adc13_disable_cal_freeze_input_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:4649]
+WARNING: [Synth 8-6014] Unused sequential element adc10_dsa_code_reg_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:4661]
+WARNING: [Synth 8-6014] Unused sequential element adc10_disable_ds_code_input_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:4662]
+WARNING: [Synth 8-6014] Unused sequential element adc11_dsa_code_reg_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:4674]
+WARNING: [Synth 8-6014] Unused sequential element adc11_disable_ds_code_input_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:4675]
+WARNING: [Synth 8-6014] Unused sequential element adc12_dsa_code_reg_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:4687]
+WARNING: [Synth 8-6014] Unused sequential element adc12_disable_ds_code_input_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:4688]
+WARNING: [Synth 8-6014] Unused sequential element adc13_dsa_code_reg_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:4700]
+WARNING: [Synth 8-6014] Unused sequential element adc13_disable_ds_code_input_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:4701]
+WARNING: [Synth 8-6014] Unused sequential element adc1_dsa_update_reg_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:4713]
+WARNING: [Synth 8-6014] Unused sequential element adc21_cal_freeze_reg_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:5160]
+WARNING: [Synth 8-6014] Unused sequential element adc21_disable_cal_freeze_input_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:5161]
+WARNING: [Synth 8-6014] Unused sequential element adc22_cal_freeze_reg_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:5173]
+WARNING: [Synth 8-6014] Unused sequential element adc22_disable_cal_freeze_input_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:5174]
+WARNING: [Synth 8-6014] Unused sequential element adc23_cal_freeze_reg_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:5186]
+WARNING: [Synth 8-6014] Unused sequential element adc23_disable_cal_freeze_input_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:5187]
+WARNING: [Synth 8-6014] Unused sequential element adc22_dsa_code_reg_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:5225]
+WARNING: [Synth 8-6014] Unused sequential element adc22_disable_ds_code_input_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:5226]
+WARNING: [Synth 8-6014] Unused sequential element adc23_dsa_code_reg_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:5238]
+WARNING: [Synth 8-6014] Unused sequential element adc23_disable_ds_code_input_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:5239]
+WARNING: [Synth 8-6014] Unused sequential element adc30_cal_freeze_reg_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:5685]
+WARNING: [Synth 8-6014] Unused sequential element adc30_disable_cal_freeze_input_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:5686]
+WARNING: [Synth 8-6014] Unused sequential element adc31_cal_freeze_reg_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:5698]
+WARNING: [Synth 8-6014] Unused sequential element adc31_disable_cal_freeze_input_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:5699]
+WARNING: [Synth 8-6014] Unused sequential element adc32_cal_freeze_reg_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:5711]
+WARNING: [Synth 8-6014] Unused sequential element adc32_disable_cal_freeze_input_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:5712]
+WARNING: [Synth 8-6014] Unused sequential element adc33_cal_freeze_reg_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:5724]
+WARNING: [Synth 8-6014] Unused sequential element adc33_disable_cal_freeze_input_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:5725]
+WARNING: [Synth 8-6014] Unused sequential element adc30_dsa_code_reg_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:5737]
+WARNING: [Synth 8-6014] Unused sequential element adc30_disable_ds_code_input_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:5738]
+WARNING: [Synth 8-6014] Unused sequential element adc31_dsa_code_reg_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:5750]
+WARNING: [Synth 8-6014] Unused sequential element adc31_disable_ds_code_input_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:5751]
+WARNING: [Synth 8-6014] Unused sequential element adc32_dsa_code_reg_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:5763]
+WARNING: [Synth 8-6014] Unused sequential element adc32_disable_ds_code_input_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:5764]
+WARNING: [Synth 8-6014] Unused sequential element adc33_dsa_code_reg_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:5776]
+WARNING: [Synth 8-6014] Unused sequential element adc33_disable_ds_code_input_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:5777]
+WARNING: [Synth 8-6014] Unused sequential element adc3_dsa_update_reg_reg was removed.  [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:5789]
+WARNING: [Synth 8-3848] Net adc20_sig_detect in module/entity design_1_usp_rf_data_converter_0_0_block does not have driver. [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:113]
+WARNING: [Synth 8-3848] Net dac1_reset_cnt in module/entity design_1_usp_rf_data_converter_0_0_block does not have driver. [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:1131]
+WARNING: [Synth 8-3848] Net dac2_reset_cnt in module/entity design_1_usp_rf_data_converter_0_0_block does not have driver. [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:1164]
+WARNING: [Synth 8-3848] Net dac3_reset_cnt in module/entity design_1_usp_rf_data_converter_0_0_block does not have driver. [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:1197]
+WARNING: [Synth 8-3848] Net adc0_reset_cnt in module/entity design_1_usp_rf_data_converter_0_0_block does not have driver. [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:1256]
+WARNING: [Synth 8-3848] Net adc1_reset_cnt in module/entity design_1_usp_rf_data_converter_0_0_block does not have driver. [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:1312]
+WARNING: [Synth 8-3848] Net adc3_reset_cnt in module/entity design_1_usp_rf_data_converter_0_0_block does not have driver. [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_block.v:1424]
+WARNING: [Synth 8-7129] Port src_clk in module xpm_cdc_single__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc00_irq[2] in module design_1_usp_rf_data_converter_0_0_irq_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc01_irq[2] in module design_1_usp_rf_data_converter_0_0_irq_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc02_irq[2] in module design_1_usp_rf_data_converter_0_0_irq_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc03_irq[2] in module design_1_usp_rf_data_converter_0_0_irq_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc10_irq[2] in module design_1_usp_rf_data_converter_0_0_irq_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc11_irq[2] in module design_1_usp_rf_data_converter_0_0_irq_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc12_irq[2] in module design_1_usp_rf_data_converter_0_0_irq_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc13_irq[2] in module design_1_usp_rf_data_converter_0_0_irq_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc20_irq[2] in module design_1_usp_rf_data_converter_0_0_irq_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc21_irq[2] in module design_1_usp_rf_data_converter_0_0_irq_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc22_irq[2] in module design_1_usp_rf_data_converter_0_0_irq_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc23_irq[2] in module design_1_usp_rf_data_converter_0_0_irq_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc30_irq[2] in module design_1_usp_rf_data_converter_0_0_irq_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc31_irq[2] in module design_1_usp_rf_data_converter_0_0_irq_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc32_irq[2] in module design_1_usp_rf_data_converter_0_0_irq_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc33_irq[2] in module design_1_usp_rf_data_converter_0_0_irq_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_addr[12] in module design_1_usp_rf_data_converter_0_0_register_decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_addr[1] in module design_1_usp_rf_data_converter_0_0_register_decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus2ip_addr[0] in module design_1_usp_rf_data_converter_0_0_register_decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address_In_Erly[0] in module design_1_usp_rf_data_converter_0_0_address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address_In_Erly[1] in module design_1_usp_rf_data_converter_0_0_address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address_In_Erly[2] in module design_1_usp_rf_data_converter_0_0_address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address_In_Erly[3] in module design_1_usp_rf_data_converter_0_0_address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address_In_Erly[4] in module design_1_usp_rf_data_converter_0_0_address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address_In_Erly[5] in module design_1_usp_rf_data_converter_0_0_address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address_In_Erly[6] in module design_1_usp_rf_data_converter_0_0_address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address_In_Erly[7] in module design_1_usp_rf_data_converter_0_0_address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address_In_Erly[8] in module design_1_usp_rf_data_converter_0_0_address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address_In_Erly[9] in module design_1_usp_rf_data_converter_0_0_address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address_In_Erly[10] in module design_1_usp_rf_data_converter_0_0_address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address_In_Erly[11] in module design_1_usp_rf_data_converter_0_0_address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address_In_Erly[12] in module design_1_usp_rf_data_converter_0_0_address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address_In_Erly[13] in module design_1_usp_rf_data_converter_0_0_address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address_In_Erly[14] in module design_1_usp_rf_data_converter_0_0_address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address_In_Erly[15] in module design_1_usp_rf_data_converter_0_0_address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address_In_Erly[16] in module design_1_usp_rf_data_converter_0_0_address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Address_In_Erly[17] in module design_1_usp_rf_data_converter_0_0_address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Bus_RNW in module design_1_usp_rf_data_converter_0_0_address_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WSTRB[3] in module design_1_usp_rf_data_converter_0_0_slave_attachment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WSTRB[2] in module design_1_usp_rf_data_converter_0_0_slave_attachment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WSTRB[1] in module design_1_usp_rf_data_converter_0_0_slave_attachment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WSTRB[0] in module design_1_usp_rf_data_converter_0_0_slave_attachment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_clk in module xpm_cdc_single is either unconnected or has no load
+WARNING: [Synth 8-7129] Port status_bits[2] in module design_1_usp_rf_data_converter_0_0_por_fsm_disabled__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drpdo_status[15] in module design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drpdo_status[14] in module design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drpdo_status[13] in module design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drpdo_status[12] in module design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drpdo_status[9] in module design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drpdo_status[8] in module design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drpdo_status[5] in module design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drpdo_status[4] in module design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drpdo_status[3] in module design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drpdo_status[2] in module design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drpdo_status[1] in module design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port drpdo_status[0] in module design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc0_status[23] in module design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc0_status[22] in module design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc0_status[21] in module design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc0_status[20] in module design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc0_status[19] in module design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc0_status[18] in module design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc0_status[17] in module design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc0_status[16] in module design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc0_status[15] in module design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc0_status[14] in module design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc0_status[13] in module design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc0_status[12] in module design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc0_status[11] in module design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc0_status[10] in module design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc0_status[9] in module design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc0_status[8] in module design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc0_status[7] in module design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc0_status[6] in module design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc0_status[5] in module design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc0_status[4] in module design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc0_status[3] in module design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc0_status[2] in module design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc0_status[1] in module design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc1_status[23] in module design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc1_status[22] in module design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc1_status[21] in module design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc1_status[20] in module design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc1_status[19] in module design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc1_status[18] in module design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc1_status[17] in module design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc1_status[16] in module design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc1_status[15] in module design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc1_status[14] in module design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc1_status[13] in module design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc1_status[12] in module design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc1_status[11] in module design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc1_status[10] in module design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc1_status[9] in module design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc1_status[8] in module design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc1_status[7] in module design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc1_status[6] in module design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc1_status[5] in module design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port adc1_status[4] in module design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2137.770 ; gain = 685.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2137.770 ; gain = 685.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2137.770 ; gain = 685.215
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.358 . Memory (MB): peak = 2137.770 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_ooc.xdc] for cell 'inst'
+create_clock: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2238.773 ; gain = 0.691
+Finished Parsing XDC File [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_clocks.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_clocks.xdc] for cell 'inst'
+Parsing XDC File [C:/TDM_0704/TDM_0704/TDM_0704.runs/design_1_usp_rf_data_converter_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/TDM_0704/TDM_0704/TDM_0704.runs/design_1_usp_rf_data_converter_0_0_synth_1/dont_touch.xdc]
+Parsing XDC File [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_usp_rf_data_converter_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_usp_rf_data_converter_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_usp_rf_data_converter_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_usp_rf_data_converter_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 158 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2238.773 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.188 . Memory (MB): peak = 2239.098 ; gain = 0.324
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 2239.098 ; gain = 786.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu48dr-fsvg1517-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 2239.098 ; gain = 786.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/TDM_0704/TDM_0704/TDM_0704.runs/design_1_usp_rf_data_converter_0_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/design_1_usp_rf_data_converter_0_0_rf_wrapper_i/por_state_machine_i/por_fsm_adc0/cdc_adc0_status_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/design_1_usp_rf_data_converter_0_0_rf_wrapper_i/por_state_machine_i/por_fsm_adc2/cdc_adc0_status_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/design_1_usp_rf_data_converter_0_0_rf_wrapper_i/por_state_machine_i/por_fsm_dac0/cdc_adc0_status_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/design_1_usp_rf_data_converter_0_0_rf_wrapper_i/cdc_adc0_supplies_up_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/design_1_usp_rf_data_converter_0_0_rf_wrapper_i/por_state_machine_i/por_fsm_adc0/cdc_adc1_status_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/design_1_usp_rf_data_converter_0_0_rf_wrapper_i/por_state_machine_i/por_fsm_adc2/cdc_adc1_status_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/design_1_usp_rf_data_converter_0_0_rf_wrapper_i/por_state_machine_i/por_fsm_dac0/cdc_adc1_status_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/design_1_usp_rf_data_converter_0_0_rf_wrapper_i/cdc_adc1_supplies_up_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/design_1_usp_rf_data_converter_0_0_rf_wrapper_i/cdc_adc2_clk_present_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/cdc_adc2_clk_valid_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/design_1_usp_rf_data_converter_0_0_rf_wrapper_i/cdc_adc2_done_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/design_1_usp_rf_data_converter_0_0_rf_wrapper_i/cdc_adc2_pll_lock_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/design_1_usp_rf_data_converter_0_0_rf_wrapper_i/cdc_adc2_powerup_state_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/design_1_usp_rf_data_converter_0_0_rf_wrapper_i/por_state_machine_i/por_fsm_adc0/cdc_adc2_status_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/design_1_usp_rf_data_converter_0_0_rf_wrapper_i/por_state_machine_i/por_fsm_adc2/cdc_adc2_status_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/design_1_usp_rf_data_converter_0_0_rf_wrapper_i/por_state_machine_i/por_fsm_dac0/cdc_adc2_status_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/design_1_usp_rf_data_converter_0_0_rf_wrapper_i/cdc_adc2_supplies_up_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/design_1_usp_rf_data_converter_0_0_rf_wrapper_i/por_state_machine_i/por_fsm_adc0/cdc_adc3_status_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/design_1_usp_rf_data_converter_0_0_rf_wrapper_i/por_state_machine_i/por_fsm_adc2/cdc_adc3_status_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/design_1_usp_rf_data_converter_0_0_rf_wrapper_i/por_state_machine_i/por_fsm_dac0/cdc_adc3_status_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/design_1_usp_rf_data_converter_0_0_rf_wrapper_i/cdc_adc3_supplies_up_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/design_1_usp_rf_data_converter_0_0_rf_wrapper_i/cdc_dac0_clk_present_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/cdc_dac0_clk_valid_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/design_1_usp_rf_data_converter_0_0_rf_wrapper_i/cdc_dac0_done_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/design_1_usp_rf_data_converter_0_0_rf_wrapper_i/cdc_dac0_pll_lock_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/design_1_usp_rf_data_converter_0_0_rf_wrapper_i/cdc_dac0_powerup_state_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/design_1_usp_rf_data_converter_0_0_rf_wrapper_i/cdc_dac0_supplies_up_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/design_1_usp_rf_data_converter_0_0_rf_wrapper_i/cdc_dac1_supplies_up_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/design_1_usp_rf_data_converter_0_0_rf_wrapper_i/cdc_dac2_supplies_up_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/design_1_usp_rf_data_converter_0_0_rf_wrapper_i/cdc_dac3_supplies_up_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc00_cm_over_vol. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc00_cm_under_vol. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc00_data_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc00_fifo_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc00_over_range. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc00_over_vol. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc01_cm_over_vol. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc01_cm_under_vol. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc01_data_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc01_fifo_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc01_over_range. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc01_over_vol. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc02_cm_over_vol. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc02_cm_under_vol. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc02_data_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc02_fifo_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc02_over_range. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc02_over_vol. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc03_cm_over_vol. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc03_cm_under_vol. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc03_data_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc03_fifo_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc03_over_range. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc03_over_vol. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc10_cm_over_vol. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc10_cm_under_vol. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc10_data_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc10_fifo_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc10_over_range. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc10_over_vol. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc11_cm_over_vol. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc11_cm_under_vol. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc11_data_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc11_fifo_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc11_over_range. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc11_over_vol. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc12_cm_over_vol. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc12_cm_under_vol. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc12_data_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc12_fifo_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc12_over_range. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc12_over_vol. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc13_cm_over_vol. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc13_cm_under_vol. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc13_data_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc13_fifo_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc13_over_range. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc13_over_vol. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc20_cm_over_vol. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc20_cm_under_vol. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc20_data_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc20_fifo_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc20_over_range. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc20_over_vol. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc21_cm_over_vol. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc21_cm_under_vol. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc21_data_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc21_fifo_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc21_over_range. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc21_over_vol. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc22_cm_over_vol. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc22_cm_under_vol. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc22_data_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc22_fifo_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc22_over_range. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc22_over_vol. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc23_cm_over_vol. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc23_cm_under_vol. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc23_data_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc23_fifo_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc23_over_range. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc23_over_vol. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc30_cm_over_vol. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc30_cm_under_vol. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc30_data_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc30_fifo_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc30_over_range. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc30_over_vol. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc31_cm_over_vol. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc31_cm_under_vol. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc31_data_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc31_fifo_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc31_over_range. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc31_over_vol. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc32_cm_over_vol. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc32_cm_under_vol. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc32_data_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc32_fifo_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc32_over_range. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc32_over_vol. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc33_cm_over_vol. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc33_cm_under_vol. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc33_data_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc33_fifo_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc33_over_range. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_adc33_over_vol. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_dac00_data_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_dac00_fifo_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_dac01_data_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_dac01_fifo_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_dac02_data_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_dac02_fifo_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_dac03_data_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_dac03_fifo_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_dac10_data_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_dac10_fifo_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_dac11_data_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_dac11_fifo_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_dac12_data_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_dac12_fifo_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_dac13_data_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_dac13_fifo_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_dac20_data_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_dac20_fifo_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_dac21_data_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_dac21_fifo_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_dac22_data_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_dac22_fifo_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_dac23_data_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_dac23_fifo_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_dac30_data_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_dac30_fifo_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_dac31_data_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_dac31_fifo_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_dac32_data_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_dac32_fifo_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_dac33_data_irq. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/i_design_1_usp_rf_data_converter_0_0_irq_sync/sync_dac33_fifo_irq. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 2239.098 ; gain = 786.543
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'tc_sm_state_reg' in module 'design_1_usp_rf_data_converter_0_0_tile_config'
+INFO: [Synth 8-802] inferred FSM for state register 'const_sm_state_adc2_reg' in module 'design_1_usp_rf_data_converter_0_0_constants_config'
+INFO: [Synth 8-3936] Found unconnected internal register 'rdata_status_reg' and it is trimmed from '16' to '1' bits. [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_usp_rf_data_converter_0_0/synth/design_1_usp_rf_data_converter_0_0_bgt_fsm.v:303]
+INFO: [Synth 8-802] inferred FSM for state register 'bgt_sm_state_reg' in module 'design_1_usp_rf_data_converter_0_0_bgt_fsm'
+INFO: [Synth 8-802] inferred FSM for state register 'por_sm_state_reg' in module 'design_1_usp_rf_data_converter_0_0_por_fsm'
+INFO: [Synth 8-802] inferred FSM for state register 'fsm_cs_reg' in module 'design_1_usp_rf_data_converter_0_0_drp_arbiter'
+INFO: [Synth 8-802] inferred FSM for state register 'por_sm_state_reg' in module 'design_1_usp_rf_data_converter_0_0_por_fsm_disabled'
+INFO: [Synth 8-802] inferred FSM for state register 'pll_state_machine.status_sm_state_reg' in module 'design_1_usp_rf_data_converter_0_0_por_fsm__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'por_sm_state_reg' in module 'design_1_usp_rf_data_converter_0_0_por_fsm__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'fsm_cs_reg' in module 'design_1_usp_rf_data_converter_0_0_drp_arbiter_adc'
+INFO: [Synth 8-802] inferred FSM for state register 'pll_state_machine.status_sm_state_reg' in module 'design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'por_sm_state_reg' in module 'design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'fsm_cs_reg' in module 'design_1_usp_rf_data_converter_0_0_drp_arbiter__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'por_sm_state_reg' in module 'design_1_usp_rf_data_converter_0_0_por_fsm_disabled__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'access_cs_reg' in module 'design_1_usp_rf_data_converter_0_0_slave_attachment'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'design_1_usp_rf_data_converter_0_0_drp_control'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                          0000001 |                              000
+            wait_for_drp |                          0000010 |                              011
+            memory_delay |                          0000100 |                              001
+        check_tile_index |                          0001000 |                              010
+               write_drp |                          0010000 |                              100
+      wait_for_write_rdy |                          0100000 |                              101
+                finished |                          1000000 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'tc_sm_state_reg' using encoding 'one-hot' in module 'design_1_usp_rf_data_converter_0_0_tile_config'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+          wait_for_start |                              001 |                              001
+            wait_for_drp |                              010 |                              010
+            check_subdrp |                              011 |                              011
+               write_drp |                              100 |                              100
+      wait_for_write_rdy |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'const_sm_state_adc2_reg' using encoding 'sequential' in module 'design_1_usp_rf_data_converter_0_0_constants_config'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                            00000 |                            00000
+             request_drp |                            00001 |                            00001
+        write_vbg_ctrl_1 |                            00010 |                            00010
+        write_vbg_ctrl_2 |                            00011 |                            00011
+        write_vbg_ctrl_3 |                            00100 |                            00100
+        write_vbg_ctrl_4 |                            00101 |                            00101
+        write_vbg_ctrl_5 |                            00110 |                            00111
+        write_vbg_ctrl_6 |                            00111 |                            01000
+       wait_for_125_ns_2 |                            01000 |                            01001
+        write_vbg_ctrl_7 |                            01001 |                            01010
+        write_vbg_ctrl_8 |                            01010 |                            01011
+       read_vbg_status_1 |                            01011 |                            01100
+       read_vbg_status_2 |                            01100 |                            01101
+     wait_for_vbg_status |                            01101 |                            01110
+        write_vbg_ctrl_9 |                            01110 |                            01111
+       write_vbg_ctrl_10 |                            01111 |                            10000
+       wait_for_125_ns_1 |                            10000 |                            00110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'bgt_sm_state_reg' using encoding 'sequential' in module 'design_1_usp_rf_data_converter_0_0_bgt_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0111 |                             0000
+         wait_for_config |                             1010 |                             0001
+        find_start_stage |                             0110 |                             0010
+            memory_delay |                             0000 |                             0011
+               op_decode |                             0001 |                             0100
+                  finish |                             0011 |                             1110
+             request_drp |                             0010 |                             0101
+                read_drp |                             1110 |                             0110
+       wait_for_read_rdy |                             1011 |                             0111
+          dummy_read_drp |                             1100 |                             1000
+ wait_for_dummy_read_rdy |                             1101 |                             1001
+               write_drp |                             1001 |                             1010
+      wait_for_write_rdy |                             1000 |                             1011
+            decode_event |                             0100 |                             1100
+          wait_for_event |                             0101 |                             1101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'por_sm_state_reg' using encoding 'sequential' in module 'design_1_usp_rf_data_converter_0_0_por_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+          gnt_dummy_read |                              001 |                              110
+         gnt_tile_config |                              010 |                              001
+              gnt_status |                              011 |                              010
+                 gnt_por |                              100 |                              011
+                 gnt_bgt |                              101 |                              100
+                gnt_user |                              110 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'fsm_cs_reg' using encoding 'sequential' in module 'design_1_usp_rf_data_converter_0_0_drp_arbiter'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                     000000000001 |                             0000
+         wait_for_config |                     000000000010 |                             0001
+    wait_for_supplies_up |                     000000000100 |                             0010
+          wait_for_timer |                     000000001000 |                             0011
+             request_drp |                     000000010000 |                             0100
+                read_drp |                     000000100000 |                             0101
+       wait_for_read_rdy |                     000001000000 |                             0110
+          dummy_read_drp |                     000010000000 |                             0111
+ wait_for_dummy_read_rdy |                     000100000000 |                             1000
+               write_drp |                     001000000000 |                             1001
+      wait_for_write_rdy |                     010000000000 |                             1010
+                  finish |                     100000000000 |                             1011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'por_sm_state_reg' using encoding 'one-hot' in module 'design_1_usp_rf_data_converter_0_0_por_fsm_disabled'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                             0000
+    wait_for_tile_config |                              001 |                             0001
+       access_drp_status |                              010 |                             0010
+         read_pll_enable |                              011 |                             0011
+ wait_for_pll_enable_rdy |                              100 |                             0100
+         read_pll_status |                              101 |                             0101
+ wait_for_pll_status_rdy |                              110 |                             0110
+          wait_for_50_us |                              111 |                             1100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'pll_state_machine.status_sm_state_reg' using encoding 'sequential' in module 'design_1_usp_rf_data_converter_0_0_por_fsm__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0111 |                             0000
+         wait_for_config |                             1010 |                             0001
+        find_start_stage |                             0110 |                             0010
+            memory_delay |                             0000 |                             0011
+               op_decode |                             0001 |                             0100
+                  finish |                             0011 |                             1110
+             request_drp |                             0010 |                             0101
+                read_drp |                             1110 |                             0110
+       wait_for_read_rdy |                             1011 |                             0111
+          dummy_read_drp |                             1100 |                             1000
+ wait_for_dummy_read_rdy |                             1101 |                             1001
+               write_drp |                             1001 |                             1010
+      wait_for_write_rdy |                             1000 |                             1011
+            decode_event |                             0100 |                             1100
+          wait_for_event |                             0101 |                             1101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'por_sm_state_reg' using encoding 'sequential' in module 'design_1_usp_rf_data_converter_0_0_por_fsm__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+          gnt_dummy_read |                              001 |                              111
+         gnt_tile_config |                              010 |                              001
+        gnt_const_config |                              011 |                              010
+              gnt_status |                              100 |                              011
+                 gnt_por |                              101 |                              100
+                 gnt_bgt |                              110 |                              101
+                gnt_user |                              111 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'fsm_cs_reg' using encoding 'sequential' in module 'design_1_usp_rf_data_converter_0_0_drp_arbiter_adc'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                             0000
+    wait_for_tile_config |                              001 |                             0001
+       access_drp_status |                              010 |                             0010
+         read_pll_enable |                              011 |                             0011
+ wait_for_pll_enable_rdy |                              100 |                             0100
+         read_pll_status |                              101 |                             0101
+ wait_for_pll_status_rdy |                              110 |                             0110
+          wait_for_50_us |                              111 |                             1100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'pll_state_machine.status_sm_state_reg' using encoding 'sequential' in module 'design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0000 |                             0000
+         wait_for_config |                             0001 |                             0001
+        find_start_stage |                             0010 |                             0010
+            memory_delay |                             0011 |                             0011
+               op_decode |                             0100 |                             0100
+                  finish |                             0101 |                             1110
+             request_drp |                             0110 |                             0101
+                read_drp |                             0111 |                             0110
+       wait_for_read_rdy |                             1000 |                             0111
+          dummy_read_drp |                             1001 |                             1000
+ wait_for_dummy_read_rdy |                             1010 |                             1001
+               write_drp |                             1011 |                             1010
+      wait_for_write_rdy |                             1100 |                             1011
+            decode_event |                             1101 |                             1100
+          wait_for_event |                             1110 |                             1101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'por_sm_state_reg' using encoding 'sequential' in module 'design_1_usp_rf_data_converter_0_0_por_fsm__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+          gnt_dummy_read |                              001 |                              110
+         gnt_tile_config |                              010 |                              001
+              gnt_status |                              011 |                              010
+                 gnt_por |                              100 |                              011
+                 gnt_bgt |                              101 |                              100
+                gnt_user |                              110 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'fsm_cs_reg' using encoding 'sequential' in module 'design_1_usp_rf_data_converter_0_0_drp_arbiter__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                     000000000001 |                             0000
+         wait_for_config |                     000000000010 |                             0001
+    wait_for_supplies_up |                     000000000100 |                             0010
+          wait_for_timer |                     000000001000 |                             0011
+             request_drp |                     000000010000 |                             0100
+                read_drp |                     000000100000 |                             0101
+       wait_for_read_rdy |                     000001000000 |                             0110
+          dummy_read_drp |                     000010000000 |                             0111
+ wait_for_dummy_read_rdy |                     000100000000 |                             1000
+               write_drp |                     001000000000 |                             1001
+      wait_for_write_rdy |                     010000000000 |                             1010
+                  finish |                     100000000000 |                             1011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'por_sm_state_reg' using encoding 'one-hot' in module 'design_1_usp_rf_data_converter_0_0_por_fsm_disabled__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              000
+                 READING |                              001 |                              001
+               READ_WAIT |                              010 |                              010
+              WRITE_WAIT |                              011 |                              011
+                 WRITING |                              100 |                              100
+                 B_VALID |                              101 |                              101
+              BRESP_WAIT |                              110 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'access_cs_reg' using encoding 'sequential' in module 'design_1_usp_rf_data_converter_0_0_slave_attachment'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                            00001 |                              000
+             send_enable |                            00010 |                              001
+                wait_rdy |                            00100 |                              010
+               read_done |                            01000 |                              100
+              write_done |                            10000 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'design_1_usp_rf_data_converter_0_0_drp_control'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:02 ; elapsed = 00:01:04 . Memory (MB): peak = 2239.098 ; gain = 786.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 4272 (col length:192)
+BRAMs: 2160 (col length: RAMB18 192 RAMB36 96)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:14 ; elapsed = 00:02:19 . Memory (MB): peak = 2473.094 ; gain = 1020.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:28 ; elapsed = 00:02:34 . Memory (MB): peak = 2737.219 ; gain = 1284.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:04:23 ; elapsed = 00:04:33 . Memory (MB): peak = 3195.465 ; gain = 1742.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:04:33 ; elapsed = 00:04:43 . Memory (MB): peak = 3195.465 ; gain = 1742.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3295] tying undriven pin design_1_usp_rf_data_converter_0_0_rf_wrapper_i/adc0_done_i_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_usp_rf_data_converter_0_0_rf_wrapper_i/adc0_obs_done_i_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_usp_rf_data_converter_0_0_rf_wrapper_i/adc1_done_i_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_usp_rf_data_converter_0_0_rf_wrapper_i/adc1_obs_done_i_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_usp_rf_data_converter_0_0_rf_wrapper_i/adc2_obs_done_i_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_usp_rf_data_converter_0_0_rf_wrapper_i/adc3_done_i_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin design_1_usp_rf_data_converter_0_0_rf_wrapper_i/adc3_obs_done_i_inferred:in0 to constant 0
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:04:40 ; elapsed = 00:04:51 . Memory (MB): peak = 3195.465 ; gain = 1742.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:04:40 ; elapsed = 00:04:52 . Memory (MB): peak = 3195.465 ; gain = 1742.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:42 ; elapsed = 00:04:53 . Memory (MB): peak = 3195.465 ; gain = 1742.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:04:42 ; elapsed = 00:04:53 . Memory (MB): peak = 3195.465 ; gain = 1742.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:42 ; elapsed = 00:04:54 . Memory (MB): peak = 3195.465 ; gain = 1742.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:04:43 ; elapsed = 00:04:54 . Memory (MB): peak = 3195.465 ; gain = 1742.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG_GT |     2|
+|2     |CARRY8  |    36|
+|3     |LUT1    |   151|
+|4     |LUT2    |   619|
+|5     |LUT3    |   800|
+|6     |LUT4    |  1057|
+|7     |LUT5    |   957|
+|8     |LUT6    |  2562|
+|9     |MUXF7   |    49|
+|10    |RFADC   |     4|
+|11    |RFDAC   |     4|
+|12    |FDRE    |  3779|
+|13    |FDSE    |   463|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:43 ; elapsed = 00:04:54 . Memory (MB): peak = 3195.465 ; gain = 1742.910
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 11 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:04:03 ; elapsed = 00:04:35 . Memory (MB): peak = 3195.465 ; gain = 1641.582
+Synthesis Optimization Complete : Time (s): cpu = 00:04:43 ; elapsed = 00:04:55 . Memory (MB): peak = 3195.465 ; gain = 1742.910
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.334 . Memory (MB): peak = 3195.465 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 85 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC inst/design_1_usp_rf_data_converter_0_0_rf_wrapper_i/BUFG_GT_SYNC for BUFG_GT inst/i_design_1_usp_rf_data_converter_0_0_bufg_gt_ctrl/adc2_bufg_gt
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC inst/design_1_usp_rf_data_converter_0_0_rf_wrapper_i/BUFG_GT_SYNC_1 for BUFG_GT inst/i_design_1_usp_rf_data_converter_0_0_bufg_gt_ctrl/dac0_bufg_gt
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 3195.465 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 3e5ced05
+INFO: [Common 17-83] Releasing license: Synthesis
+157 Infos, 203 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:05:01 ; elapsed = 00:05:16 . Memory (MB): peak = 3195.465 ; gain = 2679.082
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 3195.465 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/TDM_0704/TDM_0704/TDM_0704.runs/design_1_usp_rf_data_converter_0_0_synth_1/design_1_usp_rf_data_converter_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_usp_rf_data_converter_0_0, cache-ID = 785886e423c44b70
+INFO: [Coretcl 2-1174] Renamed 158 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 3195.465 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/TDM_0704/TDM_0704/TDM_0704.runs/design_1_usp_rf_data_converter_0_0_synth_1/design_1_usp_rf_data_converter_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_usp_rf_data_converter_0_0_utilization_synth.rpt -pb design_1_usp_rf_data_converter_0_0_utilization_synth.pb
+write_vhdl: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3195.465 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 21 16:24:07 2026...

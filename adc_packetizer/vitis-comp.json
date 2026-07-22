@@ -1,0 +1,12 @@
+{
+  "name": "adc_packetizer",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "hls_config.cfg"
+    ],
+    "work_dir": "adc_packetizer"
+  },
+  "template": "empty_hls_component"
+}

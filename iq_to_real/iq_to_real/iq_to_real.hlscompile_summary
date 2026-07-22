@@ -1,0 +1,245 @@
+<ENTRY>
+{
+ "thisFile": "C:/TDM_0704\\TDM_0704\\iq_to_real\\iq_to_real\\iq_to_real.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "07/17/26 18:38:00",
+ "timestampMillis": "1784284680674",
+ "buildStep": {
+  "cmdId": "44ac71c0-a335-4a11-9d41-6d90009e6aec",
+  "name": "v++",
+  "logFile": "C:/TDM_0704\\TDM_0704\\iq_to_real\\iq_to_real\\logs\\iq_to_real.steps.log",
+  "commandLine": "C:/Xilinx/Vitis/2024.2/bin/unwrapped/win64.o/v++.exe  -c --mode hls --config C:\\TDM_0704\\TDM_0704\\iq_to_real\\hls_config.cfg --work_dir iq_to_real ",
+  "args": [
+   "-c",
+   "--mode",
+   "hls",
+   "--config",
+   "C:\\TDM_0704\\TDM_0704\\iq_to_real\\hls_config.cfg",
+   "--work_dir",
+   "iq_to_real"
+  ],
+  "iniFiles": [
+   {
+    "path": "C:/TDM_0704\\TDM_0704\\iq_to_real\\hls_config.cfg",
+    "content": "part=xczu48dr-fsvg1517-2-e\n\n[hls]\nflow_target=vivado\npackage.output.format=ip_catalog\npackage.output.syn=false\nsyn.top=iq_to_real\nclock=10ns\nsyn.file=iq_to_real.cpp"
+   }
+  ],
+  "cwd": "C:\\TDM_0704\\TDM_0704\\iq_to_real"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "07/17/26 18:38:00",
+ "timestampMillis": "1784284680675",
+ "status": {
+  "cmdId": "44ac71c0-a335-4a11-9d41-6d90009e6aec",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "07/17/26 18:38:17",
+ "timestampMillis": "1784284697924",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "iq_to_real",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/TDM_0704\\TDM_0704\\iq_to_real\\iq_to_real.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "07/17/26 18:38:17",
+ "timestampMillis": "1784284697925",
+ "buildStep": {
+  "cmdId": "f95f332a-54f0-49a7-b36f-ec2ddbbc30cc",
+  "name": "",
+  "logFile": "C:/TDM_0704\\TDM_0704\\iq_to_real\\iq_to_real\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\TDM_0704\\TDM_0704\\iq_to_real"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "07/17/26 18:38:17",
+ "timestampMillis": "1784284697926",
+ "status": {
+  "cmdId": "f95f332a-54f0-49a7-b36f-ec2ddbbc30cc",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/17/26 18:38:17",
+ "timestampMillis": "1784284697926",
+ "report": {
+  "path": "C:/TDM_0704\\TDM_0704\\iq_to_real\\iq_to_real\\hls\\hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/17/26 18:38:17",
+ "timestampMillis": "1784284697927",
+ "report": {
+  "path": "C:/TDM_0704\\TDM_0704\\iq_to_real\\iq_to_real\\hls\\syn\\report\\csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/17/26 18:38:17",
+ "timestampMillis": "1784284697928",
+ "report": {
+  "path": "C:/TDM_0704\\TDM_0704\\iq_to_real\\iq_to_real\\hls\\syn\\report\\csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/17/26 18:38:41",
+ "timestampMillis": "1784284721259",
+ "report": {
+  "path": "C:/TDM_0704\\TDM_0704\\iq_to_real\\iq_to_real\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/17/26 18:38:41",
+ "timestampMillis": "1784284721261",
+ "report": {
+  "path": "C:/TDM_0704\\TDM_0704\\iq_to_real\\iq_to_real\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/17/26 18:38:41",
+ "timestampMillis": "1784284721262",
+ "report": {
+  "path": "C:/TDM_0704\\TDM_0704\\iq_to_real\\iq_to_real\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "07/17/26 18:38:41",
+ "timestampMillis": "1784284721263",
+ "status": {
+  "cmdId": "f95f332a-54f0-49a7-b36f-ec2ddbbc30cc",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "07/17/26 18:38:41",
+ "timestampMillis": "1784284721588",
+ "status": {
+  "cmdId": "44ac71c0-a335-4a11-9d41-6d90009e6aec",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/17/26 18:38:41",
+ "timestampMillis": "1784284721648",
+ "report": {
+  "path": "C:/TDM_0704\\TDM_0704\\iq_to_real\\iq_to_real\\reports\\v++_compile_iq_to_real_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "07/17/26 18:38:41",
+ "timestampMillis": "1784284721649",
+ "report": {
+  "path": "C:/TDM_0704\\TDM_0704\\iq_to_real\\iq_to_real\\reports\\.db\\v++_compile_iq_to_real_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

@@ -1,0 +1,15 @@
+[
+  {
+    "directory": "C:\\TDM_0704\\TDM_0704\\adc_packetizer",
+    "arguments": [
+      "C:\\Xilinx\\Vitis\\2024.2\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\Vitis\\2024.2\\common\\technology\\autopilot",
+      "-fhlstoplevel=adc_packetizer",
+      "-c",
+      "C:\\TDM_0704\\TDM_0704\\adc_packetizer\\adc_packetizer.cpp"
+    ],
+    "file": "C:\\TDM_0704\\TDM_0704\\adc_packetizer\\adc_packetizer.cpp"
+  }
+]

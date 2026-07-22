@@ -1,0 +1,11 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_iq_to_real_ir
+Args:            
+  - Callee:          'iq_to_real(hls::stream<hls::axis<ap_uint<32>, 0ul, 0ul, 0ul, (unsigned char)56, false>, 0>&, hls::stream<ap_int<16>, 0>&)'
+    DebugLoc:        { File: iq_to_real.cpp, Line: 18, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_iq_to_real_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...

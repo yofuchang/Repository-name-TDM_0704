@@ -1,0 +1,15 @@
+[
+  {
+    "directory": "C:\\TDM_0704\\TDM_0704\\iq_to_real",
+    "arguments": [
+      "C:\\Xilinx\\Vitis\\2024.2\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\Vitis\\2024.2\\common\\technology\\autopilot",
+      "-fhlstoplevel=iq_to_real",
+      "-c",
+      "C:\\TDM_0704\\TDM_0704\\iq_to_real\\iq_to_real.cpp"
+    ],
+    "file": "C:\\TDM_0704\\TDM_0704\\iq_to_real\\iq_to_real.cpp"
+  }
+]

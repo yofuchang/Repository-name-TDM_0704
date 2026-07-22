@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Mon Jul 20 15:01:55 2026
+# Process ID         : 17448
+# Current directory  : C:/TDM_0704/TDM_0704/TDM_0704.runs/design_1_rfdc_resetn_and_0_synth_1
+# Command line       : vivado.exe -log design_1_rfdc_resetn_and_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_rfdc_resetn_and_0.tcl
+# Log file           : C:/TDM_0704/TDM_0704/TDM_0704.runs/design_1_rfdc_resetn_and_0_synth_1/design_1_rfdc_resetn_and_0.vds
+# Journal file       : C:/TDM_0704/TDM_0704/TDM_0704.runs/design_1_rfdc_resetn_and_0_synth_1\vivado.jou
+# Running On         : JohnsonKu
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz
+# CPU Frequency      : 1992 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 34169 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 36316 MB
+# Available Virtual  : 14999 MB
+#-----------------------------------------------------------
+source design_1_rfdc_resetn_and_0.tcl -notrace

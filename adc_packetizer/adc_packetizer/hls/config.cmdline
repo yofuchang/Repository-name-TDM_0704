@@ -1,0 +1,3 @@
+relativeroot=C:/TDM_0704/TDM_0704/adc_packetizer
+original_argv=--mode hls --package --config C:\TDM_0704\TDM_0704\adc_packetizer\hls_config.cfg --work_dir adc_packetizer 
+

@@ -1,6 +1,12 @@
 axi_dma_0:
 - axi_dma
 - axidma
+axi_gpio_0:
+- axi_gpio
+- gpio
+axi_gpio_rfdc_reset:
+- axi_gpio
+- gpio
 lfm_tdm_gen_0:
 - lfm_tdm_gen
 - lfm_tdm_gen
@@ -304,6 +310,6 @@ psu_wdt_0:
 psu_wdt_1:
 - psu_wdt
 - wdtps
-radar_beamformer_0:
-- radar_beamformer
-- radar_beamformer
+usp_rf_data_converter_0:
+- usp_rf_data_converter
+- rfdc

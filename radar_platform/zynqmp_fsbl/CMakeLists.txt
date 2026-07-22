@@ -16,7 +16,87 @@ collect(PROJECT_LIB_DEPS xil)
 collect(PROJECT_LIB_DEPS xiltimer)
 collect(PROJECT_LIB_DEPS xilffs)
 collect(PROJECT_LIB_DEPS xilsecure)
-collect(PROJECT_LIB_DEPS xilstandalone;xiltimer;xilffs;xilsecure;xilpm)
+collect(PROJECT_LIB_DEPS xilstandalone;xiltimer;xilffs;xilsecure;xilpm;metal;m)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

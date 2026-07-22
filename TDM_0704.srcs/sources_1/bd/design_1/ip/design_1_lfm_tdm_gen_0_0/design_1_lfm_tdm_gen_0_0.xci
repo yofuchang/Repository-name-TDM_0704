@@ -4,7 +4,7 @@
     "xci_name": "design_1_lfm_tdm_gen_0_0",
     "cell_name": "lfm_tdm_gen_0",
     "component_reference": "xilinx.com:hls:lfm_tdm_gen:1.0",
-    "ip_revision": "2114696888",
+    "ip_revision": "2114706876",
     "gen_directory": "../../../../../../TDM_0704.gen/sources_1/bd/design_1/ip/design_1_lfm_tdm_gen_0_0",
     "parameters": {
       "component_parameters": {
@@ -34,7 +34,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "2114696888" } ],
+        "IPREVISION": [ { "value": "2114706876" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../TDM_0704.gen/sources_1/bd/design_1/ip/design_1_lfm_tdm_gen_0_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],

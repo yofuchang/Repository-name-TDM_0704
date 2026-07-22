@@ -3,9 +3,12 @@ cmake_minimum_required(VERSION 3.16)
 
 if("${CONFIG}" STREQUAL "" OR "${CONFIG}" STREQUAL "")
   file(REMOVE_RECURSE
+  "C:\\TDM_0704\\TDM_0704\\radar_platform\\psu_cortexa53_0\\standalone_psu_cortexa53_0\\bsp\\include\\metal"
   "C:\\TDM_0704\\TDM_0704\\radar_platform\\psu_cortexa53_0\\standalone_psu_cortexa53_0\\bsp\\include\\sleep.h"
   "C:\\TDM_0704\\TDM_0704\\radar_platform\\psu_cortexa53_0\\standalone_psu_cortexa53_0\\bsp\\include\\xiltimer.h"
   "C:\\TDM_0704\\TDM_0704\\radar_platform\\psu_cortexa53_0\\standalone_psu_cortexa53_0\\bsp\\include\\xtimer_config.h"
+  "C:\\TDM_0704\\TDM_0704\\radar_platform\\psu_cortexa53_0\\standalone_psu_cortexa53_0\\bsp\\lib\\libmetal.a"
   "C:\\TDM_0704\\TDM_0704\\radar_platform\\psu_cortexa53_0\\standalone_psu_cortexa53_0\\bsp\\lib\\libxiltimer.a"
+  "C:\\TDM_0704\\TDM_0704\\radar_platform\\psu_cortexa53_0\\standalone_psu_cortexa53_0\\bsp\\lib\\metal.a"
   )
 endif()

@@ -6,6 +6,7 @@ if("${CONFIG}" STREQUAL "" OR "${CONFIG}" STREQUAL "")
   "C:\\TDM_0704\\TDM_0704\\radar_platform\\zynqmp_fsbl\\zynqmp_fsbl_bsp\\include\\diskio.h"
   "C:\\TDM_0704\\TDM_0704\\radar_platform\\zynqmp_fsbl\\zynqmp_fsbl_bsp\\include\\ff.h"
   "C:\\TDM_0704\\TDM_0704\\radar_platform\\zynqmp_fsbl\\zynqmp_fsbl_bsp\\include\\ffconf.h"
+  "C:\\TDM_0704\\TDM_0704\\radar_platform\\zynqmp_fsbl\\zynqmp_fsbl_bsp\\include\\metal"
   "C:\\TDM_0704\\TDM_0704\\radar_platform\\zynqmp_fsbl\\zynqmp_fsbl_bsp\\include\\pm_api_sys.h"
   "C:\\TDM_0704\\TDM_0704\\radar_platform\\zynqmp_fsbl\\zynqmp_fsbl_bsp\\include\\pm_apu.h"
   "C:\\TDM_0704\\TDM_0704\\radar_platform\\zynqmp_fsbl\\zynqmp_fsbl_bsp\\include\\pm_callbacks.h"
@@ -36,10 +37,12 @@ if("${CONFIG}" STREQUAL "" OR "${CONFIG}" STREQUAL "")
   "C:\\TDM_0704\\TDM_0704\\radar_platform\\zynqmp_fsbl\\zynqmp_fsbl_bsp\\include\\xsecure_utils.h"
   "C:\\TDM_0704\\TDM_0704\\radar_platform\\zynqmp_fsbl\\zynqmp_fsbl_bsp\\include\\xsecure_ver.h"
   "C:\\TDM_0704\\TDM_0704\\radar_platform\\zynqmp_fsbl\\zynqmp_fsbl_bsp\\include\\xtimer_config.h"
+  "C:\\TDM_0704\\TDM_0704\\radar_platform\\zynqmp_fsbl\\zynqmp_fsbl_bsp\\lib\\libmetal.a"
   "C:\\TDM_0704\\TDM_0704\\radar_platform\\zynqmp_fsbl\\zynqmp_fsbl_bsp\\lib\\libxilffs.a"
   "C:\\TDM_0704\\TDM_0704\\radar_platform\\zynqmp_fsbl\\zynqmp_fsbl_bsp\\lib\\libxilpm.a"
   "C:\\TDM_0704\\TDM_0704\\radar_platform\\zynqmp_fsbl\\zynqmp_fsbl_bsp\\lib\\libxilsecure.a"
   "C:\\TDM_0704\\TDM_0704\\radar_platform\\zynqmp_fsbl\\zynqmp_fsbl_bsp\\lib\\libxilsecure_plat.a"
   "C:\\TDM_0704\\TDM_0704\\radar_platform\\zynqmp_fsbl\\zynqmp_fsbl_bsp\\lib\\libxiltimer.a"
+  "C:\\TDM_0704\\TDM_0704\\radar_platform\\zynqmp_fsbl\\zynqmp_fsbl_bsp\\lib\\metal.a"
   )
 endif()

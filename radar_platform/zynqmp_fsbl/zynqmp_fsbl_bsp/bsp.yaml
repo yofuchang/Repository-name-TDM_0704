@@ -187,6 +187,14 @@ drv_info:
     driver: axidma
     ip_name: axi_dma
     path: C:\Xilinx\Vitis\2024.2\data\embeddedsw\XilinxProcessorIPLib\drivers\axidma_v9_19
+  axi_gpio_0:
+    driver: gpio
+    ip_name: axi_gpio
+    path: C:\Xilinx\Vitis\2024.2\data\embeddedsw\XilinxProcessorIPLib\drivers\gpio_v4_12
+  axi_gpio_rfdc_reset:
+    driver: gpio
+    ip_name: axi_gpio
+    path: C:\Xilinx\Vitis\2024.2\data\embeddedsw\XilinxProcessorIPLib\drivers\gpio_v4_12
   lfm_tdm_gen_0:
     driver: lfm_tdm_gen
     ip_name: lfm_tdm_gen
@@ -420,10 +428,10 @@ drv_info:
     driver: wdtps
     ip_name: psu_wdt
     path: C:\Xilinx\Vitis\2024.2\data\embeddedsw\XilinxProcessorIPLib\drivers\wdtps_v3_8
-  radar_beamformer_0:
-    driver: radar_beamformer
-    ip_name: radar_beamformer
-    path: C:\TDM_0704\TDM_0704\radar_platform\zynqmp_fsbl\zynqmp_fsbl_bsp\hw_artifacts\drivers\radar_beamformer_v1_0
+  usp_rf_data_converter_0:
+    driver: rfdc
+    ip_name: usp_rf_data_converter
+    path: C:\Xilinx\Vitis\2024.2\data\embeddedsw\XilinxProcessorIPLib\drivers\rfdc_v12_3
 lib_info:
   xiltimer:
     path: C:\Xilinx\Vitis\2024.2\data\embeddedsw\lib\sw_services\xiltimer_v2_1
@@ -447,6 +455,8 @@ lib_info:
       - timer.h
       - gic_setup.c
       - gic_setup.h
+  libmetal:
+    path: C:\Xilinx\Vitis\2024.2\data\embeddedsw\ThirdParty\sw_services\libmetal_v2_8
 lib_config:
   xiltimer:
     XILTIMER_en_interval_timer:
@@ -813,3 +823,4 @@ lib_config:
       - 'false'
       description: 'true: RPU1 as reset management master, false: Disable RPU1 as
         reset management master'
+  libmetal: {}

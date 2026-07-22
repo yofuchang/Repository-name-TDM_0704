@@ -1,0 +1,326 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Fri Jul 17 20:06:09 2026
+# Process ID         : 10912
+# Current directory  : C:/TDM_0704/TDM_0704/TDM_0704.runs/design_1_iq_to_real_0_0_synth_1
+# Command line       : vivado.exe -log design_1_iq_to_real_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_iq_to_real_0_0.tcl
+# Log file           : C:/TDM_0704/TDM_0704/TDM_0704.runs/design_1_iq_to_real_0_0_synth_1/design_1_iq_to_real_0_0.vds
+# Journal file       : C:/TDM_0704/TDM_0704/TDM_0704.runs/design_1_iq_to_real_0_0_synth_1\vivado.jou
+# Running On         : JohnsonKu
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz
+# CPU Frequency      : 1992 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 34169 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 36316 MB
+# Available Virtual  : 16279 MB
+#-----------------------------------------------------------
+source design_1_iq_to_real_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 448.660 ; gain = 121.809
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/TDM_0704/radar_beamformer_ip/radar_beamformer_ip/hls/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/TDM_0704/TDM_0704/adc_packetizer/adc_packetizer/hls/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/TDM_0704/TDM_0704/iq_to_real/iq_to_real/hls/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_iq_to_real_0_0
+Command: synth_design -top design_1_iq_to_real_0_0 -part xczu48dr-fsvg1517-2-e -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu48dr'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu48dr'
+INFO: [Device 21-403] Loading part xczu48dr-fsvg1517-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 19568
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:42 . Memory (MB): peak = 1820.469 ; gain = 382.152
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_iq_to_real_0_0' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_iq_to_real_0_0/synth/design_1_iq_to_real_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'iq_to_real' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ipshared/6dbe/hdl/verilog/iq_to_real.v:9]
+INFO: [Synth 8-6157] synthesizing module 'iq_to_real_regslice_both' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ipshared/6dbe/hdl/verilog/iq_to_real_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'iq_to_real_regslice_both' (0#1) [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ipshared/6dbe/hdl/verilog/iq_to_real_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'iq_to_real_regslice_both__parameterized0' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ipshared/6dbe/hdl/verilog/iq_to_real_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'iq_to_real_regslice_both__parameterized0' (0#1) [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ipshared/6dbe/hdl/verilog/iq_to_real_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'iq_to_real_regslice_both__parameterized1' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ipshared/6dbe/hdl/verilog/iq_to_real_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'iq_to_real_regslice_both__parameterized1' (0#1) [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ipshared/6dbe/hdl/verilog/iq_to_real_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'iq_to_real_regslice_both__parameterized2' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ipshared/6dbe/hdl/verilog/iq_to_real_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'iq_to_real_regslice_both__parameterized2' (0#1) [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ipshared/6dbe/hdl/verilog/iq_to_real_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'iq_to_real' (0#1) [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ipshared/6dbe/hdl/verilog/iq_to_real.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_iq_to_real_0_0' (0#1) [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_iq_to_real_0_0/synth/design_1_iq_to_real_0_0.v:53]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:24 ; elapsed = 00:00:51 . Memory (MB): peak = 1929.008 ; gain = 490.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:51 . Memory (MB): peak = 1929.008 ; gain = 490.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:51 . Memory (MB): peak = 1929.008 ; gain = 490.691
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1929.008 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_iq_to_real_0_0/constraints/iq_to_real_ooc.xdc] for cell 'inst'
+create_clock: Time (s): cpu = 00:00:27 ; elapsed = 00:00:38 . Memory (MB): peak = 2037.367 ; gain = 2.105
+Finished Parsing XDC File [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_iq_to_real_0_0/constraints/iq_to_real_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/TDM_0704/TDM_0704/TDM_0704.runs/design_1_iq_to_real_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/TDM_0704/TDM_0704/TDM_0704.runs/design_1_iq_to_real_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2037.367 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.109 . Memory (MB): peak = 2038.332 ; gain = 0.965
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:15 ; elapsed = 00:02:00 . Memory (MB): peak = 2038.332 ; gain = 600.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu48dr-fsvg1517-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:15 ; elapsed = 00:02:00 . Memory (MB): peak = 2038.332 ; gain = 600.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/TDM_0704/TDM_0704/TDM_0704.runs/design_1_iq_to_real_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:15 ; elapsed = 00:02:00 . Memory (MB): peak = 2038.332 ; gain = 600.016
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'iq_to_real_regslice_both'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'iq_to_real_regslice_both__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'iq_to_real_regslice_both__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'iq_to_real_regslice_both__parameterized2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+                    ZERO |                               01 |                               10
+                     ONE |                               11 |                               11
+                     TWO |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'iq_to_real_regslice_both'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+                    ZERO |                               01 |                               10
+                     ONE |                               11 |                               11
+                     TWO |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'iq_to_real_regslice_both__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+                    ZERO |                               01 |                               10
+                     ONE |                               11 |                               11
+                     TWO |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'iq_to_real_regslice_both__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+                    ZERO |                               01 |                               10
+                     ONE |                               11 |                               11
+                     TWO |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'iq_to_real_regslice_both__parameterized2'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:16 ; elapsed = 00:02:02 . Memory (MB): peak = 2038.332 ; gain = 600.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 2     
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 50    
+	   4 Input    2 Bit        Muxes := 20    
+	   2 Input    1 Bit        Muxes := 16    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 4272 (col length:192)
+BRAMs: 2160 (col length: RAMB18 192 RAMB36 96)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3936] Found unconnected internal register 'regslice_both_s_axis_iq_V_data_V_U/data_p1_reg' and it is trimmed from '32' to '16' bits. [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ipshared/6dbe/hdl/verilog/iq_to_real_regslice_both.v:41]
+WARNING: [Synth 8-3936] Found unconnected internal register 'regslice_both_s_axis_iq_V_data_V_U/data_p2_reg' and it is trimmed from '32' to '16' bits. [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ipshared/6dbe/hdl/verilog/iq_to_real_regslice_both.v:63]
+WARNING: [Synth 8-7129] Port s_axis_iq_TDATA[31] in module iq_to_real is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_iq_TDATA[30] in module iq_to_real is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_iq_TDATA[29] in module iq_to_real is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_iq_TDATA[28] in module iq_to_real is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_iq_TDATA[27] in module iq_to_real is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_iq_TDATA[26] in module iq_to_real is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_iq_TDATA[25] in module iq_to_real is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_iq_TDATA[24] in module iq_to_real is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_iq_TDATA[23] in module iq_to_real is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_iq_TDATA[22] in module iq_to_real is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_iq_TDATA[21] in module iq_to_real is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_iq_TDATA[20] in module iq_to_real is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_iq_TDATA[19] in module iq_to_real is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_iq_TDATA[18] in module iq_to_real is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_iq_TDATA[17] in module iq_to_real is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_iq_TDATA[16] in module iq_to_real is either unconnected or has no load
+WARNING: [Synth 8-3332] Sequential element (regslice_both_s_axis_iq_V_keep_V_U/FSM_sequential_state_reg[1]) is unused and will be removed from module iq_to_real.
+WARNING: [Synth 8-3332] Sequential element (regslice_both_s_axis_iq_V_keep_V_U/FSM_sequential_state_reg[0]) is unused and will be removed from module iq_to_real.
+WARNING: [Synth 8-3332] Sequential element (regslice_both_s_axis_iq_V_strb_V_U/FSM_sequential_state_reg[1]) is unused and will be removed from module iq_to_real.
+WARNING: [Synth 8-3332] Sequential element (regslice_both_s_axis_iq_V_strb_V_U/FSM_sequential_state_reg[0]) is unused and will be removed from module iq_to_real.
+WARNING: [Synth 8-3332] Sequential element (regslice_both_s_axis_iq_V_last_V_U/FSM_sequential_state_reg[1]) is unused and will be removed from module iq_to_real.
+WARNING: [Synth 8-3332] Sequential element (regslice_both_s_axis_iq_V_last_V_U/FSM_sequential_state_reg[0]) is unused and will be removed from module iq_to_real.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:23 ; elapsed = 00:02:10 . Memory (MB): peak = 2038.332 ; gain = 600.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:50 ; elapsed = 00:02:50 . Memory (MB): peak = 2539.805 ; gain = 1101.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:50 ; elapsed = 00:02:50 . Memory (MB): peak = 2560.766 ; gain = 1122.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:50 ; elapsed = 00:02:51 . Memory (MB): peak = 2560.766 ; gain = 1122.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:02 ; elapsed = 00:03:05 . Memory (MB): peak = 2761.008 ; gain = 1322.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:02 ; elapsed = 00:03:05 . Memory (MB): peak = 2761.008 ; gain = 1322.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:02 ; elapsed = 00:03:05 . Memory (MB): peak = 2761.008 ; gain = 1322.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:02 ; elapsed = 00:03:05 . Memory (MB): peak = 2761.008 ; gain = 1322.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:02 ; elapsed = 00:03:05 . Memory (MB): peak = 2761.008 ; gain = 1322.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:02 ; elapsed = 00:03:05 . Memory (MB): peak = 2761.008 ; gain = 1322.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     1|
+|2     |LUT2 |     1|
+|3     |LUT3 |     1|
+|4     |LUT4 |    36|
+|5     |LUT5 |     6|
+|6     |LUT6 |     4|
+|7     |FDRE |    71|
+|8     |FDSE |     4|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:02 ; elapsed = 00:03:05 . Memory (MB): peak = 2761.008 ; gain = 1322.691
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 25 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:07 ; elapsed = 00:02:19 . Memory (MB): peak = 2761.008 ; gain = 1213.367
+Synthesis Optimization Complete : Time (s): cpu = 00:02:03 ; elapsed = 00:03:06 . Memory (MB): peak = 2761.008 ; gain = 1322.691
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2761.008 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2761.008 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 61227248
+INFO: [Common 17-83] Releasing license: Synthesis
+41 Infos, 25 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:29 ; elapsed = 00:03:51 . Memory (MB): peak = 2761.008 ; gain = 2252.016
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2761.008 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/TDM_0704/TDM_0704/TDM_0704.runs/design_1_iq_to_real_0_0_synth_1/design_1_iq_to_real_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_iq_to_real_0_0, cache-ID = d7cfef9b18f448bb
+INFO: [Coretcl 2-1174] Renamed 3 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2761.008 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/TDM_0704/TDM_0704/TDM_0704.runs/design_1_iq_to_real_0_0_synth_1/design_1_iq_to_real_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_iq_to_real_0_0_utilization_synth.rpt -pb design_1_iq_to_real_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 17 20:10:53 2026...

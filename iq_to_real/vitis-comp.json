@@ -1,0 +1,12 @@
+{
+  "name": "iq_to_real",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "hls_config.cfg"
+    ],
+    "work_dir": "iq_to_real"
+  },
+  "template": "empty_hls_component"
+}

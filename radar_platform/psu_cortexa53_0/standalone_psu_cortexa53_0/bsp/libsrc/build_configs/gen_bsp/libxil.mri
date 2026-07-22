@@ -8,13 +8,14 @@ addlib C:/TDM_0704/TDM_0704/radar_platform/psu_cortexa53_0/standalone_psu_cortex
 addlib C:/TDM_0704/TDM_0704/radar_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/libsrc/sdps/src/libsdps.a
 addlib C:/TDM_0704/TDM_0704/radar_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/libsrc/scugic/src/libscugic.a
 addlib C:/TDM_0704/TDM_0704/radar_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/libsrc/rtcpsu/src/librtcpsu.a
+addlib C:/TDM_0704/TDM_0704/radar_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/libsrc/rfdc/src/librfdc.a
 addlib C:/TDM_0704/TDM_0704/radar_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/libsrc/resetps/src/libresetps.a
-addlib C:/TDM_0704/TDM_0704/radar_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/libsrc/radar_beamformer/src/libradar_beamformer.a
 addlib C:/TDM_0704/TDM_0704/radar_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/libsrc/qspipsu/src/libqspipsu.a
 addlib C:/TDM_0704/TDM_0704/radar_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/libsrc/lfm_tdm_gen/src/liblfm_tdm_gen.a
 addlib C:/TDM_0704/TDM_0704/radar_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/libsrc/ipipsu/src/libipipsu.a
 addlib C:/TDM_0704/TDM_0704/radar_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/libsrc/iicps/src/libiicps.a
 addlib C:/TDM_0704/TDM_0704/radar_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/libsrc/gpiops/src/libgpiops.a
+addlib C:/TDM_0704/TDM_0704/radar_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/libsrc/gpio/src/libgpio.a
 addlib C:/TDM_0704/TDM_0704/radar_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/libsrc/emacps/src/libemacps.a
 addlib C:/TDM_0704/TDM_0704/radar_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/libsrc/ddrcpsu/src/libddrcpsu.a
 addlib C:/TDM_0704/TDM_0704/radar_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/libsrc/csudma/src/libcsudma.a

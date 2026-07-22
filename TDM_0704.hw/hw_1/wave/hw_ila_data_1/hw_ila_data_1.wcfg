@@ -9,12 +9,12 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0"></ZoomStartTime>
-      <ZoomEndTime time="3,361"></ZoomEndTime>
-      <Cursor1Time time="5"></Cursor1Time>
+      <ZoomStartTime time="2,955"></ZoomStartTime>
+      <ZoomEndTime time="3,500"></ZoomEndTime>
+      <Cursor1Time time="3,317"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="327"></NameColumnWidth>
+      <NameColumnWidth column_width="322"></NameColumnWidth>
       <ValueColumnWidth column_width="72"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="7" />
@@ -34,7 +34,8 @@
       <obj_property name="ObjectShortName">lfm_tdm_gen_0_dbg_lfm_i[15:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
-      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
    </wvobject>
    <wvobject fp_name="design_1_i/lfm_tdm_gen_0_dbg_sample_count" type="array">
       <obj_property name="DisplayName">FullPathName</obj_property>

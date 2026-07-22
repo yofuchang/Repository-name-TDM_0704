@@ -56,10 +56,13 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "design_1_lfm_tdm_gen_0_0_synth_1" START { ROLLUP_AUTO }
-set_param tcl.collectionResultDisplayLimit 0
 set_param chipscope.maxJobs 2
+set_param power.BramSDPPropagationFix 1
+set_param power.enableUnconnectedCarry8PinPower 1
+set_param power.enableCarry8RouteBelPower 1
+set_param power.enableLutRouteBelPower 1
 set_param bd.open.in_stealth_mode 4
-set_param xicom.use_bs_reader 1
+set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config  -id {[BD 41-1306]}  -suppress 
 set_msg_config  -id {[BD 41-1271]}  -suppress 
 set_param project.vivado.isBlockSynthRun true
@@ -79,7 +82,9 @@ set_property board_part_repo_paths {C:/Users/NTUTIASE/AppData/Roaming/Xilinx/Viv
 set_property board_part xilinx.com:zcu208:part0:2.0 [current_project]
 set_property ip_repo_paths {
   c:/TDM_0704/radar_beamformer_ip/radar_beamformer_ip/hls/impl/ip
+  c:/TDM_0704/TDM_0704/adc_packetizer/adc_packetizer/hls/impl/ip
   c:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/impl/ip
+  c:/TDM_0704/TDM_0704/iq_to_real/iq_to_real/hls/impl/ip
 } [current_project]
 update_ip_catalog
 set_property ip_output_repo c:/TDM_0704/TDM_0704/TDM_0704.cache/ip [current_project]

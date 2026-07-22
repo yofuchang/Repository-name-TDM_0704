@@ -1,0 +1,50 @@
+07/17/26 18:37:59: Running xcd server. This server was built by gradle.
+07/17/26 18:37:59: Server was asked to start on port: '62598'
+07/17/26 18:37:59: Server is using token UUID: '61296588-cfbf-4785-b7a4-9ef4770e6c91'
+07/17/26 18:37:59: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+07/17/26 18:37:59: Attempting to start server on port '62598'
+07/17/26 18:37:59: Running Dispatch Server
+07/17/26 18:37:59: Version 2.2.0
+07/17/26 18:38:00: Dispatch Server: Accepted socket connection from client
+07/17/26 18:38:00: Starting Socket connection
+07/17/26 18:38:00: EXCHANGE_TOKEN received, server token: 61296588-cfbf-4785-b7a4-9ef4770e6c91, passed token: 61296588-cfbf-4785-b7a4-9ef4770e6c91
+07/17/26 18:38:01: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+07/17/26 18:38:01: SESSION_MGR: creating session with session uuid: 'e58fee86-da34-454e-a44b-b34067ca1eba' and name 'v++_compile_iq_to_real'
+07/17/26 18:38:01: KERNEL_SVC: creating session with uuid: 'e58fee86-da34-454e-a44b-b34067ca1eba' and name 'v++_compile_iq_to_real'
+07/17/26 18:38:01: GUIDANCE_SMGR: creating guidance session with uuid: 'e58fee86-da34-454e-a44b-b34067ca1eba' and name 'v++_compile_iq_to_real'
+07/17/26 18:38:01: SYSTEM_DIAGRAM: creating session with uuid: 'e58fee86-da34-454e-a44b-b34067ca1eba' and name 'v++_compile_iq_to_real'
+07/17/26 18:38:17: Dispatch Server: Accepted socket connection from client
+07/17/26 18:38:17: Starting Socket connection
+07/17/26 18:38:41: SESSION_MGR: closing session for UUID 'e58fee86-da34-454e-a44b-b34067ca1eba' with name 'v++_compile_iq_to_real'
+07/17/26 18:38:41: KERNEL_SVC: closing session for UUID 'e58fee86-da34-454e-a44b-b34067ca1eba' with name 'v++_compile_iq_to_real'
+07/17/26 18:38:41: GUIDANCE_SMGR: closing session for UUID 'e58fee86-da34-454e-a44b-b34067ca1eba' with name 'v++_compile_iq_to_real'
+07/17/26 18:38:41: SYSTEM_DIAGRAM: closing session for UUID 'e58fee86-da34-454e-a44b-b34067ca1eba' with name 'v++_compile_iq_to_real'
+07/17/26 18:38:41: STOP_SERVER received, server token: 61296588-cfbf-4785-b7a4-9ef4770e6c91, passed token: 61296588-cfbf-4785-b7a4-9ef4770e6c91
+07/17/26 18:38:41: Socket received request to stop server.
+07/17/26 18:38:41: Dispatch Server: do_await_stop
+07/17/26 18:38:41: SERVER: destructor for server bound to port 62598
+07/17/26 18:38:55: Running xcd server. This server was built by gradle.
+07/17/26 18:38:55: Server was asked to start on port: '59490'
+07/17/26 18:38:55: Server is using token UUID: 'f6437e6d-d4a9-4d52-a92a-03ca4ad5be47'
+07/17/26 18:38:55: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+07/17/26 18:38:55: Attempting to start server on port '59490'
+07/17/26 18:38:55: Running Dispatch Server
+07/17/26 18:38:55: Version 2.2.0
+07/17/26 18:38:56: Dispatch Server: Accepted socket connection from client
+07/17/26 18:38:56: Starting Socket connection
+07/17/26 18:38:56: EXCHANGE_TOKEN received, server token: f6437e6d-d4a9-4d52-a92a-03ca4ad5be47, passed token: f6437e6d-d4a9-4d52-a92a-03ca4ad5be47
+07/17/26 18:38:56: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+07/17/26 18:38:56: SESSION_MGR: creating session with session uuid: 'eb5cc402-e17e-4592-ac46-1732f6da65fc' and name 'vitis-run_compile_iq_to_real'
+07/17/26 18:38:56: KERNEL_SVC: creating session with uuid: 'eb5cc402-e17e-4592-ac46-1732f6da65fc' and name 'vitis-run_compile_iq_to_real'
+07/17/26 18:38:56: GUIDANCE_SMGR: creating guidance session with uuid: 'eb5cc402-e17e-4592-ac46-1732f6da65fc' and name 'vitis-run_compile_iq_to_real'
+07/17/26 18:38:56: SYSTEM_DIAGRAM: creating session with uuid: 'eb5cc402-e17e-4592-ac46-1732f6da65fc' and name 'vitis-run_compile_iq_to_real'
+07/17/26 18:39:07: Dispatch Server: Accepted socket connection from client
+07/17/26 18:39:07: Starting Socket connection
+07/17/26 18:39:28: SESSION_MGR: closing session for UUID 'eb5cc402-e17e-4592-ac46-1732f6da65fc' with name 'vitis-run_compile_iq_to_real'
+07/17/26 18:39:28: KERNEL_SVC: closing session for UUID 'eb5cc402-e17e-4592-ac46-1732f6da65fc' with name 'vitis-run_compile_iq_to_real'
+07/17/26 18:39:28: GUIDANCE_SMGR: closing session for UUID 'eb5cc402-e17e-4592-ac46-1732f6da65fc' with name 'vitis-run_compile_iq_to_real'
+07/17/26 18:39:28: SYSTEM_DIAGRAM: closing session for UUID 'eb5cc402-e17e-4592-ac46-1732f6da65fc' with name 'vitis-run_compile_iq_to_real'
+07/17/26 18:39:28: STOP_SERVER received, server token: f6437e6d-d4a9-4d52-a92a-03ca4ad5be47, passed token: f6437e6d-d4a9-4d52-a92a-03ca4ad5be47
+07/17/26 18:39:28: Socket received request to stop server.
+07/17/26 18:39:28: Dispatch Server: do_await_stop
+07/17/26 18:39:28: SERVER: destructor for server bound to port 59490

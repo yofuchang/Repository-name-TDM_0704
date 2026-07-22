@@ -1,0 +1,3 @@
+relativeroot=C:/TDM_0704/TDM_0704/iq_to_real
+original_argv=--mode hls --package --config C:\TDM_0704\TDM_0704\iq_to_real\hls_config.cfg --work_dir iq_to_real 
+
