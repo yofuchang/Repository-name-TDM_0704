@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Jul 21 20:42:55 2026" VIVADOVERSION="2024.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Jul 22 14:51:07 2026" VIVADOVERSION="2024.2">
 
   <SYSTEMINFO ARCH="zynquplusRFSOC" BOARD="xilinx.com:zcu208:part0:2.0" DEVICE="xczu48dr" NAME="design_1" PACKAGE="fsvg1517" SPEEDGRADE="-2"/>
 
@@ -112,32 +112,22 @@
         </PORT>
         <PORT DIR="O" LEFT="31" NAME="m_axis_dma_TDATA" RIGHT="0" SIGIS="undef" SIGNAME="adc_packetizer_0_m_axis_dma_TDATA">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axis_data_fifo_1" PORT="s_axis_tdata"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="3" NAME="m_axis_dma_TKEEP" RIGHT="0" SIGIS="undef" SIGNAME="adc_packetizer_0_m_axis_dma_TKEEP">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axis_data_fifo_1" PORT="s_axis_tkeep"/>
+            <CONNECTION INSTANCE="axis_capture_gate_0" PORT="s_axis_tdata"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="0" NAME="m_axis_dma_TLAST" RIGHT="0" SIGIS="undef" SIGNAME="adc_packetizer_0_m_axis_dma_TLAST">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axis_data_fifo_1" PORT="s_axis_tlast"/>
+            <CONNECTION INSTANCE="axis_capture_gate_0" PORT="s_axis_tlast"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="m_axis_dma_TREADY" SIGIS="undef" SIGNAME="adc_packetizer_0_m_axis_dma_TREADY">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axis_data_fifo_1" PORT="s_axis_tready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="3" NAME="m_axis_dma_TSTRB" RIGHT="0" SIGIS="undef" SIGNAME="adc_packetizer_0_m_axis_dma_TSTRB">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="axis_data_fifo_1" PORT="s_axis_tstrb"/>
+            <CONNECTION INSTANCE="axis_capture_gate_0" PORT="s_axis_tready"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="m_axis_dma_TVALID" SIGIS="undef" SIGNAME="adc_packetizer_0_m_axis_dma_TVALID">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axis_data_fifo_1" PORT="s_axis_tvalid"/>
+            <CONNECTION INSTANCE="axis_capture_gate_0" PORT="s_axis_tvalid"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="15" NAME="s_axis_adc_TDATA" RIGHT="0" SIGIS="undef" SIGNAME="adc_packetizer_0_s_axis_adc_TDATA">
@@ -193,10 +183,8 @@
           <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
           <PORTMAPS>
             <PORTMAP LOGICAL="TDATA" PHYSICAL="m_axis_dma_TDATA"/>
-            <PORTMAP LOGICAL="TKEEP" PHYSICAL="m_axis_dma_TKEEP"/>
             <PORTMAP LOGICAL="TLAST" PHYSICAL="m_axis_dma_TLAST"/>
             <PORTMAP LOGICAL="TREADY" PHYSICAL="m_axis_dma_TREADY"/>
-            <PORTMAP LOGICAL="TSTRB" PHYSICAL="m_axis_dma_TSTRB"/>
             <PORTMAP LOGICAL="TVALID" PHYSICAL="m_axis_dma_TVALID"/>
           </PORTMAPS>
         </BUSINTERFACE>
@@ -3769,6 +3757,140 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/axis_capture_gate_0" HWVERSION="1.0" INSTANCE="axis_capture_gate_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="axis_capture_gate" VLNV="xilinx.com:module_ref:axis_capture_gate:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="FRAME_SAMPLES" VALUE="4096"/>
+        <PARAMETER NAME="RX_DELAY_SAMPLES" VALUE="0"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_axis_capture_gate_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="99999001" DIR="I" NAME="aclk" SIGIS="clk" SIGNAME="zynq_ultra_ps_e_0_pl_clk0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="zynq_ultra_ps_e_0" PORT="pl_clk0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="aresetn" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="rst_ps8_0_99M_peripheral_aresetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rst_ps8_0_99M" PORT="peripheral_aresetn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="capture_active" SIGIS="undef"/>
+        <PORT DIR="I" NAME="capture_arm" SIGIS="undef" SIGNAME="capture_arm_const_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="capture_arm_const" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="capture_done" SIGIS="undef"/>
+        <PORT DIR="I" NAME="dbg_chirp_start" SIGIS="undef" SIGNAME="lfm_tdm_gen_0_dbg_chirp_start">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="lfm_tdm_gen_0" PORT="dbg_chirp_start"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="dbg_chirp_start_ap_vld" SIGIS="undef" SIGNAME="lfm_tdm_gen_0_dbg_chirp_start_ap_vld">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="lfm_tdm_gen_0" PORT="dbg_chirp_start_ap_vld"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="dbg_tx_sel" RIGHT="0" SIGIS="undef" SIGNAME="lfm_tdm_gen_0_dbg_tx_sel">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="lfm_tdm_gen_0" PORT="dbg_tx_sel"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="dbg_tx_sel_ap_vld" SIGIS="undef" SIGNAME="lfm_tdm_gen_0_dbg_tx_sel_ap_vld">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="lfm_tdm_gen_0" PORT="dbg_tx_sel_ap_vld"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="frame_start_event" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="31" NAME="m_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="axis_capture_gate_0_m_axis_tdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axis_data_fifo_1" PORT="s_axis_tdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axis_tlast" SIGIS="undef" SIGNAME="axis_capture_gate_0_m_axis_tlast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axis_data_fifo_1" PORT="s_axis_tlast"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m_axis_tready" SIGIS="undef" SIGNAME="axis_capture_gate_0_m_axis_tready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axis_data_fifo_1" PORT="s_axis_tready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axis_tvalid" SIGIS="undef" SIGNAME="axis_capture_gate_0_m_axis_tvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axis_data_fifo_1" PORT="s_axis_tvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="s_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="adc_packetizer_0_m_axis_dma_TDATA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="adc_packetizer_0" PORT="m_axis_dma_TDATA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axis_tlast" SIGIS="undef" SIGNAME="adc_packetizer_0_m_axis_dma_TLAST">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="adc_packetizer_0" PORT="m_axis_dma_TLAST"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axis_tready" SIGIS="undef" SIGNAME="adc_packetizer_0_m_axis_dma_TREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="adc_packetizer_0" PORT="m_axis_dma_TREADY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axis_tvalid" SIGIS="undef" SIGNAME="adc_packetizer_0_m_axis_dma_TVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="adc_packetizer_0" PORT="m_axis_dma_TVALID"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="axis_capture_gate_0_m_axis" NAME="m_axis" TYPE="INITIATOR" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="design_1_zynq_ultra_ps_e_0_0_pl_clk0"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="99999001"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="1"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PARAMETER NAME="PHASE" VALUE="0.0"/>
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="4"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="m_axis_tdata"/>
+            <PORTMAP LOGICAL="TLAST" PHYSICAL="m_axis_tlast"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="m_axis_tready"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="m_axis_tvalid"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="adc_packetizer_0_m_axis_dma" NAME="s_axis" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="design_1_zynq_ultra_ps_e_0_0_pl_clk0"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="99999001"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="1"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PARAMETER NAME="PHASE" VALUE="0.0"/>
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="4"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="s_axis_tdata"/>
+            <PORTMAP LOGICAL="TLAST" PHYSICAL="s_axis_tlast"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="s_axis_tready"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="s_axis_tvalid"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
     <MODULE COREREVISION="34" FULLNAME="/axis_clock_converter_0" HWVERSION="1.1" INSTANCE="axis_clock_converter_0" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="axis_clock_converter" VLNV="xilinx.com:ip:axis_clock_converter:1.1">
       <DOCUMENTS>
         <DOCUMENT SOURCE="https://www.xilinx.com/cgi-bin/docs/ipdoc?c=axis_clock_converter;v=v1_1;d=pg085-axi4stream-infrastructure.pdf"/>
@@ -4103,39 +4225,29 @@
             <CONNECTION INSTANCE="rst_ps8_0_99M" PORT="peripheral_aresetn"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="31" NAME="s_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="adc_packetizer_0_m_axis_dma_TDATA">
+        <PORT DIR="I" LEFT="31" NAME="s_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="axis_capture_gate_0_m_axis_tdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="adc_packetizer_0" PORT="m_axis_dma_TDATA"/>
+            <CONNECTION INSTANCE="axis_capture_gate_0" PORT="m_axis_tdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="3" NAME="s_axis_tkeep" RIGHT="0" SIGIS="undef" SIGNAME="adc_packetizer_0_m_axis_dma_TKEEP">
+        <PORT DIR="I" NAME="s_axis_tlast" SIGIS="undef" SIGNAME="axis_capture_gate_0_m_axis_tlast">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="adc_packetizer_0" PORT="m_axis_dma_TKEEP"/>
+            <CONNECTION INSTANCE="axis_capture_gate_0" PORT="m_axis_tlast"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="s_axis_tlast" SIGIS="undef" SIGNAME="adc_packetizer_0_m_axis_dma_TLAST">
+        <PORT DIR="O" NAME="s_axis_tready" SIGIS="undef" SIGNAME="axis_capture_gate_0_m_axis_tready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="adc_packetizer_0" PORT="m_axis_dma_TLAST"/>
+            <CONNECTION INSTANCE="axis_capture_gate_0" PORT="m_axis_tready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="s_axis_tready" SIGIS="undef" SIGNAME="adc_packetizer_0_m_axis_dma_TREADY">
+        <PORT DIR="I" NAME="s_axis_tvalid" SIGIS="undef" SIGNAME="axis_capture_gate_0_m_axis_tvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="adc_packetizer_0" PORT="m_axis_dma_TREADY"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="3" NAME="s_axis_tstrb" RIGHT="0" SIGIS="undef" SIGNAME="adc_packetizer_0_m_axis_dma_TSTRB">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="adc_packetizer_0" PORT="m_axis_dma_TSTRB"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="s_axis_tvalid" SIGIS="undef" SIGNAME="adc_packetizer_0_m_axis_dma_TVALID">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="adc_packetizer_0" PORT="m_axis_dma_TVALID"/>
+            <CONNECTION INSTANCE="axis_capture_gate_0" PORT="m_axis_tvalid"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
       <BUSINTERFACES>
-        <BUSINTERFACE BUSNAME="adc_packetizer_0_m_axis_dma" NAME="S_AXIS" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
+        <BUSINTERFACE BUSNAME="axis_capture_gate_0_m_axis" NAME="S_AXIS" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
           <PARAMETER NAME="CLK_DOMAIN" VALUE="design_1_zynq_ultra_ps_e_0_0_pl_clk0"/>
           <PARAMETER NAME="FREQ_HZ" VALUE="99999001"/>
           <PARAMETER NAME="HAS_TKEEP" VALUE="1"/>
@@ -4151,10 +4263,8 @@
           <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
           <PORTMAPS>
             <PORTMAP LOGICAL="TDATA" PHYSICAL="s_axis_tdata"/>
-            <PORTMAP LOGICAL="TKEEP" PHYSICAL="s_axis_tkeep"/>
             <PORTMAP LOGICAL="TLAST" PHYSICAL="s_axis_tlast"/>
             <PORTMAP LOGICAL="TREADY" PHYSICAL="s_axis_tready"/>
-            <PORTMAP LOGICAL="TSTRB" PHYSICAL="s_axis_tstrb"/>
             <PORTMAP LOGICAL="TVALID" PHYSICAL="s_axis_tvalid"/>
           </PORTMAPS>
         </BUSINTERFACE>
@@ -4181,6 +4291,23 @@
           </PORTMAPS>
         </BUSINTERFACE>
       </BUSINTERFACES>
+    </MODULE>
+    <MODULE COREREVISION="9" FULLNAME="/capture_arm_const" HWVERSION="1.1" INSTANCE="capture_arm_const" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x1"/>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_capture_arm_const_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="capture_arm_const_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axis_capture_gate_0" PORT="capture_arm"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
     </MODULE>
     <MODULE COREREVISION="15" FULLNAME="/clk_wiz_adc2" HWVERSION="6.0" INSTANCE="clk_wiz_adc2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clk_wiz" VLNV="xilinx.com:ip:clk_wiz:6.0">
       <DOCUMENTS>
@@ -8957,9 +9084,14 @@
         <PORT DIR="O" LEFT="0" NAME="dbg_chirp_start" RIGHT="0" SIGIS="data" SIGNAME="lfm_tdm_gen_0_dbg_chirp_start">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ila_0" PORT="probe5"/>
+            <CONNECTION INSTANCE="axis_capture_gate_0" PORT="dbg_chirp_start"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="dbg_chirp_start_ap_vld" SIGIS="undef"/>
+        <PORT DIR="O" NAME="dbg_chirp_start_ap_vld" SIGIS="undef" SIGNAME="lfm_tdm_gen_0_dbg_chirp_start_ap_vld">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axis_capture_gate_0" PORT="dbg_chirp_start_ap_vld"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="O" LEFT="0" NAME="dbg_enable" RIGHT="0" SIGIS="data" SIGNAME="lfm_tdm_gen_0_dbg_enable">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ila_0" PORT="probe7"/>
@@ -9003,9 +9135,14 @@
         <PORT DIR="O" LEFT="1" NAME="dbg_tx_sel" RIGHT="0" SIGIS="data" SIGNAME="lfm_tdm_gen_0_dbg_tx_sel">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ila_0" PORT="probe2"/>
+            <CONNECTION INSTANCE="axis_capture_gate_0" PORT="dbg_tx_sel"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="dbg_tx_sel_ap_vld" SIGIS="undef"/>
+        <PORT DIR="O" NAME="dbg_tx_sel_ap_vld" SIGIS="undef" SIGNAME="lfm_tdm_gen_0_dbg_tx_sel_ap_vld">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axis_capture_gate_0" PORT="dbg_tx_sel_ap_vld"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="O" NAME="interrupt" SENSITIVITY="LEVEL_HIGH" SIGIS="INTERRUPT"/>
         <PORT DIR="O" LEFT="31" NAME="m_axis_tx_TDATA" RIGHT="0" SIGIS="undef" SIGNAME="iq_to_real_0_s_axis_iq_TDATA">
           <CONNECTIONS>
@@ -9379,6 +9516,7 @@
             <CONNECTION INSTANCE="axi_gpio_rfdc_reset" PORT="s_axi_aresetn"/>
             <CONNECTION INSTANCE="rfdc_resetn_and" PORT="Op1"/>
             <CONNECTION INSTANCE="lfm_tdm_gen_0" PORT="ap_rst_n"/>
+            <CONNECTION INSTANCE="axis_capture_gate_0" PORT="aresetn"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="0" NAME="peripheral_reset" POLARITY="ACTIVE_HIGH" RIGHT="0" SIGIS="rst"/>
@@ -21381,6 +21519,7 @@
             <CONNECTION INSTANCE="axi_gpio_0" PORT="s_axi_aclk"/>
             <CONNECTION INSTANCE="axi_gpio_rfdc_reset" PORT="s_axi_aclk"/>
             <CONNECTION INSTANCE="lfm_tdm_gen_0" PORT="ap_clk"/>
+            <CONNECTION INSTANCE="axis_capture_gate_0" PORT="aclk"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="0" NAME="pl_ps_irq0" RIGHT="0" SENSITIVITY="LEVEL_HIGH" SIGIS="INTERRUPT"/>

@@ -1,0 +1,253 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Wed Jul 22 14:52:41 2026
+# Process ID         : 12584
+# Current directory  : C:/TDM_0704/TDM_0704/TDM_0704.runs/design_1_axis_capture_gate_0_0_synth_1
+# Command line       : vivado.exe -log design_1_axis_capture_gate_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axis_capture_gate_0_0.tcl
+# Log file           : C:/TDM_0704/TDM_0704/TDM_0704.runs/design_1_axis_capture_gate_0_0_synth_1/design_1_axis_capture_gate_0_0.vds
+# Journal file       : C:/TDM_0704/TDM_0704/TDM_0704.runs/design_1_axis_capture_gate_0_0_synth_1\vivado.jou
+# Running On         : JohnsonKu
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz
+# CPU Frequency      : 1992 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 34169 MB
+# Swap memory        : 3556 MB
+# Total Virtual      : 37725 MB
+# Available Virtual  : 9819 MB
+#-----------------------------------------------------------
+source design_1_axis_capture_gate_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 446.148 ; gain = 120.602
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/TDM_0704/radar_beamformer_ip/radar_beamformer_ip/hls/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/TDM_0704/TDM_0704/adc_packetizer/adc_packetizer/hls/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/TDM_0704/TDM_0704/lfm_tdm_gen/lfm_tdm_gen/hls/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/TDM_0704/TDM_0704/iq_to_real/iq_to_real/hls/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+Command: synth_design -top design_1_axis_capture_gate_0_0 -part xczu48dr-fsvg1517-2-e -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu48dr'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu48dr'
+INFO: [Device 21-403] Loading part xczu48dr-fsvg1517-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 5580
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1821.273 ; gain = 381.367
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_axis_capture_gate_0_0' [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_axis_capture_gate_0_0/synth/design_1_axis_capture_gate_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axis_capture_gate' [C:/TDM_0704/TDM_0704/TDM_0704.srcs/sources_1/new/axis_capture_gate.v:4]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter FRAME_SAMPLES bound to: 4096 - type: integer 
+	Parameter RX_DELAY_SAMPLES bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axis_capture_gate' (0#1) [C:/TDM_0704/TDM_0704/TDM_0704.srcs/sources_1/new/axis_capture_gate.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axis_capture_gate_0_0' (0#1) [c:/TDM_0704/TDM_0704/TDM_0704.gen/sources_1/bd/design_1/ip/design_1_axis_capture_gate_0_0/synth/design_1_axis_capture_gate_0_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element delay_count_reg was removed.  [C:/TDM_0704/TDM_0704/TDM_0704.srcs/sources_1/new/axis_capture_gate.v:107]
+WARNING: [Synth 8-7129] Port s_axis_tlast in module axis_capture_gate is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1928.527 ; gain = 488.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1928.527 ; gain = 488.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1928.527 ; gain = 488.621
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1928.527 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1998.379 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.075 . Memory (MB): peak = 2017.246 ; gain = 18.410
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 2017.246 ; gain = 577.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu48dr-fsvg1517-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 2017.246 ; gain = 577.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 2017.246 ; gain = 577.340
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axis_capture_gate'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             ST_DISARMED |                             0001 |                              000
+         ST_WAIT_TRIGGER |                             0010 |                              001
+              ST_CAPTURE |                             0100 |                              011
+                 ST_DONE |                             1000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'axis_capture_gate'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 2017.246 ; gain = 577.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   12 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
++---Muxes : 
+	   2 Input   12 Bit        Muxes := 1     
+	   4 Input   12 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 7     
+	   4 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 4272 (col length:192)
+BRAMs: 2160 (col length: RAMB18 192 RAMB36 96)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port s_axis_tlast in module design_1_axis_capture_gate_0_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 2017.246 ; gain = 577.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:49 ; elapsed = 00:00:59 . Memory (MB): peak = 2545.137 ; gain = 1105.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:00:59 . Memory (MB): peak = 2545.211 ; gain = 1105.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:49 ; elapsed = 00:00:59 . Memory (MB): peak = 2555.031 ; gain = 1115.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:55 ; elapsed = 00:01:05 . Memory (MB): peak = 2765.055 ; gain = 1325.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:55 ; elapsed = 00:01:05 . Memory (MB): peak = 2765.055 ; gain = 1325.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:55 ; elapsed = 00:01:05 . Memory (MB): peak = 2765.055 ; gain = 1325.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:55 ; elapsed = 00:01:05 . Memory (MB): peak = 2765.055 ; gain = 1325.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:55 ; elapsed = 00:01:05 . Memory (MB): peak = 2765.055 ; gain = 1325.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:55 ; elapsed = 00:01:05 . Memory (MB): peak = 2765.055 ; gain = 1325.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     1|
+|2     |LUT2 |     5|
+|3     |LUT3 |     2|
+|4     |LUT4 |     8|
+|5     |LUT5 |     5|
+|6     |LUT6 |     9|
+|7     |FDRE |    15|
+|8     |FDSE |     1|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:55 ; elapsed = 00:01:05 . Memory (MB): peak = 2765.055 ; gain = 1325.148
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:38 ; elapsed = 00:01:02 . Memory (MB): peak = 2765.055 ; gain = 1236.430
+Synthesis Optimization Complete : Time (s): cpu = 00:00:56 ; elapsed = 00:01:07 . Memory (MB): peak = 2765.055 ; gain = 1325.148
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2765.055 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2765.055 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 8cb22476
+INFO: [Common 17-83] Releasing license: Synthesis
+26 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:15 ; elapsed = 00:01:54 . Memory (MB): peak = 2765.055 ; gain = 2255.148
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2765.055 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/TDM_0704/TDM_0704/TDM_0704.runs/design_1_axis_capture_gate_0_0_synth_1/design_1_axis_capture_gate_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_axis_capture_gate_0_0_utilization_synth.rpt -pb design_1_axis_capture_gate_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 22 14:55:24 2026...

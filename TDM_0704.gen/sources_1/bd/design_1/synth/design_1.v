@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-//Date        : Tue Jul 21 20:42:03 2026
+//Date        : Wed Jul 22 14:49:05 2026
 //Host        : JohnsonKu running 64-bit major release  (build 9200)
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -10,7 +10,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=22,numReposBlks=22,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=3,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=10,da_board_cnt=1,da_zynq_ultra_ps_e_cnt=3,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
+(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=24,numReposBlks=24,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=3,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=10,da_board_cnt=1,da_zynq_ultra_ps_e_cnt=3,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
 module design_1
    (GPIO_0_tri_o,
     adc2_clk_0_clk_n,
@@ -35,10 +35,8 @@ module design_1
   wire adc2_clk_0_clk_n;
   wire adc2_clk_0_clk_p;
   wire [31:0]adc_packetizer_0_m_axis_dma_TDATA;
-  wire [3:0]adc_packetizer_0_m_axis_dma_TKEEP;
   wire [0:0]adc_packetizer_0_m_axis_dma_TLAST;
   wire adc_packetizer_0_m_axis_dma_TREADY;
-  wire [3:0]adc_packetizer_0_m_axis_dma_TSTRB;
   wire adc_packetizer_0_m_axis_dma_TVALID;
   wire [31:0]axi_dma_0_M_AXI_MM2S_ARADDR;
   wire [1:0]axi_dma_0_M_AXI_MM2S_ARBURST;
@@ -187,12 +185,17 @@ module design_1
   wire axi_smc_M04_AXI_WREADY;
   wire [3:0]axi_smc_M04_AXI_WSTRB;
   wire axi_smc_M04_AXI_WVALID;
+  wire [31:0]axis_capture_gate_0_m_axis_TDATA;
+  wire axis_capture_gate_0_m_axis_TLAST;
+  wire axis_capture_gate_0_m_axis_TREADY;
+  wire axis_capture_gate_0_m_axis_TVALID;
   wire [15:0]axis_clock_converter_0_M_AXIS_TDATA;
   wire axis_clock_converter_0_M_AXIS_TREADY;
   wire axis_clock_converter_0_M_AXIS_TVALID;
   wire [15:0]axis_clock_converter_1_M_AXIS_TDATA;
   wire axis_clock_converter_1_M_AXIS_TREADY;
   wire axis_clock_converter_1_M_AXIS_TVALID;
+  wire [0:0]capture_arm_const_dout;
   wire clk_wiz_adc2_clk_out1;
   wire clk_wiz_adc2_locked;
   wire clk_wiz_dac0_100MHz;
@@ -205,6 +208,7 @@ module design_1
   wire [15:0]lfm_tdm_gen_0_dbg_chirp_count;
   wire [0:0]lfm_tdm_gen_0_dbg_chirp_end;
   wire [0:0]lfm_tdm_gen_0_dbg_chirp_start;
+  wire lfm_tdm_gen_0_dbg_chirp_start_ap_vld;
   wire [0:0]lfm_tdm_gen_0_dbg_enable;
   wire [15:0]lfm_tdm_gen_0_dbg_lfm_i;
   wire [15:0]lfm_tdm_gen_0_dbg_lfm_q;
@@ -213,6 +217,7 @@ module design_1
   wire [2:0]lfm_tdm_gen_0_dbg_state;
   wire [3:0]lfm_tdm_gen_0_dbg_tx_active;
   wire [1:0]lfm_tdm_gen_0_dbg_tx_sel;
+  wire lfm_tdm_gen_0_dbg_tx_sel_ap_vld;
   (* CONN_BUS_INFO = "lfm_tdm_gen_0_m_axis_tx xilinx.com:interface:axis:1.0 None TDATA" *) (* DONT_TOUCH *) wire [31:0]lfm_tdm_gen_0_m_axis_tx_TDATA;
   (* CONN_BUS_INFO = "lfm_tdm_gen_0_m_axis_tx xilinx.com:interface:axis:1.0 None TKEEP" *) (* DONT_TOUCH *) wire [3:0]lfm_tdm_gen_0_m_axis_tx_TKEEP;
   (* CONN_BUS_INFO = "lfm_tdm_gen_0_m_axis_tx xilinx.com:interface:axis:1.0 None TLAST" *) (* DONT_TOUCH *) wire [0:0]lfm_tdm_gen_0_m_axis_tx_TLAST;
@@ -286,10 +291,8 @@ module design_1
        (.ap_clk(zynq_ultra_ps_e_0_pl_clk0),
         .ap_rst_n(rst_ps8_0_99M_peripheral_aresetn),
         .m_axis_dma_TDATA(adc_packetizer_0_m_axis_dma_TDATA),
-        .m_axis_dma_TKEEP(adc_packetizer_0_m_axis_dma_TKEEP),
         .m_axis_dma_TLAST(adc_packetizer_0_m_axis_dma_TLAST),
         .m_axis_dma_TREADY(adc_packetizer_0_m_axis_dma_TREADY),
-        .m_axis_dma_TSTRB(adc_packetizer_0_m_axis_dma_TSTRB),
         .m_axis_dma_TVALID(adc_packetizer_0_m_axis_dma_TVALID),
         .s_axis_adc_TDATA(axis_clock_converter_0_M_AXIS_TDATA),
         .s_axis_adc_TREADY(axis_clock_converter_0_M_AXIS_TREADY),
@@ -587,6 +590,22 @@ module design_1
         .S01_AXI_wvalid(axi_dma_0_M_AXI_S2MM_WVALID),
         .aclk(zynq_ultra_ps_e_0_pl_clk0),
         .aresetn(rst_ps8_0_99M_peripheral_aresetn));
+  design_1_axis_capture_gate_0_0 axis_capture_gate_0
+       (.aclk(zynq_ultra_ps_e_0_pl_clk0),
+        .aresetn(rst_ps8_0_99M_peripheral_aresetn),
+        .capture_arm(capture_arm_const_dout),
+        .dbg_chirp_start(lfm_tdm_gen_0_dbg_chirp_start),
+        .dbg_chirp_start_ap_vld(lfm_tdm_gen_0_dbg_chirp_start_ap_vld),
+        .dbg_tx_sel(lfm_tdm_gen_0_dbg_tx_sel),
+        .dbg_tx_sel_ap_vld(lfm_tdm_gen_0_dbg_tx_sel_ap_vld),
+        .m_axis_tdata(axis_capture_gate_0_m_axis_TDATA),
+        .m_axis_tlast(axis_capture_gate_0_m_axis_TLAST),
+        .m_axis_tready(axis_capture_gate_0_m_axis_TREADY),
+        .m_axis_tvalid(axis_capture_gate_0_m_axis_TVALID),
+        .s_axis_tdata(adc_packetizer_0_m_axis_dma_TDATA),
+        .s_axis_tlast(adc_packetizer_0_m_axis_dma_TLAST),
+        .s_axis_tready(adc_packetizer_0_m_axis_dma_TREADY),
+        .s_axis_tvalid(adc_packetizer_0_m_axis_dma_TVALID));
   design_1_axis_clock_converter_0_0 axis_clock_converter_0
        (.m_axis_aclk(zynq_ultra_ps_e_0_pl_clk0),
         .m_axis_aresetn(rst_ps8_0_99M_interconnect_aresetn),
@@ -617,12 +636,14 @@ module design_1
         .m_axis_tvalid(radar_beamformer_0_out_data_TVALID),
         .s_axis_aclk(zynq_ultra_ps_e_0_pl_clk0),
         .s_axis_aresetn(rst_ps8_0_99M_peripheral_aresetn),
-        .s_axis_tdata(adc_packetizer_0_m_axis_dma_TDATA),
-        .s_axis_tkeep(adc_packetizer_0_m_axis_dma_TKEEP),
-        .s_axis_tlast(adc_packetizer_0_m_axis_dma_TLAST),
-        .s_axis_tready(adc_packetizer_0_m_axis_dma_TREADY),
-        .s_axis_tstrb(adc_packetizer_0_m_axis_dma_TSTRB),
-        .s_axis_tvalid(adc_packetizer_0_m_axis_dma_TVALID));
+        .s_axis_tdata(axis_capture_gate_0_m_axis_TDATA),
+        .s_axis_tkeep({1'b1,1'b1,1'b1,1'b1}),
+        .s_axis_tlast(axis_capture_gate_0_m_axis_TLAST),
+        .s_axis_tready(axis_capture_gate_0_m_axis_TREADY),
+        .s_axis_tstrb({1'b1,1'b1,1'b1,1'b1}),
+        .s_axis_tvalid(axis_capture_gate_0_m_axis_TVALID));
+  design_1_capture_arm_const_0 capture_arm_const
+       (.dout(capture_arm_const_dout));
   design_1_clk_wiz_adc2_0 clk_wiz_adc2
        (.clk_in1(usp_rf_data_converter_0_clk_adc2),
         .clk_out1(clk_wiz_adc2_clk_out1),
@@ -662,6 +683,7 @@ module design_1
         .dbg_chirp_count(lfm_tdm_gen_0_dbg_chirp_count),
         .dbg_chirp_end(lfm_tdm_gen_0_dbg_chirp_end),
         .dbg_chirp_start(lfm_tdm_gen_0_dbg_chirp_start),
+        .dbg_chirp_start_ap_vld(lfm_tdm_gen_0_dbg_chirp_start_ap_vld),
         .dbg_enable(lfm_tdm_gen_0_dbg_enable),
         .dbg_lfm_i(lfm_tdm_gen_0_dbg_lfm_i),
         .dbg_lfm_q(lfm_tdm_gen_0_dbg_lfm_q),
@@ -670,6 +692,7 @@ module design_1
         .dbg_state(lfm_tdm_gen_0_dbg_state),
         .dbg_tx_active(lfm_tdm_gen_0_dbg_tx_active),
         .dbg_tx_sel(lfm_tdm_gen_0_dbg_tx_sel),
+        .dbg_tx_sel_ap_vld(lfm_tdm_gen_0_dbg_tx_sel_ap_vld),
         .m_axis_tx_TDATA(lfm_tdm_gen_0_m_axis_tx_TDATA),
         .m_axis_tx_TKEEP(lfm_tdm_gen_0_m_axis_tx_TKEEP),
         .m_axis_tx_TLAST(lfm_tdm_gen_0_m_axis_tx_TLAST),

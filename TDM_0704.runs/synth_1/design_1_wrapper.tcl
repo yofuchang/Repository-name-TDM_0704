@@ -63,6 +63,7 @@ set_param power.enableCarry8RouteBelPower 1
 set_param power.enableLutRouteBelPower 1
 set_param bd.open.in_stealth_mode 4
 set_msg_config -id {Common 17-41} -limit 10000000
+set_msg_config -id {HDL-1065} -limit 10000
 set_msg_config  -id {[BD 41-1306]}  -suppress 
 set_msg_config  -id {[BD 41-1271]}  -suppress 
 OPTRACE "Creating in-memory project" START { }

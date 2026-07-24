@@ -210,9 +210,6 @@
 
 // ------------------------------- Buffers -------------------------------------
 
-static u8 DiscardBuffer[RX_BUFFER_SIZE + CACHE_PADDING]
-    __attribute__((aligned(64)));
-
 static u8 RxBuffer[RX_BUFFER_SIZE + CACHE_PADDING]
     __attribute__((aligned(64)));
 
@@ -2243,7 +2240,6 @@ int main()
 {
     int Status;
 
-    u32 *DiscardData = (u32 *)DiscardBuffer;
     u32 *RxData = (u32 *)RxBuffer;
 
     xil_printf("\r\n");
@@ -2261,19 +2257,36 @@ int main()
     );
     xil_printf("====================================================\r\n");
 
-    xil_printf("DMA_BASEADDR         = 0x%08X\r\n",
-               (unsigned int)DMA_BASEADDR);
-    xil_printf("LFM_TDM_GEN_BASEADDR = 0x%08X\r\n",
-               (unsigned int)LFM_TDM_GEN_BASEADDR);
-    xil_printf("RFDC_BASEADDR        = 0x%08X\r\n",
-               (unsigned int)RFDC_BASEADDR);
-    xil_printf("RFDC_RESET_GPIO_BASE = 0x%08X\r\n",
-               (unsigned int)RFDC_RESET_GPIO_BASEADDR);
-    xil_printf("FRAME_SAMPLES        = %u\r\n",
-               (unsigned int)FRAME_SAMPLES);
-    xil_printf("RX_BUFFER_SIZE       = %u bytes (0x%08X)\r\n",
-               (unsigned int)RX_BUFFER_SIZE,
-               (unsigned int)RX_BUFFER_SIZE);
+    xil_printf(
+        "DMA_BASEADDR         = 0x%08X\r\n",
+        (unsigned int)DMA_BASEADDR
+    );
+
+    xil_printf(
+        "LFM_TDM_GEN_BASEADDR = 0x%08X\r\n",
+        (unsigned int)LFM_TDM_GEN_BASEADDR
+    );
+
+    xil_printf(
+        "RFDC_BASEADDR        = 0x%08X\r\n",
+        (unsigned int)RFDC_BASEADDR
+    );
+
+    xil_printf(
+        "RFDC_RESET_GPIO_BASE = 0x%08X\r\n",
+        (unsigned int)RFDC_RESET_GPIO_BASEADDR
+    );
+
+    xil_printf(
+        "FRAME_SAMPLES        = %u\r\n",
+        (unsigned int)FRAME_SAMPLES
+    );
+
+    xil_printf(
+        "RX_BUFFER_SIZE       = %u bytes (0x%08X)\r\n",
+        (unsigned int)RX_BUFFER_SIZE,
+        (unsigned int)RX_BUFFER_SIZE
+    );
 
 #ifdef LFM_TDM_GEN_BASEADDR_IS_FALLBACK
     xil_printf(
@@ -2283,57 +2296,66 @@ int main()
 
 #ifdef RFDC_RESET_GPIO_BASEADDR_IS_FALLBACK
     xil_printf(
-        "WARNING: Using fallback RFDC reset GPIO address 0xA0010000.\r\n"
+        "WARNING: Using fallback RFDC reset GPIO address "
+        "0xA0010000.\r\n"
     );
 #endif
 
     xil_printf("\r\n");
     xil_printf("CLK104 configuration:\r\n");
+
     xil_printf(
-        "The program will configure LMK ID 1 before RFDC startup.\r\n"
+        "The program will configure LMK ID 1 before "
+        "RFDC startup.\r\n"
     );
+
     xil_printf(
         "Expected ADC/DAC references: 250 MHz / 250 MHz.\r\n"
     );
 
     /*
      * Correct clock/reset sequence:
-     *   1. Keep RFDC AXI reset asserted.
-     *   2. Program CLK104 and wait for stable references.
-     *   3. Release RFDC reset.
-     *   4. Initialize and inspect RFDC.
+     *
+     * 1. Keep RFDC AXI reset asserted.
+     * 2. Program CLK104 and wait for stable references.
+     * 3. Release RFDC reset.
+     * 4. Initialize and inspect RFDC.
      */
     hold_rfdc_in_reset();
 
     Status = init_clk104();
+
     if (Status != XST_SUCCESS) {
         return XST_FAILURE;
     }
 
     Status = release_rfdc_from_reset();
+
     if (Status != XST_SUCCESS) {
         return XST_FAILURE;
     }
 
     Status = init_rfdc();
+
     if (Status != XST_SUCCESS) {
         return XST_FAILURE;
     }
 
     Status = init_dma();
+
     if (Status != XST_SUCCESS) {
         return XST_FAILURE;
     }
 
+    /*
+     * Fill only the actual capture buffer with a known sentinel.
+     *
+     * DiscardBuffer is no longer used because axis_capture_gate_0
+     * performs the alignment entirely in PL hardware.
+     */
     for (u32 i = 0U; i < DMA_WORDS_PER_FRAME; ++i) {
-        DiscardData[i] = RX_SENTINEL;
         RxData[i] = RX_SENTINEL;
     }
-
-    Xil_DCacheFlushRange(
-        (UINTPTR)DiscardBuffer,
-        RX_BUFFER_SIZE
-    );
 
     Xil_DCacheFlushRange(
         (UINTPTR)RxBuffer,
@@ -2344,49 +2366,44 @@ int main()
 
     xil_printf("\r\n");
     xil_printf("====================================================\r\n");
-    xil_printf("PAUSED BEFORE DMA AND LFM START\r\n");
-    xil_printf("1. Connect the XM655 DAC output to the selected ADC input.\r\n");
-    xil_printf("2. Use a suitable 50-ohm cable and safe attenuation.\r\n");
-    xil_printf("3. Open Vivado Hardware Manager.\r\n");
-    xil_printf("4. Arm system_ila_1 for the LFM generator AXIS.\r\n");
-    xil_printf("5. Arm system_ila_2 for RFDC/m20_axis.\r\n");
-    xil_printf("6. Return to this UART window and press any key.\r\n");
+    xil_printf(
+        "PAUSED BEFORE TX0-TRIGGER-ALIGNED CAPTURE\r\n"
+    );
+    xil_printf(
+        "1. Confirm the XM655 DAC-to-ADC loopback cable.\r\n"
+    );
+    xil_printf(
+        "2. Confirm that the reduced-amplitude LFM bitstream "
+        "is programmed.\r\n"
+    );
+    xil_printf(
+        "3. Open Vivado Hardware Manager.\r\n"
+    );
+    xil_printf(
+        "4. Arm system_ila_1 for the LFM generator AXIS.\r\n"
+    );
+    xil_printf(
+        "5. Arm system_ila_2 for RFDC/m20_axis.\r\n"
+    );
+    xil_printf(
+        "6. Return to this UART window and press any key.\r\n"
+    );
     xil_printf("====================================================\r\n");
 
     (void)inbyte();
 
-    xil_printf("\r\nStarting alignment DMA transfer...\r\n");
-
-    /*
-     * Alignment transfer:
-     * adc_packetizer is free-running and may already be in the middle of its
-     * 4096-word frame. This first DMA transaction drains data until the next
-     * TLAST. The second transaction is then much more likely to begin on a
-     * packet boundary.
-     */
-    Status = start_s2mm_transfer(
-        DiscardBuffer,
-        RX_BUFFER_SIZE
+    xil_printf(
+        "\r\nStarting TX0-trigger-aligned ADC capture...\r\n"
     );
 
-    if (Status != XST_SUCCESS) {
-        xil_printf("ERROR: Cannot start alignment S2MM transfer.\r\n");
-        return XST_FAILURE;
-    }
-
-    // Start continuous repeated LFM immediately after the alignment DMA is armed.
-    start_lfm_auto_restart();
-
-    Status = wait_s2mm_done("ALIGNMENT TRANSFER DONE", 0);
-    if (Status != XST_SUCCESS) {
-        stop_lfm_auto_restart();
-        return XST_FAILURE;
-    }
-
     /*
-     * Start the actual capture immediately. Avoid UART prints between the two
-     * transfers so the receive FIFO has the best chance of absorbing the short
-     * DMA re-arm gap.
+     * axis_capture_gate_0 is armed by capture_arm_const = 1.
+     *
+     * Start the DMA before starting the LFM generator.
+     *
+     * While waiting for TX0 chirp_start, the gate continuously
+     * drains and discards the free-running ADC samples. No ADC
+     * sample is sent to the FIFO or DMA until the trigger occurs.
      */
     Status = start_s2mm_transfer(
         RxBuffer,
@@ -2394,25 +2411,64 @@ int main()
     );
 
     if (Status != XST_SUCCESS) {
-        stop_lfm_auto_restart();
-        xil_printf("ERROR: Cannot start ADC capture S2MM transfer.\r\n");
+        xil_printf(
+            "ERROR: Cannot start trigger-aligned "
+            "S2MM transfer.\r\n"
+        );
+
         return XST_FAILURE;
     }
 
-    Status = wait_s2mm_done("ADC CAPTURE DONE", 1);
+    /*
+     * Allow DMA and axis_data_fifo_1 time to become ready before
+     * the first TX0 frame-start event is generated.
+     */
+    usleep(10U);
 
+    /*
+     * Start continuous:
+     *
+     * TX0 -> TX1 -> TX2 -> TX3
+     *
+     * axis_capture_gate_0 waits for:
+     *
+     *   dbg_chirp_start        = 1
+     *   dbg_chirp_start_ap_vld = 1
+     *   dbg_tx_sel             = 0
+     *   dbg_tx_sel_ap_vld      = 1
+     *
+     * The gate then forwards exactly 4096 ADC samples and
+     * regenerates TLAST on sample index 4095.
+     */
+    start_lfm_auto_restart();
+
+    Status = wait_s2mm_done(
+        "TRIGGER-ALIGNED ADC CAPTURE DONE",
+        1
+    );
+
+    /*
+     * Stop repeated LFM generation after the aligned DMA
+     * transaction is complete or has timed out.
+     */
     stop_lfm_auto_restart();
 
     if (Status != XST_SUCCESS) {
         return XST_FAILURE;
     }
 
+    /*
+     * DMA has written new data into DDR, so invalidate the CPU
+     * cache before reading the receive buffer.
+     */
     Xil_DCacheInvalidateRange(
         (UINTPTR)RxBuffer,
         RX_BUFFER_SIZE
     );
 
-    u32 captured_words = count_captured_words(RxData);
+    u32 captured_words = count_captured_words(
+        RxData
+    );
 
     print_capture_summary(
         RxData,
@@ -2420,7 +2476,10 @@ int main()
     );
 
     if (captured_words == 0U) {
-        xil_printf("ERROR: ADC capture buffer is empty.\r\n");
+        xil_printf(
+            "ERROR: ADC capture buffer is empty.\r\n"
+        );
+
         return XST_FAILURE;
     }
 
@@ -2430,12 +2489,18 @@ int main()
     );
 
     if (Status != XST_SUCCESS) {
-        xil_printf("ERROR: Failed to build ADC CSV in DDR.\r\n");
+        xil_printf(
+            "ERROR: Failed to build ADC CSV in DDR.\r\n"
+        );
+
         return XST_FAILURE;
     }
 
     print_csv_ddr_export_information();
 
+    /*
+     * Keep DDR contents valid so XSDB can export the generated CSV.
+     */
     while (1) {
         sleep(1);
     }

@@ -14,3 +14,13 @@ status = platform.build()
 
 comp.build()
 
+status = comp.clean()
+
+status = platform.update_hw(hw_design = "$COMPONENT_LOCATION/../design_1_wrapper.xsa")
+
+status = platform.build()
+
+comp.build()
+
+vitis.dispose()
+
